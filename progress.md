@@ -1,35 +1,60 @@
 # progress — Estudo CMB
 
-## Estado (21/09/2026, fim da 1ª sessão)
+## Estado (21/09/2026, fim da 2ª sessão)
 - ✅ Desenho aprovado → `PLANO.md`. Pasta criada.
 - ✅ **Fase 1 · Pesquisa — CONCLUÍDA.**
   - Edital oficial 2026/2027 (DOU) em `pesquisa/edital-2026-2027.txt`; programa e regras resumidos em `pesquisa/01-o-que-cai.md`.
   - 6 provas (2020–2025) + gabaritos em `pesquisa/provas/`. Só a 2025 tem texto extraível; as outras são imagem.
   - 198 questões classificadas por assunto (`pesquisa/classificacao/<ano>.csv`, taxonomia em `pesquisa/taxonomia.md`), tabela em `classificacao/frequencia.md` (regenerar: `python pesquisa/frequencia.py`).
-  - Prioridades (faixas A/B/C/D) e uso de cada prova antiga: seção final do `01-o-que-cai.md`.
-- ✅ **Fase 1b · Roteiro provisório** — `roteiro/index.html` com Dias 1–3 (**seg 21, ter 22, qua 23/09** — ela começou no dia 21): frações → decimais → porcentagem, Khan + 2 questões do CMB por dia (2020 Q9/Q11/Q4, 2021 Q8/Q9/Q4, PDF abrindo na página, resposta escondida em "Ver respostas"; gabaritos conferidos por resolução própria). Revisado por agente separado: **PODE IR COM AJUSTES PEQUENOS** — 9 ajustes aplicados (meta explícita "tela de resultado, mais da metade certa", timer, aviso de login, vídeo de pré-álgebra trocado pelo 1º vídeo da unidade de porcentagem do 6º ano, aviso de legenda nos 2 links do curso americano); item "5% e 6%" descartado porque vem da Q16 de 2025.
-- ⏳ **Fase 2 · Aulas** — não começou. Pendência: a partir do **Dia 4 (qui 24/09)** a criança fica sem roteiro → Fase 2 + 4 precisam entregar até **quarta 23/09 à noite**.
+- ✅ **Fase 1b · Roteiro provisório** — Dias 1–3 (seg 21 a qua 23/09), revisado por agente separado, 9 ajustes aplicados.
+- ✅ **Fase 2 · Aulas — CONCLUÍDA** (21/09): vídeo + exercício por assunto das faixas A e B em `pesquisa/02-aulas.md`. Khan primeiro; YouTube para Português, redação, escada, romanos, média e vistas. 34 vídeos do YouTube conferidos por oEmbed (`pesquisa/ytcheck.py`).
+- ✅ **Fase 3 · Prática — CONCLUÍDA** (21/09): banco 2020+2021 esgotado, 43 questões com resolução escrita no padrão aprovado; tabela do que foi usado em `pesquisa/03-pratica.md`. Vídeos por questão só existem para 2020 (Matemática).
+- ✅ **Fase 4 · Roteiro completo — PUBLICADO** (21/09): `roteiro/index.html` com 28 cards (Dia 1 seg 21/09 → Dia 27 sáb 17/10 + "Dia da prova"). 141 fórmulas KaTeX validadas, HTML balanceado, ids únicos, 10 PDFs locais existentes. Revisão por 2 agentes separados (Matemática / Português+fins de semana) — resultado e ajustes registrados abaixo em "Revisões".
+- ⏳ **Fase 5 · Anki** — opcional, só se sobrar tempo. As 27 "dicas do dia" já são as cartas.
 
-## Próximo passo
-1. Fase 2: para cada assunto das faixas A e B, achar vídeo (Khan; YouTube para Português) + exercício autocorrigido + duração. Enumerar as lições da Khan.
-2. Fase 3: separar as questões de 2020/2021 por assunto (renderizar as páginas em PNG; usar os CSVs como índice) e achar vídeos de resolução das provas no YouTube.
-3. Fase 4: estender `roteiro/index.html` até o Dia 27 (calendário no `PLANO.md`).
+## Calendário do roteiro (como ficou)
+| Semana | seg | ter | qua | qui | sex | sáb | dom |
+|---|---|---|---|---|---|---|---|
+| S1 21–27/09 | D1 frações | D2 decimais | D3 porcentagem | D4 Port interpretação | D5 Port vírgula | D6 diagnóstico 2022 | D7 redação 1 (herói) + revisão |
+| S2 28/09–04/10 | D8 escada de unidades | D9 área e volume | D10 Port sentido das palavras | D11 classes/ordens/romanos | D12 Port conectivos | D13 simulado 2023 | D14 redação 2 (faz de conta) |
+| S3 05–11/10 | D15 MMC/divisores | D16 gráficos/média | D17 Port tirinhas | D18 probabilidade/vistas | D19 Port poema | D20 simulado 2024 | D21 reescrita + revisão |
+| S4 12–18/10 | D22 ensaio geral 2025 (feriado, 4h30 com redação) | D23 revisão Mat | D24 revisão Port | D25 revisão simulados | D26 leve + mochila | D27 véspera sem estudo | **PROVA** |
 
-## Publicação (21/09)
-- ✅ Repo público `diogobr23/estudo-cmb` + GitHub Pages: **https://diogobr23.github.io/estudo-cmb/** (redireciona para `roteiro/`). PDFs das provas servidos pela mesma URL. Atualizar = `git push` (Pages reconstrói em ~1 min).
-- ✅ Pedido do Diogo: toda questão do CMB com resolução (vídeo curto se existir; senão escrita, revisada por agente). 6 resoluções escritas nos Dias 1–3; vídeos só para 2020 (canal Matemática para Vencer). Levantamento em `pesquisa/03-pratica.md`.
+Padrão de dia de semana: 🎬 (10–14 min) → ✏️ Khan ou 📖 leitura (10–15) → 📝 2–5 questões do CMB com resolução (25) → 💡 dica (5). Simulado: 🧰 → 📝 (2h30/3h/4h30) → ✅ gabarito → 📓 anota conta/pergunta/assunto + ⭐ → 💡. Redação: 🎬/📖 correção → 📖 proposta + esqueleto → ✍️ 40 min → ✔ lista → 📷 foto → 🔁 revisão do simulado.
+
+## Fluxo com o Diogo durante as 4 semanas
+1. **Redações** (dom 27/09, dom 04/10, dom 11/10 reescrita, seg 12/10 ensaio): adulto fotografa → Diogo manda ao Claude → correção com a rubrica do edital (5 competências + 9 eliminatórias) em linguagem de 10 anos → Diogo entrega antes do domingo seguinte. Redações NÃO entram no repo (`.gitignore`).
+2. **⭐ dos simulados** (2022, 2023, 2024, 2025): a criança marca as questões que não entendeu; Diogo manda "ano + número" → resolução escrita no padrão do roteiro, publicada num card de revisão.
+3. Dia 22: confirmar com a criança o horário de início da prova (o roteiro manda "perguntar pro Diogo"); Dia 26: qual documento de identificação é aceito (Manual do Candidato do CMB).
+
+## Publicação
+- Repo público `diogobr23/estudo-cmb` + GitHub Pages: **https://diogobr23.github.io/estudo-cmb/** (redireciona para `roteiro/`). PDFs das provas servidos pela mesma URL. Atualizar = `git push` (Pages reconstrói em ~1 min).
+- Antes de publicar mudança no roteiro: `node roteiro/check_katex.js` (fórmulas) + checagem de HTML balanceado/ids/links locais (script no scratchpad da sessão; refazer se precisar: html.parser + regex).
 
 ## Limitações conhecidas
-- 2 links do Dia 1 e Dia 2 (soma de frações / soma de decimais) são do curso `arithmetic` (americano): pode haver vídeo em inglês com legenda. Testar 1 antes de terça; se estiver em inglês, trocar pelo equivalente BR na Fase 2.
-- **Khan Academy bloqueia robôs** (curl/WebFetch recebem só a casca; até endereço inventado devolve 200). Checagem de link da Khan por curl NÃO vale. Evidência usada: URL + título indexados pelo buscador. Para checagem de verdade: navegador (claude-in-chrome, com autorização do Diogo) ou testar na mão.
-- Os cadernos de 2022, 2023 e 2024 não trazem a proposta de redação (era caderno separado). Propostas disponíveis: 2020 (herói, 1ª pessoa, 20–30 linhas), 2021 (faz de conta, 1ª pessoa, 20–30 linhas), 2025 (água, 3ª pessoa, 15–30 linhas).
-- Ressalvas dos leitores: 2020 Q3 e Q5 anuladas; 2021 Q12 provável erro de enunciado; 2024 Q13 com duas alternativas verdadeiras (gabarito D). Evitar essas questões no banco.
+- 2 links do Dia 1 e Dia 2 (soma de frações / soma de decimais) são do curso `arithmetic` (americano): pode haver vídeo em inglês com legenda. Também o Pratique "cálculo da média" (Dia 16) pode vir em inglês — avisado no próprio passo.
+- **Khan Academy bloqueia robôs** (curl/WebFetch recebem só a casca; até endereço inventado devolve 200). Checagem de link da Khan por curl NÃO vale. Evidência usada: URL + título indexados pelo buscador. Para checagem de verdade: navegador ou testar na mão. Links novos da Fase 2 que valem testar na mão antes do dia: Dia 11 (valor posicional 6º ano), Dia 16 (gráficos de imagens, média), Dia 15 (dois Pratiques).
+- Os cadernos de 2022, 2023 e 2024 não trazem a proposta de redação. Propostas usadas: 2020 (herói, 1ª pessoa) no Dia 7; 2021 (faz de conta, 1ª pessoa) no Dia 14; 2025 (água, 3ª pessoa, 15–30 linhas) no ensaio do Dia 22. Dia 21 = reescrita da pior das duas primeiras.
+- Ressalvas: 2020 Q3 e Q5 anuladas; 2020 Q6 exige raiz/potência (fora); 2020 Q18 gabarito retificado (pulada, avisado no Dia 5); 2021 Q12 erro de enunciado; 2024 Q13 duas alternativas verdadeiras (avisado no Dia 20).
+- Vídeos de correção de prova inteira (2022 Azambuja 1h, 2023 Prof. Vilmar 10 questões) só servem com adulto achando o minuto — o roteiro diz isso.
+- Não consigo renderizar a página nesta sessão (sem navegador): visual conferido pelo Diogo no aparelho (21/09, "ficou bom").
 
 ## Decisões
-- 21/09 (tarde): Diogo abriu a versão 3 no aparelho e aprovou o visual ("ficou bom"). Padrão de resolução (🎯 → balões → ✅ → 💡 → ⚠️ → 🎬, KaTeX) vale para todas as próximas questões.
-- 21/09: fórmulas desenhadas com **KaTeX 0.18.7 auto-hospedado** em `roteiro/vendor/katex/` (sem CDN; funciona no Pages e offline). Antes de publicar: `node roteiro/check_katex.js` (valida toda fórmula `\( \)` / `\[ \]` da página). Pedido do Diogo: fração desenhada, contas em pé, formatação melhor.
+- 21/09 (noite): **escada de conversão** desenhada (`div.escada`) em toda resolução que troca unidade — pedido do Diogo depois que a criança não lembrou da escada na Q8/2021 do Dia 1. Área ×100 e volume ×1000 com a explicação de 1 linha (1 m = 10 dm → 1 m² = 100 dm² → 1 m³ = 1000 dm³). Regra no `CLAUDE.md`.
+- 21/09 (noite): simulados de fim de semana não ganham resolução escrita de todas as 30–40 questões — inviável e desnecessário. Fluxo: ⭐ → Diogo → resolução sob demanda. Vídeo de prova inteira fica como opcional.
+- 21/09 (tarde): Diogo aprovou o visual v3 ("ficou bom"). Padrão de resolução (🎯 → balões → ✅ → 💡 → ⚠️ → 🎬, KaTeX) vale para todas as questões. Em Português: balões por alternativa (A–E) ou por passo, com a linha do texto citada.
+- 21/09: fórmulas com **KaTeX 0.18.7 auto-hospedado** em `roteiro/vendor/katex/`. Antes de publicar: `node roteiro/check_katex.js`.
 - 21/09: formato A (página única com cards). Khan Academy primeiro, YouTube só onde faltar.
 - 21/09: criança estuda sozinha; redação corrigida pelo Claude via foto enviada pelo Diogo.
-- 21/09: peso da frequência = principal 1 + secundário 0,5 (assunto "de carona" conta metade).
-- 21/09: uso das provas: 2020–2021 = banco por assunto; 2022 = diagnóstico (26–27/09); 2023 e 2024 = simulados dos fins de semana 2 e 3; 2025 = ensaio geral 4h30 no feriado de 12/10; 17/10 só revisão leve.
+- 21/09: peso da frequência = principal 1 + secundário 0,5.
+- 21/09: uso das provas: 2020–2021 = banco por assunto (esgotado); 2022 = diagnóstico (26/09); 2023 e 2024 = simulados (03 e 10/10); 2025 = ensaio geral 4h30 no feriado de 12/10; 17/10 só descanso.
 - 21/09: tempo ≈ Mat 55% · Port 30% · Redação 15%.
+
+## Revisões (agentes separados)
+- Dias 1–3 (21/09, tarde): PODE IR COM AJUSTES PEQUENOS → 9 aplicados; 2ª revisão das resoluções: 0 erros de matemática, 10 pontes de linguagem aplicadas.
+- Dias 4–28 (21/09, noite): ver seção "Próximo passo" enquanto não estiver registrado.
+
+## Próximo passo
+1. Registrar o resultado das revisões dos Dias 4–28 e aplicar os ajustes (esta sessão).
+2. Diogo: testar na mão os links da Khan dos Dias 8, 9, 11, 15, 16 e 18 (abrem? em português?) — 10 minutos. Trocar pelo equivalente se algum falhar.
+3. Correção da 1ª redação (dom 27/09) e primeira leva de ⭐ do diagnóstico de 2022 (seg 28/09).
