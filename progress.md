@@ -15,8 +15,9 @@
 2. Fase 3: separar as questões de 2020/2021 por assunto (renderizar as páginas em PNG; usar os CSVs como índice) e achar vídeos de resolução das provas no YouTube.
 3. Fase 4: estender `roteiro/index.html` até o Dia 27 (calendário no `PLANO.md`).
 
-## Pedidos do Diogo em aberto (21/09)
-- Publicar a página no GitHub Pages para acessar de outro computador → aguardando ok para criar repo **público** (Pages grátis exige repo público). Regra: nenhum dado pessoal da criança no repo.
+## Publicação (21/09)
+- ✅ Repo público `diogobr23/estudo-cmb` + GitHub Pages: **https://diogobr23.github.io/estudo-cmb/** (redireciona para `roteiro/`). PDFs das provas servidos pela mesma URL. Atualizar = `git push` (Pages reconstrói em ~1 min).
+- ✅ Pedido do Diogo: toda questão do CMB com resolução (vídeo curto se existir; senão escrita, revisada por agente). 6 resoluções escritas nos Dias 1–3; vídeos só para 2020 (canal Matemática para Vencer). Levantamento em `pesquisa/03-pratica.md`.
 
 ## Limitações conhecidas
 - 2 links do Dia 1 e Dia 2 (soma de frações / soma de decimais) são do curso `arithmetic` (americano): pode haver vídeo em inglês com legenda. Testar 1 antes de terça; se estiver em inglês, trocar pelo equivalente BR na Fase 2.

@@ -21,12 +21,17 @@
   .passo { display:flex; gap:12px; align-items:flex-start; padding:10px 0; border-top:1px dashed var(--line) }
   .passo input { width:26px; height:26px; margin:2px 0 0; flex:none; accent-color:var(--ok) }
   .passo label { flex:1; cursor:pointer }
+  .passo .corpo { flex:1 } .passo .corpo label { display:block }
   .passo .t { color:var(--muted); font-size:14px }
   .passo:has(input:checked) label { text-decoration:line-through; color:var(--muted) }
   a { color:var(--mat); font-weight:600 }
   .dica { background:var(--dica); color:var(--dica-ink); border-radius:12px; padding:12px 14px; margin-top:12px }
   .dica b { display:block; margin-bottom:4px }
   details { margin-top:6px; font-size:15px } summary { cursor:pointer; color:var(--mat); font-weight:600 }
+  details.res { background:#f0f4fa; border-radius:10px; padding:8px 12px }
+  details.res ol { margin:6px 0 0 18px; padding:0 } details.res li { margin:4px 0 }
+  details.res .esc { margin-top:8px; color:#8a3b00; font-size:14px }
+  details.res .video { margin-top:8px; font-size:14px }
   .fim { text-align:center; color:var(--muted); font-size:15px; margin-top:8px }
   .prog { font-size:14px; color:var(--muted); margin-top:8px }
 </style>
@@ -39,7 +44,7 @@
   <div class="como">
     <b>Como funciona</b>
     <ol>
-      <li>Cada dia tem 4 passos. Faz na ordem e <b>marca a caixinha</b> quando terminar.</li>
+      <li>Cada dia tem 5 passos. Faz na ordem e <b>marca a caixinha</b> quando terminar.</li>
       <li>Antes de cada passo, põe um <b>timer no celular</b> com os minutos que estão entre parênteses.</li>
       <li>Nos exercícios da Khan ("Pratique"), faz o bloco <b>inteiro</b> até aparecer a tela de resultado (tipo "Você acertou 5 de 7"). Acertou menos da metade? Faz de novo. Errar faz parte do treino.</li>
       <li>Se aparecer uma janela pedindo pra entrar ou criar conta, fecha no X e continua.</li>
@@ -68,11 +73,35 @@
       assiste o <b>primeiro vídeo</b> e faz o <b>primeiro "Pratique"</b>.
       <div class="t">Meta: vídeo até o fim + tela de resultado do 1º Pratique. É o assunto que MAIS cai na prova. Se o vídeo estiver em inglês, liga a legenda (botão CC) ou vai direto pro Pratique.</div></label></div>
 
-    <div class="passo"><input type="checkbox" id="d1p4"><label for="d1p4">📝 <b>Questões do CMB de verdade</b> (15 min):
+    <div class="passo"><input type="checkbox" id="d1p4"><div class="corpo"><label for="d1p4">📝 <b>Questões do CMB de verdade</b> (15 min):
       1ª) abre a <a href="../pesquisa/provas/2020-prova.pdf#page=8" target="_blank">prova de 2020 na página 8</a> → <b>Questão 9</b> (colocar as alturas dos anões em ordem, com frações).
       2ª) se der tempo, a <a href="../pesquisa/provas/2021-prova.pdf#page=7" target="_blank">prova de 2021 na página 7</a> → <b>Questão 8</b> (essa é difícil de verdade: mistura fração, decimal e medida — tenta, e se não sair, tudo bem).
-      <div class="t">Resolve no caderno, marca a letra, e só depois abre a resposta. Errou? Lê de novo devagar e tenta achar onde escorregou.</div>
-      <details><summary>Ver respostas</summary>2020 Questão 9 = <b>D</b> · 2021 Questão 8 = <b>C</b></details></label></div>
+      <div class="t">Resolve no caderno, marca a letra, e só depois abre a resposta. Errou (ou acertou sem ter certeza)? Abre a resolução e compara com o seu caminho.</div></label>
+      <details><summary>Ver respostas</summary>2020 Questão 9 = <b>D</b> · 2021 Questão 8 = <b>C</b></details>
+      <details class="res"><summary>Resolução da 1ª (2020, Questão 9 — anões)</summary>
+        <b>O que ela quer:</b> as sete frações do maior pro menor.
+        <ol>
+          <li>Separa em dois times. <b>Maior que 1</b> (número de cima maior que o de baixo): 7/6, 4/3, 9/8. <b>Menor que 1</b>: 3/5, 5/6, 9/10, 7/12.</li>
+          <li>Time "maior que 1": quanto cada um <b>passa</b> de 1? 7/6 = 1 e 1/6 · 4/3 = 1 e 1/3 · 9/8 = 1 e 1/8. Quanto maior o número de baixo, menor o pedaço: 1/3 &gt; 1/6 &gt; 1/8. Então <b>4/3 &gt; 7/6 &gt; 9/8</b>.</li>
+          <li>Time "menor que 1": deixa todas com o <b>mesmo número de baixo</b> (a dica do dia!). O 60 dá certinho pra 10, 6, 5 e 12: 9/10 = 54/60 · 5/6 = 50/60 · 3/5 = 36/60 · 7/12 = 35/60. Agora é só olhar o de cima: <b>9/10 &gt; 5/6 &gt; 3/5 &gt; 7/12</b>.</li>
+          <li>Junta tudo: 4/3 &gt; 7/6 &gt; 9/8 &gt; 9/10 &gt; 5/6 &gt; 3/5 &gt; 7/12 → letra <b>D</b>.</li>
+        </ol>
+        <div><b>Atalho de prova</b> (depois que você já descobriu que 4/3 é o maior): só as letras A e D começam com 4/3. A letra A termina com "7/12 &gt; 3/5", que é falso. Sobra D — sem precisar ordenar as sete!</div>
+        <div class="esc">⚠️ Escorregão comum: achar que 9/8 &gt; 7/6 porque 9 &gt; 7. Só dá pra comparar o número de cima quando o de baixo é igual.</div>
+        <div class="video">🎬 Quer ver um professor resolvendo? <a href="https://www.youtube.com/watch?v=uz47luJqj1g" target="_blank">Vídeo da Questão 9 (17 min)</a> — opcional.</div>
+      </details>
+      <details class="res"><summary>Resolução da 2ª (2021, Questão 8 — percurso do Alison)</summary>
+        <b>O que ela quer:</b> o tamanho total do percurso, em metros.
+        <ol>
+          <li>0,75 é a mesma coisa que <b>3/4</b> (pensa em dinheiro: R$ 0,75 são 3 moedas de 25 centavos, e 4 moedas dão 1 real → 3 de 4 partes = 3/4). Imagina o percurso cortado em <b>4 partes iguais</b>: ele andou 3 e sobrou <b>1 parte</b>.</li>
+          <li>Essa 1 parte que sobrou, ele cortou em <b>9 pedacinhos</b> e correu 2. Sobraram <b>7 pedacinhos</b>.</li>
+          <li>Esses 7 pedacinhos são os 140 decâmetros (dam) que faltavam. Cuidado com a unidade: 1 dam = 10 m → 140 dam = <b>1 400 m</b>.</li>
+          <li>7 pedacinhos = 1 400 m → 1 pedacinho = 1 400 ÷ 7 = <b>200 m</b>.</li>
+          <li>A parte inteira tem 9 pedacinhos = 9 × 200 = <b>1 800 m</b>.</li>
+          <li>O percurso todo tem 4 partes = 4 × 1 800 = <b>7 200 m</b> → letra <b>C</b>.</li>
+        </ol>
+        <div class="esc">⚠️ Escorregões comuns: esquecer de trocar dam por metro (140 não é 1 400) e achar que os 2/9 são do percurso inteiro — são do que <b>restou</b>.</div>
+      </details></div></div>
 
     <div class="passo"><input type="checkbox" id="d1p5"><label for="d1p5">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
     <div class="dica"><b>Dica do dia 1</b>Pra somar ou subtrair frações com denominadores (o número de baixo) diferentes, primeiro deixo as duas com o <b>mesmo denominador</b> (frações equivalentes). Só depois somo os números de cima. Ex.: 1/2 + 1/4 → 2/4 + 1/4 = 3/4.</div>
@@ -99,11 +128,32 @@
       e depois faz o primeiro "Pratique" de <a href="https://pt.khanacademy.org/math/arithmetic/x18ca194a:add-and-subtract-decimals" target="_blank">Soma e subtração de números decimais</a>.
       <div class="t">Meta: vídeo até o fim + tela de resultado do 1º Pratique. Se o vídeo estiver em inglês, liga a legenda (botão CC) ou vai direto pro Pratique.</div></label></div>
 
-    <div class="passo"><input type="checkbox" id="d2p4"><label for="d2p4">📝 <b>Questões do CMB de verdade</b> (15 min):
+    <div class="passo"><input type="checkbox" id="d2p4"><div class="corpo"><label for="d2p4">📝 <b>Questões do CMB de verdade</b> (15 min):
       1ª) abre a <a href="../pesquisa/provas/2020-prova.pdf#page=10" target="_blank">prova de 2020 na página 10</a> → <b>Questão 11</b> (as moedas do cofrinho dão pra pagar a tiara? — decimais e dinheiro).
       2ª) se der tempo, a <a href="../pesquisa/provas/2021-prova.pdf#page=7" target="_blank">prova de 2021 na página 7</a> → <b>Questão 9</b> (tempos da corrida: subtrair e dividir decimais).
-      <div class="t">Resolve no caderno, marca a letra, e só depois abre a resposta.</div>
-      <details><summary>Ver respostas</summary>2020 Questão 11 = <b>E</b> · 2021 Questão 9 = <b>E</b></details></label></div>
+      <div class="t">Resolve no caderno, marca a letra, e só depois abre a resposta. Errou (ou acertou sem ter certeza)? Abre a resolução e compara com o seu caminho.</div></label>
+      <details><summary>Ver respostas</summary>2020 Questão 11 = <b>E</b> · 2021 Questão 9 = <b>E</b></details>
+      <details class="res"><summary>Resolução da 1ª (2020, Questão 11 — a tiara da Minnie)</summary>
+        <b>O que ela quer:</b> saber se o dinheiro do cofrinho paga a dívida — e quanto sobra ou falta.
+        <ol>
+          <li>Quanto ela deve: 7 dólares × R$ 5,65. Separa: 5 × 7 = 35 reais e 65 centavos × 7 = 455 centavos = R$ 4,55. Soma: 35 + 4,55 = <b>R$ 39,55</b>.</li>
+          <li>Quanto tem no cofrinho, monte por monte: 20 × R$ 1,00 = 20,00 · 25 × R$ 0,50 = 12,50 (2 moedas de 50 = 1 real; 24 moedas = 12 reais; mais 1 = 12,50) · 21 × R$ 0,25 = 5,25 (4 moedas de 25 = 1 real; 20 moedas = 5 reais; mais 1 = 5,25) · 15 × R$ 0,10 = 1,50.</li>
+          <li>Soma com vírgula embaixo de vírgula: 20,00 + 12,50 + 5,25 + 1,50 = <b>R$ 39,25</b>.</li>
+          <li>Compara: deve 39,55 e tem 39,25 → <b>falta</b> 39,55 − 39,25 = <b>R$ 0,30</b>.</li>
+          <li>30 centavos em moedas de 5 centavos: 30 ÷ 5 = <b>6 moedas</b> → letra <b>E</b>.</li>
+        </ol>
+        <div class="esc">⚠️ Escorregão comum: ler rápido e responder "sobraram" quando na verdade "faltaram". Sublinha a palavra na alternativa.</div>
+        <div class="video">🎬 Quer ver um professor resolvendo? <a href="https://www.youtube.com/watch?v=1_O9bletwus" target="_blank">Vídeo da Questão 11 (9 min)</a> — opcional.</div>
+      </details>
+      <details class="res"><summary>Resolução da 2ª (2021, Questão 9 — tempos da corrida)</summary>
+        <b>O que ela quer:</b> a diferença entre a média de tempo <b>por atleta</b> do Canadá e da Itália. Média = repartir o tempo total igualzinho entre os 4 corredores da equipe.
+        <ol>
+          <li>Quanto o Canadá gastou a mais que a Itália no total: 37,70 − 37,50 = <b>0,20 s</b>.</li>
+          <li>Esse "a mais" foi repartido entre os 4 corredores: 0,20 ÷ 4 = <b>0,05 s</b> a mais por atleta → letra <b>E</b>. (Isso funciona porque as duas equipes têm o mesmo número de atletas: 4.)</li>
+        </ol>
+        <div><b>Conferindo pelo caminho longo:</b> Itália 37,50 ÷ 4 = 9,375 s por atleta; Canadá 37,70 ÷ 4 = 9,425 s. Diferença: 9,425 − 9,375 = 0,05 s. Mesmo resultado.</div>
+        <div class="esc">⚠️ Escorregão comum: responder 0,5 (letra A). 0,20 ÷ 4 é <b>0,05</b> (cinco centésimos). Pensa em dinheiro: 20 centavos divididos por 4 dá 5 centavos, não 50.</div>
+      </details></div></div>
 
     <div class="passo"><input type="checkbox" id="d2p5"><label for="d2p5">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
     <div class="dica"><b>Dica do dia 2</b>Vírgula embaixo de vírgula! Pra somar ou subtrair decimais, alinho as vírgulas e completo com zero o que faltar: 2,5 + 0,75 vira 2,50 + 0,75 = 3,25.</div>
@@ -129,11 +179,37 @@
       <a href="https://pt.khanacademy.org/math/6-ano-matematica/x3567d95341aaa14c:educacao-financeira/x3567d95341aaa14c:relacao-com-o-dinheiro/v/descontos-e-porcentagem" target="_blank">Descontos e porcentagem</a>.
       <div class="t">Na prova cai muito "5% de desconto" e "6% a mais" — é exatamente isso.</div></label></div>
 
-    <div class="passo"><input type="checkbox" id="d3p4"><label for="d3p4">📝 <b>Questões do CMB de verdade</b> (15 min):
+    <div class="passo"><input type="checkbox" id="d3p4"><div class="corpo"><label for="d3p4">📝 <b>Questões do CMB de verdade</b> (15 min):
       1ª) abre a <a href="../pesquisa/provas/2021-prova.pdf#page=4" target="_blank">prova de 2021 na página 4</a> → <b>Questão 4</b> (15% da pista de 4,1 km é plana — quanto é isso?).
       2ª) se der tempo, a <a href="../pesquisa/provas/2020-prova.pdf#page=4" target="_blank">prova de 2020 na página 4</a> → <b>Questão 4</b> (cinco frases com porcentagem — só UMA é verdadeira; testa uma por uma).
-      <div class="t">Resolve no caderno, marca a letra, e só depois abre a resposta.</div>
-      <details><summary>Ver respostas</summary>2021 Questão 4 = <b>D</b> · 2020 Questão 4 = <b>E</b></details></label></div>
+      <div class="t">Resolve no caderno, marca a letra, e só depois abre a resposta. Errou (ou acertou sem ter certeza)? Abre a resolução e compara com o seu caminho.</div></label>
+      <details><summary>Ver respostas</summary>2021 Questão 4 = <b>D</b> · 2020 Questão 4 = <b>E</b></details>
+      <details class="res"><summary>Resolução da 1ª (2021, Questão 4 — pista de mountain bike)</summary>
+        <b>O que ela quer:</b> a pista tem 4,1 km e 15% é parte plana. Quanto é isso?
+        <ol>
+          <li>10% de 4,1 → divide por 10 (a vírgula anda uma casa pra esquerda): <b>0,41 km</b>.</li>
+          <li>5% é a metade de 10%: 0,41 ÷ 2 = <b>0,205 km</b> (41 centésimos ÷ 2 = 20,5 centésimos).</li>
+          <li>15% = 10% + 5% = 0,41 + 0,205 = <b>0,615 km de parte plana</b> → letra <b>D</b>.</li>
+          <li>Conferindo as outras: o terreno irregular é 4,100 − 0,615 = 3,485 km (vírgula embaixo de vírgula, completando com zeros) — não é "exatamente 3,5" (A) nem "mais de 3,5" (B). A letra C tem o número certo, mas chama de <b>irregular</b> o que é <b>plano</b>. A letra E diz "mais de 0,7 km plano" — é 0,615.</li>
+        </ol>
+        <div class="esc">⚠️ Escorregão comum: marcar a C porque viu "0,615" e parou de ler. Lê a alternativa <b>até o fim</b>.</div>
+      </details>
+      <details class="res"><summary>Resolução da 2ª (2020, Questão 4 — Árvore da Vida)</summary>
+        <b>O que ela quer:</b> das 5 frases, só <b>uma</b> é verdadeira. Cada frase é uma mini-questão: testa e risca.
+        <div><b>Truque:</b> começa pela frase com a conta mais curta. Aqui é a E — se ela for verdadeira, acabou (só uma é certa).</div>
+        <ol>
+          <li><b>E)</b> 1 espécie entre 250 = 1/250. Como 250 × 4 = 1 000, então 1/250 = 4/1000. Divide em cima e embaixo por 10: 0,4/100 → 0,4 de cada 100 → <b>0,4%</b>. ✔ Verdadeira → letra <b>E</b>.</li>
+        </ol>
+        <div>Se quiser conferir por que as outras são falsas:</div>
+        <ol>
+          <li><b>A)</b> 30 passos = 18 m. 10% dos passos = 3 passos, que valem 10% de 18 m = 1,8 m — e não 3 m. ✘</li>
+          <li><b>B)</b> 227 de 327 é mais de 70%? 10% de 327 = 32,7 → 70% = 32,7 × 7 = 228,9. Como 227 é menor que 228,9, <b>não</b> chega a 70%. ✘</li>
+          <li><b>C)</b> 42 é "exatamente 94%" de 44? 10% de 44 = 4,4 → 90% = 39,6. 1% de 44 = 0,44 → 4% = 0,44 × 4 = 1,76. 94% = 39,6 + 1,76 = 41,36. Não é 42. ✘ (42 de 44 é uns 95%.)</li>
+          <li><b>D)</b> Diferença de altura: 44 − 42 = 2 m. 1% de 42 = 0,42 → 7% = 0,42 × 7 = 2,94 m, não 2. ✘ (2 de 42 é uns 5%.)</li>
+        </ol>
+        <div class="esc">⚠️ Escorregão comum: cansar no meio e chutar. Nesse tipo de questão, riscar as falsas <b>é</b> resolver.</div>
+        <div class="video">🎬 Quer ver um professor resolvendo? <a href="https://www.youtube.com/watch?v=S-o-1r-87dw" target="_blank">Vídeo da Questão 4 (18 min)</a> — opcional.</div>
+      </details></div></div>
 
     <div class="passo"><input type="checkbox" id="d3p5"><label for="d3p5">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
     <div class="dica"><b>Dica do dia 3</b>10% é dividir por 10. 5% é a metade de 10%. 1% é dividir por 100. Com esses três eu monto quase tudo: 15% = 10% + 5%; 12% = 10% + 1% + 1%.</div>
