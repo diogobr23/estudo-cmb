@@ -45,6 +45,11 @@
   .res table.tab td:last-child { text-align:right; font-weight:600 }
   .barra { display:flex; gap:3px; margin:6px 0 } .barra span { flex:1; height:22px; border-radius:4px; background:#dbe7f7; border:1px solid #9bb8e0 } .barra span.ok { background:var(--mat) }
   .barra.fina span { height:16px } .legenda { font-size:13px; color:var(--muted); margin-bottom:6px }
+  .escada { margin:8px 0 4px } .escada .deg { display:flex; gap:4px }
+  .escada .deg span { flex:1; text-align:center; background:#fff; border:1px solid #9bb8e0; border-radius:6px; padding:4px 0; font-weight:700; font-size:14px }
+  .escada .deg span.aqui { background:var(--mat); color:#fff; border-color:var(--mat) }
+  .escada .seta { display:flex; justify-content:space-between; font-size:13px; color:var(--muted); margin-top:3px }
+  .escada .seta b { color:var(--ink) }
   .res .alt { margin:6px 0 } .res .alt b.x { color:#8a3b00 } .res .alt b.v { color:#1d6b2d }
   .fim { text-align:center; color:var(--muted); font-size:15px; margin-top:8px }
   .prog { font-size:14px; color:var(--muted); margin-top:8px }
@@ -117,12 +122,15 @@
   <div class="passo-r"><span class="n">2</span><div>Essa 1 parte que sobrou, ele cortou em <b>9 pedacinhos</b> e correu \(\frac{2}{9}\) → correu 2 pedacinhos e sobraram <b>7 pedacinhos</b>.
       <div class="barra fina"><span class="ok"></span><span class="ok"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
       <div class="legenda">a parte que sobrou, cortada em 9: correu 2 · faltaram 7 = 140 decâmetros</div></div></div>
-  <div class="passo-r"><span class="n">3</span><div>Esses 7 pedacinhos são os 140 decâmetros (dam) que faltavam. Cuidado com a unidade: \(1\ \text{dam} = 10\ \text{m}\), então \(140\ \text{dam} = 1\,400\ \text{m}\).</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Esses 7 pedacinhos são os 140 <b>decâmetros</b> (dam) que faltavam — mas a resposta é em <b>metros</b>. Hora da escada das unidades:
+      <div class="escada"><div class="deg"><span>km</span><span>hm</span><span class="aqui">dam</span><span class="aqui">m</span><span>dm</span><span>cm</span><span>mm</span></div>
+      <div class="seta"><span>← pra esquerda: <b>÷ 10</b> por degrau</span><span>pra direita: <b>× 10</b> por degrau →</span></div></div>
+      De dam para m é <b>1 degrau pra direita</b> → multiplica por 10 uma vez: \[140\ \text{dam} = 140 \times 10 = 1\,400\ \text{m}\]</div></div>
   <div class="passo-r"><span class="n">4</span><div>1 pedacinho: \[1\,400 \div 7 = 200\ \text{m}\]</div></div>
   <div class="passo-r"><span class="n">5</span><div>A parte inteira tem 9 pedacinhos: \[9 \times 200 = 1\,800\ \text{m}\]</div></div>
   <div class="passo-r"><span class="n">6</span><div>O percurso todo tem 4 partes: \[4 \times 1\,800 = 7\,200\ \text{m}\]</div></div>
   <div class="resp">✅ Resposta: letra C — 7 200 metros</div>
-  <div class="esc">⚠️ <b>Escorregões comuns:</b> esquecer de trocar dam por metro (140 não é 1 400) e achar que os \(\frac{2}{9}\) são do percurso inteiro — são do que <b>restou</b>.</div>
+  <div class="esc">⚠️ <b>Escorregões comuns:</b> esquecer de trocar dam por metro (140 não é 1 400 — quando a pergunta pede uma unidade e o texto dá outra, desenha a escada antes de fazer conta) e achar que os \(\frac{2}{9}\) são do percurso inteiro — são do que <b>restou</b>.</div>
 </details></div></div>
 
     <div class="passo"><input type="checkbox" id="d1p5"><label for="d1p5">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>

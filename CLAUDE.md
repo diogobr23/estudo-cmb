@@ -23,6 +23,8 @@ Sempre responder em português brasileiro.
 - Todo link é testado antes de entrar (abre, é o assunto certo, duração anotada).
 - Toda tarefa tem "como sei que terminei" (gabarito ou autocorreção).
 - Não registrar nome nem dados pessoais da criança em nenhum arquivo.
+- **Resolução de questão do CMB** segue o padrão aprovado (🎯 o que ela quer → balões numerados → ✅ resposta → 💡 atalho → ⚠️ escorregão → 🎬 vídeo se existir), fórmulas em KaTeX; validar com `node roteiro/check_katex.js` antes de publicar.
+- **Toda resolução que troca unidade desenha a escada** (`div.escada`, unidades de partida e chegada marcadas com `.aqui`) antes de fazer a conta — a criança não lembrou da escada na 2ª questão do Dia 1 (pedido do Diogo, 21/09). Comprimento, massa e capacidade: ×10/÷10 por degrau. **Área: ×100/÷100 por degrau; volume: ×1000/÷1000 por degrau** — e nessas duas vai uma explicação de 1 linha do porquê (1 m = 10 dm → 1 m² = 10 × 10 = 100 dm² → 1 m³ = 10 × 10 × 10 = 1000 dm³). Ponte capacidade↔volume quando aparecer: 1 L = 1 dm³, 1 mL = 1 cm³, 1 m³ = 1000 L.
 
 ## Freios (risco baixo: não gasta dinheiro, não fala com terceiros)
 - Checagem automática de links antes de entregar o roteiro.
