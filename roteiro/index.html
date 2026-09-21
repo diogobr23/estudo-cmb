@@ -759,6 +759,349 @@
     <p class="prog" id="prog14"></p>
   </section>
 
+  <!-- DIA 15 -->
+  <section class="dia" data-dia="15">
+    <h2>Dia 15 — Múltiplos, divisores e MMC <span class="tag">Matemática</span></h2>
+    <p class="quando">segunda, 05/10 · ⏱ mais ou menos 1 hora</p>
+
+    <div class="passo"><input type="checkbox" id="d15p1"><label for="d15p1">🎬 <b>Assiste</b> (14 min):
+      <a href="https://pt.khanacademy.org/math/6-ano-matematica/numeros-multiplos-e-divisores-6ano/algoritimos-e-problemas/v/problema-com-multiplos-e-divisores" target="_blank">Problema com múltiplos e divisores (Khan)</a>,
+      <a href="https://pt.khanacademy.org/math/6-ano-matematica/numeros-multiplos-e-divisores-6ano/criterios-de-divisibilidade/v/recognizing-divisibility" target="_blank">Reconhecendo a divisibilidade (Khan)</a>
+      e <a href="https://www.youtube.com/watch?v=SREXBpdCkYo" target="_blank">Como calcular o MMC (4 min, YouTube)</a>.
+      <div class="t">Múltiplo é a tabuada do número (12, 24, 36…). Divisor é quem divide certinho (os divisores de 12: 1, 2, 3, 4, 6, 12). MMC é o primeiro múltiplo que dois números têm em comum.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d15p2"><label for="d15p2">✏️ <b>Pratica</b> (12 min):
+      <a href="https://pt.khanacademy.org/math/6-ano-matematica/numeros-multiplos-e-divisores-6ano/criterios-de-divisibilidade/e/divisibility_tests" target="_blank">Testes de divisibilidade — Pratique</a>
+      e <a href="https://pt.khanacademy.org/math/6-ano-matematica/numeros-multiplos-e-divisores-6ano/algoritimos-e-problemas/e/problemas-com-divisores-comuns" target="_blank">Problemas com divisores comuns — Pratique</a>.
+      <div class="t">Meta: tela de resultado nos dois. Divisível por 2: termina em par. Por 3: soma dos algarismos é múltiplo de 3. Por 5: termina em 0 ou 5.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d15p3"><div class="corpo"><label for="d15p3">📝 <b>Questões do CMB de verdade</b> (25 min):
+      1ª) <a href="../pesquisa/provas/2021-prova.pdf#page=6" target="_blank">prova de 2021, página 6</a> → <b>Questão 7</b> (três ciclistas: quando se encontram de novo?).
+      2ª) <a href="../pesquisa/provas/2021-prova.pdf#page=9" target="_blank">prova de 2021, página 9</a> → <b>Questão 11</b> (quantos divisores tem 68 000 — é das difíceis, tenta e depois lê com calma).
+      3ª) sobrou tempo? <a href="../pesquisa/provas/2020-prova.pdf#page=6" target="_blank">prova de 2020, página 6</a> → <b>Questão 7</b> (restos de divisões).
+      <div class="t">"De quanto em quanto tempo se encontram" = MMC. Lê a pergunta do fim: uma quer o tempo E as voltas.</div></label>
+      <details><summary>Ver respostas</summary>2021 Questão 7 = <b>D</b> · 2021 Questão 11 = <b>E</b> · 2020 Questão 7 = <b>D</b></details>
+      <details class="res"><summary>Resolução da 1ª — 2021, Questão 7 (os três ciclistas)</summary>
+  <div class="quer">🎯 O que ela quer: os ciclistas dão uma volta em 24 s, 32 s e 36 s. Saindo juntos, <b>quando</b> se encontram de novo na largada e <b>quantas voltas</b> cada um deu?</div>
+  <div class="passo-r"><span class="n">1</span><div>Cada um passa na largada nos múltiplos do seu tempo: o de 24 s passa em 24, 48, 72…; o de 32 s em 32, 64, 96…; o de 36 s em 36, 72, 108… Os três juntos = o primeiro múltiplo comum = <b>MMC</b>.</div></div>
+  <div class="passo-r"><span class="n">2</span><div>MMC pelo método da tabela (divide pelos primos até sobrar 1 em todos):
+      <div class="mat">\[\begin{array}{ccc|c} 24 & 32 & 36 & 2 \\ 12 & 16 & 18 & 2 \\ 6 & 8 & 9 & 2 \\ 3 & 4 & 9 & 2 \\ 3 & 2 & 9 & 2 \\ 3 & 1 & 9 & 3 \\ 1 & 1 & 3 & 3 \\ 1 & 1 & 1 & \end{array}\]</div>
+      \[\text{MMC} = 2 \times 2 \times 2 \times 2 \times 2 \times 3 \times 3 = 32 \times 9 = 288\ \text{s}\]</div></div>
+  <div class="passo-r"><span class="n">3</span><div>288 segundos em minutos: \(288 \div 60 = 4\) e sobram \(288 - 240 = 48\). Então <b>4 min 48 s</b>. (Isso já elimina C e E.)</div></div>
+  <div class="passo-r"><span class="n">4</span><div>Voltas de cada um até lá: \[288 \div 24 = 12 \quad (\text{Grã-Bretanha}) \qquad 288 \div 32 = 9 \quad (\text{Holanda}) \qquad 288 \div 36 = 8 \quad (\text{Dinamarca})\]
+      <div class="alt"><b class="x">A ✘</b> Dinamarca deu 8, não 12 · <b class="x">B ✘</b> Holanda deu 9 · <b class="v">D ✔</b> Grã-Bretanha, 12 voltas em 4 min 48 s.</div></div></div>
+  <div class="resp">✅ Resposta: letra D</div>
+  <div class="atalho">💡 <b>Atalho:</b> o texto diz "24 s, 32 s e 36 s, <b>respectivamente</b>" pra Grã-Bretanha, Holanda e Dinamarca. Anota do lado de cada país o tempo dele antes de começar — senão você troca as voltas.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> transformar 288 s em "2 min 88 s" ou "4,8 min". Divide por 60: o resultado são os minutos, o resto são os segundos.</div>
+</details>
+      <details class="res"><summary>Resolução da 2ª — 2021, Questão 11 (os divisores de 68 000)</summary>
+  <div class="quer">🎯 O que ela quer: quantos divisores tem 68 000 e que fração deles é ímpar (ou par). Ninguém vai listar 48 divisores na prova — tem um jeito esperto.</div>
+  <div class="passo-r"><span class="n">1</span><div>Quebra 68 000 em primos: \[68\,000 = 68 \times 1\,000\] \[68 = 2 \times 2 \times 17 \qquad 1\,000 = 10 \times 10 \times 10 = 2 \times 5 \times 2 \times 5 \times 2 \times 5\] Juntando: cinco 2, três 5 e um 17: \[68\,000 = 2^5 \times 5^3 \times 17\]</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Todo divisor de 68 000 é montado <b>escolhendo</b> quantos de cada primo usar: quantos 2? (nenhum, 1, 2, 3, 4 ou 5 → <b>6 jeitos</b>) · quantos 5? (nenhum, 1, 2 ou 3 → <b>4 jeitos</b>) · o 17? (não ou sim → <b>2 jeitos</b>). \[6 \times 4 \times 2 = 48\ \text{divisores}\] (Isso elimina A e B.)</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Divisor <b>ímpar</b> = não usa nenhum 2. Só sobra escolher os 5 e o 17: \[1 \times 4 \times 2 = 8\ \text{divisores ímpares}\] \[\frac{8}{48} = \frac{1}{6}\] E os pares são o resto: 40 de 48 = \(\frac{5}{6}\).</div></div>
+  <div class="passo-r"><span class="n">4</span><div><div class="alt"><b class="x">C ✘</b> \(\frac{1}{12}\) pares? Não · <b class="x">D ✘</b> \(\frac{1}{8}\) pares? Não · <b class="v">E ✔</b> 48 divisores, \(\frac{1}{6}\) ímpares.</div></div></div>
+  <div class="resp">✅ Resposta: letra E</div>
+  <div class="atalho">💡 <b>Atalho:</b> pra contar divisores, soma 1 em cada "expoente" e multiplica: \(2^5 \times 5^3 \times 17^1 \to (5+1)(3+1)(1+1) = 48\). Testa com 12 = \(2^2 \times 3\): \((2+1)(1+1) = 6\) divisores — 1, 2, 3, 4, 6, 12. Funciona!</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> essa é uma das questões mais difíceis do banco. Se travou, normal. O que vale levar: <b>número ímpar é o que não tem o 2 na decomposição</b>.</div>
+</details>
+      <details class="res"><summary>Resolução da 3ª — 2020, Questão 7 (os restos das divisões)</summary>
+  <div class="quer">🎯 O que ela quer: achar x e y e somar. "257 dividido por x deixa resto 7" — o que isso diz sobre x?</div>
+  <div class="passo-r"><span class="n">1</span><div>Se sobrou 7, então <b>257 − 7 = 250</b> é dividido por x sem sobrar nada. E 315 − 5 = <b>310</b> também. Então x é divisor de 250 e de 310 ao mesmo tempo. Detalhe importante: o resto é sempre <b>menor</b> que o divisor, então x é maior que 7.</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Divisores comuns de 250 e 310: 1, 2, 5 e 10 (o MDC é 10). Maior que 7? Só o <b>10</b>. Então x = 10. Confere: 257 ÷ 10 = 25 e sobra 7 ✔; 315 ÷ 10 = 31 e sobra 5 ✔.</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Mesma coisa pro y: 165 − 3 = <b>162</b> e 215 − 5 = <b>210</b>. Divisores comuns de 162 e 210: 1, 2, 3 e 6 (o MDC é 6). Maior que 5? Só o <b>6</b>. Confere: 165 ÷ 6 = 27 e sobra 3 ✔; 215 ÷ 6 = 35 e sobra 5 ✔.</div></div>
+  <div class="passo-r"><span class="n">4</span><div>\[x + y = 10 + 6 = 16\]</div></div>
+  <div class="resp">✅ Resposta: letra D — 16 personagens</div>
+  <div class="atalho">💡 <b>Atalho:</b> "resto" → tira o resto, e o que sobra é múltiplo do divisor. Aí é achar o MDC.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> esquecer que o divisor tem que ser maior que o resto (5 também divide 250 e 310, mas 5 é menor que 7).</div>
+  <div class="video">🎬 Quer ver um professor resolvendo? <a href="https://www.youtube.com/watch?v=k9JOhfYjWM4" target="_blank">Vídeo da Questão 7 (13 min)</a> — opcional.</div>
+</details></div></div>
+
+    <div class="passo"><input type="checkbox" id="d15p4"><label for="d15p4">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
+    <div class="dica"><b>Dica do dia 15</b>Encontro, repetição junta, "de quanto em quanto tempo" = <b>MMC</b>. Dividir em pedaços iguais, o maior possível = <b>MDC</b>. Divisível por 2: termina em par · por 3: soma dos algarismos dá múltiplo de 3 · por 5: termina em 0 ou 5 · por 10: termina em 0.</div>
+    <p class="prog" id="prog15"></p>
+  </section>
+
+  <!-- DIA 16 -->
+  <section class="dia" data-dia="16">
+    <h2>Dia 16 — Tabelas, gráficos e média <span class="tag">Matemática</span></h2>
+    <p class="quando">terça, 06/10 · ⏱ mais ou menos 1 hora</p>
+
+    <div class="passo"><input type="checkbox" id="d16p1"><label for="d16p1">🎬 <b>Assiste</b> (12 min):
+      <a href="https://pt.khanacademy.org/math/6-ano-matematica/probabilidade-e-estatistica/interpretacao-e-producao/v/interpretao-de-informaes" target="_blank">Interpretação de informações em gráficos (Khan)</a>
+      e <a href="https://www.youtube.com/watch?v=ZMFo1lLFTc8" target="_blank">Média aritmética simples (5 min, YouTube)</a>.
+      <div class="t">Média = soma tudo e divide pela quantidade de coisas. Toda prova do CMB tem 1 ou 2 questões de gráfico ou tabela.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d16p2"><label for="d16p2">✏️ <b>Pratica</b> (12 min):
+      <a href="https://pt.khanacademy.org/math/pt-mat-prep-7-ano-4/xa604197cee3a33ba:probabilidade-e-estatistica/xa604197cee3a33ba:graficos-de-imagens-graficos-de-barras-e-histogramas/e/reading_pictographs_2" target="_blank">Ler gráficos de imagens — Pratique</a>
+      e <a href="https://pt.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/mean-median-basics/e/calculating-the-mean" target="_blank">Cálculo da média — Pratique</a>.
+      <div class="t">Meta: tela de resultado nos dois. Se o segundo aparecer em inglês, "mean" é média — os números são iguais.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d16p3"><div class="corpo"><label for="d16p3">📝 <b>Questões do CMB de verdade</b> (25 min):
+      1ª) <a href="../pesquisa/provas/2021-prova.pdf#page=5" target="_blank">prova de 2021, página 5</a> (texto, tabela e gráfico) → <b>Questão 6</b> na página 6 (média de medalhas).
+      2ª) <a href="../pesquisa/provas/2020-prova.pdf#page=11" target="_blank">prova de 2020, página 11</a> → <b>Questão 12</b> (gráfico do dólar, 5 frases).
+      3ª) sobrou tempo? <b>Questão 5</b> de 2021 (mesma página 6 — 5 frases sobre a tabela e o gráfico).
+      <div class="t">Antes de calcular, lê o título do gráfico e o que cada eixo mede. Nas de "5 frases", risca as falsas.</div></label>
+      <details><summary>Ver respostas</summary>2021 Questão 6 = <b>D</b> · 2020 Questão 12 = <b>B</b> · 2021 Questão 5 = <b>B</b></details>
+      <details class="res"><summary>Resolução da 1ª — 2021, Questão 6 (média de medalhas)</summary>
+  <div class="quer">🎯 O que ela quer: a média de medalhas do Brasil por Olimpíada, nos 6 jogos do gráfico (homens + mulheres).</div>
+  <div class="passo-r"><span class="n">1</span><div>Lê os números do gráfico. Linha azul (homens): 12, 14, 11, 10, 8, 8. Linha vermelha (mulheres): 9, 5, 6, 7, 2, 4.</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Soma tudo: \[12 + 14 + 11 + 10 + 8 + 8 = 63 \qquad 9 + 5 + 6 + 7 + 2 + 4 = 33 \qquad 63 + 33 = 96\]</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Divide pela quantidade de Olimpíadas (6): \[96 \div 6 = 16\]</div></div>
+  <div class="resp">✅ Resposta: letra D — 16 medalhas por Olimpíada</div>
+  <div class="atalho">💡 <b>Atalho:</b> soma por Olimpíada (12+9 = 21, 14+5 = 19, 11+6 = 17, 10+7 = 17, 8+2 = 10, 8+4 = 12) — os totais ficam em volta de 16, dá pra conferir se a média faz sentido.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> calcular só os homens (63 ÷ 6 = 10,5) ou dividir por 12 (6 jogos, não 12 pontos).</div>
+</details>
+      <details class="res"><summary>Resolução da 2ª — 2020, Questão 12 (o dólar no gráfico)</summary>
+  <div class="quer">🎯 O que ela quer: das 5 frases sobre o gráfico (dólar a 4,2 em 2017; 4,8 em 2018; 5,24 em 2019; 5,65 em 2020), qual é a verdadeira.</div>
+  <div class="passo-r"><span class="n">C</span><div>Começa pela mais fácil: "gráfico de setores"? Setores é o de pizza. Esse é de <b>barras</b>. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>"Em 2018 o dólar teve redução"? De 4,2 pra 4,8 ele <b>subiu</b>. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>"Aumento de 6% em 2020"? O aumento foi \(5{,}65 - 5{,}24 = 0{,}41\). E 6% de 5,24: \(1\% = 0{,}0524 \Rightarrow 6\% = 0{,}3144\). Como 0,41 é <b>mais</b> que 0,31, o aumento passou de 6% (foi uns 8%). <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">A</span><div>As irmãs foram em 2020 (5,65); as primas, no ano mais barato, 2017 (4,2). Diferença: 1,45. Isso é "menos de 20%"? 20% de 5,65 = 1,13 — e 1,45 é mais que isso. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>"O dólar de 2017 (4,2) corresponde a mais de 74% do de 2020 (5,65)". Calcula 74% de 5,65: \[10\% = 0{,}565 \Rightarrow 70\% = 3{,}955 \qquad 1\% = 0{,}0565 \Rightarrow 4\% = 0{,}226\] \[74\% = 3{,}955 + 0{,}226 = 4{,}181\] Como 4,2 é maior que 4,181, é <b>mais de 74%</b>. <b class="v">✔</b></div></div>
+  <div class="resp">✅ Resposta: letra B</div>
+  <div class="atalho">💡 <b>Atalho:</b> "X é mais de 74% de Y?" → calcula 74% de Y (com os pedaços 10%, 1%) e compara com X. Nunca precisa dividir com vírgula.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> marcar A sem fazer a conta, porque "parece" pouco. Diferença de 1,45 em 5,65 é mais de 25%.</div>
+  <div class="video">🎬 Quer ver um professor resolvendo? <a href="https://www.youtube.com/watch?v=pCcarv-9ttc" target="_blank">Vídeo da Questão 12 (9 min)</a> — opcional.</div>
+</details>
+      <details class="res"><summary>Resolução da 3ª — 2021, Questão 5 (tabela + gráfico, 5 frases)</summary>
+  <div class="quer">🎯 O que ela quer: das 5 frases, a verdadeira. Cada frase mistura a <b>tabela</b> (atletas) com o <b>gráfico</b> (medalhas) — cuidado pra não trocar.</div>
+  <div class="passo-r"><span class="n">B</span><div>Começa por ela (é só ler a tabela). "Menos de 49,5 mulheres em cada 100 atletas em 2000, 2004 e 2016". A tabela dá a % de <b>homens</b>: 54,1 · 50,6 · 55,1. Mulheres = 100 menos isso: 45,9 · 49,4 · 44,9. Todas abaixo de 49,5. <b class="v">✔</b></div></div>
+  <div class="resp">✅ Resposta: letra B</div>
+  <div class="quer">Se quiser conferir por que as outras são falsas:</div>
+  <div class="passo-r"><span class="n">A</span><div>Mulheres: Rio 209 → Tóquio 140, caiu 69. \(\frac{2}{7}\) de 209 = 209 ÷ 7 × 2 ≈ 59,7. Caiu <b>mais</b> que isso, não "inferior". <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>Medalhas de mulheres em Sydney (4) + Rio (5) = 9. Total do Brasil em Tóquio = 12 + 9 = 21; \(\frac{1}{3}\) de 21 = 7. E 9 não é menor que 7. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>Atenas: 125 atletas homens, 8 medalhas de homens. 6% de 125 = 7,5. Como 8 é mais que 7,5, não é "menos de 6%". <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>Tóquio: 161 + 140 = 301 atletas; \(\frac{1}{12}\) de 301 ≈ 25. Medalhas: 21, que é menos que 25. <b class="x">✘</b></div></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> usar o número de medalhas onde a frase fala de atletas (ou o contrário). Antes de cada frase, pergunta: "isso está na tabela ou no gráfico?".</div>
+</details></div></div>
+
+    <div class="passo"><input type="checkbox" id="d16p4"><label for="d16p4">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
+    <div class="dica"><b>Dica do dia 16</b>Média = soma tudo ÷ quantidade de coisas. Gráfico: primeiro leio o título e os eixos, depois procuro o número. Se 54,1% são homens, então 100 − 54,1 = 45,9% são mulheres — o "resto" também é resposta.</div>
+    <p class="prog" id="prog16"></p>
+  </section>
+
+  <!-- DIA 17 -->
+  <section class="dia" data-dia="17">
+    <h2>Dia 17 — Tirinha, imagem e diálogo <span class="tag port">Português</span></h2>
+    <p class="quando">quarta, 07/10 · ⏱ mais ou menos 1 hora</p>
+
+    <div class="passo"><input type="checkbox" id="d17p1"><label for="d17p1">🎬 <b>Assiste</b> (13 min):
+      <a href="https://www.youtube.com/watch?v=HvF2iOx4GBY" target="_blank">Gênero textual: HQ e tirinhas — 5º ano (7 min)</a>
+      e <a href="https://www.youtube.com/watch?v=sg11xVkFRsU" target="_blank">O que são tirinhas? Exemplos (6 min)</a>.
+      <div class="t">Texto com imagem é o assunto nº 1 da prova de Português do CMB. A graça da tirinha quase sempre está na diferença entre o que se esperava e o que aconteceu.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d17p2"><label for="d17p2">📖 <b>Lê os textos</b> (8 min):
+      <a href="../pesquisa/provas/2021-prova.pdf#page=18" target="_blank">prova de 2021, página 18</a> → Texto 3 (o tabuleiro e o diálogo sobre o cavalo);
+      <a href="../pesquisa/provas/2021-prova.pdf#page=20" target="_blank">página 20</a> → Texto 4 (tirinha do Armandinho);
+      <a href="../pesquisa/provas/2020-prova.pdf#page=21" target="_blank">prova de 2020, página 21</a> → Texto 5 (tirinha do Super Nino).
+      <div class="t">Nas tirinhas, olha o rosto e o gesto dos personagens em cada quadrinho, e o que mudou do 1º pro 2º.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d17p3"><div class="corpo"><label for="d17p3">📝 <b>Questões do CMB de verdade</b> (25 min):
+      2021: <b>Questão 21</b> (página 18), <b>Questões 22 e 23</b> (<a href="../pesquisa/provas/2021-prova.pdf#page=19" target="_blank">página 19</a>), <b>Questão 24</b> (página 20). 2020: <b>Questão 24</b> (página 21).
+      <div class="t">Cinco questões curtas. Na 22, olha as setas do tabuleiro de verdade. Na 23, lê cada frase em voz baixa respeitando as vírgulas.</div></label>
+      <details><summary>Ver respostas</summary>2021: Q21 = <b>B</b> · Q22 = <b>A</b> · Q23 = <b>B</b> · Q24 = <b>E</b> · 2020: Q24 = <b>C</b></details>
+      <details class="res"><summary>Resolução da Questão 21 de 2021 (o contrário de "insultos")</summary>
+  <div class="quer">🎯 O que ela quer: o <b>antônimo</b> (contrário) de "insultos" — e não o sinônimo. Lê a pergunta duas vezes: "antônimo" está sublinhado.</div>
+  <div class="passo-r"><span class="n">1</span><div>Insulto = ofensa, xingamento. O contrário é <b>desfazer</b> a ofensa: pedir desculpa, reparar. Isso é "<b>desafronta</b>" (afronta = ofensa; desafronta = a reparação). <b class="v">B ✔</b></div></div>
+  <div class="passo-r"><span class="n">2</span><div>As outras quatro são todas <b>sinônimos</b> de insulto: desacato, desfeita, desconsideração, desonra. <b class="x">A, C, D, E ✘</b></div></div>
+  <div class="resp">✅ Resposta: letra B</div>
+  <div class="atalho">💡 <b>Truque:</b> quando quatro alternativas dizem a mesma coisa e uma é diferente, a diferente é a resposta — desde que a pergunta peça o contrário. Aqui pede.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> ler "antônimo" como "sinônimo". Todas começam com "des-", o que confunde; "desafronta" é a única que desfaz a ofensa.</div>
+</details>
+      <details class="res"><summary>Resolução da Questão 22 de 2021 (o cavalo no tabuleiro)</summary>
+  <div class="quer">🎯 O que ela quer: juntar o que o texto explica com o que a <b>imagem</b> mostra. Bianca diz: o cavalo em C3 pode ir pra D5 em uma jogada, por dois caminhos (seta amarela e seta vermelha).</div>
+  <div class="passo-r"><span class="n">1</span><div>Olha o tabuleiro: a seta <b>verde</b> vai direto de C3 até D5 — é a casa onde o cavalo chega depois do movimento. Exatamente o que a A diz. <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">2</span><div><div class="alt"><b class="x">B ✘</b> o "L" é o formato do <b>movimento</b>, não um desenho do cavalo · <b class="x">C ✘</b> amarela e vermelha são os dois caminhos <b>até D5</b>, não "os dois únicos caminhos possíveis" (um cavalo pode ir pra várias casas) · <b class="x">D ✘</b> o cavalo justamente <b>não</b> anda em linha reta · <b class="x">E ✘</b> D4 é a casa ao lado, não dá um "L".</div></div></div>
+  <div class="resp">✅ Resposta: letra A</div>
+  <div class="atalho">💡 <b>Truque:</b> a pergunta diz "após analisar o texto <b>e</b> a jogada da imagem". Quando fala em imagem, a resposta precisa bater com o desenho — confere as cores das setas.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> a C parece certa porque repete palavras do texto ("amarela e vermelha"). Repetir palavra do texto não é estar certa: ela acrescentou "únicos".</div>
+</details>
+      <details class="res"><summary>Resolução da Questão 23 de 2021 (as vírgulas do Lucas)</summary>
+  <div class="quer">🎯 O que ela quer: a frase original é "Não é complicado, não, é fácil!" = <b>não é complicado; é fácil</b>. Qual alternativa muda a ordem das palavras mas, graças às vírgulas, continua dizendo isso?</div>
+  <div class="passo-r"><span class="n">1</span><div>Lê cada uma parando nas vírgulas: <div class="alt"><b class="x">A ✘</b> "Não, é complicado, não é fácil!" → diz que <b>é</b> complicado (o contrário) · <b class="v">B ✔</b> "Não, é complicado não, é fácil!" → "não / é complicado não / é fácil" = continua não sendo complicado · <b class="x">C ✘</b> "não é fácil, é complicado" → o contrário · <b class="x">D ✘</b> "É complicado não, não é fácil!" → diz que não é fácil · <b class="x">E ✘</b> "Não é fácil, não é complicado!" → diz que não é fácil.</div></div></div>
+  <div class="resp">✅ Resposta: letra B</div>
+  <div class="atalho">💡 <b>Truque:</b> em questão de vírgula com fala de personagem, lê em voz baixa fazendo a pausa em cada vírgula. O ouvido pega o sentido antes da cabeça.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> as frases são quase iguais; a diferença é onde está o "não". Sublinha o "não é fácil" e o "não é complicado" em cada uma.</div>
+</details>
+      <details class="res"><summary>Resolução da Questão 24 de 2021 (Armandinho e o telefone sem fio)</summary>
+  <div class="quer">🎯 O que ela quer: como Armandinho (o menino do cabelo azul) está se sentindo no <b>2º quadrinho</b>. A resposta está na cara dele e no que mudou entre os quadrinhos.</div>
+  <div class="passo-r"><span class="n">1</span><div>1º quadrinho: ele propõe "brincar de telefone sem fio" (a brincadeira de passar a mensagem no ouvido) e todos topam animados: "Tá!", "Pode ser!", "Vamos!".</div></div>
+  <div class="passo-r"><span class="n">2</span><div>2º quadrinho: os amigos estão todos olhando o <b>celular</b> (que é um telefone sem fio!) e ninguém brinca. Armandinho olha pra eles, parado, de ombros caídos.</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Ele esperava uma coisa e aconteceu outra: está <b>desapontado</b> (decepcionado). <b class="v">E ✔</b> <div class="alt"><b class="x">A ✘</b> enfurecido é raiva, e ele não está bravo · <b class="x">B ✘</b> agitado é o contrário do que a imagem mostra · <b class="x">C ✘</b> comovido é emocionado de um jeito bom · <b class="x">D ✘</b> indiferente é "tanto faz", e pra ele não tanto faz.</div></div></div>
+  <div class="resp">✅ Resposta: letra E</div>
+  <div class="atalho">💡 <b>Truque:</b> a piada está no duplo sentido de "telefone sem fio": brincadeira antiga × celular. Perceber o trocadilho já mostra o sentimento.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> escolher o sentimento pelo que <b>você</b> sentiria. Olha a expressão desenhada.</div>
+</details>
+      <details class="res"><summary>Resolução da Questão 24 de 2020 (o Super Nino)</summary>
+  <div class="quer">🎯 O que ela quer: a <b>finalidade</b> da tirinha — pra que ela foi feita.</div>
+  <div class="passo-r"><span class="n">1</span><div>1º quadrinho: Nino decide virar super-herói e "proteger o mundo dos vilões". O tucano pergunta: "vai começar lutando contra quem?".</div></div>
+  <div class="passo-r"><span class="n">2</span><div>2º quadrinho: "A bagunça do meu quarto? A louça suja? Geladeira fedida? Isso eu ainda não decidi." Os "vilões" viraram as tarefas de casa.</div></div>
+  <div class="passo-r"><span class="n">3</span><div>A tirinha brinca com a distância entre o <b>sonho grandioso</b> (salvar o mundo) e a <b>realidade</b> (arrumar o quarto). <b class="v">C ✔</b> <div class="alt"><b class="x">A ✘</b> "causar risos em todos… pelas expressões do tucano" — a graça não está na cara do tucano · <b class="x">B ✘</b> não é uma aula de obrigações · <b class="x">D ✘</b> não critica ninguém, só brinca · <b class="x">E ✘</b> não fala de criminalidade.</div></div></div>
+  <div class="resp">✅ Resposta: letra C</div>
+  <div class="atalho">💡 <b>Truque:</b> "finalidade" de tirinha quase nunca é "ensinar" ou "criticar" de forma séria: é fazer pensar rindo. Procura a alternativa com "refletir/reflexão".</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> alternativas com palavras grandes (padrões de comportamento, condutas) parecem "mais certas". Não são.</div>
+</details></div></div>
+
+    <div class="passo"><input type="checkbox" id="d17p4"><label for="d17p4">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
+    <div class="dica"><b>Dica do dia 17</b>Tirinha: leio o texto E olho o desenho (rosto, gesto, o que mudou do 1º pro 2º quadrinho). A graça quase sempre é a diferença entre o que se esperava e o que aconteceu. E "antônimo" é o contrário — leio a pergunta duas vezes.</div>
+    <p class="prog" id="prog17"></p>
+  </section>
+
+  <!-- DIA 18 -->
+  <section class="dia" data-dia="18">
+    <h2>Dia 18 — Probabilidade e vistas <span class="tag">Matemática</span></h2>
+    <p class="quando">quinta, 08/10 · ⏱ mais ou menos 1 hora</p>
+
+    <div class="passo"><input type="checkbox" id="d18p1"><label for="d18p1">🎬 <b>Assiste</b> (12 min):
+      <a href="https://pt.khanacademy.org/math/pt-5-ano/probabilidade-e-estatistica-5ano/eventos-aleatorios-5ano/v/representando-probabilidade-com-fracoes" target="_blank">Probabilidade com frações (Khan)</a>,
+      <a href="https://pt.khanacademy.org/math/pt-5-ano/probabilidade-e-estatistica-5ano/eventos-aleatorios-5ano/v/exemplo-representando-probabilidade-com-fracoes" target="_blank">Exemplo de probabilidade com frações (Khan)</a>
+      e <a href="https://www.youtube.com/watch?v=f8QyOfWjjiM" target="_blank">Vistas de sólidos geométricos — 5º ano (5 min, YouTube)</a>.
+      <div class="t">Probabilidade = o que eu quero ÷ tudo que pode acontecer. Vista de frente = a pilha "achatada", como uma foto tirada de frente.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d18p2"><label for="d18p2">✏️ <b>Pratica</b> (12 min):
+      <a href="https://pt.khanacademy.org/math/pt-5-ano/probabilidade-e-estatistica-5ano/eventos-aleatorios-5ano/e/determinar-a-probabilidade" target="_blank">Determinar a probabilidade — Pratique</a>.
+      <div class="t">Meta: tela de resultado. Escreve sempre como fração: casos que quero em cima, total embaixo. Pra virar porcentagem, é só transformar em "de cada 100".</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d18p3"><div class="corpo"><label for="d18p3">📝 <b>Questões do CMB de verdade</b> (25 min):
+      1ª) <a href="../pesquisa/provas/2021-prova.pdf#page=4" target="_blank">prova de 2021, página 4</a> → <b>Questão 3</b> (atletas militares: 5 frases de probabilidade).
+      2ª) <a href="../pesquisa/provas/2020-prova.pdf#page=9" target="_blank">prova de 2020, página 9</a> → <b>Questão 10</b> (a pilha de blocos vista de frente).
+      <div class="t">Na 1ª, anota os números do texto antes de ler as frases: 301 atletas, 91 militares (21 Aeronáutica, 26 Exército, 44 Marinha).</div></label>
+      <details><summary>Ver respostas</summary>2021 Questão 3 = <b>E</b> · 2020 Questão 10 = <b>C</b></details>
+      <details class="res"><summary>Resolução da 1ª — 2021, Questão 3 (atletas militares)</summary>
+  <div class="quer">🎯 O que ela quer: das 5 frases, a verdadeira. O pulo do gato: "<b>dentre os militares</b>" muda o total pra 91; "dentre todos" usa 301.</div>
+  <div class="passo-r"><span class="n">A</span><div>Entre os militares, Exército (26) menos provável que Aeronáutica (21)? 26 é mais que 21. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>Exército entre <b>todos</b>: \(\frac{26}{301}\), uns 8,6%. (28,6% seria \(\frac{26}{91}\), entre os militares — a frase misturou os totais.) <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>Marinha (44) é exatamente o dobro da Aeronáutica (21)? \(2 \times 21 = 42\), não 44. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>Não militares: \(301 - 91 = 210\). É mais de 70% de 301? \[10\% \text{ de } 301 = 30{,}1 \Rightarrow 70\% = 210{,}7\] 210 é <b>menos</b> que 210,7 — não passa de 70% (fica em 69,8%). <b class="x">✘</b> Por pouco!</div></div>
+  <div class="passo-r"><span class="n">E</span><div>Aeronáutica entre os militares: \(\frac{21}{91}\). É menos de 24% de 91? \[10\% \text{ de } 91 = 9{,}1 \Rightarrow 20\% = 18{,}2 \qquad 1\% = 0{,}91 \Rightarrow 4\% = 3{,}64\] \[24\% = 18{,}2 + 3{,}64 = 21{,}84\] 21 é menor que 21,84 → é inferior a 24%. <b class="v">✔</b></div></div>
+  <div class="resp">✅ Resposta: letra E</div>
+  <div class="atalho">💡 <b>Atalho:</b> "probabilidade de ser X dentre Y" = \(\frac{\text{quantos X}}{\text{quantos Y}}\). Escreve a fração de cada frase antes de calcular — metade das erradas cai só de olhar o total.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> a D é uma pegadinha de "quase": 69,8% parece 70%, mas "superior a 70%" precisa passar. Faz a conta.</div>
+</details>
+      <details class="res"><summary>Resolução da 2ª — 2020, Questão 10 (a pilha vista de frente)</summary>
+  <div class="quer">🎯 O que ela quer: qual desenho é a pilha de cubos vista <b>de frente</b>, como uma foto tirada da posição escrita "Frente".</div>
+  <div class="passo-r"><span class="n">1</span><div>De frente, a profundidade some: bloco da frente e bloco de trás na mesma coluna viram um só. O que sobra é: <b>quantas colunas</b>, <b>qual a altura</b> de cada uma e <b>qual cor</b> aparece na frente.</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Colunas, da esquerda pra direita, olhando a fila da frente: vermelha · vermelha · azul · verde · azul · amarela → <b>6 colunas</b>.</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Altura de cada coluna = o bloco mais alto dela, mesmo lá atrás: a torre vermelha da esquerda tem 5 · a 2ª vermelha tem 3 · a azul tem 2 (azul em cima de azul) · a verde 1 · a azul 1 · a amarela tem 3 (amarelo embaixo, dois vermelhos em cima). Alturas: <b>5 · 3 · 2 · 1 · 1 · 3</b>.</div></div>
+  <div class="passo-r"><span class="n">4</span><div>Procura nas alternativas: B e E têm a 1ª coluna com 4 (✘). A tem a 2ª coluna com 4 (✘). Sobram C e D, iguais nas alturas — a diferença é a ordem das cores baixinhas: em C, verde depois azul (igual à pilha); em D, azul depois verde (trocado). <b class="v">C ✔</b></div></div>
+  <div class="resp">✅ Resposta: letra C</div>
+  <div class="atalho">💡 <b>Atalho:</b> conta primeiro a altura da coluna mais alta e a mais baixa. Só isso já elimina 3 alternativas.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> esquecer o bloco que está atrás (a torre alta fica na segunda fileira, mas de frente ela aparece na 1ª coluna).</div>
+  <div class="video">🎬 Quer ver um professor resolvendo? <a href="https://www.youtube.com/watch?v=ee1zxcZwRnY" target="_blank">Vídeo da Questão 10 (3 min)</a> — opcional.</div>
+</details></div></div>
+
+    <div class="passo"><input type="checkbox" id="d18p4"><label for="d18p4">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
+    <div class="dica"><b>Dica do dia 18</b>Probabilidade = o que eu quero ÷ tudo que pode acontecer. Se a frase diz "dentre os militares", o "tudo" vira só os militares. Vista de frente: conto as colunas e a altura de cada uma, contando o bloco de trás também.</div>
+    <p class="prog" id="prog18"></p>
+  </section>
+
+  <!-- DIA 19 -->
+  <section class="dia" data-dia="19">
+    <h2>Dia 19 — Poema e dois textos juntos <span class="tag port">Português</span></h2>
+    <p class="quando">sexta, 09/10 · ⏱ mais ou menos 1 hora</p>
+
+    <div class="passo"><input type="checkbox" id="d19p1"><label for="d19p1">🎬 <b>Assiste</b> (6 min):
+      <a href="https://www.youtube.com/watch?v=AcJWxs9TdGs" target="_blank">Gênero textual: poema (6 min)</a>.
+      <div class="t">Verso = cada linha. Estrofe = cada bloco de versos. No poema, palavra repetida é de propósito: reforça a ideia principal.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d19p2"><label for="d19p2">📖 <b>Lê o poema e olha a imagem</b> (10 min):
+      <a href="../pesquisa/provas/2020-prova.pdf#page=19" target="_blank">prova de 2020, página 19</a> → Texto 3 ("Heróis da vida real") e Texto 4 (a imagem dos profissionais).
+      <div class="t">Lê o poema duas vezes, a segunda em voz baixa. Conta quantas vezes aparece "herói". Na imagem, repara nas profissões e na pose das pessoas.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d19p3"><div class="corpo"><label for="d19p3">📝 <b>Questões do CMB de verdade</b> (25 min):
+      <a href="../pesquisa/provas/2020-prova.pdf#page=20" target="_blank">página 20</a> → <b>Questões 20, 21 e 22</b>; <a href="../pesquisa/provas/2020-prova.pdf#page=21" target="_blank">página 21</a> → <b>Questão 23</b>.
+      <div class="t">Na 21, cada alternativa tem uma palavrinha sublinhada: testa o sentido dela no verso. Na 23, a resposta é o que o poema e a imagem têm em comum.</div></label>
+      <details><summary>Ver respostas</summary>Questão 20 = <b>E</b> · Questão 21 = <b>B</b> · Questão 22 = <b>A</b> · Questão 23 = <b>A</b></details>
+      <details class="res"><summary>Resolução da Questão 20 (o que é "peleja")</summary>
+  <div class="quer">🎯 O que ela quer: o sentido de "peleja" em "essa gente do bem, que peleja todo dia para se salvar também".</div>
+  <div class="passo-r"><span class="n">1</span><div>Olha o resto do verso: a gente do bem faz isso "todo dia <b>para se salvar</b>". É um esforço, uma luta diária. Peleja = <b>batalha</b>, luta. <b class="v">E ✔</b></div></div>
+  <div class="passo-r"><span class="n">2</span><div><div class="alt"><b class="x">A ✘</b> planeja? Não combina com "para se salvar" · <b class="x">B ✘</b> avança? Quase, mas não é luta · <b class="x">C ✘</b> sucumbe = desiste, o contrário · <b class="x">D ✘</b> descansa é o oposto de lutar todo dia.</div></div></div>
+  <div class="resp">✅ Resposta: letra E</div>
+  <div class="atalho">💡 <b>Truque:</b> troca a palavra desconhecida pela alternativa e relê o verso: "que <b>batalha</b> todo dia para se salvar" — encaixou.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> chutar pela aparência da palavra. "Peleja" não parece com nada; o contexto é que resolve.</div>
+</details>
+      <details class="res"><summary>Resolução da Questão 21 (a palavrinha e o que ela liga)</summary>
+  <div class="quer">🎯 O que ela quer: qual alternativa explica certo a relação marcada pela palavra sublinhada (e, tampouco, que, para, se).</div>
+  <div class="passo-r"><span class="n">A</span><div>"Heróis que acertam <u>e</u> erram" — "e" <b>soma</b> (adição), não opõe. Pra ser oposição seria "acertam <b>mas</b> erram". <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>"não é preciso voar, <u>tampouco</u> ser imortal" — tampouco = "nem", que <b>soma</b> outra coisa que não é preciso. Adição. <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>"cada gesto seu <u>que</u> vai lhe imortalizar" — esse "que" só retoma "gesto" (é o gesto que imortaliza). Não é causa. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>"peleja todo dia <u>para</u> se salvar" — "para" diz o <b>objetivo</b> (finalidade), não uma explicação. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>"para <u>se</u> salvar" — esse "se" é "a si mesmo" (salvar a si), não um "se" de condição ("se chover"). <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra B</div>
+  <div class="atalho">💡 <b>Cola:</b> <b>e / nem / tampouco</b> = adição · <b>mas / porém</b> = oposição · <b>porque / pois</b> = causa · <b>para / a fim de</b> = finalidade · <b>se / caso</b> = condição (só quando dá pra trocar por "caso").</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> "tampouco" tem "não" escondido dentro (= "também não"), e por isso parece oposição. Mas ele <b>acrescenta</b> mais um item à lista do que não é preciso.</div>
+</details>
+      <details class="res"><summary>Resolução da Questão 22 (o que o poema faz com as palavras)</summary>
+  <div class="quer">🎯 O que ela quer: qual observação sobre a linguagem do poema está certa.</div>
+  <div class="passo-r"><span class="n">1</span><div>Contou quantas vezes aparece "herói"? Um monte (heróis, herói, super-herói, heroico…). Repetir tanto é de propósito: martela a ideia de herói que o poema quer passar — o herói comum, de verdade. <b class="v">A ✔</b></div></div>
+  <div class="passo-r"><span class="n">2</span><div><div class="alt"><b class="x">B ✘</b> "acertam e erram" mostra um herói <b>humano</b>, não "idealizado" (perfeito) · <b class="x">C ✘</b> "não são estrelas famosas, não estampam os jornais" compara heróis reais com <b>famosos</b>, não passado com moderno · <b class="x">D ✘</b> "super-herói" aparece pra dizer que <b>não</b> precisa ser um; não cria "categoria dos históricos" · <b class="x">E ✘</b> "os verdadeiros heróis" é dito a sério, sem ironia.</div></div></div>
+  <div class="resp">✅ Resposta: letra A</div>
+  <div class="atalho">💡 <b>Truque:</b> "recursos de linguagem" na pergunta = repetição, comparação, negação, ironia. Se você marcou no texto uma palavra que se repete muito, a alternativa que fala dela costuma ser a certa.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> a E usa "ironia" — ironia é dizer o contrário do que se pensa. O poema diz exatamente o que pensa.</div>
+</details>
+      <details class="res"><summary>Resolução da Questão 23 (poema + imagem)</summary>
+  <div class="quer">🎯 O que ela quer: o que o poema (Texto 3) e a imagem (Texto 4) dizem <b>juntos</b>.</div>
+  <div class="passo-r"><span class="n">1</span><div>Poema: herói é gente comum (professor, quem mata a fome), "sem nenhum superpoder". Imagem: médica, enfermeira, policial, operário, entregador… em pose de super-herói, com o queixo erguido. O que os dois têm em comum: <b>pessoas comuns são heróis</b>. <b class="v">A ✔</b></div></div>
+  <div class="passo-r"><span class="n">2</span><div><div class="alt"><b class="x">B ✘</b> "todos têm um superpoder oculto" — o poema diz que <b>não</b> precisa de superpoder · <b class="x">C ✘</b> "combater o crime" — não é disso que fala · <b class="x">D ✘</b> a "união" é importante no poema, não "pouco relevante" · <b class="x">E ✘</b> "só pode ser herói quem tem profissão" — o poema diz que herói "sou eu, é você".</div></div></div>
+  <div class="resp">✅ Resposta: letra A</div>
+  <div class="atalho">💡 <b>Truque:</b> em "relacione os Textos 3 e 4", escreve uma frase pra cada e procura a alternativa que junta as duas sem exagero ("todos", "só", "oculto" são exageros).</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> alternativas com "todas as pessoas" ou "só quem" — palavras absolutas quase sempre estão erradas em interpretação.</div>
+</details></div></div>
+
+    <div class="passo"><input type="checkbox" id="d19p4"><label for="d19p4">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
+    <div class="dica"><b>Dica do dia 19</b>Poema: verso = linha, estrofe = bloco. Palavra repetida é de propósito. Poema + imagem: a resposta é o que os dois têm em comum. E desconfio de alternativa com "todos", "só", "sempre", "nunca".</div>
+    <p class="prog" id="prog19"></p>
+  </section>
+
+  <!-- DIA 20 -->
+  <section class="dia" data-dia="20">
+    <h2>Dia 20 — Prova inteira de 2024 <span class="tag sim">Simulado</span></h2>
+    <p class="quando">sábado, 10/10 · ⏱ 3h30 (3h de prova + correção) · de manhã</p>
+
+    <div class="passo"><input type="checkbox" id="d20p1"><label for="d20p1">🧰 <b>Prepara a mesa</b> (5 min):
+      caderno com 1 a 40 em coluna, lápis, borracha, caneta, água. Celular só pro timer.</label></div>
+
+    <div class="passo"><input type="checkbox" id="d20p2"><label for="d20p2">📝 <b>Faz a prova</b> (3h):
+      abre a <a href="../pesquisa/provas/2024-prova.pdf#page=1" target="_blank">prova de 2024</a>. 20 de Matemática (1 a 20) e 20 de Português (21 a 40). Timer em 3 horas.
+      <div class="t">Mesmas regras: pergunta do fim primeiro, "?" no que travar, escada do lado, conta em pé, prova no texto.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d20p3"><label for="d20p3">✅ <b>Corrige</b> (15 min):
+      <a href="../pesquisa/provas/2024-gabarito.pdf" target="_blank">gabarito de 2024</a>. Escreve: "Matemática: __ de 20 · Português: __ de 20" e compara com os dois sábados anteriores.
+      <div class="t">Aviso: a <b>questão 13</b> de 2024 tem duas alternativas que parecem certas (o gabarito diz D). Se marcou outra, não conta como erro.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d20p4"><label for="d20p4">📓 <b>Anota o que travou</b> (10 min):
+      número + <b>conta</b> / <b>pergunta</b> / <b>assunto</b>. ⭐ nas que quer explicação. Amanhã e na semana que vem você volta nelas.</label></div>
+
+    <div class="passo"><input type="checkbox" id="d20p5"><label for="d20p5">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
+    <div class="dica"><b>Dica do dia 20</b>No cartão de respostas da prova de verdade, marco tudo de uma vez no fim, com calma, conferindo o número da questão. No caderno de hoje, treinei isso: coluna de 1 a 40, letra ao lado, sem pular linha.</div>
+    <p class="prog" id="prog20"></p>
+  </section>
+
+  <!-- DIA 21 -->
+  <section class="dia" data-dia="21">
+    <h2>Dia 21 — Reescrever a redação + revisão <span class="tag red">Redação</span></h2>
+    <p class="quando">domingo, 11/10 · ⏱ mais ou menos 2 horas (com pausa no meio)</p>
+
+    <div class="passo"><input type="checkbox" id="d21p1"><label for="d21p1">📖 <b>Lê as duas correções</b> (10 min):
+      as correções das redações do herói e do faz de conta. Escolhe a que teve <b>mais coisa pra melhorar</b> — é essa que você reescreve hoje.
+      <div class="t">Anota os 3 pontos principais da correção no caderno. Reescrever com a correção do lado é o jeito mais rápido de subir na redação.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d21p2"><label for="d21p2">✍️ <b>Reescreve a redação escolhida</b> (40 min):
+      mesma história, mesma proposta, caneta azul ou preta, título, 20 a 30 linhas — agora corrigindo os 3 pontos.
+      <div class="t">Não é copiar: é a mesma história contada melhor. Se a correção falou de parágrafos, começo-meio-fim ou linhas, é aqui que arruma.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d21p3"><label for="d21p3">✔ <b>Confere com a lista e pede a foto</b> (5 min):
+      <div class="t">☐ narrativa · ☐ 1ª pessoa (as duas propostas pediam) · ☐ no tema · ☐ título · ☐ 20 a 30 linhas · ☐ caneta, legível · ☐ parágrafos · ☐ sem nome. Foto → Diogo.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d21p4"><label for="d21p4">🔁 <b>Revisão do simulado de ontem</b> (30 min, depois da pausa):
+      refaz sem tempo as de <b>conta</b> e <b>pergunta</b>. Escreve ao lado o que tinha dado errado.
+      <div class="t">Amanhã é o ensaio geral com a prova de 2025, igualzinho ao dia da prova. Hoje termina cedo e dorme bem.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d21p5"><label for="d21p5">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
+    <div class="dica"><b>Dica do dia 21</b>Nove coisas zeram a redação no CMB: fugir do tema · não ser narrativa · letra ilegível · texto sem sentido · escrever poema · assinar ou se identificar · menos de 15 ou mais de 30 linhas · lápis ou caneta de outra cor · escrever fora das linhas. Nenhuma delas é difícil de evitar — é só conferir antes de entregar.</div>
+    <p class="prog" id="prog21"></p>
+  </section>
+
   <p class="fim">Os próximos dias aparecem aqui assim que ficarem prontos. 💪</p>
 </div>
 
