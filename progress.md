@@ -52,9 +52,11 @@ Padrão de dia de semana: 🎬 (10–14 min) → ✏️ Khan ou 📖 leitura (10
 
 ## Revisões (agentes separados)
 - Dias 1–3 (21/09, tarde): PODE IR COM AJUSTES PEQUENOS → 9 aplicados; 2ª revisão das resoluções: 0 erros de matemática, 10 pontes de linguagem aplicadas.
-- Dias 4–28 (21/09, noite): ver seção "Próximo passo" enquanto não estiver registrado.
+- Dias 4–28 (21/09, noite), dois agentes em paralelo, cada um refazendo contas e citações contra os PNGs das provas:
+  - **Matemática** (Dias 8, 9, 11, 15, 16, 18, 23): PODE IR COM AJUSTES PEQUENOS — 15/15 respostas batem, **0 erros de conta**; 1 ajuste médio (Dia 18, Q10/2020: eu tinha descrito errado por que a alternativa A é falsa — é a coluna verde com 2, não a 2ª coluna com 4) + 6 de clareza (atalho "corta quatro zeros", letra C na Q1/2021, passo do MDC mostrado, "expoente" explicado, atalho da Q10). **8 trocas aplicadas.**
+  - **Português + fins de semana** (Dias 4–7, 10, 12–14, 17, 19–22, 24–28): PODE IR COM AJUSTES PEQUENOS — 24/24 respostas e todas as citações/linhas batem; 6 médios (truque da vírgula e do "como" reescritos pelo teste da troca, não pela posição; Q16-B/2021 apontava pro parágrafo errado; truque "procura refletir" trocado por "combina com o desenho"; "ponto e vírgula" ambíguo; Dia 21 sem plano B) + 12 pequenos. **19 trocas aplicadas.**
+  - Após os ajustes: 145 fórmulas KaTeX válidas, HTML balanceado, ids únicos. Publicado.
 
 ## Próximo passo
-1. Registrar o resultado das revisões dos Dias 4–28 e aplicar os ajustes (esta sessão).
-2. Diogo: testar na mão os links da Khan dos Dias 8, 9, 11, 15, 16 e 18 (abrem? em português?) — 10 minutos. Trocar pelo equivalente se algum falhar.
-3. Correção da 1ª redação (dom 27/09) e primeira leva de ⭐ do diagnóstico de 2022 (seg 28/09).
+1. Diogo: testar na mão os links da Khan dos Dias 8, 9, 11, 15, 16 e 18 (abrem? em português?) — 10 minutos. Trocar pelo equivalente se algum falhar.
+2. Correção da 1ª redação (dom 27/09) e primeira leva de ⭐ do diagnóstico de 2022 (seg 28/09).
