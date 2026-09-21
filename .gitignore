@@ -1,0 +1,11 @@
+# NUNCA subir dados da criança: fotos, redações, prints
+redacoes/
+fotos/
+*.jpg
+*.jpeg
+*.heic
+*.webp
+# temporários
+_*
+__pycache__/
+*.pyc

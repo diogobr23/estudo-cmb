@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meu treino CMB</title>
+<style>
+  :root { --bg:#f6f7fb; --card:#fff; --ink:#1d2330; --muted:#5b6475; --line:#e3e6ee;
+          --mat:#2b6cb0; --ok:#2f9e44; --dica:#fff7d6; --dica-ink:#6b4e00; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:720px; margin:0 auto; padding:20px 16px 60px }
+  h1 { font-size:26px; margin:0 0 4px }
+  .sub { color:var(--muted); margin:0 0 18px }
+  .count { display:inline-block; background:var(--ink); color:#fff; border-radius:999px; padding:4px 12px; font-weight:600 }
+  .como { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin-bottom:18px }
+  .como ol { margin:6px 0 0 18px; padding:0 }
+  .dia { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; margin-bottom:16px }
+  .dia h2 { margin:0; font-size:20px } .dia .quando { color:var(--muted); font-size:15px; margin:2px 0 10px }
+  .tag { display:inline-block; font-size:13px; font-weight:700; color:#fff; background:var(--mat); border-radius:6px; padding:2px 8px; margin-left:6px; vertical-align:middle }
+  .passo { display:flex; gap:12px; align-items:flex-start; padding:10px 0; border-top:1px dashed var(--line) }
+  .passo input { width:26px; height:26px; margin:2px 0 0; flex:none; accent-color:var(--ok) }
+  .passo label { flex:1; cursor:pointer }
+  .passo .t { color:var(--muted); font-size:14px }
+  .passo:has(input:checked) label { text-decoration:line-through; color:var(--muted) }
+  a { color:var(--mat); font-weight:600 }
+  .dica { background:var(--dica); color:var(--dica-ink); border-radius:12px; padding:12px 14px; margin-top:12px }
+  .dica b { display:block; margin-bottom:4px }
+  details { margin-top:6px; font-size:15px } summary { cursor:pointer; color:var(--mat); font-weight:600 }
+  .fim { text-align:center; color:var(--muted); font-size:15px; margin-top:8px }
+  .prog { font-size:14px; color:var(--muted); margin-top:8px }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Meu treino pro CMB 🎯</h1>
+  <p class="sub">Prova: domingo, 18 de outubro. <span class="count" id="contagem">…</span></p>
+
+  <div class="como">
+    <b>Como funciona</b>
+    <ol>
+      <li>Cada dia tem 4 passos. Faz na ordem e <b>marca a caixinha</b> quando terminar.</li>
+      <li>Antes de cada passo, põe um <b>timer no celular</b> com os minutos que estão entre parênteses.</li>
+      <li>Nos exercícios da Khan ("Pratique"), faz o bloco <b>inteiro</b> até aparecer a tela de resultado (tipo "Você acertou 5 de 7"). Acertou menos da metade? Faz de novo. Errar faz parte do treino.</li>
+      <li>Se aparecer uma janela pedindo pra entrar ou criar conta, fecha no X e continua.</li>
+      <li>Todo dia tem <b>questões do CMB de verdade</b>. Elas são difíceis de propósito: texto longo e 2 ou 3 assuntos misturados. Truque: <b>lê a pergunta do FIM primeiro</b>, depois volta ao texto caçando os números que precisa. Errar essas é normal — o importante é entender a resposta depois.</li>
+      <li>Travou em alguma coisa? Anota no caderno o nome do Pratique (ou o número da questão) e o que não entendeu pra perguntar depois. Não fica preso.</li>
+    </ol>
+  </div>
+
+  <!-- DIA 1 -->
+  <section class="dia" data-dia="1">
+    <h2>Dia 1 — Frações <span class="tag">Matemática</span></h2>
+    <p class="quando">segunda, 21/09 · ⏱ mais ou menos 1 hora</p>
+
+    <div class="passo"><input type="checkbox" id="d1p1"><label for="d1p1">🎬 <b>Assiste</b> (10 min):
+      <a href="https://pt.khanacademy.org/math/pt-5-ano/numeros-fracoes-5ano/fracoes-equivalentes-5ano/v/equivalent-amount-of-pizza" target="_blank">Frações equivalentes</a>
+      e depois <a href="https://pt.khanacademy.org/math/pt-5-ano/numeros-fracoes-5ano/pt-fraes-equivalentes-na-reta-numrica/v/generating-equivalent-fractions" target="_blank">Criação de frações equivalentes</a>.
+      <div class="t">Frações equivalentes são a mesma pizza cortada em pedaços diferentes: 1/2 = 2/4 = 4/8.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d1p2"><label for="d1p2">✏️ <b>Pratica</b> (15 min):
+      <a href="https://pt.khanacademy.org/math/pt-5-ano/numeros-fracoes-5ano/fracoes-equivalentes-5ano/e/equivalent_fractions" target="_blank">Frações equivalentes — Pratique</a>
+      e <a href="https://pt.khanacademy.org/math/pt-5-ano/numeros-fracoes-5ano/comparacao-entre-fracoes-5ano/e/comparing-fractions-with-the-same-numerator-or-denominator" target="_blank">Comparar frações — Pratique</a>.
+      <div class="t">Meta: tela de resultado nos dois, com mais da metade certa.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d1p3"><label for="d1p3">🎬✏️ <b>Somar e subtrair frações com denominadores diferentes</b> (20 min):
+      abre <a href="https://pt.khanacademy.org/math/arithmetic/x18ca194a:add-and-subtract-fractions-different-denominators" target="_blank">esta unidade</a>,
+      assiste o <b>primeiro vídeo</b> e faz o <b>primeiro "Pratique"</b>.
+      <div class="t">Meta: vídeo até o fim + tela de resultado do 1º Pratique. É o assunto que MAIS cai na prova. Se o vídeo estiver em inglês, liga a legenda (botão CC) ou vai direto pro Pratique.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d1p4"><label for="d1p4">📝 <b>Questões do CMB de verdade</b> (15 min):
+      1ª) abre a <a href="../pesquisa/provas/2020-prova.pdf#page=8" target="_blank">prova de 2020 na página 8</a> → <b>Questão 9</b> (colocar as alturas dos anões em ordem, com frações).
+      2ª) se der tempo, a <a href="../pesquisa/provas/2021-prova.pdf#page=7" target="_blank">prova de 2021 na página 7</a> → <b>Questão 8</b> (essa é difícil de verdade: mistura fração, decimal e medida — tenta, e se não sair, tudo bem).
+      <div class="t">Resolve no caderno, marca a letra, e só depois abre a resposta. Errou? Lê de novo devagar e tenta achar onde escorregou.</div>
+      <details><summary>Ver respostas</summary>2020 Questão 9 = <b>D</b> · 2021 Questão 8 = <b>C</b></details></label></div>
+
+    <div class="passo"><input type="checkbox" id="d1p5"><label for="d1p5">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
+    <div class="dica"><b>Dica do dia 1</b>Pra somar ou subtrair frações com denominadores (o número de baixo) diferentes, primeiro deixo as duas com o <b>mesmo denominador</b> (frações equivalentes). Só depois somo os números de cima. Ex.: 1/2 + 1/4 → 2/4 + 1/4 = 3/4.</div>
+    <p class="prog" id="prog1"></p>
+  </section>
+
+  <!-- DIA 2 -->
+  <section class="dia" data-dia="2">
+    <h2>Dia 2 — Números decimais <span class="tag">Matemática</span></h2>
+    <p class="quando">terça, 22/09 · ⏱ mais ou menos 1 hora</p>
+
+    <div class="passo"><input type="checkbox" id="d2p1"><label for="d2p1">🎬 <b>Assiste</b> (10 min):
+      <a href="https://pt.khanacademy.org/math/pt-5-ano/numeros-numeros-decimais-5ano/comparacao-visual-de-numeros-decimais/v/comparing-decimals-visually-example" target="_blank">Comparação visual de números decimais</a>
+      e <a href="https://pt.khanacademy.org/math/pt-5-ano/numeros-numeros-decimais-5ano/fracoes-e-decimais-comuns/v/common-fractions-and-decimals" target="_blank">Frações e decimais comuns</a>.
+      <div class="t">0,5 é a mesma coisa que 1/2. 0,25 é 1/4. Decimal e fração são dois nomes da mesma coisa.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d2p2"><label for="d2p2">✏️ <b>Pratica</b> (15 min):
+      abre a unidade <a href="https://pt.khanacademy.org/math/pt-5-ano/numeros-numeros-decimais-5ano" target="_blank">Números: números decimais</a>
+      e faz os "Pratique" de <b>comparar</b> e <b>ordenar</b> decimais (na lista da unidade, procura os itens que têm a palavra <b>Pratique</b>).
+      <div class="t">Meta: tela de resultado em pelo menos 2 Pratiques, com mais da metade certa.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d2p3"><label for="d2p3">🎬✏️ <b>Somar e subtrair decimais</b> (20 min):
+      assiste <a href="https://pt.khanacademy.org/math/pt-5-ano/numeros-porcentagem-soma-subtracao-5ano/soma-de-numeros-decimais-5ano/v/adding-decimals-with-ones-and-tenths-parts" target="_blank">Soma de números decimais</a>
+      e depois faz o primeiro "Pratique" de <a href="https://pt.khanacademy.org/math/arithmetic/x18ca194a:add-and-subtract-decimals" target="_blank">Soma e subtração de números decimais</a>.
+      <div class="t">Meta: vídeo até o fim + tela de resultado do 1º Pratique. Se o vídeo estiver em inglês, liga a legenda (botão CC) ou vai direto pro Pratique.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d2p4"><label for="d2p4">📝 <b>Questões do CMB de verdade</b> (15 min):
+      1ª) abre a <a href="../pesquisa/provas/2020-prova.pdf#page=10" target="_blank">prova de 2020 na página 10</a> → <b>Questão 11</b> (as moedas do cofrinho dão pra pagar a tiara? — decimais e dinheiro).
+      2ª) se der tempo, a <a href="../pesquisa/provas/2021-prova.pdf#page=7" target="_blank">prova de 2021 na página 7</a> → <b>Questão 9</b> (tempos da corrida: subtrair e dividir decimais).
+      <div class="t">Resolve no caderno, marca a letra, e só depois abre a resposta.</div>
+      <details><summary>Ver respostas</summary>2020 Questão 11 = <b>E</b> · 2021 Questão 9 = <b>E</b></details></label></div>
+
+    <div class="passo"><input type="checkbox" id="d2p5"><label for="d2p5">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
+    <div class="dica"><b>Dica do dia 2</b>Vírgula embaixo de vírgula! Pra somar ou subtrair decimais, alinho as vírgulas e completo com zero o que faltar: 2,5 + 0,75 vira 2,50 + 0,75 = 3,25.</div>
+    <p class="prog" id="prog2"></p>
+  </section>
+
+  <!-- DIA 3 -->
+  <section class="dia" data-dia="3">
+    <h2>Dia 3 — Porcentagem <span class="tag">Matemática</span></h2>
+    <p class="quando">quarta, 23/09 · ⏱ mais ou menos 1 hora</p>
+
+    <div class="passo"><input type="checkbox" id="d3p1"><label for="d3p1">🎬 <b>Assiste</b> (10 min):
+      abre a unidade <a href="https://pt.khanacademy.org/math/6-ano-matematica/numeros-porcentagem-6ano" target="_blank">Números: porcentagem (6º ano)</a>
+      e assiste o <b>primeiro vídeo</b> da lista.
+      <div class="t">Porcentagem é "de cada 100": 25% = 25 de cada 100 = 1/4.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d3p2"><label for="d3p2">✏️ <b>Pratica</b> (20 min):
+      continua na <a href="https://pt.khanacademy.org/math/6-ano-matematica/numeros-porcentagem-6ano" target="_blank">mesma unidade</a>,
+      fazendo vídeos e "Pratique" <b>na ordem</b>, até o timer tocar.
+      <div class="t">Meta: tela de resultado em pelo menos 2 Pratiques, com mais da metade certa.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d3p3"><label for="d3p3">🎬 <b>Assiste</b> (10 min):
+      <a href="https://pt.khanacademy.org/math/6-ano-matematica/x3567d95341aaa14c:educacao-financeira/x3567d95341aaa14c:relacao-com-o-dinheiro/v/descontos-e-porcentagem" target="_blank">Descontos e porcentagem</a>.
+      <div class="t">Na prova cai muito "5% de desconto" e "6% a mais" — é exatamente isso.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d3p4"><label for="d3p4">📝 <b>Questões do CMB de verdade</b> (15 min):
+      1ª) abre a <a href="../pesquisa/provas/2021-prova.pdf#page=4" target="_blank">prova de 2021 na página 4</a> → <b>Questão 4</b> (15% da pista de 4,1 km é plana — quanto é isso?).
+      2ª) se der tempo, a <a href="../pesquisa/provas/2020-prova.pdf#page=4" target="_blank">prova de 2020 na página 4</a> → <b>Questão 4</b> (cinco frases com porcentagem — só UMA é verdadeira; testa uma por uma).
+      <div class="t">Resolve no caderno, marca a letra, e só depois abre a resposta.</div>
+      <details><summary>Ver respostas</summary>2021 Questão 4 = <b>D</b> · 2020 Questão 4 = <b>E</b></details></label></div>
+
+    <div class="passo"><input type="checkbox" id="d3p5"><label for="d3p5">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
+    <div class="dica"><b>Dica do dia 3</b>10% é dividir por 10. 5% é a metade de 10%. 1% é dividir por 100. Com esses três eu monto quase tudo: 15% = 10% + 5%; 12% = 10% + 1% + 1%.</div>
+    <p class="prog" id="prog3"></p>
+  </section>
+
+  <p class="fim">Os próximos dias aparecem aqui assim que ficarem prontos. 💪</p>
+</div>
+
+<script>
+  // contagem regressiva até a prova (18/10/2026)
+  (function () {
+    var prova = new Date(2026, 9, 18), hoje = new Date();
+    hoje.setHours(0, 0, 0, 0);
+    var dias = Math.round((prova - hoje) / 86400000);
+    var el = document.getElementById('contagem');
+    el.textContent = dias > 1 ? 'Faltam ' + dias + ' dias' : dias === 1 ? 'É amanhã!' : dias === 0 ? 'É hoje! Boa prova!' : 'Prova feita 🎉';
+  })();
+
+  // lembra as caixinhas marcadas neste aparelho (se o navegador deixar)
+  (function () {
+    var caixas = document.querySelectorAll('.passo input[type=checkbox]');
+    function salvar(c) { try { localStorage.setItem('cmb:' + c.id, c.checked ? '1' : '0'); } catch (e) {} }
+    function carregar(c) { try { c.checked = localStorage.getItem('cmb:' + c.id) === '1'; } catch (e) {} }
+    function progresso() {
+      document.querySelectorAll('.dia').forEach(function (d) {
+        var todas = d.querySelectorAll('input[type=checkbox]'), feitas = d.querySelectorAll('input:checked');
+        var p = d.querySelector('.prog');
+        p.textContent = feitas.length === todas.length ? '✅ Dia completo! Mandou bem.' : feitas.length + ' de ' + todas.length + ' passos feitos';
+      });
+    }
+    caixas.forEach(function (c) { carregar(c); c.addEventListener('change', function () { salvar(c); progresso(); }); });
+    progresso();
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,1492 @@
+
+===== Pagina 1/36 =====
+1. 
+As provas de Matemática, Língua Portuguesa e Produção Textual 
+são constituídas por um único caderno de questões, um único cartão de 
+respostas e uma única folha definitiva de Produção Textual. 
+ 
+2. 
+Este CADERNO DE QUESTÕES é constituído por 36 (trinta e seis) 
+páginas, incluindo capa, folha para rascunho de Matemática e folha de 
+rascunho de Produção Textual. 
+ 
+3. 
+O tempo de duração desta prova é de 04 (quatro) horas e 30 (trinta) 
+minutos, incluindo o tempo destinado ao preenchimento do CARTÃO DE 
+RESPOSTAS e da FOLHA DEFINITIVA de Produção Textual. 
+ 
+4. 
+CONFIRA TODAS AS PÁGINAS do caderno. Qualquer falha de 
+impressão ou falta de folhas deve ser comunicada ao fiscal de sala, no 
+prazo máximo de 15 (quinze) minutos após o início da prova para que as 
+providências sejam tomadas em tempo hábil.  
+ 
+5. 
+A Prova de Matemática é composta por 20 (vinte) questões de múltipla-
+escolha, cada questão contendo 5 (cinco) opções de resposta. A Prova 
+de Língua Portuguesa é composta por 20 (vinte) questões de múltipla-
+escolha, cada questão contendo 5 (cinco) opções de resposta. A prova 
+de Produção Textual terá caráter exclusivamente eliminatório. 
+ 
+6. 
+O fiscal de sala avisará quando faltarem 30 (trinta) e 10 (dez) minutos 
+para o término do tempo previsto para a prova. 
+ 
+7. 
+Antes de vencer o horário estipulado, preencha o CARTÃO DE 
+RESPOSTAS e transcreva a Produção Textual para a FOLHA 
+DEFINITIVA, pois não será dado tempo a mais para essa finalidade. 
+ 
+8. 
+Quando o fiscal avisar que o tempo da prova terminou, nada mais escreva 
+e aguarde para que ele recolha o seu CARTÃO DE RESPOSTAS e a 
+FOLHA DEFINITIVA de Produção Textual.  
+ 
+9. 
+Fica esclarecido que, caso o candidato termine a prova e preencha o 
+CARTÃO DE RESPOSTAS e a FOLHA DEFINITIVA de Produção Textual 
+antes do tempo limite estipulado, somente poderá sair do local de 
+aplicação após transcorridos 45 (quarenta e cinco) minutos do início 
+da prova. O CADERNO DE QUESTÕES NÃO poderá ser levado pelo 
+candidato. 
+ 
+10. 
+Utilize somente caneta esferográfica de tinta AZUL ou PRETA para 
+marcação das respostas no CARTÃO DE RESPOSTAS e na FOLHA 
+DEFINITIVA de Produção Textual. 
+ 
+ 
+____________________ 
+Cel Sartori Aguiar 
+Comandante e Diretor de Ensino
+
+===== Pagina 2/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 2 
+ 
+ 
+ 
+ 
+ 
+Mariana e Ronaldo são um casal jovem e apaixonado por descobrir o mundo. Juntos, transformam cada 
+viagem em uma nova aventura, motivados pelo desejo de explorar paisagens deslumbrantes, experimentar 
+sabores exóticos e mergulhar em diferentes culturas. Para eles, cada destino é uma oportunidade de aprender, 
+crescer e criar memórias inesquecíveis. Seja caminhando pelas ruelas de uma cidade histórica, navegando por 
+mares desconhecidos ou participando de festividades locais, Mariana e Ronaldo vivem intensamente cada 
+momento, guiados pela curiosidade e pelo amor que compartilham tanto um pelo outro quanto pelas 
+diversidades do mundo. 
+Vamos embarcar nas aventuras de Mariana e Ronaldo, conhecendo um pouco mais sobre alguns países 
+do mundo e descobrindo, junto com eles, as histórias, culturas e belezas que cada destino tem a oferecer.  
+ 
+MÚLTIPLA-ESCOLHA 
+Marque com um “X” a única opção que atende ao que é solicitado em cada questão. 
+ 
+QUESTÃO 1.  Mariana e Ronaldo adoram planejar cada detalhe de suas viagens, desde a compra das passagens 
+até a definição do roteiro. No entanto, em 2024, não conseguiram organizar as férias como de costume e 
+decidiram recorrer à agência TBT, uma das maiores agências de turismo do país, especializada em viagens 
+nacionais. 
+Ao chegarem lá, souberam que a agência estava promovendo um sorteio entre os 60 primeiros clientes. Cada 
+cliente retirava aleatoriamente um cupom numerado de 1 a 60 de uma urna. Os prêmios eram distribuídos da 
+seguinte forma: 
+ 
+Cupons múltiplos de 5, mas não múltiplos de 3: passagens de ida e volta para Fortaleza; 
+ 
+Cupons múltiplos de 3, mas não múltiplos de 5: duas diárias de hospedagem em Bonito; 
+ 
+Cupons múltiplos de 3 e de 5 ao mesmo tempo: passagens de ida e volta para Fernando de Noronha. 
+Diante disso, se Mariana e Ronaldo retirarem um cupom ao acaso, qual é a probabilidade de não ganharem 
+algum dos prêmios oferecidos? 
+A. (     ) 
+8
+15 
+B. (     ) 
+7
+15 
+C. (     ) 
+4
+15 
+D. (     ) 
+2
+15 
+E. (     ) 
+1
+15 
+ 
+PROVA DE MATEMÁTICA
+
+===== Pagina 3/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 3 
+ 
+QUESTÃO 2. Ronaldo tem grande interesse no mercado de ações e resolveu pesquisar sobre a agência de 
+turismo TBT Brasil, descobrindo que suas ações são negociadas na bolsa de valores brasileira. O gráfico a seguir 
+mostra a valorização do preço da ação da empresa entre os dias 2 de janeiro e 25 de março de 2025. 
+ 
+ 
+Figura 1 - Gráfico da valorização de preço da ação da empresa TBT Brasil 
+ 
+Considere os seguintes dados extraídos do gráfico: 
+ 
+Em 2 de janeiro de 2025, o valor da ação era de R$ 1,39; 
+ 
+Em 25 de março de 2025, o valor passou a R$ 2,36. 
+Suponha agora que, após o dia 25 de março, a ação tenha sofrido uma nova valorização correspondente à 
+metade do percentual de aumento observado entre 2 de janeiro e 25 de março. 
+Com base nessas informações, qual passou a ser o novo valor aproximado da ação após essa nova 
+valorização? 
+ 
+A. (     ) 
+R$ 2,84. 
+B. (     ) 
+R$ 3,18. 
+C. (     ) 
+R$ 3,33. 
+D. (     ) 
+R$ 4,01. 
+E. (     ) 
+R$ 4,36
+
+===== Pagina 4/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 4 
+ 
+QUESTÃO 3. Mariana e Ronaldo estão organizando uma viagem ao Monte Chimborazo, no Equador, para 
+uma atividade especial de escalada. Como preparação, eles buscaram uma escola de alpinismo para aprender as 
+técnicas necessárias e iniciaram os treinos antes da expedição. 
+Para simular os trechos de escalada, compraram três cordas com os seguintes comprimentos: 
+ 
+ 
+Corda azul: 168 metros;  
+ 
+Corda verde: 132 metros; 
+ 
+Corda vermelha: 252 metros. 
+ 
+ 
+ 
+ 
+ 
+O objetivo é cortar todas as cordas em pedaços de mesmo comprimento, o maior possível, sem sobras. Cada 
+percurso de treino será montado utilizando 2 pedaços de corda, independentemente da cor. 
+Sabendo que todas as cordas serão totalmente utilizadas, o número máximo de percursos completos que Mariana 
+e Ronaldo poderão montar é 
+ 
+A. (     ) 
+um número múltiplo de 3 e de 4. 
+B. (     ) 
+o menor número ímpar maior que 20.  
+C. (     ) 
+um número primo e maior que 20, mas menor que 25. 
+D. (     ) 
+um número que possui exatamente três divisores positivos distintos. 
+E. (     ) 
+um número que é múltiplo comum de 5 e 7, mas não é divisível por 3. 
+ 
+ 
+ 
+ 
+Figura 2 - Monte Chimborazo 
+Disponível em: https://images.app.goo.gl/9TcyfupyRGcSWyNYA.  
+Acesso em: 25 jun 2025
+
+===== Pagina 5/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 5 
+ 
+QUESTÃO 4. Após intensos treinos com as cordas no Brasil, Mariana e Ronaldo finalmente embarcaram rumo 
+ao Monte Chimborazo, no Equador, para a tão esperada expedição de alpinismo. Depois de uma longa viagem, 
+chegaram exaustos ao hotel previamente reservado. 
+Ao tentarem acessar o quarto 214, foram surpreendidos por uma fechadura digital, que exigia uma senha de três 
+dígitos. No visor, apareceu a seguinte instrução: 
+ 
+"Resolva as expressões abaixo e digite os três resultados, na ordem correta." 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Após realizarem os cálculos, Mariana e Ronaldo perceberam que o número formado pelos três dígitos possuía 
+uma característica curiosa. 
+Assinale a alternativa correta sobre a senha que abre a fechadura digital do quarto 214. 
+ 
+A. (     ) 
+O primeiro dígito é o dobro do terceiro e todos são diferentes. 
+B. (     ) 
+É um número ímpar e a soma de seus dígitos é múltiplo de 4. 
+C. (     ) 
+É um número divisível por 3 e ímpar. 
+D. (     ) 
+É um número múltiplo de 9 e par. 
+E. (     ) 
+Formada apenas por números ímpares e é múltiplo de 3. 
+ 
+ 
+ 
+ 
+ 
+ 
+1º 
+dígito 
+ 
+{[(3
+4 + 1
+2 −0,25) ÷ (1 −0,5)] + (3 −1)} × 1
+2 
+ 
+2º 
+dígito 
+{[(5
+2 −0,5) × 2] + (6 −2)} ÷ (4
+9 ÷ 6
+27) 
+ 
+3º 
+dígito 
+(0,2 × 30) ÷ {(2,4 −2
+5) × ( 9
+10 + 0,1)} 
+ 
+Figura 3: Fechadura digital 
+Disponível em: 
+https://www.hometheater.com.br/portal/20
+22/05/11/nova-fechadura-eletronica-
+utiliza-padrao-sem-fio-zigbee/  
+Acesso em: 25 jun 2025
+
+===== Pagina 6/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 6 
+ 
+QUESTÃO 5. Após uma viagem de compras em Miami, nos Estados Unidos, Mariana retornou com sua mala 
+recheada de produtos. Ao chegar ao aeroporto e pesar a bagagem, foi informada de que o peso máximo permitido 
+de cada bagagem despachada era de 23 kg por passageiro. No entanto, sua mala registrou 31,8 kg. Conforme as 
+regras da companhia aérea, seria cobrada uma taxa adicional de R$ 85,50 por cada quilograma excedente. 
+Além disso, por curiosidade, o funcionário da companhia perguntou o volume da mala. A bagagem de 
+Mariana tem o formato de um paralelepípedo reto-retângulo, com dimensões de 90 centímetros (cm) de altura, 
+4,3 decímetros (dm) de largura e 750 milímetros (mm) de comprimento. 
+O volume da mala de Mariana, em litros, e o valor total da taxa que ela precisará pagar pelo excesso de peso 
+são, respectivamente 
+ 
+ 
+A. (     ) 
+290 litros e R$ 598,50. 
+B. (     ) 
+290,25 litros e R$ 752,40.            
+C. (     ) 
+291 litros e R$ 752,40. 
+D. (     ) 
+300 litros e R$ 729,60. 
+E. (     ) 
+290,25 litros e R$ 850,00. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figura 4: Mala de viagem 
+Disponível em: 
+https://xcdn.next.co.uk/common/items/default/default/itemima
+ges/3_4Ratio/product/lge/C54605s.jpg?im=Resize,width=750 
+Acesso em: 03 jul 2025
+
+===== Pagina 7/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 7 
+ 
+QUESTÃO 6. Mariana e Ronaldo viajaram para a África do Sul, onde a moeda utilizada é o rand sul-africano 
+(ZAR). Antes da viagem, eles foram a uma casa de câmbio para trocar os dólares que sobraram das compras 
+feitas em Miami e os reais brasileiros que economizaram para essa ocasião. 
+O casal possui 2 500 dólares e 8 401 reais e deseja converter todo esse valor em rands sul-africanos (ZAR). 
+Sabendo que: 
+ 
+1 ZAR = 0,31 real 
+ 
+1 dólar = 5,45 reais 
+ 
+1 dólar = 17,58 ZAR 
+Qual é o valor total aproximado que Mariana e Ronaldo tinham em rands sul-africanos após a conversão de 
+todos os dólares e reais? 
+ 
+A. (     ) 71 050. 
+B. (     ) 46 551. 
+C. (     ) 43 950. 
+D. (     ) 27 100. 
+E. (     ) 13 625. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figura 5: Rands sul-africano (ZAR) 
+Disponível em: https://ivairs.wordpress.com/2016/01/12/rand-
+sul-africano-caiu-9/ Acesso em: 25 jun 2025
+
+===== Pagina 8/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 8 
+ 
+QUESTÃO 7. Durante a viagem para a África do Sul, Mariana e Ronaldo programaram um passeio de carro 
+por uma das rotas mais visitadas da costa sul-africana: a Garden Route. Esse trajeto, que liga Mossel Bay a 
+Storms River, é famoso por suas paisagens deslumbrantes e pelas diversas atrações ao longo do caminho, como 
+o famoso salto de bungee jump na ponte Bloukrans Bridge. 
+Como estavam na Cidade do Cabo, antes de iniciarem o percurso pela Garden Route, precisaram seguir 
+até Hermanus e, em seguida, até Mossel Bay. Para organizar melhor o trajeto, Ronaldo dividiu a viagem em 
+quatro trechos: 
+ 
+ 
+Partida 
+Chegada 
+Quilômetros percorridos 
+1º trecho 
+Cidade do Cabo 
+Hermanus 
+25
+129  do total do percurso 
+2º trecho 
+Hermanus 
+Mossel Bay 
+21
+43 do total do percurso 
+3º trecho 
+Mossel Bay 
+Knysna 
+1
+3 do 2º trecho 
+4º trecho 
+Knysna 
+Storms River 
+100 km 
+ 
+Figura 6 - Mapa do Trajeto 
+Disponível em: https://maps.app.goo.gl/QvZ77HKdDGQSXu786 
+Acesso em: 05 ago 2025 
+ 
+ 
+A distância percorrida no segundo e no terceiro trechos juntos foi de 
+ 
+A. (     ) 105 km. 
+B. (     ) 129 km. 
+C. (     ) 315 km. 
+D. (     ) 420 km. 
+E. (     ) 645 km.
+
+===== Pagina 9/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 9 
+ 
+QUESTÃO 8. Mariana e Ronaldo viajaram para a cidade do Cairo, no Egito para visitar a Grande Pirâmide de 
+Gizé que é conhecida como uma das Sete Maravilhas do Mundo Antigo. Chegando lá, ficaram impressionados 
+com o tamanho desse monumento e foram pesquisar mais sobre a pirâmide encontrando o seguinte texto: 
+   
+A Grande Pirâmide de Gizé, também conhecida 
+como Pirâmide de Quéops, é a mais antiga e maior das três 
+pirâmides do complexo de Gizé. Sua construção é um feito 
+notável da engenharia antiga, com aproximadamente 2,3 
+milhões de blocos de pedra, alguns pesando mais de duas 
+toneladas. A pirâmide possui câmaras internas, como a 
+Câmara do Rei e a Câmara da Rainha, que demonstram precisão arquitetônica e engenharia avançada. O volume 
+da Grande Pirâmide de Gizé é estimado em cerca de 2,5 milhões de metros cúbicos. Mais precisamente, o 
+volume é de aproximadamente 2.594.463,61 m³.  
+Disponível em: https://www.nationalgeographicbrasil.com/historia/2023/06/a-piramide-mais-alta-e-outras-atracoes-para-conhecer-no-egito  
+Acesso em: 22 de jun 2025. 
+ 
+Sabendo que o volume ocupado por blocos de pedra corresponde a 75% do volume estimado da Grande 
+Pirâmide de Gizé, qual é o volume não ocupado por blocos de pedra, em decâmetro cúbicos? 
+ 
+A. (     ) 625 
+B. (     ) 1 875 
+C. (     ) 2 500 
+D. (     ) 625 000 
+E. (     ) 1 875 000 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figura 7: Pirâmides do Egito
+
+===== Pagina 10/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 10 
+ 
+QUESTÃO 9. Durante a viagem ao Egito, o casal viajante Mariana e Ronaldo conheceu Lucas, um aventureiro 
+que está sempre explorando novos destinos ao redor do mundo. Juntos, os três registraram momentos 
+inesquecíveis em alguns dos pontos turísticos mais emblemáticos do país: a Pirâmide de Quéops, a Esfinge de 
+Gizé e o Templo de Karnak. 
+O gráfico abaixo mostra a quantidade de fotos tiradas por cada um nos pontos turísticos: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Com base nesses dados, podemos afirmar que 
+ 
+A. (     ) considerando apenas as fotos tiradas no Templo de Karnak, a média aritmética da quantidade de 
+fotos tiradas pelos três viajantes é aproximadamente 10.  
+B. (     ) considerando o total de fotos tiradas pelos três viajantes, a probabilidade de escolher 
+aleatoriamente uma que tenha sido tirada na Esfinge de Gizé é de 33%. 
+C. (     ) a média aritmética da quantidade de fotos tiradas na Pirâmide de Quéops pelos três viajantes foi 
+superior a 10.  
+D. (     ) a porcentagem de fotos tiradas por Ronaldo no Templo de Karnak, em relação ao total de fotos 
+que ele tirou nos três pontos turísticos, é de 20%. 
+E. (     ) a porcentagem de todas as fotos que foram tiradas por Mariana na Pirâmide de Quéops, em relação 
+ao total geral de fotos dos três viajantes, é maior que 25%. 
+ 
+ 
+Figura 8 - Gráfico da quantidade de fotos tiradas nos pontos turísticos
+
+===== Pagina 11/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 11 
+ 
+QUESTÃO 10. Durante uma conversa, Mariana e Ronaldo compartilharam com Lucas suas experiências em 
+dois monumentos que já visitaram e, juntos, decidiram analisar as formas geométricas presentes nessas 
+construções: 
+ O Panteão de Roma (Itália) – famoso por sua imponente cúpula hemisférica e por apresentar uma 
+estrutura cilíndrica, com base e topo em forma de círculos perfeitos. Este antigo templo romano tem 
+formato aproximado de um cilindro. 
+ A Grande Pirâmide de Gizé (Egito) – uma construção milenar com formato de pirâmide e base 
+quadrada. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+Disponível em: https://sl.bing.net/hyLZkct6tVY e https://youtu.be/lyfMJDPI4H8  
+Acesso em: 25 jun 2025 
+ 
+Encantado com a geometria das construções, Lucas desenhou os sólidos geométricos que representam 
+os dois monumentos. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Os sólidos desenhados por Lucas, quando planificados, são formados por 
+ 
+A. (     ) 
+1 retângulo, 1 círculo, 3 triângulos e 1 quadrado. 
+B. (     ) 
+1 retângulo, 2 círculos e 3 triângulos e 2 quadrados. 
+C. (     ) 
+1 retângulo, 2 círculos, 4 triângulos e 1 quadrado. 
+D. (     ) 
+2 retângulos, 1 círculo, 5 triângulos e 2 quadrados. 
+E. (     ) 
+2 retângulos, 2 círculos, 2 triângulos e 1 quadrado. 
+ 
+ 
+ 
+Figura 10: Grande Pirâmide de Gizé (Egito) 
+Figura 9: Pantheon em Roma (Itália)
+
+===== Pagina 12/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 12 
+ 
+QUESTÃO 11. Mariana e Ronaldo perceberam que ainda não haviam visitado Paris — a charmosa capital da 
+França e um dos destinos turísticos mais procurados do mundo, que atrai milhões de visitantes todos os anos. 
+Durante uma pesquisa para planejar a viagem, encontraram passagens aéreas por uma companhia que 
+oferecia voo com decolagem prevista para as 10 horas e 50 minutos do dia 25 de junho, partindo do Aeroporto 
+de Guarulhos (GRU), em São Paulo, com destino ao Aeroporto Charles de Gaulle (CDG), em Paris. 
+Considerando que Paris está 5 horas à frente de São Paulo por conta do fuso horário, e que a duração do voo 
+é de 11 horas e 12 minutos, o casal calculou que chegaria à capital francesa no dia 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+A. (     ) 25 de junho às 15 horas e 50 minutos no horário de São Paulo.  
+B. (     ) 25 de junho às  3 horas e 2 minutos no horário de Paris.  
+C. (     ) 26 de junho às 22 horas e 2 minutos no horário de Paris.  
+D. (     ) 26 de junho às 3 horas e 2 minutos no horário de Paris. 
+E. (     ) 26 de junho às 3 horas e 2 minutos no horário de São Paulo.  
+ 
+ 
+ 
+ 
+Figura 9: Mapa de voo partindo de GRU para CDG 
+Disponível em: https://voandoeavaliando.com.br/2017/10/27/voando-com-a-latam-cdggru/ 
+Acesso em: 25 jun 2025
+
+===== Pagina 13/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 13 
+ 
+QUESTÃO 12. Durante a viagem a Paris, Mariana e Ronaldo aproveitaram para visitar a famosa Torre Eiffel. 
+Encantada com a estrutura, Mariana decidiu desenhá-la em uma malha quadriculada. Considerando que cada 
+quadradinho menor da malha tem lado de 1,5 centímetro (cm), a área da Torre Eiffel desenhada por Mariana, 
+em decímetros quadrados (dm²) e o percentual aproximado de quadrados cinza-escuros em relação aos 
+quadrados cinza-claros são, respectivamente, 
+ 
+Figura 10 - Torre Eiffel na malha quadriculada
+
+===== Pagina 14/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 14 
+ 
+ 
+A. (     ) 4,32 dm2 e 35,2% 
+B. (     ) 9,72 dm2 e 54,3%. 
+C. (     ) 243 dm2 e 54,3% 
+D. (     ) 432 dm2 e 64,8%. 
+E. (     ) 972 dm2 e 35,2% 
+ 
+ 
+QUESTÃO 13. Mariana e Ronaldo estavam em um tour pela Itália. A primeira cidade a ser visitada foi Roma 
+e em seguida iam para Florença. Para realizar esse percurso, eles tinham três opções diferentes de meio de 
+transporte: ônibus, trem e avião. 
+ 
+A cada 1 hora e 12 minutos parte um ônibus de Roma para Florença, a cada 1 hora e 48 minutos parte um 
+trem de Roma para Florença e a cada 2 horas e 24 minutos parte um avião de Roma para Florença. Sabendo que 
+às 7 horas e 53 minutos, Mariana e Ronaldo podiam pegar qualquer um dos três meios de transportes de Roma 
+para Florença, a que horas eles poderão escolher novamente qualquer um dos três meios de transportes para 
+realizar esse trajeto?   
+ 
+Figura 11 - Mapa da Itália com a rota de Roma e Florença 
+Disponível em: https://dicasdaitalia.com.br/viagens-de-trem/viagem-de-trem-de-roma-florenca/ 
+Acesso em: 05 ago 2025 
+ 
+A. (     ) 7 horas e 12 minutos. 
+B. (     ) 14 horas e 53 minutos. 
+C. (     ) 14 horas e 55 minutos. 
+D. (     ) 15 horas e 05 minutos. 
+E. (     ) 15 horas e 15 minutos.
+
+===== Pagina 15/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 15 
+ 
+QUESTÃO 14. Após passarem alguns dias em Florença explorando museus e pontos históricos, Mariana e 
+Ronaldo seguiram para a famosa região vinícola da Toscana. Lá, participaram de um roteiro de degustação em 
+três vinícolas distintas, visitadas em dias consecutivos. 
+O casal decidiu registrar detalhadamente a quantidade de vinho consumida em cada visita, tomando como 
+referência o volume total planejado para todo o roteiro. O relatório anotado ficou assim: 
+ 
+Primeiro dia: consumo de metade do volume total. 
+ 
+Segundo dia: consumo equivalente a três oitavos do volume total. 
+ 
+Terceiro dia: consumo correspondente a um dezesseis avos do 
+volume total. 
+ 
+ 
+Sabe-se que todo o restante não consumido foi guardado para um evento especial no último dia da viagem. 
+Qual a fração exata do volume total que ainda restou para esse evento, após as três degustações? 
+A. (     ) 
+1
+16 
+B. (     ) 
+3
+16 
+C. (     ) 
+1
+8 
+D. (     ) 
+5
+32 
+E. (     ) 
+15
+16 
+ 
+ 
+Figura 12 - Vinícola na Região da Toscana 
+Disponível em: https://ohhappyway.com/vinhos-da-
+toscana/ 
+Acesso em: 06 ago 2025
+
+===== Pagina 16/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 16 
+ 
+QUESTÃO 15. Mariana e Ronaldo, durante a viagem para a Suécia, resolveram fazer a trilha muito famosa e 
+adorada pelos viajantes, o Triângulo de Jämtland. Como o próprio nome diz, o trajeto dessa trilha tem um 
+formato muito próximo de um triângulo com três lados com medidas distintas.  
+Sabe-se que o primeiro lado do triângulo da trilha mede 230 hectômetros (hm), o segundo lado tem 
+2
+5 do 
+comprimento do primeiro lado e o terceiro lado tem seu comprimento igual à média aritmética dos outros dois 
+lados. Como a trilha possui trechos desafiadores, Mariana e Ronaldo caminharam 69 metros (m) por minuto 
+durante toda a trilha. Em quanto tempo o casal concluiu essa trilha sabendo que eles fizeram duas pausas para 
+descanso e hidratação que duraram 30 e 42 minutos cada? 
+ 
+ 
+Figura 13 - Mapa da Trilha 
+Disponível em: https://www.swedishtouristassociation.com/trails/trail-jamtland-triangle/ 
+Acesso em: 05 ago 2025 
+ 
+A. (     ) 10 horas e 50 minutos. 
+B. (     ) 11 horas e 40 minutos. 
+C. (     ) 11 horas e 52 minutos. 
+D. (     ) 12 horas e 32 minutos. 
+E. (     ) 12 horas e 52 minutos.
+
+===== Pagina 17/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 17 
+ 
+QUESTÃO 16. A melhor viagem de Mariana e Ronaldo foi a visita à Tailândia, que é um país do Sudeste 
+Asiático. Quando estavam organizando essa viagem, perceberam que o maior gasto deles seria com a passagem 
+aérea, então resolveram pesquisar bastante antes de comprar.  
+ 
+Depois de muita pesquisa, encontraram a passagem de ida e volta por R$ 8 605,00 para cada um. O valor 
+ainda continuava muito alto, então eles resolveram negociar a forma de pagamento. Foram apresentadas três 
+opções diferentes de pagamento na compra das duas passagens: 
+ 
+ 
+1ª opção: pagamento à vista com desconto 5% de desconto; 
+ 
+2ª opção: pagamento em 5 parcelas iguais sem acréscimo; e 
+ 
+3ª opção: aumento de 6% no valor da passagem e pagamento em 10 parcelas iguais. 
+ 
+ 
+Assinale a alternativa correta. 
+ 
+A. (     ) Na opção 1 o casal economizará R$ 430,25. 
+B. (     ) Na opção 2 o casal pagará 5 parcelas de R$ 3 542,00. 
+C. (     ) Na opção 3 o casal pagará 10 parcelas de R$ 912,13. 
+D. (     ) Na opção 1 o casal pagará R$ 860,50 a mais que na opção 2.  
+E. (     ) Na opção 3 o casal pagará R$ 1 893,10 a mais que na opção 1. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figura 14: Bangkok na Tailândia 
+Disponível em: https://www.intermundial.pt/blog/viajar-a-tailandia  
+Acesso em: 25 jun 2025
+
+===== Pagina 18/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 18 
+ 
+QUESTÃO 17. Durante uma viagem ao Japão, o casal Mariana e Ronaldo visitou o famoso Mercado Toyosu, 
+em Tóquio, onde presenciaram o tradicional leilão de atum. No primeiro leilão de 2025, eles ficaram 
+impressionados ao ver um atum rabilho ser arrematado por aproximadamente R$ 7 890 000,00, com o peixe 
+pesando cerca de 275 quilos. No entanto, o recorde desse leilão ainda pertence ao ano de 2019, quando um atum 
+foi vendido por impressionantes dezoito milhões e novecentos mil reais. 
+ 
+ 
+ 
+Figura 15 – Atum rabilho 
+Disponível em: https://umsoplaneta.globo.com/sociedade/noticia/2025/01/10/atum-e-vendido-por-r-79-milhoes-no-primeiro-leilao-de-2025-do-mercado-
+toyosu-no-japao.ghtml Acesso em: 25 jun 2025 
+ 
+Com base no valor recorde, podemos afirmar que  
+A. (     ) 
+o algarismo 8 ocupa a ordem das dezenas de milhão. 
+B. (     ) 
+o algarismo 1 ocupa a ordem das dezenas de milhar. 
+C. (     ) 
+o número possui 3 ordens e pertence a 8 classes. 
+D. (     ) 
+o valorabsoluto do algarismo 9 é de 90 000. 
+E. (     ) 
+o valor posicional do algarismo 9 é de 900 000.
+
+===== Pagina 19/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 19 
+ 
+QUESTÃO 18. Mariana e Ronaldo viajaram para Singapura, onde finalmente conheceram o luxuoso Hotel 
+Marina Bay Sands, famoso por ter a maior piscina de borda infinita nas alturas do mundo, situada a cerca de 
+190 metros de altura, com vista deslumbrante da cidade. 
+Encantados com o local, eles passaram horas aproveitando a piscina, que possui o mesmo volume de um 
+paralelepípedo, com as seguintes dimensões aproximadas: 
+ 
+15000 centímetros (cm) de comprimento;  
+ 
+8 metros (m) de largura; e    
+ 
+ 0,012 hectômetro (hm) de profundidade média.    
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Enquanto conversavam com o gerente do hotel, souberam que, por questões de segurança estrutural, a 
+piscina está operando no momento com apenas 95% da sua capacidade total de água. 
+Com base nessas informações, o volume atual de água, em litros, contido na piscina e o volume de água que 
+ainda falta para encher completamente a piscina são, respectivamente, 
+ 
+A. (     ) 
+1 350 000 litros e 90 000 litros. 
+B. (     ) 
+1 360 000 litros e 80 000 litros. 
+C. (     ) 
+1 368 000 litros e 144 000 litros. 
+D. (     ) 
+1 368 000 litros e 72 000 litros. 
+E. (     ) 
+1 440 000 litros e 72 000 litros. 
+ 
+ 
+ 
+ 
+ 
+ 
+Figura 16 - Hotel Marina Bay Sands 
+Disponível em: 
+https://i0.wp.com/luxe.net/wp-content/uploads/2014/05/marina-bay-sands-singapour.jpg?fit=2256%2C1496&ssl=1 
+https://th.bing.com/th/id/R.789b47f15809f17fcaa742a304190cb6?rik=uVkX0v0o82bNAQ&riu=http%3a%2f%2fs1.it.atcdn.net%2fwp-
+content%2fuploads%2f2015%2f04%2fBest-Hotel-Pool-Marina-Bay-
+Sands.jpg&ehk=txRsq5SBN7ZqBo13V91p3NGOnz8yZ7UB%2fOGBnlExAGM%3d&risl=&pid=ImgRa 
+https://www.marinabaysands.com/guides/exceptional-experiences/marina-bay-sands-architecture/_jcr_content/root/container/table/1-
+1/image.coreimg.jpeg/1692178839837/infinity-pool.jpeg  
+Acesso em: 05 ago 2025
+
+===== Pagina 20/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 20 
+ 
+QUESTÃO 19. Durante uma viagem internacional, dois casais de amigos — Mariana e Ronaldo, Karina e 
+Lucas — visitaram diferentes países. Ao retornarem, compartilharam entre si as construções que mais 
+chamaram a atenção: 
+ Figura 1: Habitat 67, em Montreal (Canadá) — conjunto habitacional formado por módulos cúbicos 
+empilhados. 
+ Figura 2: Universidade de Monterrey Campus Sinaloa, no México — edifício com formato de um 
+grande paralelepípedo. 
+ Figura 3: Cabana em forma de prisma triangular, situada nas montanhas do Colorado (EUA) — 
+estrutura que lembra um prisma triangular. 
+ Figura 4: Pirâmide de vidro do Louvre, em Paris (França) — famosa construção com forma de pirâmide 
+quadrangular. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Agora, observando os sólidos representados nas figuras, determine a fração correspondente entre o número 
+de vértices e o número de arestas de cada sólido, na ordem: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+A. (     ) 
+3
+2 ,
+2
+3 ,
+2
+3 e 
+5
+8 
+B. (     ) 
+2
+3 ,
+2
+3 ,
+2
+3 e 
+3
+4 
+C. (     ) 
+2
+3 ,
+2
+3 ,
+2
+3 e 
+5
+8 
+D. (     ) 
+3
+2 ,
+2
+3 ,
+5
+9 e 
+5
+8 
+E. (     ) 
+2
+3 ,
+3
+5 ,
+2
+3 e 
+1
+2 
+ 
+ 
+ 
+ 
+ 
+Figura 1 
+Figura 2 
+Figura 3 
+Figura 4 
+Figura 19 - Construções com formas geométricas pelo mundo 
+Disponível em: https://i0.wp.com/dzinetrip.com/wp-content/uploads/Habitat-67-Brutalist-Architecture-in-Montreal-by-Moshe-Safdie-05.jpg 
+https://pinturaspymasa.com.mx/wp-content/uploads/2023/10/Portada-PEIS-min.jpg 
+https://content.arquitecturaydiseno.es/medio/2022/05/30/04-colorado-villa-south-east-facade-dima-visualization_c7f2de86_1596x2000.jpg 
+https://img.freepik.com/fotos-premium/o-museu-do-louvre-em-paris-com-sua-iconica-piramide-de-vidro_36682-376309.jpg 
+Acesso em: 05 ago 2025
+
+===== Pagina 21/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 21 
+ 
+QUESTÃO 20. Durante uma viagem de pesquisa ambiental pela Costa Rica, Mariana e Ronaldo participaram 
+de um projeto para instalar acampamentos sustentáveis em áreas florestais preservadas. Eles foram responsáveis 
+por organizar um terreno retangular, cujo comprimento mede 22,5 metros e cuja largura corresponde a 
+7
+9 do 
+comprimento. Além disso, para evitar a entrada de animais silvestres, o instrutor local recomendou que o 
+cercamento fosse feito 12% maior que o perímetro do terreno, garantindo uma sobra para fixação da rede de 
+proteção. Quantos decâmetros (dam) de rede foram necessários para cercar completamente o terreno, 
+considerando a sobra recomendada? 
+A. (     ) 
+8 dam. 
+B. (     ) 
+8,96 dam. 
+C. (     ) 
+80 dam. 
+D. (     ) 
+89,6 dam. 
+E. (     ) 
+896 dam. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+FIM DA PROVA DE MATEMÁTICA
+
+===== Pagina 22/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 22 
+ 
+FOLHA DE RASCUNHO
+
+===== Pagina 23/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 23 
+ 
+ 
+ 
+MÚLTIPLA-ESCOLHA 
+Marque com um “X” a única opção que atende ao que é solicitado em cada questão. 
+ 
+Após a leitura do Texto 1, responda às questões de 21 a 28. 
+ 
+TEXTO 1 
+Água é fundamental para a vida, inclusive na alimentação 
+“A insegurança hídrica tem estreita relação com a insegurança alimentar, ou seja, há uma parcela expressiva 
+da população brasileira que tem fome e sede simultaneamente”, diz Pedro Jacobi 
+ 
+25/03/2024 
+Por Alessandra Ueno 
+ 
+ 
+A água está intrinsecamente ligada aos sistemas agroalimentares, já que a produção de 
+alimentos depende de uma boa quantidade de irrigação – Foto: feraugustodesign via Pixabay 
+ 
+Dia 22 de março é comemorado o Dia Mundial da Água e foi estabelecido pela Assembleia Geral da 
+Organização das Nações Unidas (ONU) em 1993. Porém, a relação desse líquido com a vida humana vai além 
+da simples ingestão e passa também pela produção de alimentos. 
+ 
+Crise hídrica 
+Cada lugar possui um índice pluviométrico diferente, isto é, o volume da chuva varia de acordo com 
+diversos fatores que incluem, além do geográfico, a presença ou não de vegetação natural, impacto da ação 
+humana, tratamento das águas, entre outros. Quando se pensa na intervenção do ser humano, outra palavra 
+recorrente é a escassez hídrica. “A partir do desmatamento nos biomas, dos processos de degradação dos solos, 
+da poluição atmosférica e das águas, todas condições comprometem as bacias hidrográficas fundamentais para 
+o consumo humano, ampliando os danos à saúde”, explica Pedro Jacobi, professor titular sênior do Programa 
+de Pós-Graduação em Ciência Ambiental do Instituto de Energia e Ambiente. 
+O poder público também tem responsabilidade nesse impacto: a má qualidade das águas dos rios por 
+falta de tratamento de esgoto doméstico e ocupação em áreas de mananciais, falta de planejamento para a 
+construção de novos reservatórios, falta de investimentos para a redução de perdas e falta de coordenação 
+institucional são alguns pontos elencados pelo professor.  
+PROVA DE LÍNGUA PORTUGUESA
+
+===== Pagina 24/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 24 
+ 
+Água e alimentação 
+A água está intrinsecamente ligada aos sistemas agroalimentares, já que a produção de alimentos 
+depende de uma boa quantidade de irrigação e até mesmo da água em si para os demais processos. No Brasil, 
+Jacobi comenta que, como a maior parte das terras agrícolas é irrigada sazonalmente, dependendo das chuvas, 
+situações de escassez hídrica decorrentes das mudanças climáticas são cada vez mais preocupantes. 
+Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), o setor agropecuário foi responsável 
+por 97,4% do consumo total de água no Brasil em 2017. “O setor agropecuário busca constantemente pela alta 
+produtividade, que promove a expansão das lavouras como as de soja e milho e dos espaços destinados à 
+pecuária, demandando a expansão da fronteira agrícola para regiões como a Amazônia e o Cerrado”, diz o 
+professor. A consequência disso é o desmatamento e as queimadas florestais, que não comprometem apenas a 
+região, mas também muitos outros locais que dependem da formação de chuvas.  
+Os reflexos desses problemas atingem tanto a quantidade quanto a qualidade das águas, o que, em cadeia, 
+afeta diretamente a produção de alimentos, com consequências para as populações vulneráveis socialmente. 
+“Os agricultores familiares são os mais duramente afetados, com a queda da qualidade das pastagens e da 
+produção agrícola, gerando endividamento que dificulta desenvolver os próximos plantios”, explica Jacobi.  
+ 
+Sede e fome 
+O Objetivo de Desenvolvimento Sustentável (ODS) 6 da ONU pretende “garantir a disponibilidade e a 
+gestão sustentável da água potável e do saneamento para todos”. A água é um direito universal reconhecido 
+pela ONU, mas ele não é cumprido integralmente. “Existe um dado para o qual não podemos deixar de olhar: a 
+insegurança hídrica tem estreita relação com a insegurança alimentar, ou seja, há uma parcela expressiva da 
+população brasileira que tem fome e sede simultaneamente, de acordo com relatório da Rede Brasileira de 
+Pesquisa em Soberania e Segurança Alimentar“, ressalta o professor. 
+Para tentar controlar a situação, Jacobi diz que o Brasil precisará ampliar os estoques de alimentos e 
+privilegiar culturas mais resistentes a secas, por causa das mudanças climáticas, além de difundir o nexo água, 
+energia e alimentação, já que a água é um eixo estruturador. “A partir daí, entende-se que a governança e gestão 
+da água devem ser integradas aos demais setores pelo seu papel fundamental para a produção de alimentos e 
+garantidor de energia devido à importância da hidroeletricidade no País.” 
+ 
+ 
+Disponível em: https://jornal.usp.br/radio-usp/agua-e-fundamental-para-a-vida-inclusive-na-alimentacao> Acesso em: 21 maio 2025. 
+ 
+ 
+QUESTÃO 21. Após a leitura, é possível concluir que a finalidade do Texto 1 é 
+A. (    ) indicar a importância da água para a vida humana e para os animais domésticos e silvestres. 
+B. (    ) demonstrar técnicas bem-sucedidas de irrigação utilizadas no agronegócio brasileiro. 
+C. (    ) mostrar a relevância da água para a vida humana e sua influência na produção de alimentos. 
+D. (    ) provar que a crise hídrica é causada pela falta de chuvas em certas regiões do planeta. 
+E. (    ) incentivar o consumo de alimentos que utilizem menos água em sua produção.
+
+===== Pagina 25/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 25 
+ 
+QUESTÃO 22. Ao analisar o título do Texto 1, é possível substituir a palavra “fundamental”, mantendo as 
+mesmas relações de sentido do contexto, por: 
+ 
+A. (    ) potável. 
+B. (    ) finita. 
+C. (    ) insubstituível. 
+D. (    ) básica. 
+E. (    ) útil. 
+ 
+QUESTÃO 23. O Texto 1 possui 8 parágrafos. Os fatores que influenciam a variação da disponibilidade da 
+água estão presentes em qual parágrafo do Texto 1? 
+ 
+A. (    ) 2º parágrafo. 
+B. (    ) 4º parágrafo. 
+C. (    ) 5º parágrafo. 
+D. (    ) 6º parágrafo. 
+E. (    ) 8º parágrafo. 
+ 
+QUESTÃO 24. Em “A insegurança hídrica tem estreita relação com a insegurança alimentar, ou seja, há uma 
+parcela expressiva da população brasileira que tem fome e sede simultaneamente” (Texto 1), a expressão 
+destacada apresenta sentido oposto a: 
+ 
+A. (    ) grande parte. 
+B. (    ) porção insignificante. 
+C. (    ) parte considerável. 
+D. (    ) percentagem importante. 
+E. (    ) quantidade relevante. 
+ 
+QUESTÃO 25. No fragmento “A insegurança hídrica tem estreita relação com a insegurança alimentar, ou 
+seja, há uma parcela expressiva da população brasileira que tem fome e sede simultaneamente” (Texto 1), a 
+palavra destacada possui sentido oposto a: 
+ 
+A. (    ) ao mesmo tempo. 
+B. (    ) sincronicamente. 
+C. (    ) concomitantemente. 
+D. (    ) assincronicamente. 
+E. (    ) em conjunto.
+
+===== Pagina 26/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 26 
+ 
+QUESTÃO 26. No início do 8º parágrafo do Texto 1, em “Para tentar controlar a situação”, a expressão 
+destacada retoma: 
+ 
+A. (    ) “[...] queda da qualidade das pastagens e da produção agrícola [...]” (6º parágrafo) 
+B. (    ) “A água é um direito universal reconhecido pela ONU”. (7º parágrafo) 
+C. (    ) “Os reflexos desses problemas atingem tanto a quantidade quanto a qualidade das águas.” (6º 
+parágrafo) 
+D. (    ) “Os agricultores familiares são os mais duramente afetados.” (6º parágrafo) 
+E. (    ) “[...] a insegurança hídrica tem estreita relação com a insegurança alimentar”. (7º parágrafo) 
+ 
+QUESTÃO 27. Assinale a alternativa em que o uso da vírgula segue a mesma justificativa gramatical do 
+fragmento “Cada lugar possui um índice pluviométrico diferente, isto é, o volume da chuva varia de acordo 
+com diversos fatores [...]” (Texto 1).  
+ 
+A. (    ) “[...] o Brasil precisará ampliar os estoques de alimentos e privilegiar culturas mais resistentes a secas, 
+por causa das mudanças climáticas, além de difundir o nexo água, energia e alimentação.” 
+B. (    )  “A água é um direito universal reconhecido pela ONU, mas ele não é cumprido integralmente.”  
+C. (    )  “ [...] a insegurança hídrica tem estreita relação com a insegurança alimentar, ou seja, há uma parcela 
+expressiva da população brasileira que tem fome e sede simultaneamente [...]” 
+D. (    ) “Porém, a relação desse líquido com a vida humana vai além da simples ingestão e passa também 
+pela produção de alimentos.” 
+E. (    )  “Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), o setor agropecuário foi 
+responsável por 97,4% do consumo total de água no Brasil em 2017.” 
+ 
+QUESTÃO 28. No trecho “A partir do desmatamento nos biomas, dos processos de degradação dos solos, da 
+poluição atmosférica e das águas, todas as condições comprometem as bacias hidrográficas [...]” (Texto 1), 
+sobre o processo de formação da palavra destacada, assinale a alternativa correta.  
+ 
+A. (    ) Formada por derivação parassintética, pois anexa simultaneamente prefixo e sufixo ao radical. 
+B. (    ) Formada por derivação sufixal, pois o sufixo “-mento” foi acrescentado a uma base. 
+C. (    ) Formada por derivação prefixal, pois o prefixo “des-” foi juntado à palavra “mato”. 
+D. (    ) Composta por aglutinação, pois une dois vocábulos a um mesmo radical. 
+E. (    ) Composta por justaposição, pois une dois afixos sem alterar a estrutura.
+
+===== Pagina 27/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 27 
+ 
+Após a leitura do Texto 2, responda às questões de 29 a 31. 
+TEXTO 2 
+ 
+Disponível em: <https:// https://www.tumblr.com/tirasarmandinho/tagged/%C3%A1gua>. Acesso em: 04 jun 2025. 
+QUESTÃO 29. Sobre a temática da tirinha (Texto 2), é possível concluir que  
+A. (    ) ambos chegam a um consenso: água e amor são essenciais à vida.  
+B. (    ) ambas as prioridades (a do filho e a do pai) são idênticas. 
+C. (    ) o filho concorda com o pai: a água é essencial à vida. 
+D. (    ) o pai concorda com a resposta dada pelo filho na prova. 
+E. (    ) as prioridades do filho são diferentes das prioridades do pai. 
+ 
+QUESTÃO 30. Quanto à classe gramatical, as palavras “ESSENCIAL” (1º quadrinho), “VOCÊ” (1º 
+quadrinho), “ÓBVIO” (2º quadrinho), “ÁGUA” (2º quadrinho) e “AMOR” (3º quadrinhos) do Texto 2 são, 
+respectivamente: 
+ 
+A. (    ) substantivo, pronome demonstrativo, adjetivo, substantivo, adjetivo.  
+B. (    ) adjetivo, pronome pessoal, adjetivo, substantivo, substantivo. 
+C. (    ) adjetivo, pronome possessivo, substantivo, adjetivo, adjetivo. 
+D. (    ) substantivo, pronome pessoal, adjetivo, substantivo, adjetivo. 
+E. (    ) adjetivo, pronome possessivo, adjetivo, pronome pessoal, substantivo. 
+ 
+QUESTÃO 31. Em “COMO VOCÊ CONSEGUIU ERRAR ESSA?” (Texto 2), a palavra destacada é um 
+pronome __________________, que se refere a _____________________. 
+ 
+A. (    ) demonstrativo – um questionamento da prova 
+B. (    ) pessoal do caso reto – uma resposta do pai 
+C. (    ) possessivo – um questionamento do professor 
+D. (    ) demonstrativo – um pedido do pai 
+E. (    ) possessivo – uma resposta do aluno
+
+===== Pagina 28/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 28 
+ 
+Após a leitura dos Textos 2 e 3, responda à questão 32. 
+TEXTO 3 
+ 
+Disponível em: <https://br.pinterest.com/pin/486599934723292830/>. Acesso em: 21 mai 2025. 
+ 
+QUESTÃO 32. Levando em conta os temas “água” e “amor”, presentes nos Textos 2 e 3, o 3º quadrinho do 
+Texto 2, materializa-se por meio da linguagem verbal e não verbal no ____ quadrinho do Texto 3. 
+A. (    ) 1º 
+B. (    ) 3º 
+C. (    ) 5º 
+D. (    ) 6º 
+E. (    ) 8º
+
+===== Pagina 29/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 29 
+ 
+Após a leitura do Texto 4, responda às questões de 33 a 35. 
+TEXTO 4 
+Planeta Água 
+ 
+Guilherme Arantes 
+ 
+Água que nasce na fonte serena do mundo 
+E que abre um profundo grotão 
+Água que faz inocente riacho e deságua 
+Na corrente do ribeirão. 
+ 
+Águas escuras dos rios 
+Que levam a fertilidade ao sertão 
+Águas que banham aldeias 
+E matam a sede da população. 
+ 
+Águas que caem das pedras 
+No véu das cascatas, ronco de trovão 
+E depois dormem tranquilas 
+No leito dos lagos (no leito dos lagos) 
+No leito dos lagos. 
+ 
+Água dos igarapés 
+Onde Iara, a mãe d'água, é misteriosa canção 
+Água que o sol evapora 
+Pro céu vai embora, virar nuvens de algodão. 
+ 
+Gotas de água da chuva 
+Alegre arco-íris, sobre a plantação 
+Gotas de água da chuva 
+Tão tristes, são lágrimas na inundação. 
+ 
+Águas que movem moinhos 
+São as mesmas águas que encharcam o chão 
+E sempre voltam humildes pro fundo da terra 
+Pro fundo da terra. 
+ 
+Terra! Planeta Água 
+Terra! Planeta Água 
+Terra! Planeta Água 
+Disponível em: <https://www.letras.mus.br>. Acesso em: 11 jun 2025. (Adaptado)
+
+===== Pagina 30/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 30 
+ 
+QUESTÃO 33. Leia o trecho abaixo da canção “Planeta Água” (Texto 4): 
+ 
+“Gotas de água da chuva 
+Alegre arco-íris, sobre a plantação 
+Gotas de água da chuva 
+Tão tristes, são lágrimas na inundação.” 
+ 
+Levando em conta que a água se manifesta na natureza de diferentes formas, já que, em alguns 
+momentos, ela é vista como fonte de alegria e vida e, em outros, pode causar tristeza e destruição, o que o trecho 
+em destaque revela? 
+ 
+A. (    ) Mostra que a chuva, mesmo durante a inundação, pode trazer beleza e emoção. 
+B. (    ) Expressa a tristeza causada pela enchente, como se alguém estivesse chorando. 
+C. (    ) Destaca que as gotas da chuva são tão leves quanto as lágrimas das pessoas. 
+D. (    ) Explica que a chuva e as lágrimas são elementos da água com a mesma origem. 
+E. (    ) Revela que as chuvas são tão importantes quanto as lágrimas das pessoas. 
+ 
+QUESTÃO 34. No contexto do trecho “Águas que movem moinhos / São as mesmas águas que encharcam o 
+chão” (Texto 4), há uma oposição de ideias. Com base nessa oposição, qual é o efeito de sentido produzido 
+pelo uso das palavras destacadas? 
+ 
+A. (    ) Indicar que a água tem sempre o mesmo papel, sem mudanças e interferências. 
+B. (    ) Destacar que a água só serve para mover as coisas, não tirando nada do lugar. 
+C. (    ) Mostrar que a água pode ser útil em algumas situações e prejudicial em outras. 
+D. (    ) Dizer que “movem” e “encharcam” têm o mesmo sentido e repetem uma ideia. 
+E. (    ) Apresentar relação de semelhança de sentido entre elas, já que são sinônimas. 
+ 
+QUESTÃO 35. As palavras “céu”, “igarapés” e “lágrimas”, no Texto 4, são acentuadas pelas regras de: 
+ 
+A. (    ) monossílabos átonos terminados em ditongo aberto “éu”, oxítonas, paroxítonas.  
+B. (    ) monossílabos átonos terminados em ditongo aberto “éu”, paroxítonas, proparoxítonas. 
+C. (    ) monossílabos tônicos terminados em ditongo aberto “éu”, proparoxítonas e oxítonas. 
+D. (    ) monossílabos tônicos terminados em ditongo aberto “éu”, oxítonas, proparoxítonas. 
+E. (    ) monossílabos tônicos terminados em ditongo aberto “éu”, paroxítonas, paroxítonas.
+
+===== Pagina 31/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 31 
+Após a leitura do Texto 5, responda às questões de 36 a 38. 
+TEXTO 5 
+ 
+Disponível em: <https://www.tumblr.com/tirasarmandinho/tagged/%C3%A1gua>. Acesso em: 04 jun 2025. 
+ 
+QUESTÃO 36. No Texto 5, Armandinho afirma: “A SOLUÇÃO CAIU DO CÉU”. Considerando as linguagens 
+verbal e não verbal, presentes na tirinha, o que podemos inferir sobre a dinâmica familiar na casa da menina? 
+ 
+A. (    ) Há a utilização da água de rios, embora ela more na cidade. 
+B. (    ) Há um poço artesiano, por isso não falta água. 
+C. (    ) Há um sistema de aproveitamento das águas fluviais. 
+D. (    ) Há um sistema de captação das águas pluviais. 
+E. (    ) Há caixas d’água, que são abastecidas por uma empresa. 
+ 
+QUESTÃO 37. Na tirinha (Texto 5), os personagens discutem a falta de água e apresentam uma solução 
+alternativa. Em relação às formas verbais presentes no texto, assinale a alternativa correta. 
+ 
+A. (    )  “Faltou” e “caiu” estão no pretérito perfeito do indicativo, indicando ações concluídas no passado. 
+B. (    )  “Temos” está no pretérito imperfeito do indicativo, sugerindo uma ação habitual no passado. 
+C. (    )  “Diria” está no modo subjuntivo, expressando uma hipótese irreal. 
+D. (    )  “Caiu” está no presente do indicativo, expressando uma ação habitual. 
+E. (    ) “Temos” e “diria” estão ambos no modo subjuntivo, expressando dúvida ou desejo. 
+ 
+QUESTÃO 38. Leia, atentamente, o 3° quadrinho da tirinha (Texto 5) e assinale a alternativa correta quanto 
+ao uso das reticências. 
+ 
+A. (    ) Marcam um chamamento dos personagens envolvidos na tirinha. 
+B. (    ) Marcam o fim de uma frase, sugerindo prolongamento da ideia. 
+C. (    ) Marcam uma enumeração não exaustiva e repetitiva no diálogo. 
+D. (    ) Marcam supressão de palavra(s) na fala do personagem da tira. 
+E. (    ) Marcam, no meio da frase, breve interrupção do pensamento.
+
+===== Pagina 32/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 32 
+ 
+Após a leitura do Texto 6, responda às questões 39 e 40. 
+TEXTO 6 
+ 
+ 
+ 
+Disponível em: <https://br.pinterest.com/pin/839076974318645267/>. Acesso em: 04 jun 2025. 
+ 
+QUESTÃO 39. Após análise da charge, é possível concluir que o tema principal do Texto 6 é: 
+ 
+A. (    ) falta d’água. 
+B. (    ) verão. 
+C. (    ) desmatamento. 
+D. (    ) seca. 
+E. (    ) reflorestamento. 
+ 
+QUESTÃO 40. Ao observar as linguagens verbal e não verbal do Texto 6, constata-se que a ironia presente no 
+texto se deve ao fato de: 
+ 
+A. (    ) as árvores terem secado e caído, devido ao calorão excessivo na floresta. 
+B. (    ) não haver nenhuma garrafa d’água na imagem, o que revela a seca no local. 
+C. (    ) os lenhadores estarem sentindo-se satisfeitos, por terem concluído seu trabalho. 
+D. (    ) à medida que o tempo passa, o sol estar ficando cada vez mais quente e nocivo. 
+E. (    ) os homens terem cortado todas as árvores e estarem sentindo falta de sombra. 
+ 
+ 
+FIM DA PROVA DE LÍNGUA PORTUGUESA
+
+===== Pagina 33/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 33 
+ 
+ 
+ 
+ 
+Analise os textos I, II e III. Eles tratam sobre temas relacionados ao texto que você irá produzir. 
+ 
+TEXTO I 
+ 
+ 
+ 
+Disponível em: <https://br.pinterest.com/pin/781937554094874691/>. Acesso em: 05 ago 2025. 
+ 
+ 
+ 
+TEXTO II 
+ 
+ 
+ 
+Disponível em: <https://www.tumblr.com/tirasarmandinho/tagged/%C3%A1gua>. Acesso em: 05 ago 2025. 
+ 
+PROVA DE PRODUÇÃO TEXTUAL
+
+===== Pagina 34/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 34 
+ 
+TEXTO III 
+ 
+Disponível em: 
+<https://www.facebook.com/photo.php?fbid=839617286059664&id=558341120853950&set=a.558597987494930>. 
+Acesso em: 05 ago 2025.
+
+===== Pagina 35/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 35 
+ 
+Imagine que a água se tornou um recurso muito escasso, devido às situações de desperdício e falta de 
+cuidado, apresentadas nos textos acima. Diante desse cenário, a sociedade precisa se unir para evitar uma crise 
+hídrica ainda maior. É nesse contexto que surge a história de uma criança (personagem principal) que decide 
+agir para proteger esse bem tão essencial à vida. 
+ Com base na situação apresentada, escreva um texto narrativo, contextualizando atitudes que podem 
+levar à falta d’ água. Nessa narrativa, o personagem principal apresenta uma solução importante para 
+economizar água e evitar a falta dela, inspirando outras pessoas a fazerem o mesmo.  
+ 
+Para escrever sua produção textual, atente-se para as seguintes orientações: 
+ compreender a proposta de produção textual desenvolvendo o tema solicitado com criatividade; 
+ produzir o texto em prosa, com todos os elementos da narrativa necessários ao desenvolvimento 
+do tema; 
+ respeitar as normas da modalidade escrita da Língua Portuguesa; 
+ escrever o texto em terceira pessoa; 
+ observar a coesão e a coerência textuais; 
+ delimitar a paragrafação e as margens; 
+ utilizar letra legível; 
+ usar quaisquer dos tipos de discurso (direto, indireto e/ou indireto livre); 
+ escrever no mínimo 15 e no máximo 30 linhas; 
+ elaborar um título coerente com a narrativa. 
+ 
+OBSERVAÇÕES: 
+ Os textos desta prova, ou mesmo parte deles, não poderão ser transcritos pelo candidato na 
+produção textual. 
+ O candidato que fugir ao tema ou à tipologia textual solicitados será considerado INAPTO. 
+ Será exigida a observância pelo candidato da ortografia vigente da Língua Portuguesa. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+FIM DA PROVA DE PRODUÇÃO TEXTUAL
+
+===== Pagina 36/36 =====
+(Provas de Matemática, Língua Portuguesa e Produção Textual do Processo Seletivo ao 6º ANO do CMB – 2025/2026) 
+ 
+Página 36 
+ 
+                           
+ 
+ESPAÇO DESTINADO À ELABORAÇÃO DO RASCUNHO 
+ 
+__________________________________________ 
+ 
+01. 
+ 
+ 
+ 
+05. 
+ 
+ 
+ 
+ 
+10. 
+ 
+ 
+ 
+ 
+15. 
+ 
+ 
+ 
+ 
+20. 
+ 
+ 
+ 
+ 
+25. 
+ 
+ 
+ 
+ 
+30. 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________ 
+_________________________________________________________________________

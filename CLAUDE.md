@@ -1,0 +1,33 @@
+# CLAUDE.md — Estudo CMB (6º ano)
+
+Plano de estudo para uma criança que presta o **Concurso de Admissão ao 6º ano do
+Colégio Militar de Brasília** em **18/10/2026** (domingo). Projeto pessoal do Diogo —
+**não é Belo Coffee nem UCS**; nada daqui vai para nenhum repositório dos dois negócios.
+
+## Idioma
+Sempre responder em português brasileiro.
+
+## Ao abrir uma sessão aqui
+1. Ler `progress.md` (estado atual e próximo passo) antes de responder qualquer coisa.
+2. Ler `PLANO.md` (desenho aprovado + critério de "pronto" de cada fase).
+
+## Quem usa o quê
+- **A criança** usa **só** `roteiro/index.html` — sozinha, sem adulto por perto.
+- **Diogo** prepara o material com o Claude e manda as redações dela para correção.
+- `pesquisa/` é a "cozinha": nunca é mostrada à criança.
+
+## Regras do material
+- Linguagem de criança de 10 anos em tudo que vai para o roteiro.
+- Teoria em vídeo: **Khan Academy primeiro**; YouTube só onde a Khan não tem (Português, redação).
+- **Nada fora do programa do edital** — não inventar assunto, dica ou exigência que não esteja na fonte.
+- Todo link é testado antes de entrar (abre, é o assunto certo, duração anotada).
+- Toda tarefa tem "como sei que terminei" (gabarito ou autocorreção).
+- Não registrar nome nem dados pessoais da criança em nenhum arquivo.
+
+## Freios (risco baixo: não gasta dinheiro, não fala com terceiros)
+- Checagem automática de links antes de entregar o roteiro.
+- Revisão do roteiro por agente separado antes de ir para a criança.
+
+## Git e publicação
+Repo **público** `diogobr23/estudo-cmb`, publicado no GitHub Pages (a página da criança e as provas em PDF ficam acessíveis pela URL).
+⚠️ Por ser público: **nenhum dado da criança** aqui — nem nome, nem foto, nem redação. `.gitignore` bloqueia fotos e a pasta `redacoes/`; redações corrigidas ficam fora do repo.
