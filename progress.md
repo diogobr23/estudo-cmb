@@ -26,6 +26,7 @@
 - Ressalvas dos leitores: 2020 Q3 e Q5 anuladas; 2021 Q12 provável erro de enunciado; 2024 Q13 com duas alternativas verdadeiras (gabarito D). Evitar essas questões no banco.
 
 ## Decisões
+- 21/09: fórmulas desenhadas com **KaTeX 0.18.7 auto-hospedado** em `roteiro/vendor/katex/` (sem CDN; funciona no Pages e offline). Antes de publicar: `node roteiro/check_katex.js` (valida toda fórmula `\( \)` / `\[ \]` da página). Pedido do Diogo: fração desenhada, contas em pé, formatação melhor.
 - 21/09: formato A (página única com cards). Khan Academy primeiro, YouTube só onde faltar.
 - 21/09: criança estuda sozinha; redação corrigida pelo Claude via foto enviada pelo Diogo.
 - 21/09: peso da frequência = principal 1 + secundário 0,5 (assunto "de carona" conta metade).
