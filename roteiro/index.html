@@ -18,6 +18,8 @@
   .como ol { margin:6px 0 0 18px; padding:0 }
   .dia { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; margin-bottom:16px }
   .dia h2 { margin:0; font-size:20px } .dia .quando { color:var(--muted); font-size:15px; margin:2px 0 10px }
+  .tag.port { background:#7048b0 } .tag.sim { background:#c0392b } .tag.red { background:#b7770d } .tag.rev { background:#2f9e44 }
+  .res u { text-decoration:underline; font-weight:600 }
   .tag { display:inline-block; font-size:13px; font-weight:700; color:#fff; background:var(--mat); border-radius:6px; padding:2px 8px; margin-left:6px; vertical-align:middle }
   .passo { display:flex; gap:12px; align-items:flex-start; padding:10px 0; border-top:1px dashed var(--line) }
   .passo input { width:26px; height:26px; margin:2px 0 0; flex:none; accent-color:var(--ok) }
@@ -63,7 +65,7 @@
   <div class="como">
     <b>Como funciona</b>
     <ol>
-      <li>Cada dia tem 5 passos. Faz na ordem e <b>marca a caixinha</b> quando terminar.</li>
+      <li>Cada dia tem de 4 a 6 passos. Faz na ordem e <b>marca a caixinha</b> quando terminar. Dias de <span class="tag">Matemática</span> usam a Khan Academy; dias de <span class="tag port">Português</span> usam vídeos do YouTube (pula os anúncios). Sábado é <span class="tag sim">Simulado</span> (uma prova antiga inteira) e domingo é <span class="tag red">Redação</span>.</li>
       <li>Antes de cada passo, põe um <b>timer no celular</b> com os minutos que estão entre parênteses.</li>
       <li>Nos exercícios da Khan ("Pratique"), faz o bloco <b>inteiro</b> até aparecer a tela de resultado (tipo "Você acertou 5 de 7"). Acertou menos da metade? Faz de novo. Errar faz parte do treino.</li>
       <li>Se aparecer uma janela pedindo pra entrar ou criar conta, fecha no X e continua.</li>
@@ -253,6 +255,170 @@
     <div class="passo"><input type="checkbox" id="d3p5"><label for="d3p5">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
     <div class="dica"><b>Dica do dia 3</b>\(10\%\) é dividir por 10. \(5\%\) é a metade de \(10\%\). \(1\%\) é dividir por 100. Com esses três eu monto quase tudo: \(15\% = 10\% + 5\%\) e \(12\% = 10\% + 1\% + 1\%\).</div>
     <p class="prog" id="prog3"></p>
+  </section>
+
+  <!-- DIA 4 -->
+  <section class="dia" data-dia="4">
+    <h2>Dia 4 — Ler texto de prova <span class="tag port">Português</span></h2>
+    <p class="quando">quinta, 24/09 · ⏱ mais ou menos 1 hora</p>
+
+    <div class="passo"><input type="checkbox" id="d4p1"><label for="d4p1">🎬 <b>Assiste</b> (13 min):
+      <a href="https://www.youtube.com/watch?v=fofmRWU3EhU" target="_blank">Interpretação de texto — 5º ano (MultiRio)</a>.
+      <div class="t">Português não tem Khan, então os vídeos são do YouTube. Se aparecer anúncio, pula. Presta atenção em COMO se acha a resposta dentro do texto.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d4p2"><label for="d4p2">📖 <b>Lê o texto com lápis na mão</b> (10 min):
+      abre a <a href="../pesquisa/provas/2020-prova.pdf#page=14" target="_blank">prova de 2020 na página 14</a> → <b>Texto 1: "Quem são os heróis?"</b>.
+      <div class="t">Lê duas vezes. Na segunda, sublinha o nome de cada herói e de quem ele é filho — a prova adora perguntar isso. Repara também no subtítulo em itálico, logo abaixo do título.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d4p3"><div class="corpo"><label for="d4p3">📝 <b>Questões do CMB de verdade</b> (25 min):
+      na <a href="../pesquisa/provas/2020-prova.pdf#page=15" target="_blank">página 15</a> → <b>Questões 13, 14 e 15</b> (as três são sobre o Texto 1).
+      <div class="t">Regra de ouro: pra CADA alternativa, volta no texto e acha a linha que confirma ou desmente. A certa tem prova no texto; a errada troca um nome ou uma palavrinha. Marca no caderno e só depois abre as respostas.</div></label>
+      <details><summary>Ver respostas</summary>Questão 13 = <b>C</b> · Questão 14 = <b>D</b> · Questão 15 = <b>D</b></details>
+      <details class="res"><summary>Resolução da Questão 13 (o que o texto diz)</summary>
+  <div class="quer">🎯 O que ela quer: qual frase está escrita <b>do jeito que o texto diz</b>. É a questão mais "fácil" de interpretação: caça de informação.</div>
+  <div class="passo-r"><span class="n">A</span><div>"Hércules governava o Olimpo"? Linhas 6–7: quem governava o Olimpo era <b>Zeus</b>, o pai dele. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>"Jasão era herói imortal"? Linha 13: Jasão é dos "heróis nascidos apenas de mortais" — e o texto diz que todos os heróis eram mortais. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>Linhas 8–9: "Outros tinham raras habilidades, caso de Orfeu (filho do deus Apolo e da musa Clio)". Tudo bate. <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>"Apolo, filho de Orfeu"? Está ao contrário: Orfeu é que é filho de Apolo. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>"Anquises, filho de Eneias"? Ao contrário de novo: Eneias é filho de Anquises (linha 10). <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra C</div>
+  <div class="atalho">💡 <b>Truque:</b> três alternativas erradas só <b>trocaram pai por filho</b>. Quando a alternativa fala "X, filho de Y", volta no texto e confere quem é filho de quem.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> ler rápido, ver nomes conhecidos e marcar. A prova conta com isso.</div>
+</details>
+      <details class="res"><summary>Resolução da Questão 14 (o que dá pra concluir)</summary>
+  <div class="quer">🎯 O que ela quer: "é possível concluir que…" = a frase que combina com <b>tudo</b> que o texto diz, sem exagerar nem inventar.</div>
+  <div class="passo-r"><span class="n">A</span><div>"Os heróis são imortais"? Linhas 17–18: "todos os semideuses e heróis eram mortais". <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>"Mortais, portanto iguais aos humanos"? Linhas 4–5: eles tinham "poderes bem maiores do que os seres humanos comuns". <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>"Apolo é um herói"? Apolo é <b>deus</b> (pai do Orfeu), não herói. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>Hércules é imortal (linhas 18–19: "ganhou o dom da imortalidade… indo morar no monte Olimpo") e tem poderes maiores (é semideus). <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>"Hércules, assim como os demais heróis, é mortal"? O subtítulo já avisa: "não são imortais, <b>com exceção de Hércules</b>!". Ele é a exceção. <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra D</div>
+  <div class="atalho">💡 <b>Truque:</b> o subtítulo em itálico (abaixo do título) resume o texto inteiro. Lê ele com atenção: aqui ele matava a questão.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> marcar E porque leu "todos eram mortais" e parou. Hércules <b>era</b> mortal e <b>virou</b> imortal depois que morreu.</div>
+</details>
+      <details class="res"><summary>Resolução da Questão 15 (essa palavra aponta pra quê?)</summary>
+  <div class="quer">🎯 O que ela quer: em cada frase há uma palavra sublinhada (que, isso, nosso, seu, com). A pergunta é: <b>ela está no lugar de quê?</b> Só uma alternativa explica certo.</div>
+  <div class="passo-r"><span class="n">A</span><div>"pessoas que são dotadas de rara coragem e <u>que</u> enfrentaram…" — o "que" está no lugar de <b>pessoas</b>, não de "heróis". <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>"filhos de um deus com um mortal, e <u>isso</u> os fazia possuir poderes" — o "isso" é ser filho <b>de um deus</b> com um mortal. A alternativa cortou a parte do deus. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>"o <u>nosso</u> Hércules" — é o Hércules que nós conhecemos, jeito carinhoso de puxar o leitor pra perto. Não tem nada de "submissão". <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>"Orfeu…, o qual, com <u>seu</u> canto maravilhoso, acalmava os mares" — canto de quem? De <b>Orfeu</b>. <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>"indo morar no monte Olimpo <u>com</u> os outros deuses" — "com" aqui é <b>companhia</b> (junto com eles), não modo. <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra D</div>
+  <div class="atalho">💡 <b>Truque:</b> pra descobrir o que "seu/sua/dele" retoma, pergunta "<b>de quem?</b>" e procura o dono, que quase sempre apareceu pouco antes na frase.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> aceitar a alternativa pela metade (a B tem um pedaço certo). Compara a frase inteira com o texto.</div>
+</details></div></div>
+
+    <div class="passo"><input type="checkbox" id="d4p4"><label for="d4p4">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
+    <div class="dica"><b>Dica do dia 4</b>Resposta de interpretação tem <b>prova no texto</b>. Antes de marcar, acho a linha que confirma. Se não acho, não marco. E nas alternativas eu caço a palavrinha trocada: pai ↔ filho, mortal ↔ imortal, todos ↔ alguns.</div>
+    <p class="prog" id="prog4"></p>
+  </section>
+
+  <!-- DIA 5 -->
+  <section class="dia" data-dia="5">
+    <h2>Dia 5 — Vírgula e pontuação <span class="tag port">Português</span></h2>
+    <p class="quando">sexta, 25/09 · ⏱ mais ou menos 1 hora</p>
+
+    <div class="passo"><input type="checkbox" id="d5p1"><label for="d5p1">🎬 <b>Assiste</b> (9 min):
+      <a href="https://www.youtube.com/watch?v=QF2mOxPXW6Y" target="_blank">A vírgula — para crianças (5 min)</a>
+      e depois <a href="https://www.youtube.com/watch?v=BqjqKBWbCRg" target="_blank">Sinais de pontuação: dois-pontos, exclamação… (3 min)</a>.
+      <div class="t">Vírgula cai em TODAS as provas do CMB (1 a 3 questões). Vale muito.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d5p2"><label for="d5p2">📖 <b>Lê o texto com lápis na mão</b> (10 min):
+      abre a <a href="../pesquisa/provas/2020-prova.pdf#page=16" target="_blank">prova de 2020 na página 16</a> → <b>Texto 2: "Artur torna-se rei"</b> (continua na página 17).
+      <div class="t">Lê uma vez inteira, como uma história. Depois circula as vírgulas do 7º parágrafo ("Os adolescentes, zombeteiros, olhavam…") — a questão 17 é sobre isso.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d5p3"><div class="corpo"><label for="d5p3">📝 <b>Questões do CMB de verdade</b> (25 min):
+      na <a href="../pesquisa/provas/2020-prova.pdf#page=17" target="_blank">página 17</a> → <b>Questões 16 e 17</b>; na <a href="../pesquisa/provas/2020-prova.pdf#page=18" target="_blank">página 18</a> → <b>Questão 19</b>.
+      <div class="t">Pula a 18: o gabarito dela foi trocado depois da prova e só confunde. Na 17, o teste é ler a frase <b>com</b> e <b>sem</b> a vírgula: o sentido mudou?</div></label>
+      <details><summary>Ver respostas</summary>Questão 16 = <b>E</b> · Questão 17 = <b>C</b> · Questão 19 = <b>B</b></details>
+      <details class="res"><summary>Resolução da Questão 16 (que tipo de texto é cada um)</summary>
+  <div class="quer">🎯 O que ela quer: comparar o Texto 1 (heróis, de ontem) com o Texto 2 (Artur). Que tipo de texto é cada um?</div>
+  <div class="passo-r"><span class="n">1</span><div>Texto 1 <b>explica</b> quem são os heróis: não tem história, tem informação. Isso é texto <b>expositivo</b> (expõe, informa).</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Texto 2 <b>conta uma história</b>: personagens (Artur, Merlim), lugar (Logres), tempo (Natal), acontecimentos (a espada na pedra). Isso é texto <b>narrativo</b>.</div></div>
+  <div class="passo-r"><span class="n">3</span><div><div class="alt"><b class="x">A ✘</b> os dois narrativos? O Texto 1 não conta história · <b class="x">B ✘</b> Texto 2 "não ficcional"? É lenda, ficção · <b class="x">C ✘</b> Texto 1 "histórico, com situações reais"? É mitologia · <b class="x">D ✘</b> Texto 1 "argumentativo, provas de que Hércules existiu"? Ele não tenta convencer ninguém · <b class="v">E ✔</b> Texto 1 é expositivo: apresenta informações sobre um grupo de seres mitológicos.</div></div></div>
+  <div class="resp">✅ Resposta: letra E</div>
+  <div class="atalho">💡 <b>Cola:</b> <b>narrativo</b> = narra (conta o que aconteceu, tem personagem e tempo) · <b>expositivo</b> = expõe (explica, informa) · <b>argumentativo</b> = argumenta (quer te convencer de uma opinião).</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> achar que todo texto sobre herói é narrativo. O assunto não decide o tipo — o jeito de escrever decide.</div>
+</details>
+      <details class="res"><summary>Resolução da Questão 17 (a vírgula que muda o sentido)</summary>
+  <div class="quer">🎯 O que ela quer: em qual frase, se você <b>tirar</b> a vírgula, o sentido <b>muda</b>? Testa uma por uma, lendo sem a vírgula.</div>
+  <div class="passo-r"><span class="n">A</span><div>"O rei ficou sem herdeiro e uma terra sem senhor não vale grande coisa" — mesma ideia, só ficou mais corrido. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>"Merlim respondeu depois de muito pensar" — mesma coisa. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div><b>Com</b> vírgulas: "Os adolescentes, zombeteiros, olhavam…" = <b>todos</b> os adolescentes olhavam, e eles eram zombeteiros (é uma explicação extra sobre eles). <b>Sem</b> vírgulas: "Os adolescentes zombeteiros olhavam…" = <b>só os zombeteiros</b> olhavam, como se existissem adolescentes que não eram. O sentido mudou! <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>"Os grão-senhores após se recuperarem de sua surpresa resmungaram" — mesma ideia. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>"a paz a lealdade e a justiça" — é uma lista; sem vírgula fica feio de ler, mas continua sendo a mesma lista de três coisas. <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra C</div>
+  <div class="atalho">💡 <b>Truque que vale toda prova:</b> uma palavra <b>entre duas vírgulas</b> é explicação extra sobre TODOS ("Os alunos, cansados, dormiram" = todos estavam cansados). Sem vírgula, ela <b>separa um grupo</b> ("Os alunos cansados dormiram" = só os cansados). É exatamente essa a vírgula que o CMB cobra todo ano.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> olhar as alternativas sem ler a frase de novo sem a vírgula. Lê baixinho as duas versões.</div>
+</details>
+      <details class="res"><summary>Resolução da Questão 19 (causa e consequência)</summary>
+  <div class="quer">🎯 O que ela quer: uma frase que tenha um <b>motivo</b> (causa) e, depois, o <b>resultado</b> (consequência), nessa ordem.</div>
+  <div class="passo-r"><span class="n">1</span><div>Teste rápido: dá pra trocar por "<b>porque… então…</b>"? Só a B: "<u>como</u> não conseguiram chegar a um acordo" (= <b>porque</b> não conseguiram: a causa) → "foram aconselhar-se com Merlim" (o resultado). <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">2</span><div>As outras: <div class="alt"><b class="x">A ✘</b> "que o criava como se fosse seu filho" — "como" aqui é <b>comparação</b> (igual a um filho) · <b class="x">C ✘</b> um pedido e uma confiança, sem "porque" nenhum · <b class="x">D ✘</b> os dois-pontos só anunciam a frase gravada na espada · <b class="x">E ✘</b> "brilhava como um punhado de velas" — comparação de novo.</div></div></div>
+  <div class="resp">✅ Resposta: letra B</div>
+  <div class="atalho">💡 <b>Truque:</b> "como" no <b>começo</b> da frase, com vírgula depois, quer dizer <b>porque</b> ("Como choveu, ficamos em casa"). "como" no <b>meio</b>, ligando duas coisas, quer dizer <b>igual a</b> ("forte como um touro").</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> ver a palavra "como" nas alternativas A, B e E e não testar o sentido de cada uma.</div>
+</details></div></div>
+
+    <div class="passo"><input type="checkbox" id="d5p4"><label for="d5p4">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
+    <div class="dica"><b>Dica do dia 5</b>Palavra entre duas vírgulas = explicação extra sobre <b>todos</b>: "Os adolescentes, zombeteiros, olhavam" (todos eram zombeteiros). Sem vírgula = separa um grupo: "Os adolescentes zombeteiros olhavam" (só alguns). Na prova, leio a frase com e sem a vírgula e vejo se o sentido mudou.</div>
+    <p class="prog" id="prog5"></p>
+  </section>
+
+  <!-- DIA 6 -->
+  <section class="dia" data-dia="6">
+    <h2>Dia 6 — Prova inteira de 2022 <span class="tag sim">Simulado</span></h2>
+    <p class="quando">sábado, 26/09 · ⏱ 3 horas (2h30 de prova + correção) · de manhã, como no dia da prova</p>
+
+    <div class="passo"><input type="checkbox" id="d6p1"><label for="d6p1">🧰 <b>Prepara a mesa</b> (5 min):
+      caderno, lápis, borracha, caneta azul ou preta, garrafa de água. Celular só pro timer.
+      <div class="t">No caderno, escreve os números de 1 a 30 em coluna: é o seu "cartão de respostas". Quem estiver em casa já sabe: 2h30 sem interromper.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d6p2"><label for="d6p2">📝 <b>Faz a prova</b> (2h30):
+      abre a <a href="../pesquisa/provas/2022-prova.pdf#page=1" target="_blank">prova de 2022</a>. São 30 questões: 1 a 15 de Matemática, 16 a 30 de Português.
+      <div class="t">Timer em 2h30 (é o tempo que sobra na prova de verdade depois da redação). Travou? Marca um "?" no caderno e vai pra próxima — volta no fim. Lê a pergunta do FIM primeiro. Deixa a redação de lado hoje: ela é amanhã.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d6p3"><label for="d6p3">✅ <b>Corrige</b> (15 min):
+      abre o <a href="../pesquisa/provas/2022-gabarito.pdf" target="_blank">gabarito de 2022</a> e confere letra por letra.
+      <div class="t">Escreve no caderno: "Matemática: __ de 15 · Português: __ de 15". Esse é o seu ponto de partida — o de hoje é pra comparar com o de daqui a 2 semanas, não pra ficar triste. É a primeira vez!</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d6p4"><label for="d6p4">📓 <b>Anota o que travou</b> (10 min):
+      pra cada questão errada, escreve o número e UMA destas palavras: <b>conta</b> (errei a conta), <b>pergunta</b> (não entendi o que pedia) ou <b>assunto</b> (nunca vi isso).
+      <div class="t">Amanhã você refaz as de "conta" e "pergunta". As de "assunto" ganham uma ⭐ — o Diogo manda a lista e as resoluções aparecem aqui no roteiro.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d6p5"><label for="d6p5">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
+    <div class="dica"><b>Dica do dia 6</b>Na prova, quem controla o tempo ganha: 30 questões em 2h30 dá 5 minutos por questão. Passou de 5 minutos? Marco "?" e sigo. Questão pulada não é questão perdida — questão sem tempo no fim é.</div>
+    <p class="prog" id="prog6"></p>
+  </section>
+
+  <!-- DIA 7 -->
+  <section class="dia" data-dia="7">
+    <h2>Dia 7 — 1ª redação + revisão do simulado <span class="tag red">Redação</span></h2>
+    <p class="quando">domingo, 27/09 · ⏱ mais ou menos 2 horas (com pausa no meio)</p>
+
+    <div class="passo"><input type="checkbox" id="d7p1"><label for="d7p1">🎬 <b>Assiste</b> (10 min):
+      <a href="https://www.youtube.com/watch?v=d2h80t1VBP8" target="_blank">Texto narrativo: elementos, estrutura e exemplo (5 min)</a>
+      e <a href="https://www.youtube.com/watch?v=ZPc-IfCY_XE" target="_blank">Texto narrativo: como escrever? (5 min)</a>.
+      <div class="t">A redação do CMB é sempre narrativa: uma história com começo, meio e fim, personagens, lugar e tempo.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d7p2"><label for="d7p2">📖 <b>Lê a proposta e planeja</b> (15 min):
+      abre a <a href="../pesquisa/provas/2020-prova.pdf#page=22" target="_blank">prova de 2020 na página 22</a>: lê os Textos I, II e III e a proposta da página 23.
+      <div class="t">Resumindo a proposta: um texto narrativo, em <b>1ª pessoa</b> ("eu"), sobre uma situação em que <b>você vira herói</b> usando coragem, cooperação ou ajuda ao próximo. Antes de escrever, responde no caderno em 1 linha cada: <b>onde</b> e <b>quando</b> aconteceu · <b>quem</b> estava lá (eu + 1 ou 2 pessoas) · qual foi o <b>problema</b> · o que <b>eu fiz</b> · como <b>terminou</b>. Esse é o esqueleto da história.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d7p3"><label for="d7p3">✍️ <b>Escreve a redação</b> (40 min):
+      numa folha pautada, <b>à caneta azul ou preta</b>, com título, entre <b>20 e 30 linhas</b>, parágrafos separados (começo · meio · fim).
+      <div class="t">Timer em 40 min. Escreve dentro das linhas e das margens. Não copia frases dos textos da prova. Não assina, não escreve seu nome. Se sobrar tempo, relê procurando letra maiúscula depois de ponto e vírgula nas listas.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d7p4"><label for="d7p4">✔ <b>Confere com a lista do CMB</b> (5 min) e pede a foto:
+      <div class="t">Marca no caderno o que cumpriu: ☐ é uma história (narrativa), não um texto de opinião nem um poema · ☐ está em 1ª pessoa · ☐ fala de virar herói com coragem/cooperação · ☐ tem título · ☐ tem entre 20 e 30 linhas (na prova de verdade: mínimo 15, máximo 30) · ☐ caneta azul ou preta, letra legível · ☐ tem começo, meio e fim em parágrafos · ☐ sem nome ou assinatura. Faltou algum? Ainda dá pra ajeitar. Depois, <b>pede pra um adulto tirar uma foto</b> e mandar pro Diogo: a correção volta durante a semana.</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d7p5"><label for="d7p5">🔁 <b>Revisão do simulado de ontem</b> (30 min, depois de uma pausa):
+      pega as questões marcadas como <b>conta</b> e <b>pergunta</b> no caderno e refaz cada uma sem tempo.
+      <div class="t">Pra cada uma: lê a pergunta do FIM, circula os números do texto, refaz a conta em pé. Deu certo? Escreve ao lado o que tinha errado. Não saiu? Vira ⭐ também. (Existe um <a href="https://www.youtube.com/watch?v=r06pGYXKpSI" target="_blank">vídeo com a correção da Matemática de 2022</a>, de 1 hora — se quiser ver uma questão, pede pra um adulto achar o minuto dela.)</div></label></div>
+
+    <div class="passo"><input type="checkbox" id="d7p6"><label for="d7p6">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
+    <div class="dica"><b>Dica do dia 7</b>Redação em 3 blocos: <b>começo</b> (onde, quando, quem), <b>meio</b> (o problema e o que eu fiz) e <b>fim</b> (como terminou e o que ficou disso). Primeiro planejo em 5 linhas, depois escrevo — e conto as linhas antes de entregar.</div>
+    <p class="prog" id="prog7"></p>
   </section>
 
   <p class="fim">Os próximos dias aparecem aqui assim que ficarem prontos. 💪</p>
