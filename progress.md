@@ -49,6 +49,7 @@ Padrão de dia de semana: 🎬 (10–14 min) → ✏️ Khan ou 📖 leitura (10
 - 21/09: peso da frequência = principal 1 + secundário 0,5.
 - 21/09: uso das provas: 2020–2021 = banco por assunto (esgotado); 2022 = diagnóstico (26/09); 2023 e 2024 = simulados (03 e 10/10); 2025 = ensaio geral 4h30 no feriado de 12/10; 17/10 só descanso.
 - 21/09: tempo ≈ Mat 55% · Port 30% · Redação 15%.
+- 21/09 (noite): Português = interpretação (~75% do peso) + conectivos (1 questão/ano) — os dois já cobertos. **"Uso dos porquês" não entra**: 0 questões em 6 provas, fora do programa do edital; Diogo mandou seguir a pesquisa. Listas de exercícios do cursinho: Diogo manda fotos depois (antes de 13/10); só entram as que baterem com a frequência e tiverem gabarito, referenciadas sem subir o material pro repo.
 
 ## Revisões (agentes separados)
 - Dias 1–3 (21/09, tarde): PODE IR COM AJUSTES PEQUENOS → 9 aplicados; 2ª revisão das resoluções: 0 erros de matemática, 10 pontes de linguagem aplicadas.
