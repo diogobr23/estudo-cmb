@@ -19,8 +19,8 @@
   .dia { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; margin-bottom:16px }
   .dia h2 { margin:0; font-size:20px } .dia .quando { color:var(--muted); font-size:15px; margin:2px 0 10px }
   .semana { background:var(--ink); color:#fff; border-radius:14px; padding:12px 16px; margin-bottom:16px }
-  .semana b { font-size:17px } .semana .t { color:#c8cedb; font-size:14px; margin:2px 0 10px }
-  .btn { background:#fff; color:var(--ink); border:0; border-radius:999px; padding:7px 14px; font:inherit; font-size:14px; font-weight:600; cursor:pointer }
+  .semana b { font-size:17px } .semana .t { color:#c8cedb; font-size:14px; margin:2px 0 0 }
+  .btn-sec { background:none; border:0; color:var(--muted); font:inherit; font-size:14px; text-decoration:underline; cursor:pointer; padding:6px }
   .dia.fora { display:none } body.tudo .dia.fora { display:block }
   .dia.hoje { border-color:var(--mat); box-shadow:0 0 0 2px rgba(43,108,176,.18) }
   .dia .hoje-tag { display:inline-block; font-size:12px; font-weight:700; color:#fff; background:var(--ok); border-radius:6px; padding:2px 8px; margin-left:6px; vertical-align:middle }
@@ -80,7 +80,7 @@
   <div class="como">
     <b>Como funciona</b>
     <ol>
-      <li>A página mostra <b>só os dias desta semana</b>. Na segunda de manhã, os próximos aparecem sozinhos — se quiser espiar o plano inteiro, é o botão "Ver o plano inteiro".</li>
+      <li>A página mostra <b>só os dias desta semana</b>. Na segunda de manhã, os próximos aparecem sozinhos — se quiser espiar o plano inteiro, tem um link no fim da página.</li>
       <li>Antes de qualquer redação, lê o card <a href="#regras-redacao">📋 Regras da redação do CMB</a> aqui em cima — são as regras que reprovam ou salvam o texto.</li>
       <li>Cada dia tem de 4 a 6 passos. Faz na ordem e <b>marca a caixinha</b> quando terminar. Dias de <span class="tag">Matemática</span> usam a Khan Academy; dias de <span class="tag port">Português</span> usam vídeos do YouTube (pula os anúncios). Sábado é <span class="tag sim">Simulado</span> (uma prova antiga inteira) e domingo é <span class="tag red">Redação</span>.</li>
       <li>Antes de cada passo, põe um <b>timer no celular</b> com os minutos que estão entre parênteses.</li>
@@ -96,7 +96,6 @@
   <div class="semana">
     <b id="semana-tit">Esta semana</b>
     <p id="semana-sub" class="t">…</p>
-    <button type="button" id="ver-tudo" class="btn">👀 Ver o plano inteiro</button>
   </div>
 
   <section class="ref" id="regras-redacao">
@@ -1319,6 +1318,7 @@
   </section>
 
   <p class="fim">Fim desta semana. Um dia de cada vez. 💪</p>
+  <p class="fim"><button type="button" id="ver-tudo" class="btn-sec">ver o plano inteiro</button></p>
 </div>
 
 <script>
@@ -1365,7 +1365,7 @@
     var btn = document.getElementById('ver-tudo');
     btn.addEventListener('click', function () {
       var tudo = document.body.classList.toggle('tudo');
-      btn.textContent = tudo ? '🙈 Mostrar só esta semana' : '👀 Ver o plano inteiro';
+      btn.textContent = tudo ? 'mostrar só esta semana' : 'ver o plano inteiro';
       if (!tudo) window.scrollTo(0, 0);
     });
   })();
