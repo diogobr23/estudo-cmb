@@ -18,6 +18,13 @@
   .como ol { margin:6px 0 0 18px; padding:0 }
   .dia { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; margin-bottom:16px }
   .dia h2 { margin:0; font-size:20px } .dia .quando { color:var(--muted); font-size:15px; margin:2px 0 10px }
+  .semana { background:var(--ink); color:#fff; border-radius:14px; padding:12px 16px; margin-bottom:16px }
+  .semana b { font-size:17px } .semana .t { color:#c8cedb; font-size:14px; margin:2px 0 10px }
+  .btn { background:#fff; color:var(--ink); border:0; border-radius:999px; padding:7px 14px; font:inherit; font-size:14px; font-weight:600; cursor:pointer }
+  .dia.fora { display:none } body.tudo .dia.fora { display:block }
+  .dia.hoje { border-color:var(--mat); box-shadow:0 0 0 2px rgba(43,108,176,.18) }
+  .dia .hoje-tag { display:inline-block; font-size:12px; font-weight:700; color:#fff; background:var(--ok); border-radius:6px; padding:2px 8px; margin-left:6px; vertical-align:middle }
+  .ref details.abrir { margin-top:8px } .ref details.abrir summary { font-size:16px }
   .ref { background:var(--card); border:2px solid #b7770d; border-radius:16px; padding:16px; margin-bottom:16px }
   .ref h2 { margin:0 0 2px; font-size:20px } .ref .quando { color:var(--muted); font-size:15px; margin:0 0 10px }
   .ref h3 { font-size:16px; margin:14px 0 6px }
@@ -73,6 +80,7 @@
   <div class="como">
     <b>Como funciona</b>
     <ol>
+      <li>A página mostra <b>só os dias desta semana</b>. Na segunda de manhã, os próximos aparecem sozinhos — se quiser espiar o plano inteiro, é o botão "Ver o plano inteiro".</li>
       <li>Antes de qualquer redação, lê o card <a href="#regras-redacao">📋 Regras da redação do CMB</a> aqui em cima — são as regras que reprovam ou salvam o texto.</li>
       <li>Cada dia tem de 4 a 6 passos. Faz na ordem e <b>marca a caixinha</b> quando terminar. Dias de <span class="tag">Matemática</span> usam a Khan Academy; dias de <span class="tag port">Português</span> usam vídeos do YouTube (pula os anúncios). Sábado é <span class="tag sim">Simulado</span> (uma prova antiga inteira) e domingo é <span class="tag red">Redação</span>.</li>
       <li>Antes de cada passo, põe um <b>timer no celular</b> com os minutos que estão entre parênteses.</li>
@@ -84,9 +92,18 @@
   </div>
 
 
+
+  <div class="semana">
+    <b id="semana-tit">Esta semana</b>
+    <p id="semana-sub" class="t">…</p>
+    <button type="button" id="ver-tudo" class="btn">👀 Ver o plano inteiro</button>
+  </div>
+
   <section class="ref" id="regras-redacao">
     <h2>📋 Regras da redação do CMB <span class="tag red">Ler antes de toda redação</span></h2>
     <p class="quando">São as regras oficiais do edital. Valem nos treinos e no dia da prova.</p>
+
+    <details class="abrir"><summary>Abrir as regras (leitura de 3 minutos)</summary>
 
     <h3>⚠️ Nove coisas que reprovam a redação na hora</h3>
     <p>Não importa se o texto está lindo: se cair em uma destas, a redação é considerada <b>INAPTA</b> — e aí nem adianta ter ido bem em Matemática e Português.</p>
@@ -124,10 +141,11 @@
       <li>☐ Não copiei frases dos textos da prova?</li>
     </ul></div>
     <p class="obs">Copiar trechos dos textos da prova não reprova sozinho, mas não conta como texto seu — a proposta sempre avisa que não pode.</p>
+    </details>
   </section>
 
   <!-- DIA 1 -->
-  <section class="dia" data-dia="1">
+  <section class="dia" data-dia="1" data-data="2026-09-21">
     <h2>Dia 1 — Frações <span class="tag">Matemática</span></h2>
     <p class="quando">segunda, 21/09 · ⏱ mais ou menos 1 hora</p>
 
@@ -193,7 +211,7 @@
   </section>
 
   <!-- DIA 2 -->
-  <section class="dia" data-dia="2">
+  <section class="dia" data-dia="2" data-data="2026-09-22">
     <h2>Dia 2 — Números decimais <span class="tag">Matemática</span></h2>
     <p class="quando">terça, 22/09 · ⏱ mais ou menos 1 hora</p>
 
@@ -254,7 +272,7 @@
   </section>
 
   <!-- DIA 3 -->
-  <section class="dia" data-dia="3">
+  <section class="dia" data-dia="3" data-data="2026-09-23">
     <h2>Dia 3 — Porcentagem <span class="tag">Matemática</span></h2>
     <p class="quando">quarta, 23/09 · ⏱ mais ou menos 1 hora</p>
 
@@ -310,7 +328,7 @@
   </section>
 
   <!-- DIA 4 -->
-  <section class="dia" data-dia="4">
+  <section class="dia" data-dia="4" data-data="2026-09-24">
     <h2>Dia 4 — Ler texto de prova <span class="tag port">Português</span></h2>
     <p class="quando">quinta, 24/09 · ⏱ mais ou menos 1 hora</p>
 
@@ -366,7 +384,7 @@
   </section>
 
   <!-- DIA 5 -->
-  <section class="dia" data-dia="5">
+  <section class="dia" data-dia="5" data-data="2026-09-25">
     <h2>Dia 5 — Vírgula e pontuação <span class="tag port">Português</span></h2>
     <p class="quando">sexta, 25/09 · ⏱ mais ou menos 1 hora</p>
 
@@ -418,7 +436,7 @@
   </section>
 
   <!-- DIA 6 -->
-  <section class="dia" data-dia="6">
+  <section class="dia" data-dia="6" data-data="2026-09-26">
     <h2>Dia 6 — Prova inteira de 2022 <span class="tag sim">Simulado</span></h2>
     <p class="quando">sábado, 26/09 · ⏱ 3 horas (2h30 de prova + correção) · de manhã, como no dia da prova</p>
 
@@ -444,7 +462,7 @@
   </section>
 
   <!-- DIA 7 -->
-  <section class="dia" data-dia="7">
+  <section class="dia" data-dia="7" data-data="2026-09-27">
     <h2>Dia 7 — 1ª redação + revisão do simulado <span class="tag red">Redação</span></h2>
     <p class="quando">domingo, 27/09 · ⏱ mais ou menos 2 horas (com pausa no meio)</p>
 
@@ -474,7 +492,7 @@
   </section>
 
   <!-- DIA 8 -->
-  <section class="dia" data-dia="8">
+  <section class="dia" data-dia="8" data-data="2026-09-28">
     <h2>Dia 8 — A escada das unidades <span class="tag">Matemática</span></h2>
     <p class="quando">segunda, 28/09 · ⏱ mais ou menos 1 hora</p>
 
@@ -531,7 +549,7 @@
   </section>
 
   <!-- DIA 9 -->
-  <section class="dia" data-dia="9">
+  <section class="dia" data-dia="9" data-data="2026-09-29">
     <h2>Dia 9 — Área e volume <span class="tag">Matemática</span></h2>
     <p class="quando">terça, 29/09 · ⏱ mais ou menos 1 hora</p>
 
@@ -588,7 +606,7 @@
   </section>
 
   <!-- DIA 10 -->
-  <section class="dia" data-dia="10">
+  <section class="dia" data-dia="10" data-data="2026-09-30">
     <h2>Dia 10 — O sentido das palavras <span class="tag port">Português</span></h2>
     <p class="quando">quarta, 30/09 · ⏱ mais ou menos 1 hora</p>
 
@@ -646,7 +664,7 @@
   </section>
 
   <!-- DIA 11 -->
-  <section class="dia" data-dia="11">
+  <section class="dia" data-dia="11" data-data="2026-10-01">
     <h2>Dia 11 — Números grandes e romanos <span class="tag">Matemática</span></h2>
     <p class="quando">quinta, 01/10 · ⏱ mais ou menos 1 hora</p>
 
@@ -695,7 +713,7 @@
   </section>
 
   <!-- DIA 12 -->
-  <section class="dia" data-dia="12">
+  <section class="dia" data-dia="12" data-data="2026-10-02">
     <h2>Dia 12 — As palavrinhas que ligam <span class="tag port">Português</span></h2>
     <p class="quando">sexta, 02/10 · ⏱ mais ou menos 1 hora</p>
 
@@ -757,7 +775,7 @@
   </section>
 
   <!-- DIA 13 -->
-  <section class="dia" data-dia="13">
+  <section class="dia" data-dia="13" data-data="2026-10-03">
     <h2>Dia 13 — Prova inteira de 2023 <span class="tag sim">Simulado</span></h2>
     <p class="quando">sábado, 03/10 · ⏱ 3h30 (3h de prova + correção) · de manhã</p>
 
@@ -783,7 +801,7 @@
   </section>
 
   <!-- DIA 14 -->
-  <section class="dia" data-dia="14">
+  <section class="dia" data-dia="14" data-data="2026-10-04">
     <h2>Dia 14 — 2ª redação + revisão do simulado <span class="tag red">Redação</span></h2>
     <p class="quando">domingo, 04/10 · ⏱ mais ou menos 2 horas (com pausa no meio)</p>
 
@@ -812,7 +830,7 @@
   </section>
 
   <!-- DIA 15 -->
-  <section class="dia" data-dia="15">
+  <section class="dia" data-dia="15" data-data="2026-10-05">
     <h2>Dia 15 — Múltiplos, divisores e MMC <span class="tag">Matemática</span></h2>
     <p class="quando">segunda, 05/10 · ⏱ mais ou menos 1 hora</p>
 
@@ -874,7 +892,7 @@
   </section>
 
   <!-- DIA 16 -->
-  <section class="dia" data-dia="16">
+  <section class="dia" data-dia="16" data-data="2026-10-06">
     <h2>Dia 16 — Tabelas, gráficos e média <span class="tag">Matemática</span></h2>
     <p class="quando">terça, 06/10 · ⏱ mais ou menos 1 hora</p>
 
@@ -933,7 +951,7 @@
   </section>
 
   <!-- DIA 17 -->
-  <section class="dia" data-dia="17">
+  <section class="dia" data-dia="17" data-data="2026-10-07">
     <h2>Dia 17 — Tirinha, imagem e diálogo <span class="tag port">Português</span></h2>
     <p class="quando">quarta, 07/10 · ⏱ mais ou menos 1 hora</p>
 
@@ -1000,7 +1018,7 @@
   </section>
 
   <!-- DIA 18 -->
-  <section class="dia" data-dia="18">
+  <section class="dia" data-dia="18" data-data="2026-10-08">
     <h2>Dia 18 — Probabilidade e vistas <span class="tag">Matemática</span></h2>
     <p class="quando">quinta, 08/10 · ⏱ mais ou menos 1 hora</p>
 
@@ -1048,7 +1066,7 @@
   </section>
 
   <!-- DIA 19 -->
-  <section class="dia" data-dia="19">
+  <section class="dia" data-dia="19" data-data="2026-10-09">
     <h2>Dia 19 — Poema e dois textos juntos <span class="tag port">Português</span></h2>
     <p class="quando">sexta, 09/10 · ⏱ mais ou menos 1 hora</p>
 
@@ -1106,7 +1124,7 @@
   </section>
 
   <!-- DIA 20 -->
-  <section class="dia" data-dia="20">
+  <section class="dia" data-dia="20" data-data="2026-10-10">
     <h2>Dia 20 — Prova inteira de 2024 <span class="tag sim">Simulado</span></h2>
     <p class="quando">sábado, 10/10 · ⏱ 3h30 (3h de prova + correção) · de manhã</p>
 
@@ -1130,7 +1148,7 @@
   </section>
 
   <!-- DIA 21 -->
-  <section class="dia" data-dia="21">
+  <section class="dia" data-dia="21" data-data="2026-10-11">
     <h2>Dia 21 — Reescrever a redação + revisão <span class="tag red">Redação</span></h2>
     <p class="quando">domingo, 11/10 · ⏱ mais ou menos 2 horas (com pausa no meio)</p>
 
@@ -1155,7 +1173,7 @@
   </section>
 
   <!-- DIA 22 -->
-  <section class="dia" data-dia="22">
+  <section class="dia" data-dia="22" data-data="2026-10-12">
     <h2>Dia 22 — Ensaio geral: prova de 2025 completa <span class="tag sim">Simulado</span></h2>
     <p class="quando">segunda, 12/10 (feriado) · ⏱ 4h30 seguidas + correção · no mesmo horário da prova de verdade (pergunta pro Diogo antes; se ninguém souber, começa às 8h)</p>
 
@@ -1181,7 +1199,7 @@
   </section>
 
   <!-- DIA 23 -->
-  <section class="dia" data-dia="23">
+  <section class="dia" data-dia="23" data-data="2026-10-13">
     <h2>Dia 23 — Revisão de Matemática <span class="tag rev">Revisão</span></h2>
     <p class="quando">terça, 13/10 · ⏱ mais ou menos 1 hora</p>
 
@@ -1207,7 +1225,7 @@
   </section>
 
   <!-- DIA 24 -->
-  <section class="dia" data-dia="24">
+  <section class="dia" data-dia="24" data-data="2026-10-14">
     <h2>Dia 24 — Revisão de Português e redação <span class="tag rev">Revisão</span></h2>
     <p class="quando">quarta, 14/10 · ⏱ mais ou menos 1 hora</p>
 
@@ -1232,7 +1250,7 @@
   </section>
 
   <!-- DIA 25 -->
-  <section class="dia" data-dia="25">
+  <section class="dia" data-dia="25" data-data="2026-10-15">
     <h2>Dia 25 — Revisão dos simulados <span class="tag rev">Revisão</span></h2>
     <p class="quando">quinta, 15/10 · ⏱ mais ou menos 1 hora</p>
 
@@ -1252,7 +1270,7 @@
   </section>
 
   <!-- DIA 26 -->
-  <section class="dia" data-dia="26">
+  <section class="dia" data-dia="26" data-data="2026-10-16">
     <h2>Dia 26 — Revisão leve e mochila pronta <span class="tag rev">Revisão</span></h2>
     <p class="quando">sexta, 16/10 · ⏱ 30 minutos, no máximo</p>
 
@@ -1269,7 +1287,7 @@
   </section>
 
   <!-- DIA 27 -->
-  <section class="dia" data-dia="27">
+  <section class="dia" data-dia="27" data-data="2026-10-17">
     <h2>Dia 27 — Véspera: sem estudo <span class="tag rev">Descanso</span></h2>
     <p class="quando">sábado, 17/10 · ⏱ zero</p>
 
@@ -1284,7 +1302,7 @@
   </section>
 
   <!-- DIA DA PROVA -->
-  <section class="dia" data-dia="28">
+  <section class="dia" data-dia="28" data-data="2026-10-18">
     <h2>Domingo, 18/10 — Dia da prova 🎯 <span class="tag sim">Prova</span></h2>
     <p class="quando">4h30 · leva esta lista na cabeça</p>
 
@@ -1300,7 +1318,7 @@
     <p class="prog" id="prog28"></p>
   </section>
 
-  <p class="fim">Os próximos dias aparecem aqui assim que ficarem prontos. 💪</p>
+  <p class="fim">Fim desta semana. Um dia de cada vez. 💪</p>
 </div>
 
 <script>
@@ -1311,6 +1329,45 @@
     var dias = Math.round((prova - hoje) / 86400000);
     var el = document.getElementById('contagem');
     el.textContent = dias > 1 ? 'Faltam ' + dias + ' dias' : dias === 1 ? 'É amanhã!' : dias === 0 ? 'É hoje! Boa prova!' : 'Prova feita 🎉';
+  })();
+
+  // mostra só a semana de hoje (segunda a domingo); a troca é automática
+  (function () {
+    var PRIMEIRO = new Date(2026, 8, 21), ULTIMO = new Date(2026, 9, 18); // 21/09 e 18/10
+    var hoje = new Date(); hoje.setHours(0, 0, 0, 0);
+    var base = hoje < PRIMEIRO ? PRIMEIRO : (hoje > ULTIMO ? ULTIMO : hoje);
+    var dia = base.getDay(); // 0 = domingo
+    var seg = new Date(base); seg.setDate(base.getDate() - (dia === 0 ? 6 : dia - 1));
+    var dom = new Date(seg); dom.setDate(seg.getDate() + 6);
+
+    function dm(d) { return ('0' + d.getDate()).slice(-2) + '/' + ('0' + (d.getMonth() + 1)).slice(-2); }
+    var nsem = Math.round((seg - PRIMEIRO) / 604800000) + 1;
+    var total = 0;
+
+    document.querySelectorAll('.dia').forEach(function (s) {
+      var p = (s.getAttribute('data-data') || '').split('-');
+      var d = new Date(+p[0], p[1] - 1, +p[2]);
+      if (d < seg || d > dom) { s.classList.add('fora'); return; }
+      total++;
+      if (d.getTime() === hoje.getTime()) {
+        s.classList.add('hoje');
+        var h2 = s.querySelector('h2');
+        if (h2) h2.insertAdjacentHTML('beforeend', ' <span class="hoje-tag">hoje</span>');
+      }
+    });
+
+    var tit = document.getElementById('semana-tit'), sub = document.getElementById('semana-sub');
+    tit.textContent = 'Semana ' + nsem + ' de 4 · ' + dm(seg) + ' a ' + dm(dom);
+    sub.textContent = hoje > ULTIMO
+      ? 'Acabou! Mostrando a última semana. 🎉'
+      : 'Só os ' + total + ' dias desta semana aparecem aqui. Na segunda-feira, os próximos aparecem sozinhos.';
+
+    var btn = document.getElementById('ver-tudo');
+    btn.addEventListener('click', function () {
+      var tudo = document.body.classList.toggle('tudo');
+      btn.textContent = tudo ? '🙈 Mostrar só esta semana' : '👀 Ver o plano inteiro';
+      if (!tudo) window.scrollTo(0, 0);
+    });
   })();
 
   // lembra as caixinhas marcadas neste aparelho (se o navegador deixar)
