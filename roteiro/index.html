@@ -18,6 +18,14 @@
   .como ol { margin:6px 0 0 18px; padding:0 }
   .dia { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; margin-bottom:16px }
   .dia h2 { margin:0; font-size:20px } .dia .quando { color:var(--muted); font-size:15px; margin:2px 0 10px }
+  .ref { background:var(--card); border:2px solid #b7770d; border-radius:16px; padding:16px; margin-bottom:16px }
+  .ref h2 { margin:0 0 2px; font-size:20px } .ref .quando { color:var(--muted); font-size:15px; margin:0 0 10px }
+  .ref h3 { font-size:16px; margin:14px 0 6px }
+  .ref ul { margin:6px 0 0 20px; padding:0 } .ref li { margin:4px 0 }
+  .ref .zera { background:#fdeeea; border-radius:12px; padding:10px 14px; margin-top:6px }
+  .ref .zera li { color:#8a3b00 }
+  .ref .check { background:#e6f7ea; border-radius:12px; padding:10px 14px; margin-top:6px }
+  .ref .obs { color:var(--muted); font-size:14px; margin-top:10px }
   .tag.port { background:#7048b0 } .tag.sim { background:#c0392b } .tag.red { background:#b7770d } .tag.rev { background:#2f9e44 }
   .res u { text-decoration:underline; font-weight:600 }
   .tag { display:inline-block; font-size:13px; font-weight:700; color:#fff; background:var(--mat); border-radius:6px; padding:2px 8px; margin-left:6px; vertical-align:middle }
@@ -65,6 +73,7 @@
   <div class="como">
     <b>Como funciona</b>
     <ol>
+      <li>Antes de qualquer redação, lê o card <a href="#regras-redacao">📋 Regras da redação do CMB</a> aqui em cima — são as regras que reprovam ou salvam o texto.</li>
       <li>Cada dia tem de 4 a 6 passos. Faz na ordem e <b>marca a caixinha</b> quando terminar. Dias de <span class="tag">Matemática</span> usam a Khan Academy; dias de <span class="tag port">Português</span> usam vídeos do YouTube (pula os anúncios). Sábado é <span class="tag sim">Simulado</span> (uma prova antiga inteira) e domingo é <span class="tag red">Redação</span>.</li>
       <li>Antes de cada passo, põe um <b>timer no celular</b> com os minutos que estão entre parênteses.</li>
       <li>Nos exercícios da Khan ("Pratique"), faz o bloco <b>inteiro</b> até aparecer a tela de resultado (tipo "Você acertou 5 de 7"). Acertou menos da metade? Faz de novo. Errar faz parte do treino.</li>
@@ -73,6 +82,49 @@
       <li>Travou em alguma coisa? Anota no caderno o nome do Pratique (ou o número da questão) e o que não entendeu pra perguntar depois. Não fica preso.</li>
     </ol>
   </div>
+
+
+  <section class="ref" id="regras-redacao">
+    <h2>📋 Regras da redação do CMB <span class="tag red">Ler antes de toda redação</span></h2>
+    <p class="quando">São as regras oficiais do edital. Valem nos treinos e no dia da prova.</p>
+
+    <h3>⚠️ Nove coisas que reprovam a redação na hora</h3>
+    <p>Não importa se o texto está lindo: se cair em uma destas, a redação é considerada <b>INAPTA</b> — e aí nem adianta ter ido bem em Matemática e Português.</p>
+    <div class="zera"><ul>
+      <li><b>Escrever sobre outra coisa</b> (fugir do tema da proposta).</li>
+      <li><b>Se identificar</b>: escrever o nome, as iniciais, assinar, desenhar um símbolo, escrever um recado pro corretor. A folha é anônima.</li>
+      <li><b>Escrever outro tipo de texto</b>: a proposta pede uma <b>história</b> (narrativa). Carta, texto de opinião ou lista não valem.</li>
+      <li><b>Menos de 15 linhas ou mais de 30 linhas.</b> Conta as linhas antes de entregar.</li>
+      <li><b>Letra ilegível</b> (que o corretor não consegue ler).</li>
+      <li><b>Não usar caneta esferográfica azul ou preta</b>: nada de lápis, caneta vermelha, verde ou gel colorida. O lápis serve <b>só</b> pro rascunho.</li>
+      <li><b>Texto incompreensível</b> (frases que não dá pra entender).</li>
+      <li><b>Escrever fora das linhas</b> da folha definitiva (nem em cima, nem embaixo, nem na margem).</li>
+      <li><b>Escrever em forma de poema</b> ou qualquer coisa que não seja texto corrido (prosa).</li>
+    </ul></div>
+
+    <h3>✍️ Como a redação é pontuada (20 pontos)</h3>
+    <ul>
+      <li><b>Escrita — 4 pontos:</b> ortografia, acentuação, pontuação, maiúsculas, concordância, letra legível, sem rasura. Nota cheia = no máximo <b>1</b> erro.</li>
+      <li><b>Tipo de texto — 4 pontos:</b> ser uma história de verdade, com <b>começo</b> (situação inicial), <b>problema</b> (complicação), <b>momento mais tenso</b> (clímax) e <b>fim</b> (desfecho); parágrafos com recuo; dentro do número de linhas; <b>título</b> (se a proposta pedir); e na <b>pessoa</b> que a proposta mandou (1ª pessoa = "eu" · 3ª pessoa = "ele/ela").</li>
+      <li><b>Tema — 5 pontos:</b> cumprir <b>tudo</b> que a proposta pediu. É a competência que mais vale: sublinha cada pedido da proposta e confere um por um no fim.</li>
+      <li><b>Coerência — 3 pontos:</b> a história faz sentido do começo ao fim, sem parte solta nem contradição.</li>
+      <li><b>Coesão — 4 pontos:</b> as frases e os parágrafos ligados (então, depois, por isso, quando…), sem repetir a mesma palavra o tempo todo.</li>
+    </ul>
+    <p class="obs">Para ser <b>APTO</b> basta metade: <b>10 dos 20 pontos</b>. O difícil não é a nota — é não cair em nenhuma das nove de cima.</p>
+
+    <h3>✔️ Confere sempre antes de entregar</h3>
+    <div class="check"><ul>
+      <li>☐ É uma <b>história</b> (com começo, problema, clímax e fim)?</li>
+      <li>☐ Está na <b>pessoa</b> que a proposta pediu (eu / ele-ela)?</li>
+      <li>☐ Tem <b>título</b>?</li>
+      <li>☐ Contei as linhas: <b>entre 15 e 30</b> (ou o que a proposta pedir)?</li>
+      <li>☐ Tudo de <b>caneta azul ou preta</b>, dentro das linhas?</li>
+      <li>☐ Tem <b>parágrafos</b> (não é um bloco só)?</li>
+      <li>☐ <b>Nenhum nome, nenhuma assinatura, nenhum desenho</b>?</li>
+      <li>☐ Não copiei frases dos textos da prova?</li>
+    </ul></div>
+    <p class="obs">Copiar trechos dos textos da prova não reprova sozinho, mas não conta como texto seu — a proposta sempre avisa que não pode.</p>
+  </section>
 
   <!-- DIA 1 -->
   <section class="dia" data-dia="1">
@@ -409,7 +461,7 @@
       numa folha pautada, <b>à caneta azul ou preta</b>, com título, entre <b>20 e 30 linhas</b>, parágrafos separados (começo · meio · fim).
       <div class="t">Timer em 40 min. Escreve dentro das linhas e das margens. Não copia frases dos textos da prova. Não assina, não escreve seu nome. Se sobrar tempo, relê procurando duas coisas: letra maiúscula depois de ponto, e vírgula separando os itens das listas.</div></label></div>
 
-    <div class="passo"><input type="checkbox" id="d7p4"><label for="d7p4">✔ <b>Confere com a lista do CMB</b> (5 min) e pede a foto:
+    <div class="passo"><input type="checkbox" id="d7p4"><label for="d7p4">✔ <b>Confere com a lista do CMB</b> (5 min) e pede a foto — lista completa no card <a href="#regras-redacao">📋 Regras da redação</a>:
       <div class="t">Marca no caderno o que cumpriu: ☐ é uma história (narrativa), não um texto de opinião nem um poema · ☐ está em 1ª pessoa · ☐ fala de virar herói com coragem/cooperação · ☐ tem título · ☐ tem entre 20 e 30 linhas (na prova de verdade: mínimo 15, máximo 30) · ☐ caneta azul ou preta, letra legível · ☐ tem começo, meio e fim em parágrafos · ☐ sem nome ou assinatura. Faltou algum? Ainda dá pra ajeitar. Depois, <b>pede pra um adulto tirar uma foto</b> e mandar pro Diogo: a correção volta durante a semana.</div></label></div>
 
     <div class="passo"><input type="checkbox" id="d7p5"><label for="d7p5">🔁 <b>Revisão do simulado de ontem</b> (30 min, depois de uma pausa):
@@ -747,7 +799,7 @@
       caneta azul ou preta, título, 20 a 30 linhas, parágrafos.
       <div class="t">Usa os 2 pontos que anotou no passo 1. Sem copiar frases dos textos da prova. Sem nome.</div></label></div>
 
-    <div class="passo"><input type="checkbox" id="d14p4"><label for="d14p4">✔ <b>Confere com a lista e pede a foto</b> (5 min):
+    <div class="passo"><input type="checkbox" id="d14p4"><label for="d14p4">✔ <b>Confere com a lista e pede a foto</b> (5 min) — <a href="#regras-redacao">📋 Regras da redação</a>:
       <div class="t">☐ é uma história · ☐ 1ª pessoa · ☐ faz de conta + brincadeiras ao ar livre · ☐ título · ☐ 20 a 30 linhas · ☐ caneta, letra legível · ☐ começo, meio e fim · ☐ sem nome. Foto → Diogo.</div></label></div>
 
     <div class="passo"><input type="checkbox" id="d14p5"><label for="d14p5">🔁 <b>Revisão do simulado de ontem</b> (30 min, depois da pausa):
@@ -1090,7 +1142,7 @@
       mesma história, mesma proposta, caneta azul ou preta, título, 20 a 30 linhas — agora corrigindo os 3 pontos.
       <div class="t">Não é copiar: é a mesma história contada melhor. Se a correção falou de parágrafos, começo-meio-fim ou linhas, é aqui que arruma.</div></label></div>
 
-    <div class="passo"><input type="checkbox" id="d21p3"><label for="d21p3">✔ <b>Confere com a lista e pede a foto</b> (5 min):
+    <div class="passo"><input type="checkbox" id="d21p3"><label for="d21p3">✔ <b>Confere com a lista e pede a foto</b> (5 min) — <a href="#regras-redacao">📋 Regras da redação</a>:
       <div class="t">☐ narrativa · ☐ 1ª pessoa (as duas propostas pediam) · ☐ no tema · ☐ título · ☐ 20 a 30 linhas · ☐ caneta, legível · ☐ parágrafos · ☐ sem nome. Foto → Diogo.</div></label></div>
 
     <div class="passo"><input type="checkbox" id="d21p4"><label for="d21p4">🔁 <b>Revisão do simulado de ontem</b> (30 min, depois da pausa):
@@ -1098,7 +1150,7 @@
       <div class="t">Amanhã é o ensaio geral com a prova de 2025, igualzinho ao dia da prova. Hoje termina cedo e dorme bem.</div></label></div>
 
     <div class="passo"><input type="checkbox" id="d21p5"><label for="d21p5">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
-    <div class="dica"><b>Dica do dia 21</b>Nove coisas zeram a redação no CMB: fugir do tema · não ser narrativa · letra ilegível · texto sem sentido · escrever poema · assinar ou se identificar · menos de 15 ou mais de 30 linhas · lápis ou caneta de outra cor · escrever fora das linhas. Nenhuma delas é difícil de evitar — é só conferir antes de entregar.</div>
+    <div class="dica"><b>Dica do dia 21</b>(estão todas no card <a href="#regras-redacao">📋 Regras da redação</a>) Nove coisas reprovam a redação no CMB: fugir do tema · não ser narrativa · letra ilegível · texto sem sentido · escrever poema · assinar ou se identificar · menos de 15 ou mais de 30 linhas · lápis ou caneta de outra cor · escrever fora das linhas. Nenhuma delas é difícil de evitar — é só conferir antes de entregar.</div>
     <p class="prog" id="prog21"></p>
   </section>
 
@@ -1113,7 +1165,7 @@
 
     <div class="passo"><input type="checkbox" id="d22p2"><label for="d22p2">📝 <b>Faz a prova inteira</b> (4h30):
       abre a <a href="../pesquisa/provas/2025-prova.pdf#page=1" target="_blank">prova de 2025</a>. Matemática 1 a 20, Português 21 a 40 e a redação (proposta na <a href="../pesquisa/provas/2025-prova.pdf#page=35" target="_blank">página 35</a>).
-      <div class="t">Plano de tempo: Matemática <b>1h30</b> · Português <b>1h20</b> · redação <b>1h</b> (10 min planejando, 40 escrevendo, 10 revisando) · <b>20 min</b> pra passar as letras pro "cartão" e contar as linhas. Redação de 2025: texto narrativo em <b>3ª pessoa</b> (ele/ela), sobre atitudes que levam à falta d'água, com um personagem que apresenta uma solução; 15 a 30 linhas; título.</div></label></div>
+      <div class="t">Plano de tempo: Matemática <b>1h30</b> · Português <b>1h20</b> · redação <b>1h</b> (10 min planejando, 40 escrevendo, 10 revisando) · <b>20 min</b> pra passar as letras pro "cartão" e contar as linhas. Relê o card <a href="#regras-redacao">📋 Regras da redação</a> antes de começar a escrever. Redação de 2025: texto narrativo em <b>3ª pessoa</b> (ele/ela), sobre atitudes que levam à falta d'água, com um personagem que apresenta uma solução; 15 a 30 linhas; título.</div></label></div>
 
     <div class="passo"><input type="checkbox" id="d22p3"><label for="d22p3">✅ <b>Corrige</b> (20 min, depois de descansar):
       <a href="../pesquisa/provas/2025-gabarito.pdf" target="_blank">gabarito de 2025</a>. "Matemática: __ de 20 · Português: __ de 20".
@@ -1168,7 +1220,7 @@
       <div class="t">Ainda não chegou? Relê a sua redação e confere sozinha a lista das 9 coisas que zeram (dica do dia 21).</div></label></div>
 
     <div class="passo"><input type="checkbox" id="d24p3"><label for="d24p3">✍️ <b>Treino de planejar</b> (15 min):
-      inventa uma história nova pra proposta de 2025 (a da água), em <b>3ª pessoa</b>, e escreve <b>só o esqueleto</b>: onde e quando · quem é o personagem · qual atitude causa a falta d'água · qual solução ele apresenta · como termina. Depois, o título.
+      dá uma olhada no card <a href="#regras-redacao">📋 Regras da redação</a> e inventa uma história nova pra proposta de 2025 (a da água), em <b>3ª pessoa</b>, e escreve <b>só o esqueleto</b>: onde e quando · quem é o personagem · qual atitude causa a falta d'água · qual solução ele apresenta · como termina. Depois, o título.
       <div class="t">Cinco linhas em 10 minutos, mais 5 pro título e pra reler. No domingo é isso que você faz nos primeiros 10 minutos da redação.</div></label></div>
 
     <div class="passo"><input type="checkbox" id="d24p4"><label for="d24p4">📖 <b>Relê as dicas de Português</b> (10 min):
@@ -1241,7 +1293,7 @@
     <div class="passo"><input type="checkbox" id="d28p3"><label for="d28p3">⏱ <b>Plano de tempo</b>: Matemática 1h30 · Português 1h20 · redação 1h · cartão 20 min. Questão que passa de 5 minutos: "?" e segue.</label></div>
     <div class="passo"><input type="checkbox" id="d28p4"><label for="d28p4">🧮 <b>Matemática</b>: pergunta do fim primeiro · escada desenhada no rascunho · conta em pé · confere a unidade da resposta.</label></div>
     <div class="passo"><input type="checkbox" id="d28p5"><label for="d28p5">📖 <b>Português</b>: prova no texto pra cada alternativa · vírgula: lê com e sem · desconfia de "todos", "só", "sempre".</label></div>
-    <div class="passo"><input type="checkbox" id="d28p6"><label for="d28p6">✍️ <b>Redação</b>: lê a proposta 2 vezes (1ª ou 3ª pessoa?) · esqueleto em 5 linhas · título · caneta · 15 a 30 linhas contadas · sem nome · dentro das linhas.</label></div>
+    <div class="passo"><input type="checkbox" id="d28p6"><label for="d28p6">✍️ <b>Redação</b> (<a href="#regras-redacao">as 9 regras</a>): lê a proposta 2 vezes (1ª ou 3ª pessoa?) · esqueleto em 5 linhas · história com começo, problema, clímax e fim · título · caneta azul ou preta · parágrafos · 15 a 30 linhas contadas · sem nome nem marca · tudo dentro das linhas.</label></div>
     <div class="passo"><input type="checkbox" id="d28p7"><label for="d28p7">🗂 <b>Cartão de respostas</b>: passa as letras com calma, uma por vez, conferindo o número. Sem rasura. Marca tudo — questão em branco não pontua.</label></div>
 
     <div class="dica"><b>Depois da prova</b>Não fica conferindo resposta na saída. Vai comer alguma coisa gostosa. Você fez tudo que dava pra fazer — e fez muito. 💙</div>

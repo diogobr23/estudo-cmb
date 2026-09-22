@@ -49,6 +49,8 @@ Padrão de dia de semana: 🎬 (10–14 min) → ✏️ Khan ou 📖 leitura (10
 - 21/09: peso da frequência = principal 1 + secundário 0,5.
 - 21/09: uso das provas: 2020–2021 = banco por assunto (esgotado); 2022 = diagnóstico (26/09); 2023 e 2024 = simulados (03 e 10/10); 2025 = ensaio geral 4h30 no feriado de 12/10; 17/10 só descanso.
 - 21/09: tempo ≈ Mat 55% · Port 30% · Redação 15%.
+- 22/09: **card fixo "📋 Regras da redação do CMB"** (`<section class="ref" id="regras-redacao">`, antes do Dia 1), com as 9 irregularidades que tornam INAPTO, a rubrica das 5 competências (4+4+5+3+4 = 20, APTO com 10) e o checklist de antes de entregar — tudo copiado do Art. 125 do edital. Linkado do "Como funciona" e dos Dias 7, 14, 21, 22, 24 e 28. Pedido do Diogo. O card NÃO usa a classe `.dia` de propósito: o script de progresso percorre `.dia` e exige um `.prog` em cada.
+- 22/09: Diogo confirmou que **os links da Khan abrem OK** (pendência do dia 21 encerrada). Correção das redações: outra pessoa vai corrigir; Diogo pode repassar depois — o roteiro continua mandando fotografar.
 - 21/09 (noite): Português = interpretação (~75% do peso) + conectivos (1 questão/ano) — os dois já cobertos. **"Uso dos porquês" não entra**: 0 questões em 6 provas, fora do programa do edital; Diogo mandou seguir a pesquisa. Listas de exercícios do cursinho: Diogo manda fotos depois (antes de 13/10); só entram as que baterem com a frequência e tiverem gabarito, referenciadas sem subir o material pro repo.
 
 ## Revisões (agentes separados)
