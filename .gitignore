@@ -5,6 +5,10 @@ fotos/
 *.jpeg
 *.heic
 *.webp
+# material do cursinho: propriedade do cursinho + tem correção à caneta da criança
+# (repo é PÚBLICO — nunca subir). Fica só na máquina do Diogo.
+material/
+*.pdf.png
 # temporários
 _*
 __pycache__/
