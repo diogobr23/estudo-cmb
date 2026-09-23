@@ -25,6 +25,8 @@
   .dia.hoje { border-color:var(--mat); box-shadow:0 0 0 2px rgba(43,108,176,.18) }
   .dia .hoje-tag { display:inline-block; font-size:12px; font-weight:700; color:#fff; background:var(--ok); border-radius:6px; padding:2px 8px; margin-left:6px; vertical-align:middle }
   .ref details.abrir { margin-top:8px } .ref details.abrir summary { font-size:16px }
+  .ref.azul { border-color:var(--mat) }
+  .ref ol { margin:6px 0 0 20px; padding:0 } .ref ol li { margin:5px 0 }
   .ref { background:var(--card); border:2px solid #b7770d; border-radius:16px; padding:16px; margin-bottom:16px }
   .ref h2 { margin:0 0 2px; font-size:20px } .ref .quando { color:var(--muted); font-size:15px; margin:0 0 10px }
   .ref h3 { font-size:16px; margin:14px 0 6px }
@@ -81,6 +83,7 @@
     <b>Como funciona</b>
     <ol>
       <li>A página mostra <b>só os dias desta semana</b>. Na segunda de manhã, os próximos aparecem sozinhos — se quiser espiar o plano inteiro, tem um link no fim da página.</li>
+      <li>Ainda hoje, lê uma vez o card <a href="#como-cai">🔍 Como caem as questões do CMB</a> aqui em cima. São 5 minutos que mudam o jeito de ler toda questão daqui pra frente.</li>
       <li>Antes de qualquer redação, lê o card <a href="#regras-redacao">📋 Regras da redação do CMB</a> aqui em cima — são as regras que reprovam ou salvam o texto.</li>
       <li>Cada dia tem de 4 a 6 passos. Faz na ordem e <b>marca a caixinha</b> quando terminar. Dias de <span class="tag">Matemática</span> usam a Khan Academy; dias de <span class="tag port">Português</span> usam vídeos do YouTube (pula os anúncios). Sábado é <span class="tag sim">Simulado</span> (uma prova antiga inteira) e domingo é <span class="tag red">Redação</span>.</li>
       <li>Antes de cada passo, põe um <b>timer no celular</b> com os minutos que estão entre parênteses.</li>
@@ -97,6 +100,55 @@
     <b id="semana-tit">Esta semana</b>
     <p id="semana-sub" class="t">…</p>
   </div>
+
+
+  <section class="ref azul" id="como-cai">
+    <h2>🔍 Como caem as questões do CMB <span class="tag">Vale pra prova inteira</span></h2>
+    <p class="quando">O assunto é de 5º ano. O que deixa a prova difícil é o <b>jeito</b> de perguntar — e isso dá pra treinar.</p>
+
+    <details class="abrir"><summary>Abrir (leitura de 5 minutos, vale por uma aula)</summary>
+
+    <h3>📐 Matemática: o que mais aparece</h3>
+    <p><b>Cinco assuntos entram em quase toda questão</b>, mesmo quando a pergunta é sobre outra coisa: <b>frações · números decimais · porcentagem · as 4 operações · conversão de unidades</b>. Eles não são a pergunta — são o caminho até ela. Por isso errar uma continha aqui derruba a questão inteira.</p>
+    <p><b>E estes costumam ser a pergunta</b>, todo ano: área e perímetro · classes e ordens (e números romanos) · ler tabela e gráfico · múltiplos, divisores e primos · volume de caixa em litros · horas e calendário · média · MMC.</p>
+    <p class="obs">Cai pouco: sólidos, probabilidade, MDC e dinheiro (1 por ano). Quase nunca: ângulos e polígonos.</p>
+
+    <h3>📖 Português: 6 de cada 10 questões é interpretação</h3>
+    <p>Quase não tem "decoreba" de gramática. O que cai mesmo: <b>tirinha e charge</b> (é o campeão) · descobrir o sentido de uma palavra <b>pelo contexto</b> · <b>"essa palavra está no lugar de quê?"</b> · sinônimo e antônimo dentro do texto · entender o que o texto <b>não</b> disse com todas as letras · pra que o texto foi escrito.</p>
+    <p>De gramática, só uma coisa cai <b>todas as vezes</b>: <b>a vírgula</b> — sempre perguntando que <b>sentido</b> ela dá, nunca a regra decorada. Depois vêm classes de palavras no texto, aspas e dois-pontos, e ironia.</p>
+    <p class="obs">Em 6 provas inteiras <b>não caiu nenhuma vez</b>: mau × mal, os porquês e palavras parecidas (tipo "descrição × discrição"). Se alguém te cobrar isso, não é o CMB.</p>
+
+    <h3>🎣 Os 8 truques que a prova usa</h3>
+    <ol>
+      <li><b>Enunciado comprido com 2 ou 3 assuntos juntos.</b> Uma piscina vira volume, que vira litros, que vira quilos. Não é uma questão difícil: são três fáceis grudadas.</li>
+      <li><b>A unidade escondida.</b> O texto dá em metros e a pergunta cobra em <b>dam</b>. As alternativas vêm "28 cm", "28 cm²" e "28 mm²" — a conta certa com a unidade errada vale zero.</li>
+      <li><b>"Só uma afirmação é verdadeira".</b> Cinco mini-questões numa só. Riscar as falsas <b>é</b> resolver.</li>
+      <li><b>Afirmações I, II e III.</b> Você precisa julgar as três pra marcar uma letra. Testa uma de cada vez, no papel.</li>
+      <li><b>Fração em cascata.</b> "Gastou 3/4 e depois 2/9 <b>do que sobrou</b>." O segundo pedaço é do <b>resto</b>, não do total. É a pegadinha nº 1 da prova.</li>
+      <li><b>Um passo a mais depois da conta.</b> "O resultado é um número primo?" — quem para na conta marca errado.</li>
+      <li><b>Ler gráfico, tabela e malha quadriculada.</b> Antes de calcular: lê o título e o que cada eixo mede.</li>
+      <li><b>Em Português, texto e imagem juntos.</b> Tirinha comparada com poema, charge com reportagem. A resposta é o que os dois têm <b>em comum</b>.</li>
+    </ol>
+
+    <h3>👀 Como ler uma questão do CMB (o passo a passo)</h3>
+    <div class="check"><ol>
+      <li><b>Lê a pergunta do FIM primeiro.</b> Antes do texto todo. Assim você já sabe o que está caçando.</li>
+      <li><b>Volta ao texto e circula só o que a pergunta pediu</b> — os números, ou a linha que interessa. O resto é enfeite.</li>
+      <li><b>Escreve no cantinho a unidade que a resposta tem que ter</b> (m? dam? cm²? litros?). Antes de fazer a conta.</li>
+      <li><b>Faz a conta em pé</b>, com capricho, e desenha a escada se trocar de unidade.</li>
+      <li><b>Antes de marcar, relê a pergunta uma última vez.</b> "Era mesmo em cm²?" "Era a única FALSA?"</li>
+    </ol></div>
+    <p class="obs">Metade dos erros de simulado é conta certa respondendo a pergunta errada. O passo 5 é o mais barato de todos.</p>
+
+    <h3>✏️ Na hora de marcar o cartão</h3>
+    <div class="zera"><ul>
+      <li><b>Nunca deixe questão em branco.</b> Errar e deixar em branco valem a mesma coisa: zero. E não existe desconto por erro — então, no fim, toda questão marcada. Com duas alternativas eliminadas, um chute vale metade; em branco vale nada.</li>
+      <li><b>Uma bolinha só por questão</b>, preenchida inteira, com caneta azul ou preta. <b>Marcar duas, rasurar ou apagar zera a questão.</b> Por isso a gente decide no caderno e só depois passa a limpo.</li>
+      <li><b>Se travar numa questão por mais de 5 minutos</b>: marca um "?" no caderno, segue, e volta no fim com o tempo que sobrar.</li>
+    </ul></div>
+    <p class="obs">E uma coisa importante: <b>tudo que está neste roteiro cai no CMB.</b> Se você travou em alguma coisa aqui, é falta de treino — nunca é assunto de outro ano. Pode confiar e insistir.</p>
+    </details>
+  </section>
 
   <section class="ref" id="regras-redacao">
     <h2>📋 Regras da redação do CMB <span class="tag red">Ler antes de toda redação</span></h2>
