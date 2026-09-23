@@ -1,5 +1,41 @@
 # progress — Estudo CMB
 
+## Estado (23/09/2026, fim da 3ª sessão)
+
+### 🔴 LER PRIMEIRO — onde a criança está e o que mudou
+- **Ela está no Dia 3 (porcentagem).** Em 23/09 assistiu só os vídeos; **vai fazer o Dia 3 reformulado em 24/09**. Está ~1 dia atrás do calendário, e **isso está ok** (ver princípio abaixo).
+- **Princípio novo do Diogo (23/09), vale para todo o resto:** *resolver as dificuldades primeiro, sem pressão. Se faltar tempo, focar no que mais cai na prova.* Ou seja: o calendário é guia, não dívida. Se um dia precisar de dois dias, tudo bem — corta-se o que tem menor peso na tabela de frequência.
+- **Diagnóstico de campo (Diogo observando ela estudar, 23/09)** — vale mais que qualquer inferência de lista antiga:
+  - **Não sabia porcentagem**: nem calcular, nem as equivalências clássicas com fração (50% = 1/2, 25% = 1/4…).
+  - **Errou conta de divisão.**
+  - A **resolução da Khan confundiu**; o **método dos pedaços** (10% + 5%) que eu escrevi funcionou.
+  - Diogo levantou a hipótese de ensinar **equação**. **Decisão: NÃO.** Fora do edital (é 7º ano), ela nunca viu, e o método dos pedaços resolve os mesmos casos, inclusive o inverso ("30% de um número é 45" → desce ao 10%, sobe ao 100%).
+- **Dia 3 foi reconstruído** (23/09): 4 vídeos do YouTube verificados + passo novo "porcentagem é fração disfarçada" (copiar e decorar a tabela) + treino próprio em 3 níveis com gabarito. **Zero dependência da Khan.**
+- **Card novo `🧮 Cola de Matemática`** (`id="cola-mat"`): tabela %↔fração↔decimal, método dos pedaços, o caso inverso, **divisão sem erro** (vírgula, resto, dividir por 5, conferir multiplicando de volta), escada, área/volume, ordens e classes, romanos, MMC × MDC.
+
+### ⚠️ Links da Khan — duas falhas reais em 23/09
+1. A unidade `numeros-porcentagem-6ano` **não tem vídeo**, só exercício — o passo mandava "assiste o primeiro vídeo da lista".
+2. Eu **inventei** a URL de exercício `.../porcentagem-6ano/e/finding-percentages` deduzindo o padrão, em vez de usar uma URL vista em busca. **Nunca mais construir URL da Khan por dedução.**
+- Regra: só link direto de vídeo (`/v/`) ou exercício (`/e/`) **que tenha aparecido em busca**, e sempre com plano B no próprio passo.
+- **Pergunta aberta ao Diogo**: trocar os exercícios da Khan por treinos próprios com gabarito em **todos** os dias de Matemática (8, 9, 11, 15, 16, 18)? Os vídeos do YouTube ficam (dá para verificar por oEmbed com `pesquisa/ytcheck.py`).
+- Ainda restam 3 links de UNIDADE nos Dias 1 e 2 (soma de frações, soma de decimais, unidade de decimais do 5º ano) — mesmo risco, não testados.
+
+### ✅ Entregue nesta sessão
+- **30 resoluções da prova de 2022** dentro do Dia 6, em bloco recolhido (15 Mat + 15 Port), todas batendo com o gabarito oficial. Ressalvas em `03-pratica.md`.
+- Card **🔍 Como caem as questões do CMB** (assuntos por peso, 8 truques da prova, passo a passo de como ler uma questão, regras do cartão).
+- Card **📋 Regras da redação** (9 irregularidades, rubrica, checklist) — recolhido.
+- **Vista semanal**: a página mostra só a semana atual (seg–dom) e troca sozinha pela data; link discreto "ver o plano inteiro" no rodapé.
+- **Marcas do simulado**: conta · pergunta · assunto · **chute** (nova), com ⭐ por cima. Passo renomeado para "Anota por que errou cada uma".
+- **Privacidade**: `noindex` + `robots.txt`; `material/` fora do git; regra de zero dados pessoais no `CLAUDE.md`; imagens renderizadas do material **apagadas**.
+- **Inventário do material do cursinho** em `pesquisa/04-material-cursinho.md`.
+
+### ⏭️ Retomar por aqui
+1. Confirmar com o Diogo a troca dos exercícios da Khan nos dias de Matemática.
+2. Os 3 itens combinados que faltam: **mais questões nos dias de Português** (31 do CMB real nas listas de pronome, págs. 43–51), **fixação de Matemática** (conversão: bateria págs. 15–16; área com unidade escondida: págs. 26–28; fração em cascata: lista frações e verbos pág. 6 Q34) e o card de dicas — **este último já foi feito** (é a Cola).
+3. Novas listas que o Diogo vai subir.
+4. Se ela seguir atrasada, avaliar trocar a vista por semana por uma de "onde eu parei".
+5. Depois do CMB: **OBMEP 2ª fase, 5º ano**.
+
 ## Estado (21/09/2026, fim da 2ª sessão)
 - ✅ Desenho aprovado → `PLANO.md`. Pasta criada.
 - ✅ **Fase 1 · Pesquisa — CONCLUÍDA.**
