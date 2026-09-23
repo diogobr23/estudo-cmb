@@ -43,5 +43,13 @@ Tudo que era aproveitável entrou no roteiro (tabela acima). Se precisar de mais
 Q1 `RMd-40lyFj0` (13:49) · Q2 `lR1oXv73AMM` (9:49) · Q6 `BVt3FhjcWSo` · Q7 `k9JOhfYjWM4` (12:31) · Q8 `H7Yrp-2VMbE` (8:30) · Q10 `_FjSuOLySBg` (5:38) · Q12 `2l45Xk4QrkA` (20:56). Instituto Ser Integral (curtos): Q10 `ee1zxcZwRnY` (3:15) · Q12 `pCcarv-9ttc` (9:05) · Q11 `DhSxPX9Gnds` (4:07) · Q4 `GxyimUDoNJw` (11:35).
 Português: nenhum vídeo por questão do CMB 2020/2021 encontrado (só provas de outros colégios).
 
+## Resoluções dos simulados
+- **2022 (Dia 6): as 30 questões resolvidas e publicadas** (23/09) dentro do passo "✅ Corrige", num bloco recolhido. Matemática escrita pelo Claude (Q1–Q8) e por agente (Q9–Q15); Português por dois agentes (Q16–Q23, Q24–Q30). Todas batem com o gabarito oficial.
+  - ⚠️ **2022 Q12 (senha do iPhone): gabarito oficial C (1/12), mas a conta correta dá 1/5 (letra B).** A banca contou os 60 números de 11 a 70 como casos possíveis, ignorando que o enunciado já informa que o número é divisível por 12. Duas leituras independentes chegaram a 1/5. A resolução segue o caminho oficial e avisa a criança.
+  - ⚠️ Erros de impressão da prova de 2022: **Q22** tem a 5ª alternativa rotulada "A" em vez de "E".
+  - Figuras que exigiram zoom: **Q1** (triângulo azul tem catetos 3 e 4 → área 6) e **Q5** (a fatia é **43%**, não 45% — com 45% as fatias somavam 102%).
+  - Textos de 2022: "A terra dos meninos pelados" (Graciliano Ramos) · "Todos diferentes, todos iguais" (Hugo Santos, Folha) · Declaração Universal dos Direitos das Crianças (UNICEF) · cartum de Toni D'Agostinho · cartaz e sinopse do filme UglyDolls.
+- 2023, 2024 e 2025: fazer o mesmo nas semanas seguintes, se o formato funcionar no dia 26/09.
+
 ## Como as ⭐ viram resolução
 A criança marca ⭐ nas questões dos simulados (2022, 2023, 2024, 2025) que não entendeu. Diogo manda a lista (ano + número) → resolução escrita no padrão do roteiro, inserida num card "Resoluções pedidas" ou no dia de revisão correspondente.

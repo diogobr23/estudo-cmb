@@ -26,6 +26,10 @@
   .dia.hoje { border-color:var(--mat); box-shadow:0 0 0 2px rgba(43,108,176,.18) }
   .dia .hoje-tag { display:inline-block; font-size:12px; font-weight:700; color:#fff; background:var(--ok); border-radius:6px; padding:2px 8px; margin-left:6px; vertical-align:middle }
   .ref details.abrir { margin-top:8px } .ref details.abrir summary { font-size:16px }
+  details.grupo { margin-top:10px; background:#eef2f8; border-radius:12px; padding:10px 14px }
+  details.grupo > summary { font-size:16px; font-weight:700 }
+  details.grupo h4 { margin:14px 0 6px; font-size:16px; color:var(--mat); border-bottom:1px solid var(--line); padding-bottom:4px }
+  details.grupo details.res { background:#fff }
   .ref.azul { border-color:var(--mat) }
   .ref ol { margin:6px 0 0 20px; padding:0 } .ref ol li { margin:5px 0 }
   .ref { background:var(--card); border:2px solid #b7770d; border-radius:16px; padding:16px; margin-bottom:16px }
@@ -500,13 +504,519 @@
       abre a <a href="../pesquisa/provas/2022-prova.pdf#page=1" target="_blank">prova de 2022</a>. São 30 questões: 1 a 15 de Matemática, 16 a 30 de Português.
       <div class="t">Timer em 2h30 (30 questões em 2h30 = 5 minutos por questão, o mesmo ritmo da prova de verdade). Travou? Marca um "?" no caderno e vai pra próxima — volta no fim. Marca "?" também quando <b>chutar</b>: na correção isso vira informação. Lê a pergunta do FIM primeiro. Deixa a redação de lado hoje: ela é amanhã.</div></label></div>
 
-    <div class="passo"><input type="checkbox" id="d6p3"><label for="d6p3">✅ <b>Corrige</b> (15 min):
+    <div class="passo"><input type="checkbox" id="d6p3"><div class="corpo"><label for="d6p3">✅ <b>Corrige</b> (15 min):
       abre o <a href="../pesquisa/provas/2022-gabarito.pdf" target="_blank">gabarito de 2022</a> e confere letra por letra.
-      <div class="t">Escreve no caderno: "Matemática: __ de 15 · Português: __ de 15". Esse é o seu ponto de partida — o de hoje é pra comparar com o de daqui a 2 semanas, não pra ficar triste. É a primeira vez!</div></label></div>
+      <div class="t">Escreve no caderno: "Matemática: __ de 15 · Português: __ de 15". Esse é o seu ponto de partida — o de hoje é pra comparar com o de daqui a 2 semanas, não pra ficar triste. É a primeira vez!</div></label>
+      <details class="grupo"><summary>📘 Resoluções das 30 questões — abre só as que você errou</summary>
+        <p class="t">Primeiro tenta entender sozinha olhando o seu caderno. Se não sair, abre aqui a resolução daquela questão. Não precisa ler as 30!</p>
+        <h4>Matemática (1 a 15)</h4>
+<details class="res"><summary>Resolução — Questão 1 (a área desmatada na malha)</summary>
+  <div class="quer">🎯 O que ela quer: comparar as áreas das três regiões coloridas — vermelha, amarela e azul — contando quadradinhos da malha. Só uma das cinco frases é verdadeira.</div>
+  <div class="passo-r"><span class="n">1</span><div>Aqui vale um alívio: <b>você não precisa dos 7 km</b>. Como todas as regiões estão na mesma malha, comparar em "quadradinhos" dá o mesmo resultado que comparar em km². O 7 km está lá só para assustar.</div></div>
+  <div class="passo-r"><span class="n">2</span><div><b>Triângulo azul.</b> Ele encosta em 3 quadradinhos deitados e 4 em pé. Todo triângulo é <b>metade do retângulo</b> que cabe em volta dele: \[\frac{3 \times 4}{2} = 6 \text{ quadradinhos}\]</div></div>
+  <div class="passo-r"><span class="n">3</span><div><b>Triângulo amarelo.</b> A parte de cima dele mede 6 quadradinhos deitados e ele desce 3 quadradinhos até a pontinha: \[\frac{6 \times 3}{2} = 9 \text{ quadradinhos}\]</div></div>
+  <div class="passo-r"><span class="n">4</span><div>Agora compara amarelo com azul: \[\frac{\text{amarelo}}{\text{azul}} = \frac{9}{6} = \frac{3}{2}\] O amarelo é \(\frac{3}{2}\) do azul — ou seja, uma vez e meia o azul.</div></div>
+  <div class="resp">✅ Resposta: letra A</div>
+  <div class="passo-r"><span class="n">5</span><div>Conferindo as outras. O <b>vermelho</b> é um trapézio: 4 quadradinhos em cima, 6 embaixo, 7 de altura → \(\frac{(4+6)}{2} \times 7 = 35\) quadradinhos.
+      <div class="alt"><b class="x">B ✘</b> \(\frac{2}{3}\) seria o azul em relação ao amarelo, está de trás pra frente · <b class="x">C ✘</b> o dobro do amarelo seria 18, e o vermelho é 35 · <b class="x">D ✘</b> o azul é \(\frac{6}{9} = \frac{2}{3}\) do amarelo, não a metade · <b class="x">E ✘</b> 6 é diferente de 9.</div></div></div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> triângulo na malha = <b>metade do retângulo</b> que o cerca. Conta quantos quadradinhos ele tem de largura e de altura, multiplica e divide por 2. Não precisa contar quadradinho por quadradinho.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> perder tempo multiplicando tudo por 49 km² (7 × 7). Quando a pergunta compara duas áreas da <b>mesma</b> malha, o tamanho do quadradinho se cancela.</div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 2 (os troncos cortados em pedaços iguais)</summary>
+  <div class="quer">🎯 O que ela quer: cortar três troncos (810 cm, 540 cm e 360 cm) em pedaços <b>todos do mesmo tamanho</b>, usando o <b>menor número possível de pedaços</b>. Quantos pedaços saem no total?</div>
+  <div class="passo-r"><span class="n">1</span><div>Menos pedaços = cada pedaço o <b>maior possível</b>. E esse tamanho tem que servir para os três troncos ao mesmo tempo, sem sobrar nada. Isso é o <b>MDC</b> (máximo divisor comum).</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Um jeito fácil: os três terminam em zero, então dá pra dividir todos por 10 de cara. \[810 \div 10 = 81 \qquad 540 \div 10 = 54 \qquad 360 \div 10 = 36\] Agora, 81, 54 e 36 são todos da tabuada do 9: \(9 \times 9 = 81\), \(9 \times 6 = 54\), \(9 \times 4 = 36\).</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Então o maior pedaço mede \(10 \times 9 = 90\) cm.</div></div>
+  <div class="passo-r"><span class="n">4</span><div>Quantos pedaços de 90 cm saem de cada tronco?
+      <table class="tab"><tr><td>810 ÷ 90</td><td>9 pedaços</td></tr><tr><td>540 ÷ 90</td><td>6 pedaços</td></tr><tr><td>360 ÷ 90</td><td>4 pedaços</td></tr></table>
+      \[9 + 6 + 4 = 19\]</div></div>
+  <div class="resp">✅ Resposta: letra A — 19 pedaços</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> quando a questão fala em <b>repartir em partes iguais, do maior tamanho possível</b>, é MDC. Quando fala em <b>se encontrar de novo, ao mesmo tempo</b>, é MMC. Guarde essas duas frases.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> responder 90 (que é o tamanho do pedaço) em vez de 19 (que é a quantidade de pedaços). Releia a pergunta antes de marcar.</div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 3 (quantos km o drone pulveriza)</summary>
+  <div class="quer">🎯 O que ela quer: primeiro resolver a expressão (que dá os km de <b>1 hora</b>) e depois responder quantos km em <b>2 horas</b>.</div>
+  <div class="passo-r"><span class="n">1</span><div>Resolve o <b>de cima</b> primeiro. Multiplicação antes de subtração: \[0{,}2 \times 0{,}7 = 0{,}14 \qquad 4 \times 0{,}01 = 0{,}04\] \[0{,}14 - 0{,}04 = 0{,}10\]
+      <div class="t">Lembrete de decimal: \(2 \times 7 = 14\), e como havia uma casa depois da vírgula em cada número, o resultado fica com duas casas: 0,14.</div></div></div>
+  <div class="passo-r"><span class="n">2</span><div>Agora o <b>de baixo</b>: \[0{,}5 \times 0{,}2 = 0{,}10\]</div></div>
+  <div class="passo-r"><span class="n">3</span><div>A barra de fração é uma divisão: \[0{,}10 \div 0{,}10 = 1\] Um número dividido por ele mesmo dá 1. Então o drone faz <b>1 km em 1 hora</b>.</div></div>
+  <div class="passo-r"><span class="n">4</span><div>A pergunta é sobre <b>2 horas</b>: \[1 \times 2 = 2 \text{ km}\]</div></div>
+  <div class="resp">✅ Resposta: letra D — 2 km</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> em fração de expressões, resolve o de cima inteiro, depois o de baixo inteiro, e só no fim divide. Nunca corte números "pela metade" da conta.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> parar no 1 e marcar a letra E. O 1 era 1 hora; a pergunta pediu <b>2 horas</b>. Essa questão tem um passo escondido depois da conta.</div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 4 (subiu 20%, depois caiu 20%)</summary>
+  <div class="quer">🎯 O que ela quer: o preço sobe 20% e depois cai 20% <b>sobre o preço novo</b>. No fim, ele volta ao que era?</div>
+  <div class="passo-r"><span class="n">1</span><div>Quando a questão não dá o preço, <b>invente um fácil</b>: R$ 100. Funciona porque a resposta é em porcentagem.</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Sobe 20%: \[20\% \text{ de } 100 = 20 \qquad 100 + 20 = 120\]</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Agora cai 20%, mas <b>de 120</b>, não de 100 — é aqui que mora a pegadinha: \[20\% \text{ de } 120 = 24 \qquad 120 - 24 = 96\]</div></div>
+  <div class="passo-r"><span class="n">4</span><div>Começou em 100 e terminou em 96: perdeu 4 de 100, ou seja, <b>4% menor</b> que o preço inicial.</div></div>
+  <div class="resp">✅ Resposta: letra B — 4% menor que o valor inicial</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> "inventar o 100" resolve quase toda questão de porcentagem sem valor. 10% de 100 é 10, 1% é 1 — as contas ficam de cabeça.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> achar que sobe 20 e desce 20 dá zero (letra A). Não dá, porque o desconto é calculado sobre um valor <b>maior</b>. Subir e descer a mesma porcentagem <b>sempre</b> termina abaixo do preço inicial.</div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 5 (o gráfico de pizza da tecnologia)</summary>
+  <div class="quer">🎯 O que ela quer: das 5 frases sobre o gráfico, a verdadeira. Foram 250 000 pessoas, divididas em trabalho 43%, educação 20%, lazer 13%, informação 20% e relacionamento 4%.</div>
+  <div class="passo-r"><span class="n">1</span><div>Antes de ler as frases, transforma cada fatia em gente. O truque: <b>1% de 250 000 é 2 500</b> (é só dividir por 100).
+      <table class="tab"><tr><td>trabalho 43%</td><td>107 500</td></tr><tr><td>educação 20%</td><td>50 000</td></tr><tr><td>lazer 13%</td><td>32 500</td></tr><tr><td>informação 20%</td><td>50 000</td></tr><tr><td>relacionamento 4%</td><td>10 000</td></tr></table>
+      Com essa tabelinha pronta, cada frase vira uma conferida rápida.</div></div>
+  <div class="passo-r"><span class="n">C</span><div>Educação + trabalho: \[50\,000 + 107\,500 = 157\,500\] Agora as três coisas que a frase afirma:
+      <div class="t">• <b>6 ordens?</b> 157 500 tem 6 algarismos ✔ · <b>2 classes?</b> 157 · 500, dois grupos de três ✔ · <b>múltiplo de 12?</b> \(157\,500 \div 12 = 13\,125\), divisão exata ✔</div>
+      Tudo certo. <b class="v">✔ Verdadeira.</b></div></div>
+  <div class="resp">✅ Resposta: letra C</div>
+  <div class="quer">Se quiser conferir por que as outras são falsas:</div>
+  <div class="passo-r"><span class="n">A</span><div>Relacionamento (10 000) é \(\frac{2}{5}\) de educação (50 000)? \(\frac{2}{5}\) de 50 000 é 20 000. Na verdade é \(\frac{1}{5}\). <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>Lazer = 32 500: tem <b>5 ordens e 2 classes</b>. A frase inverteu tudo ("2 ordens e 6 classes"). <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>O dobro de trabalho já seria 215 000 — muito maior que os 50 000 de informação. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>\((10\,000 + 50\,000 + 50\,000) - 107\,500 = 2\,500\). E 2% do total é 5 000. Como 2 500 é <b>menos</b> que 5 000, não passa de 2%. <b class="x">✘</b></div></div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> em questão de gráfico com 5 afirmações, <b>monte a tabelinha de todas as fatias antes de ler as alternativas</b>. Você faz as contas uma vez só e depois é só conferir.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> confundir <b>ordem</b> (cada algarismo) com <b>classe</b> (cada grupo de 3). A alternativa B existe só pra pegar quem troca os dois.</div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 6 (usuários do app de corrida)</summary>
+  <div class="quer">🎯 O que ela quer: em 2016 eram 748 usuários. Em 2019 houve um <b>aumento de 103%</b> em relação a 2016. Entre quais números está o total de 2019?</div>
+  <div class="passo-r"><span class="n">1</span><div>Cuidado com a palavra <b>aumento</b>: o valor novo é o que já tinha <b>mais</b> os 103%. Não é "virou 103% de 748".</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Quebra o 103% em pedaços fáceis: \[100\% \text{ de } 748 = 748 \qquad 3\% = 1\% \times 3\] \[1\% \text{ de } 748 = 7{,}48 \Rightarrow 3\% = 7{,}48 \times 3 = 22{,}44\]</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Junta tudo: o que já tinha (748), mais os 100% (748), mais os 3% (22,44):
+      <div class="mat">\[\begin{array}{r} 748{,}00 \\ 748{,}00 \\ +\ \ 22{,}44 \\ \hline 1\,518{,}44 \end{array}\]</div></div></div>
+  <div class="passo-r"><span class="n">4</span><div>1 518,44 está entre <b>1517 e 1519</b>.</div></div>
+  <div class="resp">✅ Resposta: letra A</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> "aumento de 103%" é quase <b>dobrar</b>. O dobro de 748 é 1 496 — só as letras A e B chegam perto, e a A é a única que cabe 1 518. Dá pra eliminar C, D e E em 5 segundos.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> calcular 103% <b>de</b> 748 (que dá 770,44) em vez de 748 <b>mais</b> 103%. "De" é o valor todo; "aumento de" é o que se soma.</div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 7 (o número do ônibus)</summary>
+  <div class="quer">🎯 O que ela quer: o ônibus serve se cumprir <b>as duas regras ao mesmo tempo</b> — (1) todos os algarismos ímpares e (2) o número é divisível pelo algarismo das unidades (o último).</div>
+  <div class="passo-r"><span class="n">1</span><div>Lembrando: ímpares são 1, 3, 5, 7 e 9. Se <b>qualquer</b> algarismo for par, o ônibus já está fora — nem precisa testar a segunda regra.</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Testa os números que aparecem nas alternativas:
+      <table class="tab"><tr><td>53</td><td>5 e 3 ímpares ✔ · 53 ÷ 3 não é exato ✘ → <b>não serve</b></td></tr><tr><td>65</td><td>o 6 é par ✘ → não serve</td></tr><tr><td>45</td><td>o 4 é par ✘ → não serve</td></tr><tr><td>85</td><td>o 8 é par ✘ → não serve</td></tr><tr><td>71</td><td>7 e 1 ímpares ✔ · 71 ÷ 1 = 71 exato ✔ → <b>serve</b></td></tr><tr><td>31 e 51</td><td>ímpares ✔ · dividir por 1 sempre dá exato ✔ → <b>servem</b></td></tr></table>
+      <div class="t">Para saber se 53 é divisível por 3, some os algarismos: 5 + 3 = 8. Como 8 não está na tabuada do 3, o 53 também não está.</div></div></div>
+  <div class="passo-r"><span class="n">3</span><div>Agora é só ler as frases:
+      <div class="alt"><b class="x">A ✘</b> o 65 tem o 6, que é par · <b class="x">B ✘</b> acerta no 45, mas erra no 85 (tem o 8) · <b class="v">C ✔</b> o 53 realmente não serve, e o 71 serve · <b class="x">D ✘</b> nenhum dos dois serve · <b class="x">E ✘</b> os dois servem, porque todo número é divisível por 1.</div></div></div>
+  <div class="resp">✅ Resposta: letra C</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> comece caçando <b>algarismo par</b> nas alternativas. É o teste mais rápido e já derruba metade delas sem nenhuma divisão.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> esquecer que <b>todo número é divisível por 1</b>. Quem termina em 1 (como 71, 31 e 51) passa direto na segunda regra.</div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 8 (quantos metros Nicodemos caminha)</summary>
+  <div class="quer">🎯 O que ela quer: ele dá <b>1 passo por segundo</b> durante <b>15 minutos</b>, e cada passo tem <b>60 cm</b>. Quantos <b>metros</b> ele caminha?</div>
+  <div class="passo-r"><span class="n">1</span><div>Quantos passos? Primeiro, quantos segundos tem 15 minutos: \[15 \times 60 = 900 \text{ segundos}\] Como é 1 passo por segundo, são <b>900 passos</b>.</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Distância em centímetros: \[900 \times 60 = 54\,000 \text{ cm}\]</div></div>
+  <div class="passo-r"><span class="n">3</span><div>A pergunta quer em <b>metros</b>. Hora da escada:
+      <div class="escada"><div class="deg"><span>km</span><span>hm</span><span>dam</span><span class="aqui">m</span><span>dm</span><span class="aqui">cm</span><span>mm</span></div>
+      <div class="seta"><span>← pra esquerda: <b>÷ 10</b> por degrau</span><span>pra direita: <b>× 10</b> por degrau →</span></div></div>
+      De cm até m são <b>2 degraus pra esquerda</b> → ÷ 10 ÷ 10 = ÷ 100: \[54\,000 \div 100 = 540 \text{ m}\]</div></div>
+  <div class="resp">✅ Resposta: letra A — 540 m</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> dividir por 100 é andar a vírgula <b>duas casas para a esquerda</b> — ou, em número inteiro terminado em zeros, cortar dois zeros. 54 000 vira 540.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> multiplicar 15 × 60 e parar, achando que 900 é a resposta em metros. Tem dois passos escondidos aqui: os segundos <b>e</b> a troca de centímetro para metro.</div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 9 (o peso escondido do iPhone 13)</summary>
+  <div class="quer">🎯 O que ela quer: <em>descobrir quanto pesa o iPhone 13 (o peso que está tampado na tabela) e depois comparar esse peso com o dos outros aparelhos.</em></div>
+  <div class="passo-r"><span class="n">1</span><div>A <b>média</b> é como juntar tudo num monte só e repartir igualzinho entre todos. Se a média dos <b>4</b> celulares é 176,5 g, é como se cada um pesasse 176,5 g. Então, juntos, eles pesam 4 vezes isso:
+  \[4 \times 176{,}5 = 706 \text{ g}\]
+  Esse 706 g é o peso dos <b>quatro</b> somados — o iPhone 13 já está dentro dele.</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Agora some os três pesos que a tabela mostra: iPhone X = 174 g, iPhone 11 = 194 g, iPhone 12 = 164 g.
+  \[\begin{array}{r} 174 \\ 194 \\ +\ \ 164 \\ \hline 532 \end{array}\]</div></div>
+  <div class="passo-r"><span class="n">3</span><div>O que falta para chegar nos 706 g é justamente o iPhone 13:
+  \[\begin{array}{r} 706 \\ -\ \ 532 \\ \hline 174 \end{array}\]
+  O iPhone 13 pesa <b>174 g</b>.</div></div>
+  <div class="passo-r"><span class="n">4</span><div>Agora é só comparar 174 g com cada aparelho da tabela:</div></div>
+  <div class="alt"><b class="x">A ✘</b> 174 não é maior que 194 (o iPhone 11) · <b class="x">B ✘</b> 174 não é menor que 164 (o iPhone 12) · <b class="x">C ✘</b> 174 não é maior que 174, é o mesmo · <b class="v">D ✔</b> 174 g é exatamente o peso do iPhone X · <b class="x">E ✘</b> 174 não é igual a 164</div>
+  <div class="resp">✅ Resposta: letra D</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>as alternativas D e E já te entregam dois candidatos prontos (174 e 164). Teste o D de cara: \(174 + 194 + 164 + 174 = 706\) e \(706 \div 4 = 176{,}5\). Bateu com o enunciado, acabou a questão.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>somar só os três pesos que aparecem e dividir por 3, ou dividir 176,5 por 4. Não dá certo porque a média de 176,5 g já foi calculada <b>com</b> o iPhone 13 dentro — ele está escondido na conta, não de fora dela.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 10 (a tela 2% maior)</summary>
+  <div class="quer">🎯 O que ela quer: <em>a tela do iPhone 13 tem a mesma largura da tela do iPhone X (7,0 cm), mas a área dela é 2% maior. De quantos <b>milímetros</b> o comprimento precisou crescer?</em></div>
+  <div class="passo-r"><span class="n">1</span><div>Primeiro, a área da tela do iPhone X. O enunciado dá a fórmula: área = comprimento × largura.
+  \[14{,}4 \times 7 = 100{,}8 \text{ cm}^2\]</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Quanto é 2% de 100,8? <b>Por cento</b> quer dizer "de cada cem". Então divida por 100 para achar 1%, e multiplique por 2:
+  \[100{,}8 \div 100 = 1{,}008 \qquad 1{,}008 \times 2 = 2{,}016\]
+  A área nova é \(100{,}8 + 2{,}016 = 102{,}816 \text{ cm}^2\).</div></div>
+  <div class="passo-r"><span class="n">3</span><div>A largura continua 7 cm. Para achar o comprimento novo, faça o caminho de volta: divida a área pela largura.
+  \[102{,}816 \div 7 = 14{,}688 \text{ cm}\]</div></div>
+  <div class="passo-r"><span class="n">4</span><div>Atenção: a pergunta não é o comprimento novo, é <b>quanto ele cresceu</b>. Então subtraia o antigo:
+  \[\begin{array}{r} 14{,}688 \\ -\ 14{,}400 \\ \hline 0{,}288 \end{array}\]
+  Cresceu 0,288 cm.</div></div>
+  <div class="passo-r"><span class="n">5</span><div>A resposta tem que estar em milímetros, e a conta está em centímetros. Use a escada — de cm para mm é <b>um degrau para a direita</b>, então multiplica por 10:</div></div>
+  <div class="escada"><div class="deg"><span>km</span><span>hm</span><span>dam</span><span>m</span><span>dm</span><span class="aqui">cm</span><span class="aqui">mm</span></div>
+  <div class="seta"><span>← pra esquerda: <b>÷ 10</b> por degrau</span><span>pra direita: <b>× 10</b> por degrau →</span></div></div>
+  <div class="passo-r"><span class="n">6</span><div>\[0{,}288 \times 10 = 2{,}88 \text{ mm}\]</div></div>
+  <div class="resp">✅ Resposta: letra B</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>como a largura <b>não muda</b>, aumentar a área em 2% é a mesma coisa que aumentar só o comprimento em 2%. Dá para pular tudo e fazer uma conta só: 2% de 14,4 cm = \(14{,}4 \div 100 \times 2 = 0{,}288\) cm = <b>2,88 mm</b>. Guarde essa ideia: quando um lado do retângulo fica parado, a área cresce na mesma porcentagem que o outro lado.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>a alternativa A (14,688 mm) é uma armadilha dupla: ela usa o comprimento <b>novo inteiro</b> em vez do aumento, e ainda troca a unidade de lugar. A alternativa D (2,016) é o "2% da área" que apareceu no passo 2, que também não é a resposta. E tem o erro clássico de parar em 0,288 e não passar de cm para mm.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 11 (o próximo múltiplo de 7)</summary>
+  <div class="quer">🎯 O que ela quer: <em>entre os cinco números das alternativas, qual é o <b>menor</b> que é múltiplo de 7 e ao mesmo tempo <b>maior</b> que 4 580 247.</em></div>
+  <div class="passo-r"><span class="n">1</span><div>Pense nos múltiplos de 7 como os degraus de uma escada em que cada degrau mede 7: 7, 14, 21, 28… Eles andam sempre de 7 em 7, nunca de 5 ou de 8.</div></div>
+  <div class="passo-r"><span class="n">2</span><div>O enunciado já te deu de presente que <b>4 580 247 é múltiplo de 7</b>. Ou seja, você já está em cima de um degrau. Então o próximo degrau é só somar 7:
+  \[\begin{array}{r} 4\,580\,247 \\ +\ \ \ \ \ \ \ \ \ 7 \\ \hline 4\,580\,254 \end{array}\]
+  (Nas unidades: \(7 + 7 = 14\), escreve 4 e vai 1 para as dezenas: \(4 + 1 = 5\).)</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Confira as outras: elas estão a 8, 9, 11 e 12 passos do 4 580 247 — nenhum desses é um salto de 7, então nenhuma é múltiplo de 7.</div></div>
+  <div class="alt"><b class="v">A ✔</b> 4 580 254 = 4 580 247 + 7 · <b class="x">B ✘</b> + 8 · <b class="x">C ✘</b> + 9 · <b class="x">D ✘</b> + 11 · <b class="x">E ✘</b> + 12</div>
+  <div class="resp">✅ Resposta: letra A</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>quando a questão te avisa que um número já é múltiplo de alguma coisa, ela está te poupando trabalho. O múltiplo seguinte é <b>+ 7</b> e o anterior é <b>− 7</b>. Você nunca precisa dividir o número gigante.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>começar a fazer a divisão de 4 580 247 por 7 na mão. Além de demorado, é onde o erro aparece — e a informação para evitar isso já estava escrita no enunciado. Outro escorregão: somar errado nas unidades e escrever 4 580 244 (esquecer o "vai 1").</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 12 (a chance de acertar a senha)</summary>
+  <div class="quer">🎯 O que ela quer: <em>a probabilidade (a "chance") de acertar, logo na primeira tentativa, o número de dois algarismos que falta no fim da senha.</em></div>
+  <div class="passo-r"><span class="n">1</span><div><b>Probabilidade</b> é uma fração: em cima vai o número de casos que dão certo, embaixo vai o número de casos possíveis. É como uma rifa: quantos bilhetes premiados ÷ quantos bilhetes existem.</div></div>
+  <div class="passo-r"><span class="n">2</span><div><b>Casos possíveis.</b> O número é maior que 10 e menor que 71 — ou seja, vai de 11 até 70. Quantos números há aí dentro?
+  \[70 - 10 = 60\]
+  São <b>60</b> números possíveis. (Conta rápida: tira fora o 1 até o 10, que são 10 números, dos 70 → sobram 60.)</div></div>
+  <div class="passo-r"><span class="n">3</span><div><b>Casos que dão certo.</b> Desses 60, quais são divisíveis por 12? Vá contando de 12 em 12:
+  \[12 \quad 24 \quad 36 \quad 48 \quad 60\]
+  O próximo seria 72, que já passou de 71. Então são <b>5</b>.</div></div>
+  <div class="passo-r"><span class="n">4</span><div>Monte a fração e simplifique dividindo em cima e embaixo por 5:
+  \[\frac{5}{60} = \frac{1}{12}\]</div></div>
+  <div class="resp">✅ Resposta: letra C</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>para contar os múltiplos de 12 sem listar, é só dividir: \(70 \div 12 = 5\) e sobra 10 → são 5 múltiplos de 12 até 70. Esse truque serve para qualquer "quantos múltiplos de X existem até Y".</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>aqui o escorregão é grande e vale ler com calma. Muita gente pensa assim: "ele já <b>sabe</b> que o número é múltiplo de 12, então sobraram só 5 opções → a chance é \(\frac{1}{5}\)" — e marca a letra B. Esse raciocínio é bem razoável, e foi o primeiro que eu mesmo fiz ao resolver. <b>Mas o gabarito oficial do CMB é a letra C.</b> A banca contou como <b>casos possíveis</b> todos os 60 números do intervalo (de 11 a 70), e como <b>casos favoráveis</b> os 5 múltiplos de 12, chegando a \(\frac{5}{60} = \frac{1}{12}\). Regra prática para a prova: em probabilidade, "casos possíveis" = tudo que o intervalo permite; "casos favoráveis" = só os que obedecem à regra extra. Se numa questão dessas as duas leituras aparecerem nas alternativas, vá pela contagem do intervalo inteiro embaixo da fração.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 13 (a senha da fechadura eletrônica)</summary>
+  <div class="quer">🎯 O que ela quer: <em>resolver as três multiplicações de frações, simplificar cada resultado até ficar irredutível, e depois montar a senha de 6 dígitos na ordem que a tabela manda.</em></div>
+  <div class="passo-r"><span class="n">1</span><div>Multiplicar fração é o mais fácil que existe: <b>de cima com de cima, de baixo com de baixo</b>. Não precisa igualar denominador, como na soma.</div></div>
+  <div class="passo-r"><span class="n">I</span><div>\[\frac{2}{5} \times \frac{5}{9} = \frac{2 \times 5}{5 \times 9} = \frac{10}{45} = \frac{2}{9}\]
+  (Para simplificar, dividi 10 e 45 por 5.) → numerador <b>2</b>, denominador <b>9</b>.</div></div>
+  <div class="passo-r"><span class="n">II</span><div>\[\frac{1}{2} \times \frac{2}{3} \times \frac{3}{4} = \frac{1 \times 2 \times 3}{2 \times 3 \times 4} = \frac{6}{24} = \frac{1}{4}\]
+  (Dividi 6 e 24 por 6.) → numerador <b>1</b>, denominador <b>4</b>.</div></div>
+  <div class="passo-r"><span class="n">III</span><div>\[\frac{5}{8} \times \frac{4}{2} \times \frac{8}{5} = \frac{5 \times 4 \times 8}{8 \times 2 \times 5} = \frac{160}{80} = \frac{2}{1}\]
+  Deu 2 inteiros — e todo número inteiro também é uma fração: o 2 é \(\frac{2}{1}\). → numerador <b>2</b>, denominador <b>1</b>.</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Agora monte na ordem da tabela: primeiro os <b>três numeradores</b>, depois os <b>três denominadores</b>.</div></div>
+  <table class="tab"><tr><td>Numerador I</td><td>Numerador II</td><td>Numerador III</td><td>Denominador I</td><td>Denominador II</td><td>Denominador III</td></tr><tr><td>2</td><td>1</td><td>2</td><td>9</td><td>4</td><td>1</td></tr></table>
+  <div class="passo-r"><span class="n">3</span><div>A senha é <b>2 1 2 9 4 1</b>.</div></div>
+  <div class="resp">✅ Resposta: letra E</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>dois atalhos. (1) Dá para <b>cortar antes de multiplicar</b>: em III, o 5 de cima corta com o 5 de baixo e o 8 de cima corta com o 8 de baixo, sobrando \(\frac{4}{2} = 2\) na hora. (2) Olhe as alternativas: depois de achar só os dois primeiros números da senha (2 e 1), a única que começa com <b>2 1</b> é a E. Você nem precisava terminar a expressão III.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>a <b>ordem</b>. A senha não é "numerador, denominador, numerador, denominador…" (isso daria 2 9 1 4 2 1, que nem está nas opções). Primeiro vêm os três de cima, depois os três de baixo. O outro escorregão é achar que III "não tem denominador" porque deu 2 inteiros e montar uma senha de 5 dígitos — o denominador é 1 e ele entra na senha.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 14 (o gabinete antigo e o atual)</summary>
+  <div class="quer">🎯 O que ela quer: <em>calcular o volume dos dois gabinetes e descobrir qual das cinco frases é a verdadeira.</em></div>
+  <div class="passo-r"><span class="n">1</span><div>Primeiro, um cuidado: o modelo 1 está medido em <b>centímetros</b> e o modelo 2 em <b>milímetros</b>. Não dá para comparar assim — é como comparar o tamanho de duas caixas medindo uma com régua e a outra com palmos. Vamos passar tudo para centímetros. De mm para cm é <b>um degrau para a esquerda</b>, ou seja, ÷ 10:</div></div>
+  <div class="escada"><div class="deg"><span>km</span><span>hm</span><span>dam</span><span>m</span><span>dm</span><span class="aqui">cm</span><span class="aqui">mm</span></div>
+  <div class="seta"><span>← pra esquerda: <b>÷ 10</b> por degrau</span><span>pra direita: <b>× 10</b> por degrau →</span></div></div>
+  <div class="passo-r"><span class="n">2</span><div>\[90 \text{ mm} = 9 \text{ cm} \qquad 210 \text{ mm} = 21 \text{ cm} \qquad 150 \text{ mm} = 15 \text{ cm}\]</div></div>
+  <div class="passo-r"><span class="n">3</span><div><b>Volume do modelo 1</b> (45 cm × 18 cm × 42 cm). Faça em duas etapas:
+  \[45 \times 18 = 810\]
+  \[810 \times 42 = 810 \times 40 + 810 \times 2 = 32\,400 + 1\,620 = 34\,020 \text{ cm}^3\]</div></div>
+  <div class="passo-r"><span class="n">4</span><div><b>Volume do modelo 2</b> (9 cm × 21 cm × 15 cm):
+  \[9 \times 21 = 189\]
+  \[189 \times 15 = 189 \times 10 + 189 \times 5 = 1\,890 + 945 = 2\,835 \text{ cm}^3\]</div></div>
+  <div class="passo-r"><span class="n">5</span><div>As alternativas falam em <b>cubos de 1 decímetro de lado</b>. Quanto vale um desses em cm³? O lado tem 1 dm = 10 cm, então o cubo é \(10 \times 10 \times 10 = 1\,000 \text{ cm}^3\). É por isso que, na escada de <b>volume</b>, cada degrau vale 1 000 (e não 10):</div></div>
+  <div class="escada"><div class="deg"><span>m³</span><span class="aqui">dm³ = L</span><span class="aqui">cm³ = mL</span></div>
+  <div class="seta"><span>← pra esquerda: <b>÷ 1000</b> por degrau</span><span>pra direita: <b>× 1000</b> por degrau →</span></div></div>
+  <div class="passo-r"><span class="n">6</span><div>Então <b>34 cubos</b> valem \(34 \times 1\,000 = 34\,000 \text{ cm}^3\), e <b>2 cubos</b> valem \(2 \times 1\,000 = 2\,000 \text{ cm}^3\). Agora é só testar cada frase.</div></div>
+  <div class="passo-r"><span class="n">A</span><div>"Modelo 1 superior a 12 vezes o modelo 2": \(12 \times 2\,835 = 34\,020\). Deu <b>exatamente igual</b> ao modelo 1 — igual não é "superior". ✘</div></div>
+  <div class="passo-r"><span class="n">B</span><div>Pelo mesmo motivo, também não é "inferior". ✘</div></div>
+  <div class="passo-r"><span class="n">C</span><div>"Modelo 1 superior a 34 cubos": \(34\,020\) contra \(34\,000\). É maior, por 20 cm³ de diferença. ✔</div></div>
+  <div class="passo-r"><span class="n">D</span><div>"Modelo 2 inferior a 2 cubos": \(2\,835\) contra \(2\,000\). O modelo 2 é <b>maior</b>, não menor. ✘</div></div>
+  <div class="passo-r"><span class="n">E</span><div>"Modelo 1 igual a 34 cubos": 34 020 não é 34 000. Quase, mas não. ✘</div></div>
+  <div class="resp">✅ Resposta: letra C</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>repare que C e E falam do mesmo número e se contradizem ("superior a 34 cubos" × "igual a 34 cubos"). Quando duas alternativas brigam entre si sobre a mesma coisa, a resposta quase sempre está entre elas — então calcule primeiro o modelo 1 (34 020), compare com 34 000, e pronto. Nem precisaria calcular o modelo 2.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>dois erros matam essa questão. (1) Multiplicar centímetro com milímetro sem converter — o número sai gigante e nada bate. (2) Achar que 1 dm³ = 10 cm³. Em <b>volume</b> cada degrau vale 1 000, porque são três medidas mudando ao mesmo tempo: \(10 \times 10 \times 10\). E ainda tem o detalhe fino: 34 020 e 34 000 são quase iguais, então é preciso comparar dígito por dígito, sem arredondar.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 15 (as três luzes acendendo juntas)</summary>
+  <div class="quer">🎯 O que ela quer: <em>as três luzes acenderam juntas agora. Depois de quanto tempo elas voltam a acender <b>todas ao mesmo tempo</b>?</em></div>
+  <div class="passo-r"><span class="n">1</span><div>Cada luz acende nos seus múltiplos de tempo:<br>
+  🔴 vermelha (18 min): 18, 36, 54, 72, 90…<br>
+  🔵 azul (12 min): 12, 24, 36, 48, 60…<br>
+  🟡 amarela (10 min): 10, 20, 30, 40, 50…<br>
+  Elas só se reencontram num minuto que apareça nas <b>três</b> listas. O primeiro desses é o <b>MMC</b> (menor múltiplo comum).</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Para achar o MMC, divida os três ao mesmo tempo pelos números primos (2, 3, 5, 7…), até sobrar só 1 em todos:</div></div>
+  <table class="tab"><tr><td>18, 12, 10</td><td>÷ 2</td></tr><tr><td>9, 6, 5</td><td>÷ 2</td></tr><tr><td>9, 3, 5</td><td>÷ 3</td></tr><tr><td>3, 1, 5</td><td>÷ 3</td></tr><tr><td>1, 1, 5</td><td>÷ 5</td></tr><tr><td>1, 1, 1</td><td>acabou</td></tr></table>
+  <div class="passo-r"><span class="n">3</span><div>Agora multiplique os números da coluna da direita:
+  \[2 \times 2 \times 3 \times 3 \times 5 = 180\]
+  As luzes se reencontram depois de <b>180 minutos</b>.</div></div>
+  <div class="passo-r"><span class="n">4</span><div>As alternativas estão em horas. Aqui <b>não</b> vale a escada de ÷ 10: tempo anda de 60 em 60, porque 1 hora tem 60 minutos.
+  \[180 \div 60 = 3 \text{ h}\]</div></div>
+  <div class="resp">✅ Resposta: letra D</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>dá para testar as alternativas em vez de fazer o MMC. Passe tudo para minutos e veja qual é divisível pelos três (18, 12 e 10): 1h30 = 90 (90 ÷ 12 não dá exato ✘) · 2h = 120 (120 ÷ 18 não dá exato ✘) · 2h15 = 135 (ímpar, 12 nem cabe ✘) · <b>3h = 180</b> (180 ÷ 18 = 10 ✔, 180 ÷ 12 = 15 ✔, 180 ÷ 10 = 18 ✔) · 3h25 = 205 (não é par ✘). Só sobra a D.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>multiplicar \(18 \times 12 \times 10 = 2\,160\) e responder isso. Esse número realmente é um momento em que as três acendem juntas — mas está lá longe, depois de 36 horas. A questão pede o <b>primeiro</b> reencontro, e por isso é o <b>menor</b> múltiplo comum. O outro escorregão é dividir 180 por 100 ou por 10 na hora de virar horas: em tempo, é sempre ÷ 60.</em></div>
+</details>
+        <h4>Português (16 a 30)</h4>
+<details class="res"><summary>Resolução — Questão 16 (quem está contando a história?)</summary>
+  <div class="quer">🎯 O que ela quer: <em>entre as cinco frases, qual descreve CERTO a história do Texto 1 — quem narra, onde acontece, em que tempo e qual é o assunto. As outras quatro têm algum erro escondido.</em></div>
+
+  <div class="passo-r"><span class="n">1</span><div>Antes de tudo, duas palavras difíceis traduzidas:<br>
+  • <b>narrador</b> = a "voz" que conta a história.<br>
+  • <b>narrador onisciente</b> = a voz que <b>sabe tudo</b> ("oni" = tudo, "ciente" = que sabe). Ele não só vê o que acontece: ele entra na cabeça do personagem e conta o que ele <b>sente e pensa</b>. É como um narrador de videogame que mostra até a barra de vida do personagem.</div></div>
+
+  <div class="passo-r"><span class="n">2</span><div>Agora procure no texto se a voz que conta sabe o que Raimundo sente por dentro. Sabe:<br>
+  “<i>Raimundo <b>entristecia</b> e fechava o olho direito. Quando o aperreavam demais, <b>aborrecia-se</b></i>” (linhas 07 e 08)<br>
+  “<i>O viajante rondou por ali uns minutos, <b>receoso</b> de puxar conversa, <b>pensando</b> nos garotos que zombavam dele</i>” (linhas 14 e 15)<br>
+  Ninguém consegue ver de fora que outra pessoa está "receosa" ou "pensando em alguém". Só um narrador que sabe tudo conta isso. É exatamente o que a letra B diz: conhecemos Raimundo <b>além das aparências</b> (além do que dá para ver por fora).</div></div>
+
+  <div class="passo-r"><span class="n">3</span><div>Repare também que a voz fala de Raimundo como “ele”, nunca como “eu”: “<i>Havia um menino diferente dos outros meninos</i>” (linha 2). Guarde isso — derruba a letra E.</div></div>
+
+  <div class="resp">✅ Resposta: letra B</div>
+
+  <div class="alt"><b class="x">A ✘</b> Diz que Tatipirun é onde os fatos acontecem <b>exclusivamente</b> (= só lá). Mas o Capítulo um inteiro se passa na cidade de Raimundo, com os vizinhos e os garotos da rua: “<i>Os vizinhos mangavam dele</i>” (linha 03). Uma palavra sozinha, “exclusivamente”, estraga a alternativa.</div>
+  <div class="alt"><b class="v">B ✔</b> O narrador sabe tudo e nos mostra o menino por dentro (linhas 07-08 e 14-15). É a única sem erro.</div>
+  <div class="alt"><b class="x">C ✘</b> Diz que a narrativa é <b>autobiográfica</b> (= o autor contando a própria vida). Não é: quem escreve é Graciliano Ramos, e a história é do menino Raimundo, contada em “ele”. Os fatos também seguem a ordem do relógio (um capítulo depois do outro), e não a bagunça das lembranças.</div>
+  <div class="alt"><b class="x">D ✘</b> A primeira metade está certa — tem mesmo um ser sem vida falando: “<i>perguntou o tronco baixinho</i>” (linha 35). Mas a segunda metade erra o assunto: o tronco que conversa é <b>elemento de fantasia</b>, não serve para falar de “direitos humanos”. O assunto do texto é ser diferente e ser aceito.</div>
+  <div class="alt"><b class="x">E ✘</b> Diz “foco narrativo em <b>primeira pessoa</b>” (= a história contada por um “eu”). O texto é em terceira pessoa: “<i>Havia um menino…</i>”, “<i>Raimundo entristecia…</i>”. Os “eu” que aparecem estão dentro das <b>falas</b> dos personagens, e fala de personagem não é o narrador.</div>
+
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>quando a pergunta fala em “narrador” ou “foco narrativo”, vá direto ao texto e procure o pronome: achou “eu” FORA das falas → primeira pessoa; só “ele/ela” → terceira pessoa. Depois pergunte: o narrador conta o que o personagem SENTE? Se conta, ele é onisciente (sabe tudo). Duas checagens de 10 segundos que matam duas alternativas.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>ler só o começo da alternativa, achar bonito e marcar. As letras A, C e D começam certas e erram no fim (“exclusivamente”, “autobiográfico”, “direitos humanos”). Leia a alternativa inteira até o ponto final antes de decidir.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 17 (a quem o “-lo” e o “-lhe” estão apontando?)</summary>
+  <div class="quer">🎯 O que ela quer: <em>os pedacinhos <b>-lo</b> (em “vê-lo”) e <b>-lhe</b> (em “examinou-lhe”) substituem o nome de alguém. Descubra de quem os dois estão falando.</em></div>
+
+  <div class="passo-r"><span class="n">1</span><div>Pronome é uma palavra-atalho: em vez de repetir o nome, você troca por um pedacinho. “Vi <b>o Raimundo</b>” vira “<b>vi-o</b>”. Para achar de quem se trata, volte umas linhas e veja de quem o texto estava falando.</div></div>
+
+  <div class="passo-r"><span class="n">2</span><div>Primeiro trecho: “<i>Era de bom gênio e não se zangava; mas os garotos dos arredores fugiam ao <b>vê-lo</b></i>” (linhas 05 e 06). Faça o teste: troque o pedacinho pelo nome. “Os garotos fugiam ao ver <b>Raimundo</b>” — faz sentido, e é o parágrafo inteiro falando dele (“<i>deu para se assinar… Dr. Raimundo Pelado</i>”, linha 05).</div></div>
+
+  <div class="passo-r"><span class="n">3</span><div>Segundo trecho: “<i>Um rapazinho aproximou-se, examinou-<b>lhe</b>, admirado, a roupa e os sapatos</i>” (linha 16). Quem examinou foi o <b>rapazinho</b>; então o “-lhe” é o <b>dono</b> da roupa e dos sapatos, que é o viajante do Capítulo cinco — Raimundo.</div></div>
+
+  <div class="passo-r"><span class="n">4</span><div>E tem uma prova a mais, logo na linha seguinte: “<i>Todos ali estavam <b>descalços</b> e cobertos de panos brancos…</i>” (linha 17). Se todo mundo em Tatipirun está descalço, o único que tem <b>sapatos</b> para serem examinados é o visitante: Raimundo. Os dois pronomes apontam para a mesma pessoa.</div></div>
+
+  <div class="resp">✅ Resposta: letra E</div>
+
+  <div class="alt"><b class="x">A ✘</b> “todo” não é uma pessoa da história. No texto aparece “<i>Todos ali estavam descalços</i>” (linha 17), que são os moradores — e eles são quem <b>olha</b>, não quem é olhado.</div>
+  <div class="alt"><b class="x">B ✘</b> “gênio” aparece em “<i>Era de bom gênio</i>” (linha 05), mas ali gênio quer dizer <b>jeito de ser, temperamento</b> (ele não era brigão). Não é uma criatura mágica de lâmpada. Ninguém foge de ver um temperamento nem examina os sapatos dele.</div>
+  <div class="alt"><b class="x">C ✘</b> O tronco só aparece no <b>Capítulo seis</b> (linha 35). Os dois trechos da questão são das linhas 05, 06 e 16 — antes. Um pronome aponta para algo <b>já dito</b>, nunca para algo que vai aparecer 20 linhas depois.</div>
+  <div class="alt"><b class="x">D ✘</b> O rapazinho é quem <b>faz</b> a ação: “<i>Um rapazinho aproximou-se, examinou-lhe…</i>”. Quem examina não pode ser, na mesma frase, quem é examinado. E na linha 05 o rapazinho nem tinha entrado na história.</div>
+  <div class="alt"><b class="v">E ✔</b> Raimundo é o menino do primeiro trecho e o viajante calçado do segundo. Os dois pronomes são ele.</div>
+
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>quando a pergunta disser “o pronome em destaque se refere a…”, faça o <b>teste da troca</b>: apague o pronome, escreva no lugar o nome de cada alternativa e leia a frase em voz baixa. Quatro vão soar esquisitas; a que soar natural é a resposta. E lembre da regra do tempo: o pronome só pode apontar para algo que já apareceu ANTES no texto.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>escolher a palavra que está mais PERTO do pronome (aqui, “rapazinho”, coladinho no “-lhe”). Perto não quer dizer certo: o que vale é quem faz a ação e quem recebe a ação.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 18 (qual palavra NÃO é “zombar”?)</summary>
+  <div class="quer">🎯 O que ela quer: <em>“mangavam” quer dizer uma coisa. Entre as cinco palavras em destaque, ache a que está <b>mais longe</b> desse sentido. Atenção: aqui a resposta certa é a palavra DIFERENTE, não a parecida.</em></div>
+
+  <div class="passo-r"><span class="n">1</span><div>Primeiro, descubra o sentido de “mangar” pelo próprio texto (é assim que se faz — você não precisa já saber a palavra): “<i>Os vizinhos <b>mangavam</b> dele e gritavam: — Ó pelado!</i>” (linha 03). Eles gritam um apelido para humilhar. Então <b>mangar = zombar, tirar sarro, caçoar</b>.</div></div>
+
+  <div class="passo-r"><span class="n">2</span><div>Agora o presente que o texto te dá: o <b>mesmo episódio</b> é contado com palavras diferentes, e isso prova que elas são sinônimas.<br>
+  “<i>É que eles <b>caçoaram</b> de mim porque eu não conheço a Caralâmpia</i>” (linha 36)<br>
+  “<i>Mas <b>debocharam</b> de mim porque eu não conheço a Caralâmpia</i>” (linha 40)<br>
+  É a mesma cena, duas palavras: caçoar = debochar. E “<i>os moleques que <b>faziam troça</b> de mim</i>” (linha 42) e “<i>os garotos que <b>zombavam</b> dele na rua</i>” (linha 15) contam a mesma coisa sobre a cidade dele. Ou seja: B, C, D e E são todas “zombar”.</div></div>
+
+  <div class="passo-r"><span class="n">3</span><div>Sobra “aperrear”: “<i>Quando o <b>aperreavam</b> demais, aborrecia-se, fechava o olho esquerdo</i>” (linhas 07 e 08). Aperrear (palavra bem do Nordeste) é <b>amolar, importunar, encher a paciência, não largar do pé</b>. Dá para aperrear alguém sem rir dele nenhuma vez — é só insistir até irritar. Por isso é a que <b>mais se distancia</b> de “mangar”.</div></div>
+
+  <div class="resp">✅ Resposta: letra A</div>
+
+  <div class="alt"><b class="v">A ✔</b> <b>aperrear</b> = importunar, amolar. A ideia central é <i>irritar</i>, não <i>rir de</i>. É a mais distante — e é o que a questão pede.</div>
+  <div class="alt"><b class="x">B ✘</b> <b>zombar</b> é praticamente o dicionário de “mangar”. Está pertíssimo, então não serve.</div>
+  <div class="alt"><b class="x">C ✘</b> <b>caçoar</b> = fazer piada de alguém. Mesmo sentido.</div>
+  <div class="alt"><b class="x">D ✘</b> <b>debochar</b> = zombar com desprezo. O texto até usa “debochar” e “caçoar” para a MESMA cena (linhas 36 e 40).</div>
+  <div class="alt"><b class="x">E ✘</b> <b>fazer troça</b> = fazer gozação. Mesmo sentido de novo.</div>
+
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>quando a questão pedir a palavra que “mais se distancia” do sentido, não caia procurando a mais certa — procure a <b>intrusa</b>. Junte as que são parecidas entre si (aqui, quatro viraram um grupo só de “zombar”) e a que ficou sozinha é a resposta. E o sentido você descobre pelo contexto: olhe o que acontece ANTES e DEPOIS da palavra na frase.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>ler rápido e marcar “zombavam” porque é a mais parecida com “mangavam”. A pergunta pediu o CONTRÁRIO. Sublinhe as palavras “mais se distancia” no enunciado antes de olhar as alternativas.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 19 (por que Raimundo inventou Tatipirun?)</summary>
+  <div class="quer">🎯 O que ela quer: <em>qual conclusão realmente cabe no Texto 1. “Concluir” aqui é juntar as peças que o texto deu — nunca inventar peça nova.</em></div>
+
+  <div class="passo-r"><span class="n">1</span><div>Monte a linha do tempo do menino, só com o que está escrito:<br>
+  <b>(1) Rejeitam ele</b> — “<i>Os vizinhos mangavam dele e gritavam: — Ó pelado!</i>” (linha 03) e “<i>os garotos dos arredores fugiam ao vê-lo, escondiam-se por detrás das árvores</i>” (linhas 06 e 07).<br>
+  <b>(2) Ele fica sem ninguém</b> — “<i><b>Não tendo com quem entender-se</b>, Raimundo Pelado falava só</i>” (linha 09).<br>
+  <b>(3) Ele cria um mundo</b> — “<i>Conversava sozinho e desenhava na calçada coisas maravilhosas do país de Tatipirun, <b>onde não há cabelos e as pessoas têm um olho preto e outro azul</b></i>” (linhas 11 e 12).</div></div>
+
+  <div class="passo-r"><span class="n">2</span><div>Olhe bem a peça 3: no país que ele inventou, todo mundo é <b>exatamente como ele</b> — careca e com os olhos de duas cores. Ou seja, ele desenhou o único lugar do mundo onde ele não seria o esquisito. Isso é fugir da rejeição usando a imaginação — que é o que a letra D chama de “<i>universo de fantasia como estratégia para esquivar-se da rejeição</i>”. (“Esquivar-se” = desviar, escapar.)</div></div>
+
+  <div class="resp">✅ Resposta: letra D</div>
+
+  <div class="alt"><b class="x">A ✘</b> Diz que ele sofre gozação nos dois lugares “<b>por razões idênticas</b>” (= pelo mesmo motivo). Não é o mesmo motivo: em Cambacará é pela <b>aparência</b> (linhas 02 e 03); em Tatipirun é por <b>não saber uma coisa</b> — “<i>debocharam de mim porque eu não conheço a Caralâmpia</i>” (linha 40).</div>
+  <div class="alt"><b class="x">B ✘</b> Diz que o viajante é “<b>bem diferente</b> dos demais moradores” de Tatipirun. É o contrário da ideia do texto: lá ele é <b>igualzinho</b> a todo mundo, porque lá “<i>não há cabelos e as pessoas têm um olho preto e outro azul</i>” (linhas 11 e 12). A diferença que sobra é só a roupa e os sapatos (linhas 16 e 17) — detalhe pequeno, longe de “bem diferente”.</div>
+  <div class="alt"><b class="x">C ✘</b> Acerta que o acham louco, mas erra o <b>motivo</b>. Não é pela aparência: é porque ele fala sozinho — “<i>Raimundo Pelado <b>falava só</b>, e os outros pensavam que ele estava malucando</i>” (linhas 09 e 10). A aparência rendeu o apelido, não a fama de doido.</div>
+  <div class="alt"><b class="v">D ✔</b> Rejeitado → sem com quem falar → inventa Tatipirun, onde é igual aos outros. É a conclusão que as linhas 03, 09, 11 e 12 sustentam.</div>
+  <div class="alt"><b class="x">E ✘</b> O texto afirma o oposto, com todas as letras: “<i>Tanto gritaram que ele <b>se acostumou</b>, <b>achou o apelido certo</b>, deu para se assinar a carvão… Dr. Raimundo Pelado. Era de bom gênio e <b>não se zangava</b></i>” (linhas 04 e 05).</div>
+
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>alternativa de “conclusão” costuma ter duas partes: um FATO (que está no texto) e um MOTIVO/COMPARAÇÃO (“por causa de”, “por razões idênticas”, “por isso”). O fato quase sempre está certo — a armadilha mora no motivo. Então confira sempre a segunda metade, procurando no texto a frase que explica o porquê.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>marcar a letra C, porque “acham ele louco” está mesmo no texto e “aparência estranha” também. Só que o texto não liga uma coisa na outra. Duas informações verdadeiras, grudadas com um “por causa de” que o texto não autorizou, viram uma alternativa falsa.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 20 (a vírgula que faz lista)</summary>
+  <div class="quer">🎯 O que ela quer: <em>a vírgula tem vários serviços diferentes. Descubra que serviço ela faz na frase do enunciado e ache a alternativa em que ela faz <b>o mesmo serviço</b>.</em></div>
+
+  <div class="passo-r"><span class="n">1</span><div>Leia a frase do enunciado: “<i>Tinha o olho direito preto, o esquerdo azul e a cabeça pelada</i>” (linhas 2 e 3). São <b>três características</b> do menino, uma atrás da outra: olho direito preto / olho esquerdo azul / cabeça pelada. A vírgula está fazendo o papel de “e” dentro de uma <b>lista</b>. Isso se chama <b>enumeração</b> (enumerar = ir listando).</div></div>
+
+  <div class="passo-r"><span class="n">2</span><div>Teste rápido: se você puder trocar a vírgula por “e” sem estragar a frase, é lista.<br>
+  “Tinha o olho direito preto <b>e</b> o esquerdo azul <b>e</b> a cabeça pelada” ✔ funciona.</div></div>
+
+  <div class="passo-r"><span class="n">3</span><div>Agora aplique o mesmo teste na letra C: “<i>Uma terra de gente feia, cabeluda, com olhos de uma cor só.</i>” (linha 24) → “gente feia <b>e</b> cabeluda <b>e</b> com olhos de uma cor só” ✔ funciona. Três características em fila, igualzinho ao enunciado. E olhe que bonito: as duas frases estão listando o <b>jeito do rosto</b> de alguém — uma descreve Raimundo, a outra descreve o povo de Cambacará.</div></div>
+
+  <div class="resp">✅ Resposta: letra C</div>
+
+  <div class="alt"><b class="x">A ✘</b> “<i>examinou-lhe<b>,</b> admirado<b>,</b> a roupa e os sapatos</i>” (linha 16). Aqui são <b>duas</b> vírgulas que funcionam como parênteses: elas isolam a palavra “admirado”, que é um comentário jogado no meio. Tire “admirado” e a frase continua de pé (“examinou-lhe a roupa e os sapatos”). Em lista, você não pode arrancar um item e fingir que nada aconteceu.</div>
+  <div class="alt"><b class="x">B ✘</b> “<i>— Naturalmente, respondeu o outro</i>” (linha 20). A vírgula separa a <b>fala do personagem</b> do pedacinho em que o narrador avisa quem falou. É o mesmo que “— Oi, disse ele”. Nada de lista.</div>
+  <div class="alt"><b class="v">C ✔</b> Lista de características, exatamente como no enunciado.</div>
+  <div class="alt"><b class="x">D ✘</b> “<i>à aranha vermelha, amiga velha que me visita</i>” (linhas 46 e 47). A vírgula abre uma <b>explicação</b> de quem é a aranha (isso se chama aposto). É um item só sendo explicado, não vários itens em fila.</div>
+  <div class="alt"><b class="x">E ✘</b> “<i>Está aqui, vizinha.</i>” (linha 47). A vírgula vem antes de <b>quem está sendo chamado</b> (isso se chama vocativo — de “vocação”, chamar). É como “Vem cá, mãe”. Chamar não é listar.</div>
+
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>vírgula em prova quase sempre cai em 4 serviços. Decore os apelidos e o teste de cada um: <b>lista</b> (troco a vírgula por “e” e funciona) · <b>explicação</b> (a vírgula abre um “ou seja, quem é isso”) · <b>comentário no meio</b> (vem em DUAS vírgulas e dá para arrancar) · <b>chamado</b> (tem um nome de gente/bicho a quem se fala). Faça o teste do “e” primeiro: ele resolve sozinho metade das questões.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>achar que qualquer vírgula é igual a qualquer vírgula e escolher a primeira que aparecer (a letra A, que até tem duas vírgulas bonitas). Conte quantas vírgulas há e pergunte “dá para trocar por E?” — esse é o único critério que separa a lista das outras.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 21 (“Todos diferentes, todos iguais”)</summary>
+  <div class="quer">🎯 O que ela quer: <em>o título do Texto 2 parece uma contradição (como dizer “está quente e está frio”). A questão pergunta: o que essa frase quer dizer, segundo o próprio texto?</em></div>
+
+  <div class="passo-r"><span class="n">1</span><div>Não adivinhe: o autor explica o título logo no primeiro parágrafo. “<i>À primeira vista esta afirmação pode parecer confusa, até contraditória, mas, por mais incrível que pareça, <b>não o é</b>, pois a <b>coexistência</b> destas características é possível</i>” (linhas 2 a 4). <b>Coexistência</b> = as duas coisas existindo ao mesmo tempo, juntas. Ou seja: dá para ser diferente E igual ao mesmo tempo.</div></div>
+
+  <div class="passo-r"><span class="n">2</span><div>Aí o texto separa <b>em quê</b> somos cada coisa:<br>
+  • diferentes → no que se vê por fora: “<i>diversidade de pessoas, costumes, línguas, crenças e culturas</i>” (linha 6).<br>
+  • iguais → no que está por dentro: “<i>É a capacidade de pensar e refletir</i>” (linha 13).</div></div>
+
+  <div class="passo-r"><span class="n">3</span><div>E no último parágrafo ele fecha a conta numa frase só: “<i>Portanto, somos diferentes por fora, mas, <b>naquilo que nos torna semelhantes, somos iguais</b></i>” (linhas 16 e 17). Compare com a letra E: “<i>possibilidade de sermos iguais no que nos torna semelhantes</i>”. É a mesma frase com outras palavras.</div></div>
+
+  <div class="resp">✅ Resposta: letra E</div>
+
+  <div class="alt"><b class="x">A ✘</b> “comparação inadequada” = comparação errada. Mas o autor diz que a frase <b>não</b> está errada: “<i>pode parecer confusa, até contraditória, mas… <b>não o é</b></i>” (linhas 2 e 3).</div>
+  <div class="alt"><b class="x">B ✘</b> “transformação dos que são diferentes em iguais” — ninguém é transformado em nada. Já somos as duas coisas ao mesmo tempo (“<i>a coexistência destas características é possível</i>”, linhas 3 e 4).</div>
+  <div class="alt"><b class="x">C ✘</b> “diferentes, mas <b>nunca</b> iguais” — isso apaga metade do título. O texto afirma o contrário: “<i>Somos todos homens, fato inegável… e é isso que nos torna iguais</i>” (linhas 11 e 12).</div>
+  <div class="alt"><b class="x">D ✘</b> “equívoco ao usar as palavras” = o autor teria errado as palavras. Ele não errou — escolheu de propósito e gastou o texto inteiro explicando por quê.</div>
+  <div class="alt"><b class="v">E ✔</b> É a linha 16-17 reescrita: iguais naquilo que nos torna semelhantes.</div>
+
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>quando a questão pedir o sentido do TÍTULO ou de uma frase de abertura, procure a explicação em dois lugares certeiros: o <b>primeiro parágrafo</b> (onde o autor anuncia a ideia) e o <b>último</b> (onde ele fecha, geralmente começando com “Portanto”, “Assim”, “Por isso”). A resposta costuma estar quase copiada num desses dois.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>responder com a própria opinião (“ah, ninguém é igual a ninguém”) em vez de com o que o autor escreveu. Em prova de interpretação, quem manda é o texto — mesmo que você discorde dele.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 22 (o “aí” que não é lugar)</summary>
+  <div class="quer">🎯 O que ela quer: <em>na frase “é <b>aí</b> que está a nossa chave”, que ideia essa palavrinha passa? Cuidado: a resposta óbvia (“lugar”) é justamente a armadilha.</em></div>
+
+  <div class="passo-r"><span class="n">1</span><div>Leia a frase inteira, sem cortar: “<i>O que é que nos torna legítimos seres humanos? <b>É a capacidade de pensar e refletir</b> e é <b>aí</b> que está a nossa chave</i>” (linha 13).</div></div>
+
+  <div class="passo-r"><span class="n">2</span><div>Repare no que acontece: o autor <b>já tinha respondido</b> (“é a capacidade de pensar e refletir”) e, em seguida, aponta o dedo para essa mesma resposta e repete que é ali a chave. Ele não está dando informação nova — está <b>martelando</b> a que acabou de dar. É o mesmo que você dizer: “O segredo é treinar. É <b>isso</b>, ó, é aí que está.”</div></div>
+
+  <div class="passo-r"><span class="n">3</span><div>Isso tem nome fácil: <b>reforço</b> (ou ênfase) — é como passar marca-texto na parte importante para o leitor não deixar passar. Exatamente o que a letra B descreve: “<i>direciona e alerta o leitor a respeito do que deve ser compreendido</i>” (direcionar = apontar para onde olhar).</div></div>
+
+  <div class="passo-r"><span class="n">4</span><div>E por que NÃO é lugar? Faça o teste: se “aí” fosse lugar, dava para perguntar “aí onde? em que canto?” e apontar um lugar físico. Aqui não dá: “aí” aponta para uma <b>ideia</b> (a capacidade de pensar), não para um ponto do espaço. Chave, nessa frase, também não é chave de porta — é “a solução”.</div></div>
+
+  <div class="resp">✅ Resposta: letra B</div>
+
+  <div class="alt"><b class="x">A ✘</b> “lugar” — é o sentido mais comum de “aí” no dia a dia (“põe aí”), e por isso é a isca. Mas no texto não existe lugar nenhum: o “aí” retoma uma ideia dita na mesma linha.</div>
+  <div class="alt"><b class="v">B ✔</b> reforço: o autor repete e destaca a resposta que acabou de dar, para o leitor não perder o ponto principal.</div>
+  <div class="alt"><b class="x">C ✘</b> “explicação” — palavra que explica é do tipo “porque”, “pois”, “ou seja”. “Aí” não explica nada nem apresenta um motivo; só aponta de volta.</div>
+  <div class="alt"><b class="x">D ✘</b> “imprecisão” (= vago, sem clareza) — é o contrário do que acontece. Está claríssimo a que o “aí” se refere: à frase coladinha antes dele.</div>
+  <div class="alt"><b class="x">E ✘</b> “dúvida” — não há dúvida nenhuma. O autor está afirmando com toda a certeza qual é a chave. <i>(Detalhe: na prova impressa esta última alternativa saiu com a letra “A” de novo, por erro de digitação — pela ordem, ela é a letra E.)</i></div>
+
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>quando a questão destacar uma palavrinha curta (aí, lá, então, assim, isso), não responda pelo sentido que ela tem no dia a dia. Pergunte: <b>ela aponta para um lugar de verdade ou para uma ideia que já foi dita?</b> Se aponta para uma ideia anterior, o sentido é retomada/reforço, não lugar.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>marcar “lugar” no automático, porque “aí” é palavra de lugar na conversa. Prova de interpretação testa o sentido <b>dentro daquela frase</b>, não o sentido do dicionário.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 23 (“não porque… mas porque…”)</summary>
+  <div class="quer">🎯 O que ela quer: <em>no trecho final do Texto 2, o autor dá DOIS motivos para respeitar os outros — e trata os dois de um jeito bem diferente. A questão pergunta qual conclusão sai dessa montagem.</em></div>
+
+  <div class="passo-r"><span class="n">1</span><div>Copie o trecho e marque as peças: “<i>Devemos respeitar os outros por mais que eles sejam diferentes, <b>não</b> <b>porque</b> está escrito na constituição e em tantos outros documentos, <b>mas</b> <b>porque</b> é um dever humano respeitar os outros</i>” (linhas 17 e 18).</div></div>
+
+  <div class="passo-r"><span class="n">2</span><div>Essa montagem “<b>não porque A, mas porque B</b>” é uma balança:<br>
+  • o <b>não</b> (1) <b>descarta</b> o motivo A;<br>
+  • o <b>mas</b> (3) traz o motivo que <b>vale</b>, o B;<br>
+  • os dois <b>porque</b> (2 e 4) só avisam “aqui vem um motivo”.<br>
+  É igual a dizer: “Eu estudo <b>não porque</b> minha mãe mandou, <b>mas porque</b> eu quero.” Quem ouve entende na hora qual motivo é o forte: o segundo.</div></div>
+
+  <div class="passo-r"><span class="n">3</span><div>Agora troque pelas peças do texto:<br>
+  motivo descartado (A) = <b>estar escrito na constituição</b> = a lei;<br>
+  motivo que vale (B) = <b>ser um dever humano</b>.<br>
+  Conclusão: o dever humano é um motivo <b>mais forte que qualquer outro, até que a lei</b>. É exatamente a letra C. (Nota: o autor não está dizendo que a lei é ruim nem que dá para desobedecê-la — está dizendo que, mesmo se a lei não existisse, você ainda deveria respeitar.)</div></div>
+
+  <div class="resp">✅ Resposta: letra C</div>
+
+  <div class="alt"><b class="x">A ✘</b> Diz que a constituição é a “razão principal”. É justamente o motivo que o <b>não</b> (1) jogou fora. Marcar A é ler a frase de trás para frente.</div>
+  <div class="alt"><b class="x">B ✘</b> Fala em “justificativas de caráter <b>religioso</b>”. Religião não aparece em lugar nenhum do Texto 2 — o autor fala de constituição, documentos e dever humano. Alternativa que inventa assunto novo está sempre errada.</div>
+  <div class="alt"><b class="v">C ✔</b> O dever humano é o motivo superior, “<i>inclusive à legislação</i>” (= até maior que a lei). É o “mas porque” vencendo o “não porque”.</div>
+  <div class="alt"><b class="x">D ✘</b> Diz que perceber que somos todos iguais é “<b>dispensável</b>” (= não precisa). O texto inteiro defende o oposto: essa percepção é a base de tudo — “<i>naquilo que nos torna semelhantes, somos iguais</i>” (linhas 16 e 17) e por isso “<i>Devemos respeitar os outros</i>”.</div>
+  <div class="alt"><b class="x">E ✘</b> Fala em “recusa ao respeito” como se o texto admitisse não respeitar. O texto manda o contrário, com o verbo <b>devemos</b>: “<i>Devemos respeitar os outros por mais que eles sejam diferentes</i>” (linha 17).</div>
+
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>toda vez que aparecer a dupla “<b>não… mas…</b>” (ou “não é X, e sim Y”), circule as duas partes: o que vem depois do <b>mas</b> é sempre o que o autor defende; o que vem depois do <b>não</b> é o que ele está afastando. Aí olhe as alternativas — uma delas vai repetir a parte afastada só para pegar quem leu com pressa.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>achar que “o dever humano é maior que a lei” significa “a lei não serve para nada” e, por isso, recusar a letra C. O texto não desmerece a constituição; ele só diz que o respeito não depende dela para existir.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 24 (um conta história, o outro explica uma ideia)</summary>
+  <div class="quer">🎯 O que ela quer: os dois textos falam do mesmo assunto (ser diferente), mas de jeitos diferentes. A questão pergunta qual alternativa acerta a <em>finalidade</em> — ou seja, <em>para que serve</em> cada texto.</div>
+  <div class="passo-r"><span class="n">1</span><div><b>Que tipo é o Texto 1?</b> Ele tem personagem (Raimundo Pelado), lugar (Cambacará, Tatipirun), coisas que acontecem uma depois da outra e gente conversando: “— Eu queria saber se isto aqui é o país de Tatipirun, começou Raimundo.” (linha 19). Isso é <b>narrativo</b>. Narrar = contar uma história.</div></div>
+  <div class="passo-r"><span class="n">2</span><div><b>Que tipo é o Texto 2?</b> Não tem personagem nem história nenhuma. O autor levanta uma ideia e vai dando as razões dela: “Somos ‘todos diferentes’, pelo menos à vista desarmada.” (linha 5) e “Somos ‘todos iguais’, certo, mas como?” (linha 9). Isso é <b>expositivo</b>. Expor = mostrar, explicar uma ideia para o leitor entender.</div></div>
+  <div class="passo-r"><span class="n">3</span><div><b>A prova da resposta</b> está na parte final do Texto 2: “Portanto, somos diferentes por fora, mas, naquilo que nos torna semelhantes, somos iguais.” (linhas 16 e 17). É exatamente o que a letra D diz: o Texto 2 <em>demonstra</em>, expondo ideias, que somos todos diferentes e também todos iguais.</div></div>
+  <div class="alt"><b class="x">A ✘</b> o Texto 1 não é descritivo nem informativo — ele conta uma história, não passa informação “direta e objetiva” · <b class="x">B ✘</b> troca as bolas: quem usa narrativa e tem personagem é o Texto 1, não o Texto 2 · <b class="x">C ✘</b> quem convence com argumentos é o Texto 2; o Texto 1 não argumenta nada · <b class="v">D ✔</b> o Texto 2 expõe ideias para demonstrar que somos diferentes por fora e iguais por dentro · <b class="x">E ✘</b> o começo está certo (o Texto 1 é narrativa mesmo), mas o fim está errado: ele não ensina “um conjunto de práticas” para a pessoa se encaixar na sociedade — isso seria um manual de regras. Ele só conta a aventura de Raimundo.</div>
+  <div class="resp">✅ Resposta: letra D</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>quando a questão falar em “finalidade” ou “gênero”, não releia tudo — procure três marcas. Tem personagem, tempo e diálogo → <b>narra</b> (conta história). Tem “portanto”, “pois”, “devemos” e o autor defendendo uma ideia → <b>expõe/argumenta</b>. Tem passo a passo ou lista de instruções → <b>instrui</b>. E antes de julgar qualquer alternativa, confira se ela está falando do Texto 1 ou do Texto 2: metade delas troca os dois de lugar de propósito.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>ler só o comecinho da alternativa. As letras D e E começam certas (“No Texto 2… exposição de ideias”, “No Texto 1… narrativa”) — a diferença está no FIM da frase. Leia a alternativa inteira, até o ponto final.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 25 (o “ou” que soma em vez de escolher)</summary>
+  <div class="quer">🎯 O que ela quer: descobrir que ideia a palavra <b>ou</b> acrescenta <em>nessa frase</em> — não a regra decorada de gramática, e sim o sentido dentro do texto.</div>
+  <div class="passo-r"><span class="n">1</span><div><b>Leia a frase inteira:</b> “A criança deve ser protegida contra as práticas que possam fomentar a discriminação racial, religiosa, <b>ou</b> de qualquer outra índole” (linhas 10 e 11). Duas traduções: <em>fomentar</em> = estimular, fazer crescer; <em>índole</em> = tipo, natureza. Em português simples: proteger contra discriminação de raça, de religião… e de qualquer outro tipo.</div></div>
+  <div class="passo-r"><span class="n">2</span><div><b>Teste o que o “ou” faz aqui.</b> Normalmente o “ou” manda escolher um: “café <em>ou</em> suco” = um dos dois. Mas aqui não dá para escolher! A criança tem de ser protegida das três coisas ao mesmo tempo. Então esse “ou” não está separando: está <b>somando mais um item à lista</b>. Somar item à lista é <b>incluir</b>.</div></div>
+  <div class="passo-r"><span class="n">3</span><div><b>A prova no próprio texto:</b> o Princípio I usa a mesma construção, e lá fica escancarado que a lista não deixa ninguém de fora — “sem qualquer exceção, distinção ou discriminação por motivos de raça, cor, sexo, idioma, religião, opiniões políticas <b>ou de outra natureza</b>” (linhas 6 e 7). Esse “ou de outra natureza / ou de qualquer outra índole” existe para <em>incluir tudo o que não foi citado</em>.</div></div>
+  <div class="alt"><b class="x">A ✘</b> conclusão pediria “portanto, logo, por isso” — o “ou” não fecha raciocínio nenhum · <b class="x">B ✘</b> condição pediria “se, caso, desde que” · <b class="x">C ✘</b> comparação pediria “como, tal qual, mais do que” · <b class="x">D ✘</b> explicação pediria “porque, pois, já que” · <b class="v">E ✔</b> inclusão: acrescenta “qualquer outra índole” às discriminações já citadas.</div>
+  <div class="resp">✅ Resposta: letra E</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>quando a questão perguntar “que ideia esse termo dá”, não vá pela lista decorada — <b>troque a palavra por outra e veja se a frase continua fazendo sentido</b>. Aqui, troque “ou” por “e também”: “discriminação racial, religiosa e também de qualquer outro tipo”. Encaixou perfeito → é inclusão. Se coubesse “portanto”, seria conclusão; se coubesse “se”, seria condição; se coubesse “porque”, seria explicação.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>responder no automático “ou = alternativa, escolher um dos dois”. A mesma palavrinha muda de sentido conforme a frase — quem decora sem testar no texto erra esta questão.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 26 (universal = vale para todos)</summary>
+  <div class="quer">🎯 O que ela quer: achar a palavra que pode <em>substituir</em> “UNIVERSAL” no título sem mudar o sentido — e o comando dá a pista de onde olhar: “levando-se em conta o descrito no ‘Princípio I’”.</div>
+  <div class="passo-r"><span class="n">1</span><div><b>Vá direto ao Princípio I</b>, porque o enunciado mandou. Lá está: “Estes direitos serão <b>outorgados a todas as crianças, sem qualquer exceção</b>, distinção ou discriminação por motivos de raça, cor, sexo, idioma, religião…” (linhas 5 a 8). <em>Outorgados</em> = concedidos, dados.</div></div>
+  <div class="passo-r"><span class="n">2</span><div><b>Traduza:</b> vale para TODAS as crianças, SEM EXCEÇÃO. Uma regra que vale para todos, sem exceção, é uma regra <b>geral</b>. Achou a resposta antes mesmo de olhar as alternativas.</div></div>
+  <div class="passo-r"><span class="n">3</span><div><b>Confirme substituindo no título:</b> “Declaração <b>Geral</b> dos Direitos das Crianças” — continua verdadeiro. “Declaração <b>Nacional</b>…” — vira mentira, porque o subtítulo diz “SEM DISTINÇÃO DE RAÇA, RELIGIÃO OU NACIONALIDADE” (linhas 3 e 4).</div></div>
+  <div class="alt"><b class="v">A ✔</b> GERAL = vale para todos, sem exceção; é o próprio Princípio I · <b class="x">B ✘</b> NACIONAL limita a um país só, e o texto diz justamente que não há distinção de nacionalidade · <b class="x">C ✘</b> INDIVIDUAL = de uma pessoa só, o oposto de “todas as crianças” · <b class="x">D ✘</b> INTERNACIONAL fala de relação <em>entre países</em>; a Declaração não protege países, protege cada criança, venha de onde vier · <b class="x">E ✘</b> INTERPLANETÁRIA = de outros planetas; exagero, o texto fala das crianças do mundo.</div>
+  <div class="resp">✅ Resposta: letra A</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>quando o enunciado disser “levando em conta o trecho X” ou “de acordo com a linha Y”, a resposta está DENTRO desse pedaço — vá lá primeiro e sublinhe as palavras-chave, antes de ler as alternativas. E sinônimo em prova se testa de um jeito só: <b>coloque a palavra no lugar da original e releia a frase</b>. A que mantiver a frase verdadeira é a certa.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>marcar INTERNACIONAL porque a UNICEF é uma organização internacional e a palavra parece “mais importante”. A questão não pergunta o que é a UNICEF; pergunta o sentido de “universal” segundo o Princípio I — e lá está escrito “todas… sem qualquer exceção”.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 27 (a charge das gaiolas na cabeça)</summary>
+  <div class="quer">🎯 O que ela quer: dizer qual é a <em>finalidade</em> da charge — a mensagem que ela quer passar — juntando o desenho (linguagem não verbal) com as falas (linguagem verbal).</div>
+  <div class="passo-r"><span class="n">1</span><div><b>O que se vê no desenho:</b> uma multidão de pessoas em pé. Cada uma tem uma <b>gaiola na cabeça</b>, e dentro de cada gaiola há um <b>pássaro preso</b>. No meio, um homem de camisa amarela e calça azul ergue o braço: a gaiola dele está aberta e o pássaro <b>voa para fora</b>, livre, no céu. Alguém do grupo pergunta: “ESTÁ MALUCO?”. E vem a resposta: “ÀS VEZES, PRA SER FELIZ, BASTA FAZER O CONTRÁRIO DO QUE SEMPRE FEZ.”</div></div>
+  <div class="passo-r"><span class="n">2</span><div><b>A gaiola não é gaiola de verdade — é símbolo.</b> Gaiola na cabeça = ideias presas, hábitos repetidos, o “do que sempre fez”. Soltar o pássaro = se libertar disso. Todo mundo continua com o pássaro preso; só ele soltou.</div></div>
+  <div class="passo-r"><span class="n">3</span><div><b>Some as duas linguagens:</b> a fala diz “basta fazer o contrário do que sempre fez” e o desenho mostra o pássaro saindo da gaiola. Conclusão: a felicidade veio de um <b>ato que libertou</b>. É exatamente a letra E — “atos que nos libertam de aprisionamentos a que estamos submetidos”. <em>Aprisionamento</em> = estar preso; <em>submetidos</em> = obrigados a viver assim.</div></div>
+  <div class="alt"><b class="x">A ✘</b> ele não é vítima: está livre e tranquilo, e quem pergunta “Está maluco?” só está estranhando, não maltratando · <b class="x">B ✘</b> não existe nenhuma regra na cena para ser desrespeitada; a charge aprova o que ele fez, não o acusa · <b class="x">C ✘</b> a fala não diz nada sobre chamar atenção; o que ela elogia é fazer diferente, e o ganho é a liberdade, não a plateia · <b class="x">D ✘</b> é o contrário exato da fala: a charge <em>defende</em> fazer o contrário, não diz que é má saída · <b class="v">E ✔</b> ensina que a felicidade pode vir de um ato que liberta.</div>
+  <div class="resp">✅ Resposta: letra E</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>em charge e tirinha, escreva você mesmo duas frases antes de olhar as alternativas: (1) o que a IMAGEM mostra — “todos com um pássaro preso na cabeça, um soltou o dele”; (2) o que a FALA diz — “fazer o contrário traz felicidade”. A alternativa certa é quase sempre a que usa as DUAS. Alternativa que se agarra a um pedacinho só (como a letra A, presa ao “Está maluco?”) costuma ser isca.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>achar que “Está maluco?” é o assunto da charge. Essa pergunta é só o espanto dos outros; ela serve de gancho para a frase seguinte. A mensagem está na segunda fala e no pássaro voando.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 28 (o “IM” riscado no cartaz)</summary>
+  <div class="quer">🎯 O que ela quer: o cartaz risca o <b>IM</b> de IMPERFEITOS com um “X”, virando PERFEITOS. Isso é uma <em>conclusão</em> sobre os personagens. A questão pede o trecho do Texto 6 que diz essa mesma coisa, só que com palavras.</div>
+  <div class="passo-r"><span class="n">1</span><div><b>O que se vê no cartaz:</b> em letras grandes, “A DIVERTIDA HISTÓRIA DOS BONECOS IMPERFEITOS”, com as duas letrinhas <b>IM</b> cortadas por um X. Embaixo, os bonecos coloridos e tortos, sorrindo e abraçados.</div></div>
+  <div class="passo-r"><span class="n">2</span><div><b>Traduza o risco.</b> “IM-” é um prefixo (pedacinho colado na frente da palavra) que <em>nega</em>: possível → impossível; perfeito → imperfeito. Riscar o IM <b>desfaz a negação</b>. Ou seja: chamam os bonecos de imperfeitos, mas o cartaz afirma que, do jeito que são, eles já estão perfeitos.</div></div>
+  <div class="passo-r"><span class="n">3</span><div><b>Cace no Texto 6 a frase com essa mesma conclusão:</b> “e, <b>finalmente</b>, descobrem que <b>não é preciso ser perfeito para ser incrível</b>. Afinal, o que mais importa é quem você realmente é” (linhas 4 e 5). As palavras “finalmente” e “afinal” avisam que ali é o fecho da história — igualzinho ao risco, que é o fecho sobre os personagens.</div></div>
+  <div class="alt"><b class="x">A ✘</b> fala da origem do filme (marca de sucesso nos Estados Unidos); é informação de apresentação, não conclusão · <b class="x">B ✘</b> é o <em>problema</em> da história (eles “enfrentam”, “lutam”) — o começo do conflito, não o final · <b class="v">C ✔</b> é a conclusão: não é preciso ser perfeito; o que importa é quem você é · <b class="x">D ✘</b> conta quem criou os bonecos e que a marca fez sucesso; bastidor, não conclusão · <b class="x">E ✘</b> descreve como eles são (diferentes pela “feiura”), mas não diz que não é preciso ser perfeito.</div>
+  <div class="resp">✅ Resposta: letra C</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>quando a questão pedir “o trecho que representa a conclusão”, procure as palavras que marcam fim de raciocínio: <b>finalmente, afinal, portanto, então, no fim, por isso</b>. No Texto 6 elas estão todas na mesma frase — a resposta se entrega sozinha antes mesmo de você comparar as cinco alternativas.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>cair na letra E só porque ela é a única que fala de “feiura” e parece combinar com o cartaz. Combinar de assunto não basta: a questão pede o trecho que traz a CONCLUSÃO (“não é preciso ser perfeito”), e a letra E apenas descreve a aparência dos bonecos.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 29 (o que o texto diz em palavras, o cartaz mostra em desenho)</summary>
+  <div class="quer">🎯 O que ela quer: juntar o cartaz (Texto 5, que fala por imagem) com a sinopse (Texto 6, que fala por palavras) e achar a única alternativa verdadeira sobre essa dupla.</div>
+  <div class="passo-r"><span class="n">1</span><div><b>O que se vê no cartaz:</b> bonecos de formas estranhas e cores berrantes — um com um dentão para fora, outro com olhos de tamanhos diferentes, corpos gordinhos e tortos, rosa, azul, laranja, verde. Todos sorrindo, juntinhos, de braços abertos. No alto, o título com o “IM” riscado.</div></div>
+  <div class="passo-r"><span class="n">2</span><div><b>Agora ache a ponte.</b> O Texto 6 diz com <b>palavras</b>: “os personagens de <em>UglyDolls</em> são diferentes justamente por seu aspecto de ‘feiura’” (linhas 7 e 8). O cartaz diz a <b>mesma coisa sem escrever nada</b>: basta olhar os bonecos. Palavra escrita = linguagem <b>verbal</b>; desenho = linguagem <b>não verbal</b>. É exatamente o que a letra E afirma.</div></div>
+  <div class="passo-r"><span class="n">3</span><div><b>Confira uma alternativa por vez</b> — nesse tipo de questão quase sempre há uma palavrinha falsa escondida no meio de uma frase verdadeira (veja o quadro abaixo).</div></div>
+  <div class="alt"><b class="x">A ✘</b> cor não revela caráter (o jeito de ser). Nenhum dos dois textos diz que rosa significa uma personalidade e azul outra — isso a alternativa inventou · <b class="x">B ✘</b> é o oposto do texto: “as diferenças são celebradas e abraçadas” (linha 9) e “não é preciso ser perfeito para ser incrível” (linha 4) mostram que eles valorizam muito além da beleza · <b class="x">C ✘</b> sinônimo é palavra com o mesmo sentido, e essas três não têm: “brinquedos de pelúcia” é o brinquedo de verdade, “<em>UglyDolls</em>” é o nome da marca e do filme, “bonecos” é a palavra geral do cartaz · <b class="x">D ✘</b> no cartaz eles estão <em>sorrindo</em>, não tristes. A citação no fim da alternativa é verdadeira (“amados por crianças, adolescentes e adultos”, linha 7), mas o começo é falso — e meia frase falsa derruba a alternativa inteira · <b class="v">E ✔</b> o que o Texto 6 conta em palavras (o aspecto de “feiura”) está mostrado no cartaz sem nenhuma palavra.</div>
+  <div class="resp">✅ Resposta: letra E</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>quando a questão cruzar imagem com texto, escreva a ponte você mesmo antes de ler as letras: “o Texto 6 fala em feiura → o cartaz mostra a feiura”. Depois é só procurar a alternativa que repete a sua frase. E use a regra do “tudo ou nada”: basta UMA palavra falsa (“tristeza”, na letra D) para a alternativa inteira cair, mesmo que o resto dela esteja copiado do texto.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>aceitar a letra D porque a citação dentro dela existe mesmo no texto. A prova adora colar uma citação verdadeira numa afirmação falsa. Leia a alternativa em pedaços e dê um ✔ ou um ✘ para cada pedaço.</em></div>
+</details>
+
+<details class="res"><summary>Resolução — Questão 30 (por que “feiura” está entre aspas)</summary>
+  <div class="quer">🎯 O que ela quer: explicar o motivo das aspas em “feiura” (linha 8 do Texto 6). Aspas sempre dão um aviso ao leitor — a questão quer saber qual aviso é esse.</div>
+  <div class="passo-r"><span class="n">1</span><div><b>Leia a frase inteira, com as vizinhas:</b> “os personagens de <em>UglyDolls</em> são diferentes justamente por seu aspecto de ‘feiura’ e vivem num <b>maravilhoso</b> uglyverso, onde as diferenças são <b>celebradas e abraçadas</b>” (linhas 7 a 9). Logo antes: “<b>Amados</b> por crianças, adolescentes e adultos” (linha 7).</div></div>
+  <div class="passo-r"><span class="n">2</span><div><b>Compare com o sentido de sempre.</b> No dia a dia, “feiura” é defeito, coisa ruim. Mas no texto ela aparece cercada de <em>maravilhoso</em>, <em>celebradas</em>, <em>abraçadas</em>, <em>amados</em>. Aqui a feiura virou <b>qualidade</b>: é justamente por causa dela que os personagens são amados.</div></div>
+  <div class="passo-r"><span class="n">3</span><div><b>Dê o nome a isso:</b> quando uma palavra é usada com um sentido novo, diferente do habitual, dizemos que ela foi <b>ressignificada</b> (re + significado = ganhou um novo significado). As aspas são o aviso: “atenção, leitor, aqui não é no sentido comum”. É a letra A.</div></div>
+  <div class="alt"><b class="v">A ✔</b> ressignificação: a palavra ganha um sentido novo, positivo · <b class="x">B ✘</b> não é fala copiada de ninguém; não há personagem nem outra pessoa sendo citada ali · <b class="x">C ✘</b> “feiura” não é gíria nem linguagem informal; é palavra comum, que está no dicionário · <b class="x">D ✘</b> ironia é dizer o contrário para zombar, e aqui não há zombaria nenhuma — o texto elogia os personagens · <b class="x">E ✘</b> é exatamente o contrário: as aspas avisam que o sentido NÃO é o convencional (o de sempre).</div>
+  <div class="resp">✅ Resposta: letra A</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> <em>quando a questão perguntar por que algo está entre aspas, teste quatro possibilidades nesta ordem: (1) é fala de alguém, copiada? (2) é gíria ou palavra estrangeira? (3) é ironia, zombando? (4) a palavra está com sentido diferente do normal? Para decidir, olhe as palavras VIZINHAS. Aqui as vizinhas são “maravilhoso”, “celebradas”, “abraçadas” — elogio, não zombaria → sobra a opção 4, sentido novo.</em></div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> <em>confundir ironia com ressignificação. Nas duas a palavra foge do sentido comum, mas a ironia <b>debocha</b> e a ressignificação <b>valoriza</b>. Pergunte: o autor está rindo de alguém? Aqui não está — ele está do lado dos bonecos.</em></div>
+</details>
+      </details>
+    </div></div>
 
     <div class="passo"><input type="checkbox" id="d6p4"><label for="d6p4">📓 <b>Anota por que errou cada uma</b> (10 min):
       passa por <b>todas</b> as questões erradas e, ao lado do número, escreve UMA palavra: <b>conta</b> (entendi, mas errei a conta) · <b>pergunta</b> (sabia a matéria, não entendi o que pediam) · <b>assunto</b> (nunca vi isso) · <b>chute</b> (marquei sem ter certeza — <b>mesmo que tenha acertado</b>).
-      <div class="t">Faz isso <b>agora</b>, logo depois de corrigir, enquanto a prova ainda está fresca. Põe ⭐ nas que você quer que expliquem. E não esquece das que você marcou "?" durante a prova: se você chutou e acertou, ela entra na lista do mesmo jeito — ponto de sorte não se repete em outubro. Amanhã você refaz as de <b>conta</b> e <b>pergunta</b>.</div></label></div>
+      <div class="t">Faz isso <b>agora</b>, logo depois de corrigir, enquanto a prova ainda está fresca. Põe ⭐ nas que você quer que expliquem. E não esquece das que você marcou "?" durante a prova: se você chutou e acertou, ela entra na lista do mesmo jeito — ponto de sorte não se repete em outubro. Amanhã você refaz as de <b>conta</b> e <b>pergunta</b>. As <b>resoluções das 30 questões</b> estão no passo de cima, se precisar.</div></label></div>
 
     <div class="passo"><input type="checkbox" id="d6p5"><label for="d6p5">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
     <div class="dica"><b>Dica do dia 6</b>Na prova, quem controla o tempo ganha: 30 questões em 2h30 dá 5 minutos por questão. Passou de 5 minutos? Marco "?" e sigo. Questão pulada não é questão perdida — questão sem tempo no fim é.</div>
