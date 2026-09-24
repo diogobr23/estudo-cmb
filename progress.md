@@ -1,5 +1,13 @@
 # progress — Estudo CMB
 
+## Estado (23/09/2026, noite — 4ª sessão)
+- **Decisão do Diogo:** replanejar **só a semana 1** agora; semanas 2–4 ele define **no domingo 27/09**, com o resultado do Dia 3 novo, do reforço e do simulado de 2022 na mão.
+- **Semana 1 como ficou (publicada):** qui 24 = **Dia 3** (porcentagem, data movida) · sex 25 = **🔧 Reforço** (`data-dia="R"`, ~50 min: divisão em 3 níveis com conferência, fração↔% ida e volta, refazer 2021 Q9 + 2 problemas próprios) · sáb 26 = Dia 6 simulado 2022 (mantido: é o diagnóstico) · dom 27 = Dia 7 redação.
+- **Dias 4 e 5 (Português) adiados**: `data-adiado="1"` no lugar de `data-data` — o JS esconde da semana e marca "adiado" no plano inteiro. **No domingo, dar data nova a eles** (interpretação ≈ 75% do peso de Português: não cortar).
+- Reforço sem questão CMB inédita de propósito: 2022–2025 estão reservadas aos simulados.
+- Revisão por agente separado: 0 gabaritos errados; 8 ajustes (clareza, tempo, concordância) aplicados.
+- ⚠️ A sessão anterior (3ª) rodou a partir da pasta `belo-coffee` — o histórico dela está em `~/.claude/projects/C--Users-diogo-belo-coffee/`. Abrir sempre na pasta `estudo-cmb`.
+
 ## Estado (23/09/2026, fim da 3ª sessão)
 
 ### 🔴 LER PRIMEIRO — onde a criança está e o que mudou
