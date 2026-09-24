@@ -64,7 +64,7 @@ Régua de decisão: `taxonomia.md` + `classificacao/frequencia.md` (198 questõe
 - 🏆 **pág. 6, Q34 (a–j)** = contrasta lado a lado "1/4 **do total**" × "1/4 **do que sobrou**". É EXATAMENTE a pegadinha que ela errou no Dia 1 (2021 Q8: 0,75 do percurso, 2/9 **do resto**).
 - ⭐ **págs. 5–6 (Q31a/c/e, 32, 33)** = fração de quantidade pelo cálculo indireto ("os 3/5 do número valem 15") — tapa o buraco da bateria de frações.
 - ⭐ **págs. 7–8 (Q35,36,37,40,41,42,45)** = 7 no formato da prova, **5 de provas reais 2025_2026** (CMSP, CMS, CMC). Fração do restante, de figura, de hora.
-- **Q44 = CMB 2025_2026 real** (3 expressões encadeadas) — pesada, guardar para a reta final.
+- 🚫 **Q44 = CMB 2025_2026 = prova de 2025, Q4** (senha com 3 expressões) — **NÃO USAR**: 2025 é o ensaio geral de 12/10. (Corrigido em 24/09; antes dizia "guardar para a reta final".)
 - Tirinhas/charges das págs. 12, 14, 16, 18 (Armandinho, Garfield, Mafalda, Cazo) = matéria-prima para **P05 (peso 18, nº 1 de Português)** se eu trocar a pergunta de verbo por interpretação.
 - ❌ DESCARTE: págs. 3–5 (dízima, geratriz, raiz, negativo, potência ≈35 itens), Q43 e Q47 (torneiras), Q48–50 (desafios em espanhol/inglês), **págs. 10–20 inteiras = ~50 questões de VERBO** (P18 tem peso 2 em 198 questões; nível de concurso adulto: laudo veterinário, voz ativa, conjunção integrante). Exceção: 6 itens de tempo/modo verbal servem de apoio à redação (Q53, Q54, "55" da pág. 11, Q65, Q79, Q83).
 - ⚠️ Erros do material: pág. 11 tem duas Q55; Q56/57 repetem numeração; Q56 da pág. 12 tem alternativas (A),(G),(H),(I),(J); Q37 com letras duplicadas.
@@ -137,3 +137,44 @@ Régua de decisão: `taxonomia.md` + `classificacao/frequencia.md` (198 questõe
 
 **O que NÃO entra, e por quê** (conferido contra o Art. 123/124 e 198 questões):
 soma de sequências/PA · dízima periódica e fração geratriz · raiz quadrada · potenciação · combinatória · número de divisores por fórmula · círculo e π · conjunto dos racionais · pronomes de tratamento · interrogativos com regência · relativos com "cujo" · "pronome substantivo × adjetivo" · indefinidos · ~50 questões de verbo (peso 2) · discurso direto→indireto · **mau/mal, porquês e parônimos (peso ZERO em 6 provas)**.
+
+
+---
+
+# NOVA LEVA (24/09/2026) — `material/Nova leva/`, 14 PDFs, 134 págs.
+
+Inventariada por 6 agentes em paralelo (visão). PNGs apagados (conferido). Tabelas questão a questão, com gabarito resolvido pelos agentes: ver "Onde estão as tabelas" no fim.
+
+## ⚠️ Chave de leitura do rótulo "CMB aaaa/aaaa" do cursinho
+O cursinho escreve **ano da prova / ano de entrada**. Então **"CMB 2024/2025" = nossa prova de 2024** e **"CMB 2025/2026" = nossa prova de 2025**. Conferido: L16 Q1 e L00 Q8 = 2024 Q10 (Vênus); L01 Q11 = 2024 Q15 (romanos); frações-e-verbos Q44 = 2025 Q4.
+- 🚫 **Não usar nada rotulado CMB 2023/24, 2024/25 ou 2025/26** (simulados de 03/10, 10/10 e ensaio de 12/10). Isso inclui itens dos "tesouros" do lote anterior (lista MMC e listas de pronome citam 2024_2025 e 2025_2026) → **conferir contra `classificacao/<ano>.csv` antes de usar qualquer um**.
+- L02 Q3 ("CMB 2014/2025", ano errado): não bate com nenhuma questão de 2020–2025 → pode usar.
+- Rótulos de outros colégios (CMT, CMJF, CMSP, CMBH, CMDPII, CMS…) e CMB antigo (2003–2018) podem ser usados.
+
+## Resumo
+| Material | Situação | USAR/TALVEZ/DESC | Veredito |
+|---|---|---|---|
+| Lista 00 | feita, sem correção | 23/8/8 · 🚫 Q8 | EM PARTE (fácil: numeração, operações, romanos, tempo) |
+| Lista 01 | feita + corrigida | 23/8/8 · 🚫 Q11 | **MUITO** (bloco CMJF Q21–28 "Os óculos mágicos da empatia") |
+| Lista 02 | feita + corrigida | 26/7/6 | **MUITO** (CMB 2017-18 Q28–30; CMSP Q21–25) — ⚠️ o X vermelho do corretor diverge em Q12, Q34, Q36: não usar como gabarito |
+| Lista 03 | feita + corrigida | 22/8/10 | EM PARTE (CMB 2010/11 Q20; gráfico Q12–13) |
+| Lista 05 (= "LISTA 04_2026") | feita + corrigida | 30/7/3 | **MUITO** (crônica "Menino e celular à mesa" Q21–26) |
+| Lista 06 | feita + corrigida | 23/12/5 | **MUITO** (6 de colégio militar em Mat; CMB Q15 gráfico) |
+| Lista 10 | feita + corrigida | 25/9/6 | EM PARTE |
+| Lista 11 | feita + corrigida | 30/5/5 | **MUITO** (bloco CMBH Q28–36, Rubem Alves) |
+| Lista 13 | feita + corrigida | 32/4/4 | **MUITO — a que mais revela** |
+| Listas 16 e 17 | **mesmas do lote anterior**, em branco | — | ganho: gabarito de todas as USAR/TALVEZ (16 Q1 🚫) |
+| Simulado 03 | em branco | 26/13/1 | **serve como simulado extra** (20+20, Mat muito próxima do CMB; pouca fração/decimal/%) |
+| Simulados 05 = 06 | em branco | 15/5/4 | **o mesmo simulado** (12+12); usar objetivas do 06 + redação do 05 |
+
+## 🔴 Diagnóstico (listas feitas COM AJUDA → hipótese, não medida)
+1. **Trava e deixa em branco** questão de **várias afirmações (I/II/III)** — L00 Q13, L01 Q6/Q8, L03 Q39. Confirma a lista 14. Não é conta: as contas saem certas.
+2. **Marca a primeira alternativa que parece certa** sem testar as outras (L00 Q13, L02 Q20).
+3. **Divisão com zero no meio do quociente**: L03 Q7, 235.872 ÷ 468 → marcou 540 (certo 504). L03 Q8: 276 ÷ 12 = 36 (certo 23). → reforço de 25/09 mira isso.
+4. **Fração em cascata / do resto** (L13 Q11, Q17) — terceira confirmação (Dia 1 e lista 14).
+5. **Número "disfarçado"**: decimal + nome de ordem ("3,8 dezenas de milhão"), centavos, bilhões (L11 Q1, Q7, Q17, Q18). M01+M08.
+6. **Fuso horário**: não sabe para que lado converter (L06 Q14). Caiu em 2025.
+7. **Português**: acerta regra decorada, **abandona ou erra texto longo**; erra **sentido de palavra pelo contexto** escolhendo pelo clima da cena, sem caçar a palavra-pista (L05 Q38 "previdência", Q39 "a vau"); **conectivos** de explicação/conclusão/proporção ("ou seja", "quanto mais… maior": L11 Q25, L13 Q31); **tirinha** ignorando o quadrinho do meio (L01 Q34); sentido literal × figurado (L03 Q37, L10 Q38).
+
+## Defeitos a lembrar (não usar sem ajuste)
+L00 Q17 (falta número) · L02 Q12 (2–3 incorretas) · L03 Q4 (anulada) · L06 Q19 (sem alternativa certa), Q12 (70 ou 72) · L10 Q16 · L11 Q19, Q23 · L13 Q5, Q6 (anulada), Q23 · L16 Q10 · L17 Q22, Q26 · S03 Q16, Q36, Q40 (incertas) · S05 Q1, Q4, Q8, Q15, Q21, Q24.
