@@ -80,6 +80,14 @@
   .res .alt { margin:6px 0 } .res .alt b.x { color:#8a3b00 } .res .alt b.v { color:#1d6b2d }
   .fim { text-align:center; color:var(--muted); font-size:15px; margin-top:8px }
   .prog { font-size:14px; color:var(--muted); margin-top:8px }
+  .carta-box { margin-top:10px; text-align:center }
+  .carta-cont { color:var(--muted); font-size:14px; margin:0 0 8px }
+  .carta { background:#fffdf5; border:2px solid #e6d9a8; border-radius:14px; padding:22px 16px; min-height:130px; display:flex; flex-direction:column; justify-content:center; gap:12px }
+  .carta-p { font-size:19px; font-weight:700 }
+  .carta-r { font-size:18px; color:#1d6b2d; background:#e6f7ea; border-radius:10px; padding:10px 12px }
+  .carta-bts { display:flex; gap:10px; justify-content:center; margin-top:12px; flex-wrap:wrap }
+  .carta-bts button { font:inherit; font-weight:700; border:0; border-radius:10px; padding:10px 18px; cursor:pointer; color:#fff; background:var(--mat) }
+  .carta-bts button.ok { background:var(--ok) } .carta-bts button.nao { background:#b7770d }
 </style>
 </head>
 <body>
@@ -147,7 +155,7 @@
     <h3>4. Divisão sem erro</h3>
     <div class="check"><ul>
       <li><b>Dividir por 10, 100 ou 1 000</b> é andar a vírgula para a <b>esquerda</b>: 1, 2 ou 3 casas. \(46 \div 10 = 4{,}6\) · \(46 \div 100 = 0{,}46\).</li>
-      <li><b>Não acabou a divisão e sobrou resto?</b> Põe vírgula no resultado, acrescenta um zero no resto e continua: \(3 \div 4\) → não dá → \(30 \div 4 = 7\) e sobra 2 → \(20 \div 4 = 5\) → resposta \(0{,}75\).</li>
+      <li><b>Não acabou a divisão e sobrou resto</b> (numa conta de dinheiro ou de medida)? Põe vírgula no resultado, acrescenta um zero no resto e continua: \(3 \div 4\) → não dá → \(30 \div 4 = 7\) e sobra 2 → \(20 \div 4 = 5\) → resposta \(0{,}75\).</li>
       <li><b>Dividir por 5</b> é fácil: multiplica por 2 e divide por 10. \(90 \div 5 = 180 \div 10 = 18\).</li>
       <li><b>Sempre confere multiplicando de volta:</b> se \(84 \div 7 = 12\), então \(12 \times 7\) tem que dar 84. Leva 5 segundos e salva a questão.</li>
     </ul></div>
@@ -180,6 +188,21 @@
       <li>"De quanto em quanto tempo se <b>encontram</b>", "acendem juntas de novo" → <b>MMC</b> (mínimo múltiplo comum).</li>
       <li>"Repartir em pedaços <b>iguais, do maior tamanho possível</b>", "sem sobrar nada" → <b>MDC</b> (máximo divisor comum).</li>
     </ul></div>
+    </details>
+  </section>
+
+  <section class="ref verde" id="cartas">
+    <h2>🃏 Cartinhas <span class="tag">5 minutos</span></h2>
+    <p class="quando">Uma rodada rápida: lê a pergunta, responde de cabeça, vira a carta. Acertou? Ela demora mais pra voltar. Errou? Aparece de novo no fim da rodada e volta amanhã. Sem pressa e sem nota.</p>
+    <details class="abrir"><summary>Abrir as cartinhas</summary>
+      <div class="carta-box">
+        <p class="carta-cont" id="carta-cont"></p>
+        <div class="carta" id="carta">
+          <div class="carta-p" id="carta-p"></div>
+          <div class="carta-r" id="carta-r" hidden></div>
+        </div>
+        <div class="carta-bts" id="carta-bts"></div>
+      </div>
     </details>
   </section>
 
@@ -579,7 +602,7 @@
       </details>
     </div></div>
 
-    <div class="passo"><input type="checkbox" id="drp5"><label for="drp5">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
+    <div class="passo"><input type="checkbox" id="drp5"><label for="drp5">🃏 <b>Uma rodada de cartinhas</b> (5 min): abre as <a href="#cartas">🃏 Cartinhas</a> lá em cima e faz a rodada até aparecer "Rodada feita!". <div class="t">Não precisa copiar a dica de hoje, só lê ela aqui embaixo: as cartinhas já cuidam de você lembrar.</div></label></div>
     <div class="dica"><b>Dica do reforço</b>Sobrou resto na divisão? Ponho vírgula no resultado, um zero no resto e continuo. Terminei? Multiplico de volta pra conferir. E fração e porcentagem são a mesma coisa com roupa diferente: \(\frac{1}{2} = 50\%\), \(\frac{1}{4} = 25\%\), \(\frac{1}{5} = 20\%\), \(\frac{1}{10} = 10\%\).</div>
     <p class="prog" id="progR"></p>
   </section>
@@ -2138,6 +2161,79 @@
       btn.textContent = tudo ? 'mostrar só esta semana' : 'ver o plano inteiro';
       if (!tudo) window.scrollTo(0, 0);
     });
+  })();
+
+  // cartinhas: rodada curta com repetição espaçada (caixa 1 volta amanhã, 2 em 2 dias, 3 em 4 dias)
+  // "desde" = só entra depois que ela estudou o assunto (ajustar se o calendário mudar)
+  (function () {
+    var CARTAS = [
+      { id: 'p50', desde: '2026-09-25', p: '50% é qual fração?', r: '½ — a metade' },
+      { id: 'p25', desde: '2026-09-25', p: '25% é qual fração?', r: '¼ — a metade da metade' },
+      { id: 'p75', desde: '2026-09-25', p: '75% é qual fração?', r: '¾ — três quartos' },
+      { id: 'p20', desde: '2026-09-25', p: '20% é qual fração?', r: '⅕ — a quinta parte' },
+      { id: 'p10', desde: '2026-09-25', p: 'Como acho 10% de um número?', r: 'Divido por 10 (a vírgula anda 1 casa pra esquerda). 10% de 46 = 4,6' },
+      { id: 'p1', desde: '2026-09-25', p: 'Como acho 1% de um número?', r: 'Divido por 100. 1% de 300 = 3' },
+      { id: 'p5', desde: '2026-09-25', p: 'Como acho 5% de um número?', r: 'Acho o 10% e divido por 2 (é a metade do 10%)' },
+      { id: 'p15', desde: '2026-09-25', p: '15% = 10% + quanto?', r: '10% + 5% (o 5% é a metade do 10%)' },
+      { id: 'pinv', desde: '2026-09-25', p: '30% de um número é 45. Como acho o número?', r: 'Desço até o 10%: 45 ÷ 3 = 15. Subo até o 100%: 15 × 10 = 150' },
+      { id: 'dresto', desde: '2026-09-25', p: 'Na divisão sobrou resto, e a conta é de dinheiro ou medida. E agora?', r: 'Ponho vírgula no resultado, um zero no resto e continuo. 3 ÷ 4 = 0,75' },
+      { id: 'dconf', desde: '2026-09-25', p: 'Como confiro se a divisão está certa?', r: 'Multiplico de volta. 84 ÷ 7 = 12, porque 12 × 7 = 84' },
+      { id: 'esc', desde: '2026-09-25', p: 'Na escada das unidades, de m pra cm: multiplica ou divide? Por quanto?', r: 'Multiplica por 100 (2 degraus pra direita: × 10 × 10). 3 m = 300 cm' },
+      { id: 'areavol', desde: '2026-09-29', p: 'Área e volume: quanto vale cada degrau da escada?', r: 'Área: × 100 ou ÷ 100. Volume: × 1 000 ou ÷ 1 000' },
+      { id: 'litro', desde: '2026-09-29', p: '1 litro é quanto em dm³? E 1 m³ é quantos litros?', r: '1 L = 1 dm³ · 1 m³ = 1 000 L' },
+      { id: 'mmc', desde: '2026-10-05', p: '"De quanto em quanto tempo se encontram de novo?" É MMC ou MDC?', r: 'MMC. (MDC é "repartir em pedaços iguais, do maior tamanho possível")' }
+    ];
+    var POR_RODADA = 8, VOLTA = [1, 2, 4]; // dias até a carta voltar, por caixa
+    function iso(d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
+    function mais(dias) { var d = new Date(); d.setDate(d.getDate() + dias); return iso(d); }
+    var hoje = iso(new Date());
+    var est = {};
+    try { est = JSON.parse(localStorage.getItem('cmb:cartas') || '{}') || {}; } catch (e) {}
+    function guardar() { try { localStorage.setItem('cmb:cartas', JSON.stringify(est)); } catch (e) {} }
+
+    var liberadas = CARTAS.filter(function (c) { return c.desde <= hoje; });
+    var vencidas = liberadas.filter(function (c) { return !est[c.id] || est[c.id].volta <= hoje; });
+    vencidas.sort(function (a, b) { return ((est[a.id] || {}).caixa || 0) - ((est[b.id] || {}).caixa || 0); });
+    var fila = vencidas.slice(0, POR_RODADA), primeira = {}, acertos = 0, total = fila.length;
+
+    var cont = document.getElementById('carta-cont'), carta = document.getElementById('carta'),
+        cp = document.getElementById('carta-p'), cr = document.getElementById('carta-r'), bts = document.getElementById('carta-bts');
+    function botoes(lista) {
+      bts.innerHTML = '';
+      lista.forEach(function (b) {
+        var el = document.createElement('button'); el.type = 'button'; el.textContent = b[0];
+        if (b[2]) el.className = b[2];
+        el.addEventListener('click', b[1]); bts.appendChild(el);
+      });
+    }
+    function mostrar() {
+      if (!fila.length) {
+        cont.textContent = '';
+        cp.textContent = total ? 'Rodada feita! 🎉' : 'Por hoje não tem carta. Volta amanhã! 😎';
+        cr.hidden = !total;
+        cr.textContent = acertos + ' de ' + total + ' de primeira. As que você errou voltam amanhã.';
+        botoes([]); return;
+      }
+      var c = fila[0];
+      cont.textContent = 'Faltam ' + fila.length + (fila.length === 1 ? ' carta' : ' cartas');
+      cp.textContent = c.p; cr.textContent = c.r; cr.hidden = true;
+      botoes([['Virar a carta 🔄', function () {
+        cr.hidden = false;
+        botoes([['Acertei 😀', function () { marcar(true); }, 'ok'], ['Errei 🔁', function () { marcar(false); }, 'nao']]);
+      }]]);
+    }
+    function marcar(acertou) {
+      var c = fila.shift(), s = est[c.id] || { caixa: 0 };
+      if (!(c.id in primeira)) { // só a primeira tentativa do dia conta para a caixa
+        primeira[c.id] = acertou;
+        if (acertou) { acertos++; s.caixa = Math.min(s.caixa + 1, 3); } else { s.caixa = 1; }
+        s.volta = mais(VOLTA[s.caixa - 1]);
+        est[c.id] = s; guardar();
+      }
+      if (!acertou) fila.push(c); // errou: aparece de novo no fim desta rodada
+      mostrar();
+    }
+    mostrar();
   })();
 
   // lembra as caixinhas marcadas neste aparelho (se o navegador deixar)

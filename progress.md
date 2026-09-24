@@ -6,6 +6,8 @@
 - **Dias 4 e 5 (Português) adiados**: `data-adiado="1"` no lugar de `data-data` — o JS esconde da semana e marca "adiado" no plano inteiro. **No domingo, dar data nova a eles** (interpretação ≈ 75% do peso de Português: não cortar).
 - Reforço sem questão CMB inédita de propósito: 2022–2025 estão reservadas aos simulados.
 - Revisão por agente separado: 0 gabaritos errados; 8 ajustes (clareza, tempo, concordância) aplicados.
+- **Dia 3:** os vídeos (passos `d3p1` e `d3p3`) ela já viu na quarta → viraram "pula e marca a caixinha".
+- **🃏 Cartinhas** (`id="cartas"`, pedido do Diogo, 23/09): 15 cartas da Cola, rodada de no máx. 8, repetição espaçada (errou → fim da rodada + amanhã; acertou → caixa 1/2/3 = volta em 1/2/4 dias), estado no `localStorage` do aparelho (`cmb:cartas`). **Só entra carta de assunto já estudado** (campo `desde`): % e divisão 25/09, área/volume/litro 29/09, MMC 05/10 → **reajustar `desde` se o calendário mudar no domingo.** Estreia sexta, no lugar de "copia a dica" do Reforço (substitui, não soma — ela resiste a "mais coisa"). Revisor: 0 respostas erradas, 5 ajustes aplicados. **Domingo: perguntar ao Diogo como ela reagiu e decidir se as cartinhas substituem o "copia a dica" em todos os dias.**
 - ⚠️ A sessão anterior (3ª) rodou a partir da pasta `belo-coffee` — o histórico dela está em `~/.claude/projects/C--Users-diogo-belo-coffee/`. Abrir sempre na pasta `estudo-cmb`.
 
 ## Estado (23/09/2026, fim da 3ª sessão)
