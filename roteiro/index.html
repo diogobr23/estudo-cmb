@@ -208,6 +208,20 @@
     </details>
   </section>
 
+  <section class="ref azul" id="receita">
+    <h2>🧭 Receita da questão do CMB <span class="tag">Toda questão</span></h2>
+    <p class="quando">Os 5 passos da Oficina. Usa em toda questão do CMB — e na prova.</p>
+    <details class="abrir"><summary>Abrir a receita</summary>
+    <div class="check"><ol>
+        <li>🎯 <b>Lê a PERGUNTA do fim primeiro.</b> Escreve no cantinho, em poucas palavras, o que ela quer — e, se for conta, a unidade ("quero: metros").</li>
+        <li>🔎 <b>Tira os dados:</b> volta ao texto e escreve no caderno <b>só</b> o que importa — os números e as palavras que a pergunta pediu, um embaixo do outro. Em Português, anota o <b>número da linha</b> que prova a resposta. <b>Tem porcentagem? Pergunta: é porcentagem DE QUEM?</b> e anota junto ("aumento de 103% → do 1º ano: 748"). O resto é enfeite. <i>(Na prova de papel, circula direto na folha.)</i><div class="t">Exemplo — "Um livro custa R$ 30 e está com 10% de desconto. Quanto fica?" → no caderno: <b>quero: preço final</b> · R$ 30 · desconto de 10%</div></li>
+        <li>✏️ <b>Faz a conta em pé</b>, com capricho. Trocou de unidade? Desenha a tabela das unidades.</li>
+        <li>✅ <b>Testa TODAS as alternativas (se precisar).</b> Escreve A, B, C, D, E em coluna e põe <b>V</b> ou <b>F</b> do lado de cada uma. Risca as falsas. Tem I, II e III? Julga <b>uma de cada vez</b>. (Se a questão diz "só uma é verdadeira" e você tem <b>certeza</b> de que achou, pode parar. Na dúvida, testa todas.)</li>
+        <li>🔁 <b>Relê a pergunta</b> antes de marcar. "Era mesmo em metros?" "Era a única verdadeira?"</li>
+      </ol></div>
+    </details>
+  </section>
+
   <section class="ref azul" id="como-cai">
     <h2>🔍 Como caem as questões do CMB <span class="tag">Vale pra prova inteira</span></h2>
     <p class="quando">O assunto é de 5º ano. O que deixa a prova difícil é o <b>jeito</b> de perguntar — e isso dá pra treinar.</p>
@@ -1403,7 +1417,7 @@
       <div class="t">Marca no caderno: ☐ é uma <b>história</b> em que eu viro herói usando coragem, cooperação e ajuda ao próximo (o tema da proposta) · ☐ está em <b>1ª pessoa</b> ("eu") · ☐ tem <b>título</b> · ☐ tem <b>parágrafos</b> (começo · problema · momento mais tenso · fim) · ☐ contei as linhas: <b>entre 15 e 30</b> · ☐ <b>não escrevi meu nome</b> nem assinei. Faltou algum? Ainda dá pra ajeitar. Depois, <b>pede pra um adulto tirar uma foto</b> e mandar pro Diogo. As outras regras (caneta, relógio) ficam para as próximas redações — a lista completa está no card <a href="#regras-redacao">📋 Regras da redação</a>.</div></label></div>
 
     <div class="passo"><input type="checkbox" id="d7p5"><label for="d7p5">🔁 <b>Revisão da oficina de sábado</b> (15 min, depois de uma pausa):
-      abre o caderno na página onde você copiou no sábado a <b>receita dos 5 passos</b> (pergunta do fim → tira os dados → conta em pé → testa as alternativas (se precisar) → relê) e lê em voz alta. Não achou? A receita está no <a href="#d6o1">Dia 6, aqui em cima</a>. Depois escolhe a questão da oficina em que você mais travou (ou abriu mais dicas) e <b>refaz sem olhar</b>, passo por passo da receita.
+      abre o caderno na página onde você copiou no sábado a <b>receita dos 5 passos</b> (pergunta do fim → tira os dados → conta em pé → testa as alternativas (se precisar) → relê) e lê em voz alta. Não achou? A receita está no card <a href="#receita">🧭 Receita da questão do CMB</a>, lá em cima. Depois escolhe a questão da oficina em que você mais travou (ou abriu mais dicas) e <b>refaz sem olhar</b>, passo por passo da receita.
       <div class="t">Deu certo? Escreve do lado qual passo da receita te salvou. Não saiu? Marca ⭐ e mostra pro Diogo.</div></label></div>
 
     <div class="passo"><input type="checkbox" id="d7p6"><label for="d7p6">💡 <b>Copia a dica no caderno</b> (5 min)</label></div>
@@ -1466,7 +1480,7 @@
     </div></div>
 
     <div class="passo"><input type="checkbox" id="d8p3"><div class="corpo"><label for="d8p3">📝 <b>Questões do CMB com a receita</b> (20 min):
-      usa a receita dos 5 passos (está no <a href="#d6o1">Dia 6</a>). A 1ª tem dicas escondidas; a 2ª é sozinha — <b>se der tempo</b>. Se não der, ela fica pra amanhã.</label>
+      usa a receita dos 5 passos (está no card <a href="#receita">🧭 Receita</a>, lá em cima). A 1ª tem dicas escondidas; a 2ª é sozinha — <b>se der tempo</b>. Se não der, ela fica pra amanhã.</label>
 
       <details class="grupo"><summary>1ª) Prova de 2021, Questão 1 — as medalhas (com dicas)</summary>
         <p class="t">Abre a <a href="../pesquisa/provas/2021-prova.pdf#page=2" target="_blank">prova de 2021 na página 2</a>.</p>
@@ -2335,7 +2349,7 @@
       }
       var p = (s.getAttribute('data-data') || '').split('-');
       var d = new Date(+p[0], p[1] - 1, +p[2]);
-      if (d < seg || d > dom) { s.classList.add('fora'); return; }
+      if (d < seg || d > dom || (hoje <= ULTIMO && d < hoje)) { s.classList.add('fora'); return; } // fora da semana ou já passou
       total++;
       if (d.getTime() === hoje.getTime()) {
         s.classList.add('hoje');
@@ -2348,7 +2362,7 @@
     tit.textContent = 'Semana ' + nsem + ' de 4 · ' + dm(seg) + ' a ' + dm(dom);
     sub.textContent = hoje > ULTIMO
       ? 'Acabou! Mostrando a última semana. 🎉'
-      : 'Só os ' + total + ' dias desta semana aparecem aqui. Na segunda-feira, os próximos aparecem sozinhos.';
+      : 'Aqui aparecem só os dias que faltam nesta semana (' + total + '). Os que já passaram ficam em "ver o plano inteiro", lá embaixo.';
 
     var btn = document.getElementById('ver-tudo');
     btn.addEventListener('click', function () {
