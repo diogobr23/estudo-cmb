@@ -75,6 +75,9 @@
   .escada { margin:8px 0 4px } .escada .deg { display:flex; gap:4px }
   .escada .deg span { flex:1; text-align:center; background:#fff; border:1px solid #9bb8e0; border-radius:6px; padding:4px 0; font-weight:700; font-size:14px }
   .escada .deg span.aqui { background:var(--mat); color:#fff; border-color:var(--mat) }
+  .escada .deg.num { margin-top:3px }
+  .escada .deg.num span { font-weight:400; font-size:17px; background:#fffbe6; border-style:dashed; min-height:1.4em }
+  .escada .deg.num span.z { color:#c0392b; font-weight:700 }
   .escada .seta { display:flex; justify-content:space-between; font-size:13px; color:var(--muted); margin-top:3px }
   .escada .seta b { color:var(--ink) }
   .res .alt { margin:6px 0 } .res .alt b.x { color:#8a3b00 } .res .alt b.v { color:#1d6b2d }
@@ -1638,10 +1641,79 @@
     <p class="prog" id="progPT"></p>
   </section>
 
+  <!-- SEXTA 02/10: REFORÇO DA TABELA DAS UNIDADES -->
+  <section class="dia" data-dia="RT" data-data="2026-10-02">
+    <h2>🔧 Reforço — A tabela das unidades, com calma <span class="tag">Matemática</span></h2>
+    <p class="quando">sexta, 02/10 · ⏱ mais ou menos 1 hora · <b>sem pressa</b></p>
+    <p class="t">Na terça a tabela deu trabalho — normal, é muita coisa nova de uma vez. Hoje você aprende um jeito de não errar nunca: <b>um algarismo em cada casa</b>. Ele resolve as três partes chatas: pra que lado a vírgula anda, onde entram os zeros, e massa e litro.</p>
+
+    <div class="passo"><input type="checkbox" id="rtc"><label for="rtc">🃏 <b>Começa pelas cartinhas</b> (5 min): abre as <a href="#cartas">🃏 Cartinhas</a> lá em cima, faz a rodada rapidinho e volta pra cá.</label></div>
+
+    <div class="passo"><input type="checkbox" id="rt1"><div class="corpo"><label for="rt1">🧭 <b>Parte 1 — A pergunta que decide o lado</b> (5 min):
+      antes de qualquer conta, pergunta: <b>a unidade de chegada é menor ou maior?</b></label>
+      <div class="check"><ul>
+        <li>Vai pra uma unidade <b>menor</b> (pra direita na tabela)? Precisa de <b>mais</b> pedaços → o número <b>CRESCE</b>. Ex.: 3 reais = 300 centavos.</li>
+        <li>Vai pra uma unidade <b>maior</b> (pra esquerda)? Precisa de <b>menos</b> → o número <b>DIMINUI</b>. Ex.: 300 centavos = 3 reais.</li>
+      </ul></div>
+      <p class="t"><b>Treino relâmpago</b> — sem conta, só responde "cresce" ou "diminui":</p>
+      <div class="alt">a) 5 km → m<br>b) 800 cm → m<br>c) 2 kg → g<br>d) 500 mL → L<br>e) 7 dag → g<br>f) 60 mm → cm</div>
+      <details><summary>Ver respostas</summary><b>a)</b> cresce (m é menor que km)<br><b>b)</b> diminui<br><b>c)</b> cresce<br><b>d)</b> diminui<br><b>e)</b> cresce (dag é maior que g: <b>deca</b> = dez)<br><b>f)</b> diminui</details>
+    </div></div>
+
+    <div class="passo"><input type="checkbox" id="rt2"><div class="corpo"><label for="rt2">📖 <b>Parte 2 — Um algarismo em cada casa</b> (15 min):
+      desenha no caderno a tabela <b>com uma linha embaixo</b>, pra escrever os algarismos. Copia a regra:</label>
+      <div class="check"><ol>
+        <li>O algarismo que fica <b>logo antes da vírgula</b> mora na casa da unidade <b>de saída</b>. (Número sem vírgula? É o último algarismo.)</li>
+        <li>Os outros algarismos vão <b>um por casa</b>, na ordem, pros dois lados.</li>
+        <li>Pra ler na unidade <b>de chegada</b>: a vírgula vai <b>logo depois da casa de chegada</b>.</li>
+        <li>Ficou <b>casa vazia</b> entre os algarismos e a casa de chegada, <b>contando a própria casa de chegada</b>? Ela vira <b>0</b>.</li>
+      </ol></div>
+      <p class="t">Nos exemplos, as casas coloridas são a de saída e a de chegada, e o <b class="x">0 vermelho</b> é o zero que <b>você</b> completa.</p>
+      <details class="res" open><summary>👀 Olha eu fazendo (4 exemplos)</summary>
+        <div class="passo-r"><span class="n">1</span><div><b>3,2 km em m.</b><div class="escada"><div class="deg"><span class="aqui">km</span><span>hm</span><span>dam</span><span class="aqui">m</span><span>dm</span><span>cm</span><span>mm</span></div><div class="deg num"><span>3</span><span>2</span><span class="z">0</span><span class="z">0</span><span></span><span></span><span></span></div></div>O 3 (antes da vírgula) mora no <b>km</b>; o 2 vai na casa seguinte. Até chegar no <b>m</b> ficaram 2 casas vazias → <b class="x">0</b> e <b class="x">0</b>. Lê até o m: <b>3 200 m</b>. Ficou maior? Sim, fui pra unidade menor. ✔</div></div>
+        <div class="passo-r"><span class="n">2</span><div><b>45 cm em m.</b><div class="escada"><div class="deg"><span>km</span><span>hm</span><span>dam</span><span class="aqui">m</span><span>dm</span><span class="aqui">cm</span><span>mm</span></div><div class="deg num"><span></span><span></span><span></span><span class="z">0,</span><span>4</span><span>5</span><span></span></div></div>45 não tem vírgula, então o último algarismo (o 5) mora no <b>cm</b>; o 4 vai na casa da esquerda. A casa do <b>m</b> ficou vazia → <b class="x">0</b>, e a vírgula vem logo depois dela: <b>0,45 m</b>. Ficou menor? Sim, fui pra unidade maior. ✔</div></div>
+        <div class="passo-r"><span class="n">3</span><div><b>5 mm em cm.</b><div class="escada"><div class="deg"><span>km</span><span>hm</span><span>dam</span><span>m</span><span>dm</span><span class="aqui">cm</span><span class="aqui">mm</span></div><div class="deg num"><span></span><span></span><span></span><span></span><span></span><span class="z">0,</span><span>5</span></div></div>O 5 mora no <b>mm</b>. A casa do <b>cm</b> ficou vazia → <b class="x">0</b>, vírgula depois dela: <b>0,5 cm</b>.</div></div>
+        <div class="passo-r"><span class="n">4</span><div><b>2,05 m em cm.</b><div class="escada"><div class="deg"><span>km</span><span>hm</span><span>dam</span><span class="aqui">m</span><span>dm</span><span class="aqui">cm</span><span>mm</span></div><div class="deg num"><span></span><span></span><span></span><span>2</span><span>0</span><span>5</span><span></span></div></div>O 2 mora no <b>m</b>; depois vem 0 e 5, um em cada casa. Lê até o cm: <b>205 cm</b>. (Esse 0 já era do número, não fui eu que pus.)</div></div>
+      </details>
+    </div></div>
+
+    <div class="passo"><input type="checkbox" id="rt3"><div class="corpo"><label for="rt3">⚖️ <b>Parte 3 — Massa e litro: a mesma tabela</b> (5 min):
+      só troca a <b>última letra</b>: m (metro) vira <b>g</b> (grama) ou <b>L</b> (litro). As casas e a regra são iguaizinhas.</label>
+      <div class="escada"><div class="deg"><span>km</span><span>hm</span><span>dam</span><span class="aqui">m</span><span>dm</span><span>cm</span><span>mm</span></div></div><div class="escada"><div class="deg"><span>kg</span><span>hg</span><span>dag</span><span class="aqui">g</span><span>dg</span><span>cg</span><span>mg</span></div></div><div class="escada"><div class="deg"><span>kL</span><span>hL</span><span>daL</span><span class="aqui">L</span><span>dL</span><span>cL</span><span>mL</span></div></div>
+      <details class="res" open><summary>👀 Olha eu fazendo (2 exemplos)</summary>
+      <div class="passo-r"><span class="n">1</span><div><b>250 g em kg.</b><div class="escada"><div class="deg"><span class="aqui">kg</span><span>hg</span><span>dag</span><span class="aqui">g</span><span>dg</span><span>cg</span><span>mg</span></div><div class="deg num"><span class="z">0,</span><span>2</span><span>5</span><span>0</span><span></span><span></span><span></span></div></div>O último algarismo (0) mora no <b>g</b>. O kg ficou vazio → <b class="x">0</b>, vírgula depois dele: 0,250 = <b>0,25 kg</b> (zero no fim, depois da vírgula, pode cortar).</div></div>
+      <div class="passo-r"><span class="n">2</span><div><b>1,5 L em mL.</b><div class="escada"><div class="deg"><span>kL</span><span>hL</span><span>daL</span><span class="aqui">L</span><span>dL</span><span>cL</span><span class="aqui">mL</span></div><div class="deg num"><span></span><span></span><span></span><span>1</span><span>5</span><span class="z">0</span><span class="z">0</span></div></div>O 1 mora no <b>L</b>, o 5 vai na casa seguinte, e duas casas vazias até o mL → <b>1 500 mL</b>.</div></div>
+      </details>
+      <div class="esc">⚠️ <b>A pegadinha preferida:</b> <b>dag</b> (decagrama) fica à <b>esquerda</b> do g e vale 10 g; <b>dg</b> (decigrama) fica à <b>direita</b> e vale um décimo de grama. <b>Deca</b> = dez vezes mais; <b>deci</b> = dez vezes menos.</div>
+    </div></div>
+
+    <div class="passo"><input type="checkbox" id="rt4"><div class="corpo"><label for="rt4">✏️ <b>Treino</b> (20 min): em cada item, primeiro escreve <b>"cresce" ou "diminui"</b>, depois põe os algarismos na tabela e lê. Confere no fim de cada nível. Se o tempo acabar, termina o nível em que está e para.</label>
+      <details class="grupo"><summary>🥉 Nível 1 — indo pra unidade menor (completa com zeros)</summary>
+        <div class="alt">4 km → m &nbsp;|&nbsp; 2,5 km → m &nbsp;|&nbsp; 7 cm → mm &nbsp;|&nbsp; 3 m → mm &nbsp;|&nbsp; 6 kg → g &nbsp;|&nbsp; 2 L → mL</div>
+        <details><summary>Ver respostas</summary>4 km → m: cresce, 3 casas → <b>4 000 m</b><br>2,5 km → m: cresce, 3 casas → <b>2 500 m</b><br>7 cm → mm: cresce, 1 casa → <b>70 mm</b><br>3 m → mm: cresce, 3 casas → <b>3 000 mm</b><br>6 kg → g: cresce, 3 casas → <b>6 000 g</b><br>2 L → mL: cresce, 3 casas → <b>2 000 mL</b></details>
+      </details>
+      <details class="grupo"><summary>🥈 Nível 2 — indo pra unidade maior (aparece o "0,")</summary>
+        <div class="alt">8 mm → cm &nbsp;|&nbsp; 35 cm → m &nbsp;|&nbsp; 5 cm → m &nbsp;|&nbsp; 250 g → kg &nbsp;|&nbsp; 40 g → kg &nbsp;|&nbsp; 600 mL → L</div>
+        <details><summary>Ver respostas</summary>8 mm → cm: diminui, 1 casa → <b>0,8 cm</b><br>35 cm → m: diminui, 2 casas → <b>0,35 m</b><br>5 cm → m: diminui, 2 casas → <b>0,05 m</b> (o 5 no cm, o dm vazio vira 0)<br>250 g → kg: diminui, 3 casas → <b>0,25 kg</b><br>40 g → kg: diminui, 3 casas → <b>0,04 kg</b> (o 4 no dag, o hg vazio vira 0)<br>600 mL → L: diminui, 3 casas → <b>0,6 L</b> (0,600: zero no fim, depois da vírgula, pode cortar)</details>
+      </details>
+      <details class="grupo"><summary>🥇 Nível 3 — massa e litro, misturado</summary>
+        <div class="alt">1,2 kg → g &nbsp;|&nbsp; 3,5 L → mL &nbsp;|&nbsp; 75 cL → L &nbsp;|&nbsp; 4 dag → g &nbsp;|&nbsp; 30 dg → g &nbsp;|&nbsp; 2 hL → L</div>
+        <details><summary>Ver respostas</summary>1,2 kg → g: cresce, 3 casas → <b>1 200 g</b><br>3,5 L → mL: cresce, 3 casas → <b>3 500 mL</b><br>75 cL → L: diminui, 2 casas → <b>0,75 L</b><br>4 dag → g: cresce, 1 casa → <b>40 g</b> (dag é dez vezes <b>maior</b> que o g)<br>30 dg → g: diminui, 1 casa → <b>3 g</b> (3,0 = 3; dg é dez vezes <b>menor</b> que o g)<br>2 hL → L: cresce, 2 casas → <b>200 L</b></details>
+      </details>
+    </div></div>
+
+    <div class="passo"><input type="checkbox" id="rt5"><label for="rt5">📝 <b>Refaz a questão das medalhas</b> (10 min):
+      abre a <a href="../pesquisa/provas/2021-prova.pdf#page=2" target="_blank">prova de 2021 na página 2</a>, <b>Questão 1</b>, e resolve de novo <b>sem abrir as dicas</b>, usando a tabela com os algarismos em cada casa.
+      <div class="t">A resposta é a letra B (1 079,2 decagramas). Se travar, a resolução está no Dia 8, no "ver o plano inteiro". Deu tempo e está animada? Faz também a <a href="../pesquisa/provas/2022-prova.pdf#page=6" target="_blank">prova de 2022, Questão 8</a> (página 6), se ainda não fez — resposta: letra A, 540 m.</div></label></div>
+
+    <div class="dica"><b>Dica do dia</b>Antes da conta, pergunto: vou pra unidade menor ou maior? Menor → o número cresce. Maior → diminui. Depois ponho um algarismo em cada casa (o de antes da vírgula na unidade de saída) e leio até a casa de chegada. Casa vazia vira zero.</div>
+    <p class="prog" id="progRT"></p>
+  </section>
+
   <!-- DIA 5 -->
-  <section class="dia" data-dia="5" data-data="2026-10-02">
+  <section class="dia" data-dia="5" data-adiado="1">
     <h2>Português — Vírgula e pontuação <span class="tag port">Português</span></h2>
-    <p class="quando">sexta, 02/10 · ⏱ mais ou menos 1h10</p>
+    <p class="quando">⏸ vai pra semana 3 (a sexta virou reforço da tabela das unidades) · ⏱ mais ou menos 1h10</p>
     <p class="t">A vírgula cai em <b>todas</b> as provas do CMB — e ela também manda na sua redação. Hoje você aprende as duas coisas.</p>
 
     <div class="passo"><input type="checkbox" id="d5p4"><label for="d5p4">🃏 <b>Começa pelas cartinhas</b> (5 min): abre as <a href="#cartas">🃏 Cartinhas</a> lá em cima, faz a rodada rapidinho e volta pra cá.</label></div>
@@ -2771,7 +2843,7 @@
       { id: 'fsoma', desde: '2026-10-01', p: 'Como somo 2/3 + 1/4?', r: 'Acho o MMC do 3 e do 4: divido os dois pelos primos até sobrar 1 (2, 2 e 3) → 2 × 2 × 3 = 12. Pro de cima: divido o MMC pelo de baixo e multiplico pelo de cima. 2/3 → 12 ÷ 3 = 4, × 2 = 8 → 8/12. 1/4 → 12 ÷ 4 = 3, × 1 = 3 → 3/12. Somo os de cima: 11/12.' },
       { id: 'frq', desde: '2026-10-02', p: 'Como acho 3/4 de 80?', r: 'Divido pelo de baixo (80 ÷ 4 = 20, que é 1 pedaço) e multiplico pelo de cima (20 × 3 = 60).' },
       { id: 'fsobra', desde: '2026-10-02', p: 'A questão diz "gastou 1/2 do que sobrou". Essa metade é de quem?', r: 'Do que SOBROU, não do total. Primeiro acho quanto sobrou; depois calculo a fração disso (barra nova só com o que sobrou).' },
-      { id: 'virg', desde: '2026-10-03', p: '"Os meninos, cansados, dormiram." Quem estava cansado?', r: 'TODOS os meninos. Característica entre vírgulas, colada no nome, vale pra todos. Sem vírgulas ("Os meninos cansados dormiram"), só os cansados dormiram.' },
+      { id: 'virg', desde: '2026-12-31', p: '"Os meninos, cansados, dormiram." Quem estava cansado?', r: 'TODOS os meninos. Característica entre vírgulas, colada no nome, vale pra todos. Sem vírgulas ("Os meninos cansados dormiram"), só os cansados dormiram.' },
       { id: 'ponto', desde: '2026-10-03', p: 'Na redação: quando uso ponto em vez de vírgula?', r: 'Quando uma ideia terminou. A vírgula separa pedaços da mesma ideia (lista, quando, como).' },
       { id: 'p10', desde: '2026-09-25', p: 'Como acho 10% de um número?', r: 'Divido por 10 (a vírgula anda 1 casa pra esquerda). 10% de 46 = 4,6' },
       { id: 'p1', desde: '2026-09-25', p: 'Como acho 1% de um número?', r: 'Divido por 100. 1% de 300 = 3' },
@@ -2781,6 +2853,7 @@
       { id: 'dresto', desde: '2026-09-25', p: 'Estou dividindo e sobrou resto. A conta é de dinheiro ou de medida (metros, litros…). Como continuo?', r: 'Ponho uma vírgula no resultado, o resto ganha um zero e eu continuo dividindo. Ex.: 7 ÷ 2 = 3 e sobra 1 → escrevo 3, (com vírgula) → o 1 vira 10 → 10 ÷ 2 = 5 → resultado 3,5. Confiro: 3,5 × 2 = 7 ✔. A vírgula não conta como algarismo. Se, mesmo com o zero, não der pra dividir, escrevo 0 no resultado e ponho mais um zero no resto. (Se a conta for de pessoas, ônibus ou caixas, não continua: o resto é o que sobrou.)' },
       { id: 'dzero', desde: '2026-09-25', p: 'Na divisão, desci um número (ou pus um zero no resto) e não dá pra dividir. E agora?', r: 'Escrevo 0 no resultado e continuo. Cada vez que desço um algarismo ou ponho um zero no resto, eu divido, e o resultado ganha um algarismo — mesmo que seja 0. Ex.: 612 ÷ 6 → 6 ÷ 6 = 1 → desce o 1: 1 ÷ 6 não dá → escrevo 0 → desce o 2: 12 ÷ 6 = 2 → 102. Confiro: 102 × 6 = 612 ✔' },
       { id: 'dconf', desde: '2026-09-25', p: 'Fiz uma conta de dividir. Como descubro, sem calculadora, se o resultado está certo?', r: 'Multiplico o resultado pelo número que usei pra dividir. Tem que voltar o número do começo. Ex.: 84 ÷ 7 = 12 → confiro: 12 × 7 = 84 ✔. Se desse outro número, a divisão estava errada: refaço.' },
+      { id: 'esccasa', desde: '2026-10-03', p: 'Quanto é 5 cm em m?', r: 'm é maior que cm → o número DIMINUI. Na tabela: o 5 mora no cm; o dm e o m ficam vazios → 0 e 0, e a vírgula vem depois do m: 0,05 m.' },
       { id: 'esc', desde: '2026-09-29', p: 'Na tabela das unidades, de m pra cm: multiplica ou divide? Por quanto?', r: 'Multiplica por 100 (2 casas pra direita: × 10 × 10). 3 m = 300 cm' },
       { id: 'areavol', desde: '2026-10-06', p: 'Área e volume: quanto vale cada casa da tabela?', r: 'Área: × 100 ou ÷ 100. Volume: × 1 000 ou ÷ 1 000' },
       { id: 'litro', desde: '2026-10-06', p: '1 litro é quanto em dm³? E 1 m³ é quantos litros?', r: '1 L = 1 dm³ · 1 m³ = 1 000 L' },
