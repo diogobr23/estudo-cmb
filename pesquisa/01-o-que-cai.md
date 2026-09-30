@@ -118,3 +118,23 @@ saber para chegar na resposta mesmo quando a pergunta é sobre outra coisa.
 - **2023 e 2024** (40 questões) → simulados dos fins de semana 2 e 3.
 - **2025** (40 questões, formato igual ao de 2026) → ensaio geral completo, 4h30 cronometradas, no feriado de **12/10**.
 - Redações: propostas de 2020 (herói, 1ª pessoa), 2021 (faz de conta, 1ª pessoa) e 2025 (água, 3ª pessoa).
+
+## Nota de corte do 6º ano no CMB (pesquisa de 30/09/2026)
+
+Nota = (Mat + Port)/2 de 0 a 10; cada acerto = 0,25 → **acertos = nota × 4** (9,00 = 36 de 40). Mínimo para não ser eliminado: 10 acertos em **cada** prova. Desempate: maior nota de Matemática.
+
+| Processo | Modalidade | Corte (último dentro das vagas) | Acertos |
+|---|---|---|---|
+| 2023/24 (sem cotas) | Ampla (19 vagas) | 7,25 (7,00 com desistências) | 29 (28) |
+| 2024/25 (sem cotas) | Ampla (23 vagas) | 8,25 (8,00 com desistências) | 33 (32) |
+| 2025/26 | Ampla (11 vagas) | **9,00** | **36** |
+| 2025/26 | R8 – escola pública (5) | 7,75 | 31 |
+| 2025/26 | R5 – escola pública + PPI (8) | 6,50 | 26 |
+| 2025/26 | B – PcD da ampla (1) | 7,00 | 28 |
+| 2025/26 | R1–R4 (escola pública com renda) | ninguém classificado nesses códigos | — |
+
+- **Vagas 2026/27 (20):** A 9 · B 1 · R1 (EP+renda+PPI) 3 · R2 1 · R3 1 · R4 (EP+renda) 1 · R5 (EP+PPI) 2 · R6 0 · R7 1 · R8 (EP) 1. Menos vagas em R5/R8 que em 2025/26 → corte dessas cotas não deve se repetir igual; ampla subiu 7,25 → 8,25 → 9,00 e agora tem 9 vagas.
+- Concorrência: ~1 081 inscritos em 2023/24 (~54/vaga); ~1 114 em 2024/25 (~45/vaga).
+- Quem se inscreve na cota concorre também na ampla.
+- Fontes: PDFs oficiais do CMB (Wayback: "Relação Final - 6º Ano" 2024; "Aprovados e Classificados 6º Ano" 2025; comunicados de desistência) e, para 2025/26, resultado final + resultado parcial da prova objetiva (RM Concursos) hospedados no Estratégia Militares, cruzados pela inscrição. Conferido pelo Claude numa página do resultado parcial (escala Mat 0–5 + Port 0–5 = pontos 0–10).
+
