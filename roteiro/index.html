@@ -192,7 +192,7 @@
     <div class="check"><ul>
       <li>"De quanto em quanto tempo se <b>encontram</b>", "acendem juntas de novo" → <b>MMC</b> (mínimo múltiplo comum).</li>
       <li>"Repartir em pedaços <b>iguais, do maior tamanho possível</b>", "sem sobrar nada" → <b>MDC</b> (máximo divisor comum).</li>
-      <li>Somar frações com os de baixo diferentes → <b>MMC</b> dos de baixo (item 9).</li>
+      <li>O MMC também serve pra somar frações, mas não é obrigatório: o jeito do item 9 sempre funciona.</li>
     </ul></div>
 
     <h3>9. Frações: de uma quantidade, "do que sobrou" e somar</h3>
@@ -200,7 +200,7 @@
       <li><b>\(\frac{3}{4}\) de 80:</b> divide pelo de baixo (80 ÷ 4 = 20 = 1 pedaço) e multiplica pelo de cima (20 × 3 = 60).</li>
       <li><b>"do que sobrou":</b> antes de cada fração, pergunta se é do <b>total</b> ou do que <b>sobrou</b>. Faz uma barra nova só com o que sobrou.</li>
       <li><b>Ao contrário:</b> "\(\frac{2}{5}\) de um número é 20" → 1 pedaço = 10 → 5 pedaços = 50.</li>
-      <li><b>Somar ou subtrair:</b> acha o <b>MMC</b> dos de baixo (divide pelos primos até sobrar 1), põe ele embaixo, <b>divide o MMC pelo de baixo e multiplica o resultado pelo de cima</b>, e só então soma os de cima: \(\frac{2}{3}\) + \(\frac{1}{4}\) = \(\frac{8}{12}\) + \(\frac{3}{12}\) = \(\frac{11}{12}\).</li>
+      <li><b>Somar ou subtrair</b> (os de baixo diferentes): multiplica cada fração, em cima e embaixo, <b>pelo de baixo da outra</b>; aí os de baixo ficam iguais e você soma os de cima: \(\frac{2}{3}\) + \(\frac{1}{4}\) = \(\frac{8}{12}\) + \(\frac{3}{12}\) = \(\frac{11}{12}\). No fim, vê se dá pra simplificar.</li>
     </ul></div>
     </details>
   </section>
@@ -2912,7 +2912,7 @@
       { id: 'a75', desde: '2026-09-25', p: 'Jeito rápido de achar 75% de um número?', r: 'Tudo menos 25% (ou 50% + 25%). 75% de 40 = 40 − 10 = 30' },
       { id: 'a90', desde: '2026-09-25', p: 'Jeito rápido de achar 90% de um número?', r: 'Tudo menos 10%. 90% de 80 = 80 − 8 = 72' },
       { id: 'pbase', desde: '2026-09-27', p: 'A questão fala em "aumento de 20%" ou "desconto de 20%". O que eu pergunto antes de calcular?', r: 'É 20% DE QUEM? Acho o valor certo (o do começo? o do 1º ano? o preço depois do aumento?) e anoto junto. O drone: o desconto foi sobre 120, não sobre 100.' },
-      { id: 'fsoma', desde: '2026-10-03', p: 'Como somo 2/3 + 1/4?', r: 'Acho o MMC do 3 e do 4: divido os dois pelos primos até sobrar 1 (2, 2 e 3) → 2 × 2 × 3 = 12. Pro de cima: divido o MMC pelo de baixo e multiplico pelo de cima. 2/3 → 12 ÷ 3 = 4, × 2 = 8 → 8/12. 1/4 → 12 ÷ 4 = 3, × 1 = 3 → 3/12. Somo os de cima: 11/12.' },
+      { id: 'fsoma', desde: '2026-10-03', p: 'Como somo 2/3 + 1/4?', r: 'Multiplico cada fração, em cima e embaixo, pelo de baixo da outra: 2/3 vira 8/12 (× 4) e 1/4 vira 3/12 (× 3). Agora os de baixo são iguais: somo os de cima → 11/12.' },
       { id: 'frq', desde: '2026-10-02', p: 'Como acho 3/4 de 80?', r: 'Divido pelo de baixo (80 ÷ 4 = 20, que é 1 pedaço) e multiplico pelo de cima (20 × 3 = 60).' },
       { id: 'fsobra', desde: '2026-10-02', p: 'A questão diz "gastou 1/2 do que sobrou". Essa metade é de quem?', r: 'Do que SOBROU, não do total. Primeiro acho quanto sobrou; depois calculo a fração disso (barra nova só com o que sobrou).' },
       { id: 'virg', desde: '2026-12-31', p: '"Os meninos, cansados, dormiram." Quem estava cansado?', r: 'TODOS os meninos. Característica entre vírgulas, colada no nome, vale pra todos. Sem vírgulas ("Os meninos cansados dormiram"), só os cansados dormiram.' },
