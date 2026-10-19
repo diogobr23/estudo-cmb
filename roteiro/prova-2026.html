@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prova CMB 2026</title>
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<style>
+  :root { --bg:#f6f7fb; --card:#fff; --ink:#1d2330; --muted:#5b6475; --line:#e3e6ee;
+          --mat:#2b6cb0; --ok:#2f9e44; --dica:#fff7d6; --dica-ink:#6b4e00; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:720px; margin:0 auto; padding:20px 16px 60px }
+  h1 { font-size:26px; margin:0 0 4px }
+  .sub { color:var(--muted); margin:0 0 18px }
+  .count { display:inline-block; background:var(--ink); color:#fff; border-radius:999px; padding:4px 12px; font-weight:600 }
+  .como { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin-bottom:18px }
+  .como ol { margin:6px 0 0 18px; padding:0 }
+  .dia { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; margin-bottom:16px }
+  .dia h2 { margin:0; font-size:20px } .dia .quando { color:var(--muted); font-size:15px; margin:2px 0 10px }
+  .semana { background:var(--ink); color:#fff; border-radius:14px; padding:12px 16px; margin-bottom:16px }
+  .semana b { font-size:17px } .semana .t { color:#c8cedb; font-size:14px; margin:2px 0 0 }
+  .btn-sec { background:none; border:0; color:var(--muted); font:inherit; font-size:14px; text-decoration:underline; cursor:pointer; padding:6px }
+  .dia.fora { display:none } body.tudo .dia.fora { display:block }
+  .dia.hoje { border-color:var(--mat); box-shadow:0 0 0 2px rgba(43,108,176,.18) }
+  .dia .hoje-tag { display:inline-block; font-size:12px; font-weight:700; color:#fff; background:var(--ok); border-radius:6px; padding:2px 8px; margin-left:6px; vertical-align:middle }
+  .ref details.abrir { margin-top:8px } .ref details.abrir summary { font-size:16px }
+  details.grupo { margin-top:10px; background:#eef2f8; border-radius:12px; padding:10px 14px }
+  details.grupo > summary { font-size:16px; font-weight:700 }
+  details.grupo h4 { margin:14px 0 6px; font-size:16px; color:var(--mat); border-bottom:1px solid var(--line); padding-bottom:4px }
+  details.grupo details.res { background:#fff }
+  .ref.azul { border-color:var(--mat) }
+  .ref.verde { border-color:var(--ok) }
+  .ref ol { margin:6px 0 0 20px; padding:0 } .ref ol li { margin:5px 0 }
+  .ref { background:var(--card); border:2px solid #b7770d; border-radius:16px; padding:16px; margin-bottom:16px }
+  .ref h2 { margin:0 0 2px; font-size:20px } .ref .quando { color:var(--muted); font-size:15px; margin:0 0 10px }
+  .ref h3 { font-size:16px; margin:14px 0 6px }
+  .ref ul { margin:6px 0 0 20px; padding:0 } .ref li { margin:4px 0 }
+  .ref .zera { background:#fdeeea; border-radius:12px; padding:10px 14px; margin-top:6px }
+  .ref .zera li { color:#8a3b00 }
+  .ref .check { background:#e6f7ea; border-radius:12px; padding:10px 14px; margin-top:6px }
+  .ref .obs { color:var(--muted); font-size:14px; margin-top:10px }
+  .tag.port { background:#7048b0 } .tag.sim { background:#c0392b } .tag.red { background:#b7770d } .tag.rev { background:#2f9e44 }
+  .res u { text-decoration:underline; font-weight:600 }
+  .tag { display:inline-block; font-size:13px; font-weight:700; color:#fff; background:var(--mat); border-radius:6px; padding:2px 8px; margin-left:6px; vertical-align:middle }
+  .passo { display:flex; gap:12px; align-items:flex-start; padding:10px 0; border-top:1px dashed var(--line) }
+  .passo input { width:26px; height:26px; margin:2px 0 0; flex:none; accent-color:var(--ok) }
+  .passo label { flex:1; cursor:pointer }
+  .passo .corpo { flex:1 } .passo .corpo label { display:block }
+  .passo .t { color:var(--muted); font-size:14px }
+  .passo:has(input:checked) label { text-decoration:line-through; color:var(--muted) }
+  a { color:var(--mat); font-weight:600 }
+  .dica { background:var(--dica); color:var(--dica-ink); border-radius:12px; padding:12px 14px; margin-top:12px }
+  .dica b { display:block; margin-bottom:4px }
+  details { margin-top:6px; font-size:15px } summary { cursor:pointer; color:var(--mat); font-weight:600 }
+  details.res { background:#f0f4fa; border-radius:12px; padding:10px 14px 14px }
+  .res .quer { margin:8px 0 4px; font-weight:600 }
+  .res .passo-r { display:flex; gap:10px; align-items:flex-start; margin:10px 0 }
+  .res .n { flex:none; width:26px; height:26px; border-radius:50%; background:var(--mat); color:#fff; font-weight:700; font-size:14px; display:flex; align-items:center; justify-content:center; margin-top:2px }
+  .res .passo-r > div { flex:1; min-width:0 }
+  .res .mat { text-align:center; margin:4px 0; overflow-x:auto }
+  .res .katex-display { margin:8px 0 }
+  .res .katex { font-size:1.12em }
+  .res .resp { background:#e6f7ea; color:#1d6b2d; border-radius:10px; padding:8px 12px; margin-top:12px; font-weight:700; font-size:16px }
+  .res .atalho { background:#fff7d6; color:#6b4e00; border-radius:10px; padding:8px 12px; margin-top:8px }
+  .res .esc { background:#fdeeea; color:#8a3b00; border-radius:10px; padding:8px 12px; margin-top:8px }
+  .res .video { margin-top:8px; font-size:14px }
+  .res table.tab { border-collapse:collapse; margin:6px 0; font-size:15px } .res table.tab td { padding:3px 10px; border-bottom:1px solid #d9e0ea }
+  .res table.tab td:last-child { text-align:right; font-weight:600 }
+  .barra { display:flex; gap:3px; margin:6px 0 } .barra span { flex:1; height:22px; border-radius:4px; background:#dbe7f7; border:1px solid #9bb8e0 } .barra span.ok { background:var(--mat) }
+  .barra.fina span { height:16px } .legenda { font-size:13px; color:var(--muted); margin-bottom:6px }
+  svg.malha { display:block; max-width:100%; height:auto; margin:4px 0 }
+  .escada { margin:8px 0 4px } .escada .deg { display:flex; gap:4px }
+  .escada .deg span { flex:1; text-align:center; background:#fff; border:1px solid #9bb8e0; border-radius:6px; padding:4px 0; font-weight:700; font-size:14px }
+  .escada .deg span.aqui { background:var(--mat); color:#fff; border-color:var(--mat) }
+  .escada .deg.num { margin-top:3px }
+  .escada .deg.num span { font-weight:400; font-size:17px; background:#fffbe6; border-style:dashed; min-height:1.4em }
+  .escada .deg.num span.z { color:#c0392b; font-weight:700 }
+  .escada .seta { display:flex; justify-content:space-between; font-size:13px; color:var(--muted); margin-top:3px }
+  .escada .seta b { color:var(--ink) }
+  .res .alt { margin:6px 0 } .res .alt b.x { color:#8a3b00 } .res .alt b.v { color:#1d6b2d }
+  .fim { text-align:center; color:var(--muted); font-size:15px; margin-top:8px }
+  .prog { font-size:14px; color:var(--muted); margin-top:8px }
+  .carta-box { margin-top:10px; text-align:center }
+  .carta-cont { color:var(--muted); font-size:14px; margin:0 0 8px }
+  .carta { background:#fffdf5; border:2px solid #e6d9a8; border-radius:14px; padding:22px 16px; min-height:130px; display:flex; flex-direction:column; justify-content:center; gap:12px }
+  .carta-p { font-size:19px; font-weight:700 }
+  .carta-r { font-size:18px; color:#1d6b2d; background:#e6f7ea; border-radius:10px; padding:10px 12px }
+  .carta-bts { display:flex; gap:10px; justify-content:center; margin-top:12px; flex-wrap:wrap }
+  .carta-bts button { font:inherit; font-weight:700; border:0; border-radius:10px; padding:10px 18px; cursor:pointer; color:#fff; background:var(--mat) }
+  .carta-bts button.ok { background:var(--ok) } .carta-bts button.nao { background:#b7770d }
+
+  .pg { font-weight:400; color:var(--muted); font-size:13px }
+  h3.texto { font-size:17px; margin:18px 0 6px; color:#7048b0 }
+  .area { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; margin-bottom:16px }
+  .area > h2 { margin:0 0 4px; font-size:20px }
+  .area details.res { margin-top:10px }
+  .area details.res > summary { font-size:16px }
+  .gabwrap { overflow-x:auto }
+  table.gab { border-collapse:collapse; font-size:14px; margin:6px 0 }
+  table.gab td { border:1px solid var(--line); text-align:center; padding:3px 6px; min-width:30px; background:#fff }
+  table.gab a { font-weight:400; color:var(--muted) }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>A prova de 18/10 — resolvida</h1>
+  <p class="sub">Colégio Militar de Brasília · 6º ano · 2026/2027</p>
+
+  <div class="como">
+    <b>Como usar esta página</b>
+    <ol>
+      <li>Abre a <a href="../pesquisa/provas/2026-prova.pdf" target="_blank">prova inteira</a> (o mesmo caderno que você fez) e o <a href="../pesquisa/provas/2026-gabarito.pdf" target="_blank">gabarito oficial</a>.</li>
+      <li>Escolhe uma questão, tenta de novo no caderno <b>sem olhar</b>, e só depois abre a resolução aqui embaixo.</li>
+      <li>Não precisa fazer tudo de uma vez. A prova já passou: agora é só pra entender. 💪</li>
+    </ol>
+  </div>
+
+  <section class="area">
+    <h2>Gabarito oficial</h2>
+    <p class="quando">Toca no número para ir direto à resolução.</p>
+    <b>Matemática</b>
+    <div class="gabwrap"><table class="gab"><tr><td><a href="#q1">1</a><br><b>C</b></td><td><a href="#q2">2</a><br><b>B</b></td><td><a href="#q3">3</a><br><b>E</b></td><td><a href="#q4">4</a><br><b>D</b></td><td><a href="#q5">5</a><br><b>A</b></td><td><a href="#q6">6</a><br><b>E</b></td><td><a href="#q7">7</a><br><b>C</b></td><td><a href="#q8">8</a><br><b>D</b></td><td><a href="#q9">9</a><br><b>C</b></td><td><a href="#q10">10</a><br><b>B</b></td></tr></table><table class="gab"><tr><td><a href="#q11">11</a><br><b>B</b></td><td><a href="#q12">12</a><br><b>E</b></td><td><a href="#q13">13</a><br><b>A</b></td><td><a href="#q14">14</a><br><b>B</b></td><td><a href="#q15">15</a><br><b>C</b></td><td><a href="#q16">16</a><br><b>A</b></td><td><a href="#q17">17</a><br><b>D</b></td><td><a href="#q18">18</a><br><b>D</b></td><td><a href="#q19">19</a><br><b>A</b></td><td><a href="#q20">20</a><br><b>E</b></td></tr></table></div>
+    <b>Português</b>
+    <div class="gabwrap"><table class="gab"><tr><td><a href="#q21">21</a><br><b>B</b></td><td><a href="#q22">22</a><br><b>D</b></td><td><a href="#q23">23</a><br><b>B</b></td><td><a href="#q24">24</a><br><b>C</b></td><td><a href="#q25">25</a><br><b>B</b></td><td><a href="#q26">26</a><br><b>C</b></td><td><a href="#q27">27</a><br><b>A</b></td><td><a href="#q28">28</a><br><b>E</b></td><td><a href="#q29">29</a><br><b>B</b></td><td><a href="#q30">30</a><br><b>A</b></td></tr></table><table class="gab"><tr><td><a href="#q31">31</a><br><b>D</b></td><td><a href="#q32">32</a><br><b>C</b></td><td><a href="#q33">33</a><br><b>E</b></td><td><a href="#q34">34</a><br><b>E</b></td><td><a href="#q35">35</a><br><b>A</b></td><td><a href="#q36">36</a><br><b>D</b></td><td><a href="#q37">37</a><br><b>B</b></td><td><a href="#q38">38</a><br><b>E</b></td><td><a href="#q39">39</a><br><b>A</b></td><td><a href="#q40">40</a><br><b>D</b></td></tr></table></div>
+  </section>
+
+  <section class="area">
+    <h2>Matemática <span class="tag">questões 1 a 20</span></h2>
+<details class="res" id="q1"><summary>Questão 1 — sequência que soma 7 · <span class="pg">p. 3</span></summary>
+  <div class="quer">🎯 O que ela quer: o primeiro número da sequência (3, 10, 17, 24, 31, ...) que tem 4 algarismos <b>todos diferentes</b> ("distintos" = nenhum algarismo se repete). Depois, somar os algarismos dele.</div>
+  <div class="passo-r"><span class="n">1</span><div>Cada número é o anterior <b>mais 7</b>. Então todo número da sequência é o 3 mais um monte de setes:
+      <div class="mat">\[10 = 3 + 7 \qquad 17 = 3 + 7 + 7 \qquad 24 = 3 + 7 + 7 + 7\]</div>
+      Ou seja: todo número da sequência é <b>(um número da tabuada do 7) + 3</b>.</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Queremos chegar perto de 1 000 (o primeiro número com 4 algarismos). Qual número da tabuada do 7 fica pertinho de 1 000?
+      <div class="mat">\[7 \times 142 = 994\]</div>
+      Somando 3: \(994 + 3 = 997\). Esse está na sequência, mas ainda tem só 3 algarismos.</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Agora vai somando 7 e olhando se algum algarismo se repete:
+      <div class="mat">\[997 \to 1\,004 \to 1\,011 \to 1\,018 \to 1\,025\]</div>
+      1 004: tem dois zeros <b class="x">✘</b> | 1 011: tem três "1" <b class="x">✘</b> | 1 018: tem dois "1" <b class="x">✘</b> | 1 025: 1, 0, 2 e 5, todos diferentes <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">4</span><div>Soma dos algarismos de 1 025:
+      <div class="mat">\[1 + 0 + 2 + 5 = 8\]</div></div></div>
+  <div class="resp">✅ Resposta: letra C — 8</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> parar no 1 004 só porque é o primeiro com 4 algarismos e responder 1 + 0 + 0 + 4 = 5 (letra E). A questão pede algarismos <b>diferentes</b> — o 1 004 tem dois zeros.</div>
+</details>
+
+<details class="res" id="q2"><summary>Questão 2 — soma de 7 primos seguidos · <span class="pg">p. 4</span></summary>
+  <div class="quer">🎯 O que ela quer: o <b>menor</b> número que dá para formar somando 7 números primos <b>seguidos</b> (consecutivos = um logo depois do outro, sem pular nenhum).</div>
+  <div class="passo-r"><span class="n">1</span><div>Lembrete: <b>número primo</b> é o que só pode ser dividido por 1 e por ele mesmo. Os primeiros são:
+      <div class="mat">\[2;\ 3;\ 5;\ 7;\ 11;\ 13;\ 17;\ 19;\ \dots\]</div>
+      O <b>1 não é primo</b>, e o <b>2 é primo</b> (o único primo par).</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Para a soma ser a <b>menor</b> possível, começa pelos menores: os 7 primeiros primos, do 2 até o 17.</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Soma um de cada vez, sem pressa:
+      <div class="mat">\[2 + 3 = 5 \qquad 5 + 5 = 10 \qquad 10 + 7 = 17\]
+      \[17 + 11 = 28 \qquad 28 + 13 = 41 \qquad 41 + 17 = 58\]</div></div></div>
+  <div class="resp">✅ Resposta: letra B — 58 quilômetros</div>
+  <div class="esc">⚠️ <b>Escorregões comuns:</b> esquecer o 2 e começar no 3 (3 + 5 + 7 + 11 + 13 + 17 + 19 = 75, letra C) e parar no 6º primo (a soma dá 41, letra A). Conta nos dedos: são <b>7</b> números.</div>
+</details>
+
+<details class="res" id="q3"><summary>Questão 3 — área de vida do lobo-guará · <span class="pg">p. 5</span></summary>
+  <div class="quer">🎯 O que ela quer: quanto é \(\frac{3}{200}\) da Pousada (que tem 33 mil hectares, lá no Texto 1 da página 4), e em qual unidade isso fica certo.</div>
+  <div class="passo-r"><span class="n">1</span><div>Fração de um número: <b>divide pelo de baixo e multiplica pelo de cima</b>.
+      <div class="mat">\[33\,000 \div 200 = 330 \div 2 = 165\]</div>
+      (cortei dois zeros do 33 000 e dois zeros do 200 — pode, porque os dois foram divididos por 100)
+      <div class="mat">\[165 \times 3 = 495\ \text{hectares}\]</div></div></div>
+  <div class="passo-r"><span class="n">2</span><div>As respostas estão em m² e km². Hora da tabela das unidades de <b>área</b>. O <b>hectare (ha) é o hm²</b> — confere com o dado da questão: de hm² até m² são 2 casas para a direita, \(100 \times 100 = 10\,000\) ✔.
+      <div class="escada"><div class="deg"><span class="aqui">km²</span><span class="aqui">hm²</span><span>dam²</span><span>m²</span><span>dm²</span><span>cm²</span><span>mm²</span></div>
+      <div class="seta"><span>← pra esquerda: <b>÷ 100</b> por casa</span><span>pra direita: <b>× 100</b> por casa →</span></div></div>
+      Por que 100 e não 10? Porque 1 m = 10 dm → 1 m² = 10 × 10 = 100 dm². Na área, cada casa vale 100.</div></div>
+  <div class="passo-r"><span class="n">3</span><div>De hm² para km² é <b>1 casa para a esquerda</b> → divide por 100 uma vez:
+      <div class="mat">\[495\ \text{hm}^2 = 495 \div 100 = 4{,}95\ \text{km}^2\]</div></div></div>
+  <div class="resp">✅ Resposta: letra E — 4,95 km²</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> todas as alternativas usam os algarismos 4, 9, 5. Depois de achar 495 ha, a questão inteira vira "qual é a unidade certa?" — e a tabela das unidades resolve.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> andar na tabela de área dividindo por 10 (como no comprimento). Em área é <b>÷ 100 por casa</b>. Também não dá para escrever 4 950 m² (letra C): 495 ha são 4 950 000 m².</div>
+</details>
+
+<details class="res" id="q4"><summary>Questão 4 — área do polígono na malha · <span class="pg">p. 5</span></summary>
+  <div class="quer">🎯 O que ela quer: quantos por cento da Pousada (33 000 ha) é a área do desenho ABCDE.</div>
+  <div class="passo-r"><span class="n">1</span><div>Olha a figura da página 5 e conta os quadradinhos entre os pontos:
+      <br>• de <b>A</b> até <b>B</b>: 12 quadradinhos para a direita (mesma linha);
+      <br>• de <b>A</b> até <b>E</b>: 2 para baixo;
+      <br>• de <b>E</b> até <b>D</b>: 4 para a direita e 4 para baixo;
+      <br>• de <b>D</b> até <b>C</b>: 3 para a direita e 1 para cima;
+      <br>• de <b>C</b> até <b>B</b>: 5 para a direita e 5 para cima.</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Truque: desenha um <b>retângulo grande</b> em volta da figura, da linha do A até a linha do D. Ele tem 12 de largura e 6 de altura:
+      <div class="mat">\[12 \times 6 = 72\ \text{quadradinhos}\]</div>
+      Agora tira os pedaços do retângulo que <b>não</b> são da figura (os cantos de baixo).</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Os pedaços a tirar. Lembrete: triângulo com um canto reto = <b>metade de um retângulo</b>.
+      <br>• Canto de baixo à esquerda (embaixo de E e D): triângulo 4 por 4 → \(4 \times 4 \div 2 = 8\)
+      <br>• Embaixo de D e C: triângulo 3 por 1 → \(3 \times 1 \div 2 = 1{,}5\)
+      <br>• Embaixo de C, a faixa reta até a borda: retângulo 5 por 1 → \(5 \times 1 = 5\)
+      <br>• Entre C e B: triângulo 5 por 5 → \(5 \times 5 \div 2 = 12{,}5\)
+      <div class="mat">\[8 + 1{,}5 + 5 + 12{,}5 = 27\]
+      \[72 - 27 = 45\ \text{quadradinhos}\]</div></div></div>
+  <div class="passo-r"><span class="n">4</span><div>Cada quadradinho tem lado 1,1 cm, então a área de <b>um</b> quadradinho é:
+      <div class="mat">\[1{,}1 \times 1{,}1 = 1{,}21\ \text{cm}^2\]</div>
+      Os 45 quadradinhos:
+      <div class="mat">\[45 \times 1{,}21 = 45 + 45 \times 0{,}21 = 45 + 9{,}45 = 54{,}45\ \text{cm}^2\]</div></div></div>
+  <div class="passo-r"><span class="n">5</span><div>Cada 1 cm² do desenho vale 100 ha de verdade:
+      <div class="mat">\[54{,}45 \times 100 = 5\,445\ \text{ha}\]</div></div></div>
+  <div class="passo-r"><span class="n">6</span><div>Porcentagem de 33 000 pelo jeito do 10% e do 1%:
+      <div class="mat">\[10\% = 3\,300 \qquad 5\% = 1\,650 \qquad 1\% = 330 \qquad 0{,}5\% = 165\]</div>
+      Agora monta o 5 445 com esses pedaços:
+      <div class="mat">\[3\,300 + 1\,650 + 330 + 165 = 5\,445\]
+      \[10\% + 5\% + 1\% + 0{,}5\% = 16{,}5\%\]</div></div></div>
+  <div class="resp">✅ Resposta: letra D — 16,50%</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> 15% de 33 000 é 4 950 e 20% é 6 600. Como 5 445 fica <b>entre</b> esses dois, a resposta tem que estar entre 15% e 20% — só a letra D.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> achar que cada quadradinho vale 1 cm². Aí dá 45 cm² → 4 500 ha → 13,63% (letra B). O lado é <b>1,1 cm</b>, então cada quadradinho vale 1,21 cm². E o desenho é "fora de escala": confia nos números, não na régua.</div>
+</details>
+
+<details class="res" id="q5"><summary>Questão 5 — raiz do pequizeiro e do buriti · <span class="pg">p. 6</span></summary>
+  <div class="quer">🎯 O que ela quer: o tamanho da raiz do buriti e a diferença para a raiz do pequizeiro.</div>
+  <div class="passo-r"><span class="n">1</span><div>Raiz do pequizeiro: 75% de 20 m. Pelo 10% e o 5%:
+      <div class="mat">\[10\% = 2 \qquad 70\% = 14 \qquad 5\% = 1 \qquad 75\% = 14 + 1 = 15\ \text{m}\]</div></div></div>
+  <div class="passo-r"><span class="n">2</span><div>Tamanho total do buriti: 20% <b>mais alto</b> que os 20 m.
+      <div class="mat">\[10\% \text{ de } 20 = 2 \qquad 20\% = 4 \qquad 20 + 4 = 24\ \text{m}\]</div></div></div>
+  <div class="passo-r"><span class="n">3</span><div>No buriti, 40% é copa. O resto é raiz: \(100\% - 40\% = 60\%\).
+      <div class="mat">\[10\% \text{ de } 24 = 2{,}4 \qquad 60\% = 6 \times 2{,}4 = 14{,}4\ \text{m}\]</div></div></div>
+  <div class="passo-r"><span class="n">4</span><div>Compara as duas raízes:
+      <div class="mat">\[15 - 14{,}4 = 0{,}6\ \text{m}\]</div>
+      A raiz do buriti (14,4 m) é <b>menor</b> que a do pequizeiro (15 m).</div></div>
+  <div class="resp">✅ Resposta: letra A — 14,4 m, e é 0,6 m menor</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> achou 14,4? Sobram A e B. Como 14,4 é menos que 15, a raiz do buriti é <b>menor</b> → A.</div>
+  <div class="esc">⚠️ <b>Escorregões comuns:</b> usar os 40% (que é a copa) em vez dos 60% da raiz — dá 9,6 m, letra D. E atenção: a pergunta fala "a mais", mas a conta mostra que a raiz do buriti é <b>menor</b>. Não se assuste — confia na sua conta, como faz a letra A.</div>
+</details>
+
+<details class="res" id="q6"><summary>Questão 6 — conta e número romano · <span class="pg">p. 7</span></summary>
+  <div class="quer">🎯 O que ela quer: fazer as contas na ordem que o texto manda e escrever o resultado em algarismos romanos.</div>
+  <div class="passo-r"><span class="n">1</span><div>Pega os números do texto: altitude do Pico = <b>1 380</b>; espécies de vegetais = <b>309</b>; espécies de orquídeas (Orchidaceae) = <b>135</b>. A ordem das contas vem nas palavras "em seguida" e "por último":
+      <div class="mat">\[(1\,380 + 309 - 135) \times 2{,}5\]</div>
+      Primeiro tudo o que está <b>dentro do parêntese</b>, da esquerda para a direita. Só no fim o "× 2,5".</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Dentro do parêntese:
+      <div class="mat">\[1\,380 + 309 = 1\,689 \qquad 1\,689 - 135 = 1\,554\]</div></div></div>
+  <div class="passo-r"><span class="n">3</span><div>Vezes 2,5 é o mesmo que "vezes 2" mais "a metade":
+      <div class="mat">\[1\,554 \times 2 = 3\,108 \qquad 1\,554 \div 2 = 777 \qquad 3\,108 + 777 = 3\,885\]</div></div></div>
+  <div class="passo-r"><span class="n">4</span><div>Agora em romano, quebrando o número em pedaços: 3 885 = 3 000 + 800 + 80 + 5.
+      <br>3 000 = <b>MMM</b> | 800 = 500 + 300 = <b>DCCC</b> | 80 = 50 + 30 = <b>LXXX</b> | 5 = <b>V</b>
+      <br>Juntando: <b>MMMDCCCLXXXV</b>.</div></div>
+  <div class="resp">✅ Resposta: letra E — MMMDCCCLXXXV (3 885)</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> no romano, I, X, C e M podem se repetir no máximo <b>3 vezes</b> seguidas. A letra A tem IIIII (5 vezes) e a C tem XXXX (4 vezes) → erradas. B e D misturam letras numa ordem que não existe (um V antes de M, um IV antes de D). Só a E está escrita do jeito certo.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> fazer o "× 2,5" antes de terminar o parêntese. O texto diz "por último multipliquem" — a multiplicação é a última coisa.</div>
+</details>
+
+<details class="res" id="q7"><summary>Questão 7 — encontro dos três bichos no bebedouro · <span class="pg">p. 8</span></summary>
+  <div class="quer">🎯 O que ela quer: o dia e a hora em que os três animais vão se encontrar de novo no bebedouro.</div>
+  <div class="passo-r"><span class="n">1</span><div>Primeiro deixa tudo na <b>mesma unidade</b>: horas. Lembra: 1 minuto = 60 segundos e 1 hora = 60 minutos (aqui é de 60 em 60, não de 10 em 10).
+      <div class="mat">\[\text{anta: } 21\,600 \div 60 = 360\ \text{min} \qquad 360 \div 60 = 6\ \text{h}\]
+      \[\text{lobo: } 600\ \text{min} \div 60 = 10\ \text{h}\]
+      \[\text{tamanduá: } 72\,000 \div 60 = 1\,200\ \text{min} \qquad 1\,200 \div 60 = 20\ \text{h}\]</div></div></div>
+  <div class="passo-r"><span class="n">2</span><div>Eles se encontram de novo no <b>MMC</b> (o menor número que está na tabuada dos três). Tabela de dividir pelos primos:
+      <div class="mat">\[\begin{array}{ccc|c} 6 & 10 & 20 & 2\\ 3 & 5 & 10 & 2\\ 3 & 5 & 5 & 3\\ 1 & 5 & 5 & 5\\ 1 & 1 & 1 & \end{array}\]
+      \[\text{MMC} = 2 \times 2 \times 3 \times 5 = 60\ \text{horas}\]</div></div></div>
+  <div class="passo-r"><span class="n">3</span><div>60 horas em dias (1 dia = 24 horas):
+      <div class="mat">\[60 = 24 + 24 + 12 \;\to\; 2\ \text{dias e } 12\ \text{horas}\]</div></div></div>
+  <div class="passo-r"><span class="n">4</span><div>Conta a partir de 17 de abril, 11h19:
+      <br>+ 2 dias → 19 de abril, 11h19
+      <br>+ 12 horas → 11h19 + 12h = <b>23h19</b> (ainda no dia 19, porque não passou da meia-noite)</div></div>
+  <div class="resp">✅ Resposta: letra C — 19 de abril de 2026, às 23h19</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> somar só os 2 dias e esquecer as 12 horas que sobraram (dá 19/04 às 11h19, letra B). As 60 horas são 2 dias <b>e meio</b>.</div>
+</details>
+
+<details class="res" id="q8"><summary>Questão 8 — chance de ver o tamanduá · <span class="pg">p. 9</span></summary>
+  <div class="quer">🎯 O que ela quer: a probabilidade (a chance) de o próximo animal avistado ser o tamanduá-bandeira (T).</div>
+  <div class="passo-r"><span class="n">1</span><div>Começa pelo bicho mais raro, o veado (V), e dá a ele <b>1 parte</b>. Depois vai subindo pelas pistas:
+      <br>• A anta é 2 vezes mais provável que o veado → anta = \(2 \times 1 = 2\) partes
+      <br>• O lobo é 3 vezes mais provável que a anta → lobo = \(3 \times 2 = 6\) partes
+      <br>• O tamanduá é 2 vezes mais provável que o lobo → tamanduá = \(2 \times 6 = 12\) partes</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Total de partes (os <b>quatro</b> bichos):
+      <div class="mat">\[12 + 6 + 2 + 1 = 21\]</div></div></div>
+  <div class="passo-r"><span class="n">3</span><div>Probabilidade = partes do que eu quero ÷ total de partes:
+      <div class="mat">\[\frac{12}{21}\]</div>
+      Simplifica dividindo em cima e embaixo por 3:
+      <div class="mat">\[\frac{12 \div 3}{21 \div 3} = \frac{4}{7}\]</div></div></div>
+  <div class="resp">✅ Resposta: letra D — \(\frac{4}{7}\)</div>
+  <div class="esc">⚠️ <b>Escorregões comuns:</b> esquecer um bicho na soma do total — sem a anta, o total vira 19 e a resposta seria \(\frac{12}{19}\) (letra C). E não esquecer de simplificar: \(\frac{12}{21}\) não aparece nas alternativas, mas \(\frac{4}{7}\) sim.</div>
+</details>
+
+<details class="res" id="q9"><summary>Questão 9 — peso da anta pela média · <span class="pg">p. 10</span></summary>
+  <div class="quer">🎯 O que ela quer: o peso da anta, em <b>toneladas</b>, sabendo que ela faz a média dos pesos subir 30 000 g.</div>
+  <div class="passo-r"><span class="n">1</span><div><b>Média</b> = soma de todos ÷ quantos são. Média dos 4 da tabela:
+      <div class="mat">\[24 + 42 + 60 + 80 = 206 \qquad 206 \div 4 = 51{,}5\ \text{kg}\]</div></div></div>
+  <div class="passo-r"><span class="n">2</span><div>O aumento está em <b>gramas</b>, e a tabela está em <b>quilogramas</b>. Tabela das unidades de massa:
+      <div class="escada"><div class="deg"><span class="aqui">kg</span><span>hg</span><span>dag</span><span class="aqui">g</span><span>dg</span><span>cg</span><span>mg</span></div>
+      <div class="seta"><span>← pra esquerda: <b>÷ 10</b> por casa</span><span>pra direita: <b>× 10</b> por casa →</span></div></div>
+      De g para kg são <b>3 casas para a esquerda</b> → divide por 10 três vezes, ou seja, por 1 000:
+      <div class="mat">\[30\,000\ \text{g} = 30\,000 \div 1\,000 = 30\ \text{kg}\]</div></div></div>
+  <div class="passo-r"><span class="n">3</span><div>A nova média, com a anta, sobe 30 kg:
+      <div class="mat">\[51{,}5 + 30 = 81{,}5\ \text{kg}\]</div>
+      Agora são <b>5</b> animais. Se a média de 5 é 81,5, a soma dos 5 é:
+      <div class="mat">\[81{,}5 \times 5 = 407{,}5\ \text{kg}\]</div></div></div>
+  <div class="passo-r"><span class="n">4</span><div>Tira a soma dos 4 antigos e sobra o peso da anta:
+      <div class="mat">\[407{,}5 - 206 = 201{,}5\ \text{kg}\]</div></div></div>
+  <div class="passo-r"><span class="n">5</span><div>A resposta é em <b>toneladas</b>. A tonelada fica fora da tabela: <b>1 t = 1 000 kg</b>. Então de kg para t divide por 1 000 (a vírgula anda 3 lugares para a esquerda):
+      <div class="mat">\[201{,}5 \div 1\,000 = 0{,}2015\ \text{t}\]</div></div></div>
+  <div class="resp">✅ Resposta: letra C — 0,2015 tonelada</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> para a média subir 30 kg, a anta precisa "dar" 30 kg para cada um dos 4 bichos antigos e ainda ficar com a média nova: \(4 \times 30 + 81{,}5 = 201{,}5\) kg.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> dividir a soma nova por 4, esquecendo que com a anta são <b>5</b> animais. E não esquecer as duas trocas de unidade: gramas → kg no começo, kg → toneladas no fim.</div>
+</details>
+
+<details class="res" id="q10"><summary>Questão 10 — fitas cortadas em pedaços iguais · <span class="pg">p. 11</span></summary>
+  <div class="quer">🎯 O que ela quer: cortar as três fitas em pedaços do <b>mesmo tamanho</b>, o <b>maior possível</b>, sem sobrar nada — e contar quantos pedaços (mudas) saem no total.</div>
+  <div class="passo-r"><span class="n">1</span><div>Cada fita está numa unidade diferente. Vamos deixar todas em <b>metros</b>. Tabela das unidades de comprimento:
+      <div class="escada"><div class="deg"><span>km</span><span class="aqui">hm</span><span>dam</span><span class="aqui">m</span><span>dm</span><span class="aqui">cm</span><span class="aqui">mm</span></div>
+      <div class="seta"><span>← pra esquerda: <b>÷ 10</b> por casa</span><span>pra direita: <b>× 10</b> por casa →</span></div></div>
+      <div class="mat">\[\text{cm} \to \text{m}:\ 2 \text{ casas para a esquerda} \qquad 8\,000 \div 100 = 80\ \text{m}\]
+      \[\text{mm} \to \text{m}:\ 3 \text{ casas para a esquerda} \qquad 132\,000 \div 1\,000 = 132\ \text{m}\]
+      \[\text{hm} \to \text{m}:\ 2 \text{ casas para a direita} \qquad 2{,}16 \times 100 = 216\ \text{m}\]</div></div></div>
+  <div class="passo-r"><span class="n">2</span><div>"Mesmo tamanho, o maior possível, sem sobrar" = o <b>MDC</b> (o maior número que divide os três certinho). Divide os <b>três ao mesmo tempo</b> por um primo, enquanto der para dividir todos:
+      <div class="mat">\[\begin{array}{ccc|c} 80 & 132 & 216 & 2\\ 40 & 66 & 108 & 2\\ 20 & 33 & 54 & \end{array}\]</div>
+      20, 33 e 54 não têm mais nenhum primo que divida os três juntos (o 33 não é par, e o 20 não está na tabuada do 3). Para aqui.
+      <div class="mat">\[\text{MDC} = 2 \times 2 = 4\ \text{m}\]</div>
+      Cada pedaço tem 4 m.</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Quantos pedaços de 4 m saem de cada fita:
+      <div class="mat">\[80 \div 4 = 20 \qquad 132 \div 4 = 33 \qquad 216 \div 4 = 54\]
+      \[20 + 33 + 54 = 107\ \text{pedaços}\]</div>
+      Cada pedaço protege uma muda.</div></div>
+  <div class="resp">✅ Resposta: letra B — 107 mudas</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> os números que sobram no fim da tabela do MDC (20, 33 e 54) já são a quantidade de pedaços de cada fita! É só somar.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> achar o 4 e marcar a letra A. O 4 é o <b>tamanho</b> de cada pedaço (4 metros), não o número de mudas. Releia sempre o que a pergunta pede no final.</div>
+</details>
+
+<details class="res" id="q11"><summary>Questão 11 — fração do que faltava (Cerrado) · <span class="pg">p. 12</span></summary>
+  <div class="quer">🎯 O que ela quer: depois de 2 anos, que pedaço da área <b>ainda não</b> se recuperou.</div>
+  <div class="passo-r"><span class="n">1</span><div>Corta a área em <b>7 partes iguais</b>. No 1º ano recuperaram \(\frac{2}{7}\) → 2 partes. Faltaram <b>5 partes</b>.
+      <div class="barra"><span class="ok"></span><span class="ok"></span><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="legenda">azul = recuperou no 1º ano (2 partes) | claro = faltava (5 partes)</div></div></div>
+  <div class="passo-r"><span class="n">2</span><div>No 2º ano recuperaram \(\frac{3}{5}\) <b>do que faltava</b>. O que faltava são 5 partes; \(\frac{3}{5}\) de 5 partes são <b>3 partes</b>.
+      <div class="barra"><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span></span><span></span></div>
+      <div class="legenda">azul = já recuperou (2 + 3 = 5 partes) | claro = ainda falta (2 partes)</div></div></div>
+  <div class="passo-r"><span class="n">3</span><div>Sobraram <b>2 partes de 7</b> sem recuperar: \[\frac{7}{7} - \frac{2}{7} - \frac{3}{7} = \frac{2}{7}\]</div></div>
+  <div class="resp">✅ Resposta: letra B — \(\frac{2}{7}\)</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> quando o que falta são 5 partes e a conta pede \(\frac{3}{5}\) disso, nem precisa multiplicar fração: de 5 partes, 3 partes. Desenhar a barra resolve.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> marcar \(\frac{5}{7}\) (é o que faltava só no fim do 1º ano) ou \(\frac{3}{7}\) (é o que recuperou no 2º ano). E repare: "a regeneração avançou sobre \(\frac{3}{5}\)" é um jeito difícil de dizer "recuperou \(\frac{3}{5}\)".</div>
+</details>
+
+<details class="res" id="q12"><summary>Questão 12 — expressão grandona (semente do ipê) · <span class="pg">p. 13</span></summary>
+  <div class="quer">🎯 O que ela quer: o valor de \(T\). É uma divisão: <b>{chave da esquerda} ÷ {chave da direita}</b>. Resolve cada chave sozinha, por dentro, e só no fim divide.</div>
+  <div class="passo-r"><span class="n">1</span><div><b>Chave da esquerda, começando pelo andar mais de baixo</b> da fração em cima: \(1 + \frac{1}{2} = \frac{3}{2}\). Agora \(1 \div \frac{3}{2}\). Dividir por fração = <b>virar a fração e multiplicar</b>: \[1 \div \frac{3}{2} = 1 \times \frac{2}{3} = \frac{2}{3}\] Então o "1 + ..." de cima vale \(1 + \frac{2}{3} = \frac{5}{3}\).</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Essa parte de cima está dividida por \(\frac{5}{9}\) (é o andar de baixo da fração grande): \[\frac{5}{3} \div \frac{5}{9} = \frac{5}{3} \times \frac{9}{5} = \frac{45}{15} = 3\]</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Agora o parêntese \(\left(\frac{5}{6} - \frac{2}{3} \div 4\right)\). Dentro dele, <b>divisão vem antes da subtração</b>: \[\frac{2}{3} \div 4 = \frac{2}{12} = \frac{1}{6} \qquad\text{e depois}\qquad \frac{5}{6} - \frac{1}{6} = \frac{4}{6} = \frac{2}{3}\]</div></div>
+  <div class="passo-r"><span class="n">4</span><div>Na chave da esquerda sobrou \(3 \times \frac{2}{3} - 1{,}305\). <b>Multiplicação antes da subtração</b>: \[3 \times \frac{2}{3} = 2 \qquad\text{e depois}\qquad 2 - 1{,}305 = 0{,}695\] <b>Chave da esquerda = 0,695.</b></div></div>
+  <div class="passo-r"><span class="n">5</span><div><b>Chave da direita, 1ª fração:</b> \(\dfrac{\frac{7}{9} \times 1{,}2}{\frac{14}{9} \times 1{,}44}\). Olha o truque: \(\frac{14}{9}\) é o <b>dobro</b> de \(\frac{7}{9}\). Então dá pra "cortar" o \(\frac{7}{9}\) de cima e de baixo, e embaixo fica um 2 no lugar dele: \[\frac{1{,}2}{2 \times 1{,}44} = \frac{1{,}2}{2{,}88} = \frac{120}{288}\] Simplificando (dividindo cima e baixo por 2, por 2, por 2 e por 3): \(\frac{120}{288} = \frac{60}{144} = \frac{30}{72} = \frac{15}{36} = \frac{5}{12}\).</div></div>
+  <div class="passo-r"><span class="n">6</span><div><b>Chave da direita, 2ª fração:</b> em cima, \(3{,}4 \div 5 = 0{,}68\). Embaixo, \(\frac{9}{18} = \frac{1}{2}\) (simplifica por 9), então \[\frac{2}{3} \div \frac{1}{2} = \frac{2}{3} \times 2 = \frac{4}{3}\] Agora \[0{,}68 \div \frac{4}{3} = 0{,}68 \times \frac{3}{4} = \frac{2{,}04}{4} = 0{,}51\]</div></div>
+  <div class="passo-r"><span class="n">7</span><div>Soma as duas da direita. \(0{,}51 = \frac{51}{100}\). Pelo jeito "multiplica pelo de baixo da outra": \[\frac{5}{12} + \frac{51}{100} = \frac{5 \times 100 + 51 \times 12}{12 \times 100} = \frac{500 + 612}{1\,200} = \frac{1\,112}{1\,200}\] Simplifica por 8: \(\frac{1\,112}{1\,200} = \frac{139}{150}\). <b>Chave da direita = \(\frac{139}{150}\).</b></div></div>
+  <div class="passo-r"><span class="n">8</span><div>Por fim, esquerda ÷ direita. \(0{,}695 = \frac{695}{1\,000} = \frac{139}{200}\) (simplifica por 5). \[\frac{139}{200} \div \frac{139}{150} = \frac{139}{200} \times \frac{150}{139} = \frac{150}{200} = \frac{3}{4} = 0{,}75\] O 139 aparece em cima e embaixo, então ele some!</div></div>
+  <div class="resp">✅ Resposta: letra E — 0,75 segundo</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> antes de fazer conta grande, procure partes que se repetem em cima e embaixo. Aqui o \(\frac{14}{9}\) é o dobro do \(\frac{7}{9}\), e no fim o 139 apareceu em cima e embaixo. Quando isso acontece, dá para cortar e a conta fica pequena.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> fazer as contas da esquerda pra direita sem respeitar a ordem. Dentro de cada parêntese: primeiro × e ÷, depois + e −. Ex.: \(\frac{5}{6} - \frac{2}{3} \div 4\) <b>não</b> é \(\left(\frac{5}{6} - \frac{2}{3}\right) \div 4\).</div>
+</details>
+
+<details class="res" id="q13"><summary>Questão 13 — volume da caixa de terra (ipê-verde) · <span class="pg">p. 14</span></summary>
+  <div class="quer">🎯 O que ela quer: quanta terra caiu (e precisa ser reposta), em uma das unidades das alternativas.</div>
+  <div class="passo-r"><span class="n">1</span><div>As medidas vêm em <b>três unidades diferentes</b> (cm, dm e mm). Antes de multiplicar, deixa tudo em <b>cm</b>. Tabela das unidades:
+      <div class="escada"><div class="deg"><span>km</span><span>hm</span><span>dam</span><span>m</span><span class="aqui">dm</span><span class="aqui">cm</span><span class="aqui">mm</span></div>
+      <div class="seta"><span>← pra esquerda: <b>÷ 10</b> por casa</span><span>pra direita: <b>× 10</b> por casa →</span></div></div>
+      De dm para cm: 1 casa pra direita → \(2{,}5 \times 10 = 25\ \text{cm}\).<br>
+      De mm para cm: 1 casa pra esquerda → \(200 \div 10 = 20\ \text{cm}\).<br>
+      O comprimento já está em cm: 34 cm.</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Volume do bloco = comprimento × largura × altura: \[34 \times 25 \times 20 = 34 \times 500 = 17\,000\ \text{cm}^3\]</div></div>
+  <div class="passo-r"><span class="n">3</span><div>A terra ocupa 80% da caixa. 10% de 17 000 é 1 700, então 80% é \(8 \times 1\,700 = 13\,600\ \text{cm}^3\) de terra.</div></div>
+  <div class="passo-r"><span class="n">4</span><div>Caiu \(\frac{1}{10}\) da terra: \(13\,600 \div 10 = 1\,360\ \text{cm}^3\). É isso que precisa repor.</div></div>
+  <div class="passo-r"><span class="n">5</span><div>O número 1 360 cm³ não aparece nas alternativas. As letras A, B e E estão em m³, então vamos passar para m³. Tabela das unidades de <b>volume</b>:
+      <div class="escada"><div class="deg"><span>km³</span><span>hm³</span><span>dam³</span><span class="aqui">m³</span><span>dm³</span><span class="aqui">cm³</span><span>mm³</span></div>
+      <div class="seta"><span>← pra esquerda: <b>÷ 1000</b> por casa</span><span>pra direita: <b>× 1000</b> por casa →</span></div></div>
+      Por que 1000? Porque 1 m = 10 dm, e um cubo de 1 m de lado tem \(10 \times 10 \times 10 = 1\,000\) cubinhos de 1 dm³.<br>
+      De cm³ para m³ são <b>2 casas pra esquerda</b> → divide por 1000 duas vezes: \[1\,360\ \text{cm}^3 \div 1\,000 = 1{,}36\ \text{dm}^3 \qquad 1{,}36\ \text{dm}^3 \div 1\,000 = 0{,}00136\ \text{m}^3\]</div></div>
+  <div class="resp">✅ Resposta: letra A — 0,00136 m³</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> 80% e depois \(\frac{1}{10}\) é o mesmo que 8% da caixa: 8% de 17 000 = 1 360. E a letra E (1 360 m³) não pode ser: uma caixinha de mudas nunca teria terra do tamanho de uma piscina!</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> no volume, cada casa da tabela vale <b>× 1000</b>, não × 10. Quem anda de 10 em 10 coloca a vírgula no lugar errado. E cuidado com a letra D (680 dm³): 680 é a metade de 1 360, mas a unidade está errada. A conta certa dá 1,36 dm³, bem menos que 680 dm³.</div>
+</details>
+
+<details class="res" id="q14"><summary>Questão 14 — fração do dinheiro e envelopes · <span class="pg">p. 15</span></summary>
+  <div class="quer">🎯 O que ela quer: quantos envelopes de <b>jacarandá</b> foram comprados.</div>
+  <div class="passo-r"><span class="n">1</span><div>Divide o dinheiro em <b>9 partes iguais</b>. Ipê-amarelo usou 4 partes; jacarandá usou o resto: <b>5 partes</b>.
+      <div class="barra"><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="legenda">azul = ipê-amarelo (4 partes) | claro = jacarandá (5 partes)</div></div></div>
+  <div class="passo-r"><span class="n">2</span><div>1 parte: \[139{,}32 \div 9 = 15{,}48\ \text{reais}\]</div></div>
+  <div class="passo-r"><span class="n">3</span><div>5 partes (jacarandá): \[5 \times 15{,}48 = 77{,}40\ \text{reais}\]</div></div>
+  <div class="passo-r"><span class="n">4</span><div>Cada envelope custa R$ 2,15. Quantos cabem em R$ 77,40? Pra fugir da vírgula, multiplica os dois por 100 (vira centavos): \[7\,740 \div 215 = 36\]</div></div>
+  <div class="resp">✅ Resposta: letra B — 36 envelopes</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> se a divisão travar, testa a alternativa multiplicando: \(36 \times 2{,}15 = 77{,}40\). Bateu certinho!</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> usar os \(\frac{4}{9}\) (que são do ipê) em vez do resto, que é \(\frac{5}{9}\). A pergunta é só do <b>jacarandá</b>.</div>
+</details>
+
+<details class="res" id="q15"><summary>Questão 15 — tempo da caminhada (porcentagem, decimal e fração) · <span class="pg">p. 16</span></summary>
+  <div class="quer">🎯 O que ela quer: o tempo total da travessia.</div>
+  <div class="passo-r"><span class="n">1</span><div>Escreve tudo como fração do tempo total:
+      <div class="mat">\[25\% = \frac{25}{100} = \frac{1}{4} \qquad 0{,}4 = \frac{4}{10} = \frac{2}{5}\]</div>
+      O 3º trecho é \(\frac{1}{3}\) <b>do 2º trecho</b> (não do total): \[\frac{1}{3} \times \frac{2}{5} = \frac{2}{15}\]</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Soma os 3 primeiros trechos. MMC de 4, 5 e 15 pela tabela: \(4 = 2 \times 2\), \(15 = 3 \times 5\) → MMC \(= 2 \times 2 \times 3 \times 5 = 60\). \[\frac{1}{4} + \frac{2}{5} + \frac{2}{15} = \frac{15}{60} + \frac{24}{60} + \frac{8}{60} = \frac{47}{60}\]</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Pensa no tempo total como <b>60 pedacinhos</b>. Os 3 primeiros trechos usaram 47; o 4º trecho é o resto: \(60 - 47 = 13\) pedacinhos. E o 4º trecho durou 5 070 segundos.</div></div>
+  <div class="passo-r"><span class="n">4</span><div>1 pedacinho: \[5\,070 \div 13 = 390\ \text{segundos}\] Total (60 pedacinhos): \[60 \times 390 = 23\,400\ \text{segundos}\]</div></div>
+  <div class="passo-r"><span class="n">5</span><div>Confere com as outras letras. Tempo não usa a tabela das unidades: aqui é <b>÷ 60</b> (1 minuto = 60 segundos, 1 hora = 60 minutos). \[23\,400 \div 60 = 390\ \text{min} \qquad 390 \div 60 = 6\ \text{h e sobram } 30\ \text{min}\] 6 h 30 min — não é 6 h 50 min (A), nem 3,9 h (B), nem 650 min (D).</div></div>
+  <div class="resp">✅ Resposta: letra C — 23 400 segundos</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> fazer \(\frac{1}{3}\) do tempo total no 3º trecho. Ele é \(\frac{1}{3}\) <b>do 2º trecho</b>. E cuidado com a letra B: 3,9 h parece vir do 390, mas hora não tem 100 minutos — tem 60.</div>
+</details>
+
+<details class="res" id="q16"><summary>Questão 16 — gráfico de barras e propriedades do número · <span class="pg">p. 17</span></summary>
+  <div class="quer">🎯 O que ela quer: descobrir quantos pacotes de carne seca existem e ver qual frase sobre esse número é verdadeira.</div>
+  <div class="passo-r"><span class="n">1</span><div>Os 4 tipos juntos dão 100%. Carne seca = \(100 - 35 - 30 - 20 = 15\%\). (A barra verde termina no 15 do gráfico — confere!)</div></div>
+  <div class="passo-r"><span class="n">2</span><div>15% de 360: 10% = 36 e 5% = metade disso = 18. Então 15% = \(36 + 18 = 54\) pacotes. Agora testa cada letra com o <b>54</b>.</div></div>
+  <div class="passo-r"><span class="n">A</span><div>Divisores de 54 (números que dividem 54 sem sobrar): 1; 2; 3; 6; 9; 18; 27; 54. Os <b>pares</b>: 2; 6; 18; 54 → <b>4</b> divisores pares. <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>Múltiplo de 108 tem que ser 108 ou maior (108, 216, ...). 54 é menor — na verdade 54 é a <b>metade</b> de 108. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>Média (soma tudo e divide pela quantidade): \(50 + 58 + 53 = 161\), e \(161 \div 3 = 53{,}66...\) Não dá 54. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>Primos (números que só dividem por 1 e por eles mesmos): 2; 3; 5; 7; 11; 13; 17; 19; 23. Somando de 3 em 3, seguidos: \(13 + 17 + 19 = 49\) e o próximo, \(17 + 19 + 23 = 59\). Pula do 49 pro 59 — o 54 nunca aparece. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>\(0{,}000000018 \times 300\,000\,000\): primeiro × 3 → \(0{,}000000054\). Depois × 100 000 000 (8 zeros) → a vírgula anda 8 casas pra direita → <b>5,4</b>. Não é 54. <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra A — 54 pacotes, que tem 4 divisores pares</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> na letra E, contar os zeros com pressa. Depois da vírgula há <b>9 algarismos</b> (0000000 + 18); a vírgula anda só 8 casas, então sobra 1 casa decimal: 5,4.</div>
+</details>
+
+<details class="res" id="q17"><summary>Questão 17 — reservatório, porcentagem e potes de 360 mL · <span class="pg">p. 18</span></summary>
+  <div class="quer">🎯 O que ela quer: quantos potes de 360 mL ficam cheios de ração.</div>
+  <div class="passo-r"><span class="n">1</span><div>As medidas estão em dm, mm e m. Deixa tudo em <b>dm</b> (porque 1 dm³ = 1 litro, e a pergunta é de líquido). Tabela das unidades:
+      <div class="escada"><div class="deg"><span>km</span><span>hm</span><span>dam</span><span class="aqui">m</span><span class="aqui">dm</span><span>cm</span><span class="aqui">mm</span></div>
+      <div class="seta"><span>← pra esquerda: <b>÷ 10</b> por casa</span><span>pra direita: <b>× 10</b> por casa →</span></div></div>
+      De mm para dm: 2 casas pra esquerda → \(300 \div 10 \div 10 = 3\ \text{dm}\).<br>
+      De m para dm: 1 casa pra direita → \(0{,}12 \times 10 = 1{,}2\ \text{dm}\).</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Volume: \[4 \times 3 \times 1{,}2 = 14{,}4\ \text{dm}^3 = 14{,}4\ \text{litros}\] (lembra: 1 dm³ = 1 L)</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Tiraram 37,5% pro bebedouro. Pelos pedaços: 10% de 14,4 = 1,44 → 30% = 4,32; 5% = 0,72; 2,5% = 0,36. Somando: \[4{,}32 + 0{,}72 + 0{,}36 = 5{,}4\ \text{L}\] Sobrou \(14{,}4 - 5{,}4 = 9\) litros.</div></div>
+  <div class="passo-r"><span class="n">4</span><div>Usaram \(\frac{2}{5}\) <b>do que sobrou</b>: \(9 \div 5 = 1{,}8\) e \(2 \times 1{,}8 = 3{,}6\) litros de água.</div></div>
+  <div class="passo-r"><span class="n">5</span><div>A mistura <b>dobra</b>: \(2 \times 3{,}6 = 7{,}2\) litros de ração.</div></div>
+  <div class="passo-r"><span class="n">6</span><div>O pote está em mL. Tabela das unidades de capacidade:
+      <div class="escada"><div class="deg"><span>kL</span><span>hL</span><span>daL</span><span class="aqui">L</span><span>dL</span><span>cL</span><span class="aqui">mL</span></div>
+      <div class="seta"><span>← pra esquerda: <b>÷ 10</b> por casa</span><span>pra direita: <b>× 10</b> por casa →</span></div></div>
+      De L para mL: 3 casas pra direita → \(7{,}2 \times 1\,000 = 7\,200\ \text{mL}\).</div></div>
+  <div class="passo-r"><span class="n">7</span><div>Quantos potes: \[7\,200 \div 360 = 720 \div 36 = 20\]</div></div>
+  <div class="resp">✅ Resposta: letra D — 20 recipientes</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> 37,5% é o mesmo que \(\frac{3}{8}\). Então tirou \(\frac{3}{8}\) e sobraram \(\frac{5}{8}\): \(14{,}4 \div 8 = 1{,}8\) e \(5 \times 1{,}8 = 9\) litros.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> esquecer que a mistura <b>dobra</b>. Quem divide só os 3,6 L (3 600 mL) por 360 acha 10 — a letra A, que é a armadilha.</div>
+</details>
+
+<details class="res" id="q18"><summary>Questão 18 — vistas de pilhas de caixas · <span class="pg">p. 19</span></summary>
+  <div class="quer">🎯 O que ela quer: o <b>menor</b> número de caixas que combina com as três vistas — e depois ver qual frase vale para esse número.</div>
+  <div class="passo-r"><span class="n">1</span><div><b>Vista de cima = o chão.</b> Ela mostra onde tem pelo menos uma caixa: uma fileira de 3 atrás, só a casa do meio no meio, e uma fileira de 3 na frente (parece um H deitado). São <b>7 pilhas</b>.</div></div>
+  <div class="passo-r"><span class="n">2</span><div><b>Vista lateral = a altura de cada fileira</b> (trás, meio, frente). Ela mostra alturas 3, 2 e 1: a fileira mais alta tem 3 caixas de altura, a do meio 2, e a mais baixa 1.</div></div>
+  <div class="passo-r"><span class="n">3</span><div><b>Vista da frente = a altura de cada coluna</b> (esquerda, meio, direita): 3, 3 e 2.</div></div>
+  <div class="passo-r"><span class="n">4</span><div>Agora encaixa. A fileira de altura 1: as 3 pilhas dela têm <b>1 caixa</b> cada (não podem passar de 1). A fileira do meio tem só uma pilha, e ela precisa chegar a 2 → <b>2 caixas</b>. Na fileira de altura 3, cada pilha tem que fazer a sua coluna chegar na altura da vista da frente — ninguém mais naquela coluna consegue: esquerda <b>3</b>, meio <b>3</b>, direita <b>2</b>.
+      <table class="tab">
+        <tr><td><b>fileira</b></td><td><b>esquerda</b></td><td><b>meio</b></td><td><b>direita</b></td><td>caixas</td></tr>
+        <tr><td>a de altura 3</td><td>3</td><td>3</td><td>2</td><td>8</td></tr>
+        <tr><td>a do meio (altura 2)</td><td>—</td><td>2</td><td>—</td><td>2</td></tr>
+        <tr><td>a de altura 1</td><td>1</td><td>1</td><td>1</td><td>3</td></tr>
+      </table>
+      Confere: olhando de lado, as fileiras ficam com 3, 2 e 1 de altura; olhando de frente, as colunas ficam com 3, 3 e 2. Bateu!</div></div>
+  <div class="passo-r"><span class="n">5</span><div>Total: \(8 + 2 + 3 = 13\) caixas. Não dá pra tirar nenhuma sem estragar uma das vistas, então 13 é o mínimo.</div></div>
+  <div class="passo-r"><span class="n">6</span><div>Testa as letras com o 13. É <b>primo</b> (só divide por 1 e por 13) → D. A letra A pede 8 divisores (13 tem só 2); B é 21; C: o MMC de 8 e 16 é 16; E é 9.</div></div>
+  <div class="resp">✅ Resposta: letra D — 13 caixas, um número primo</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> monta uma tabelinha com o desenho de cima (o chão) e escreve em cada casa a altura da pilha. Primeiro preenche as casas que só podem ter um valor (as da fileira de altura 1), depois as outras.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> somar os quadradinhos das três vistas (6 + 8 + 7 = 21 → letra B). Cada vista mostra a mesma pilha de outro lado — não dá pra somar. Se ficar em dúvida qual fileira (frente ou trás) é a de altura 3, tudo bem: o desenho de cima é igual na frente e atrás, então a conta dá 13 do mesmo jeito.</div>
+</details>
+
+<details class="res" id="q19"><summary>Questão 19 — gráfico, porcentagem e média · <span class="pg">p. 20</span></summary>
+  <div class="quer">🎯 O que ela quer: (dinheiro das mudas) <b>menos</b> (média das três fazendas).</div>
+  <div class="passo-r"><span class="n">1</span><div>Total recebido (lendo os valores em cima das barras): \[67\,500 + 88\,260 + 57\,600 = 213\,360\]</div></div>
+  <div class="passo-r"><span class="n">2</span><div>40% foram pro solo. 10% de 213 360 = 21 336, então 40% = \(4 \times 21\,336 = 85\,344\). O resto: \[213\,360 - 85\,344 = 128\,016\]</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Mudas = três quartos <b>do resto</b>: \(128\,016 \div 4 = 32\,004\) e \(3 \times 32\,004 = 96\,012\).</div></div>
+  <div class="passo-r"><span class="n">4</span><div>Média (soma tudo e divide pela quantidade de fazendas): \[213\,360 \div 3 = 71\,120\]</div></div>
+  <div class="passo-r"><span class="n">5</span><div>Diferença: \[96\,012 - 71\,120 = 24\,892\]</div></div>
+  <div class="resp">✅ Resposta: letra A — R$ 24 892,00</div>
+  <div class="atalho">💡 <b>Atalho de prova:</b> o resto depois dos 40% é 60%, que é \(6 \times 21\,336 = 128\,016\) — dá pra pular a subtração.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> parar no valor das mudas (96 012 — é a letra E, a armadilha) e esquecer de tirar a média. E os três quartos são <b>do que sobrou</b>, não do total.</div>
+</details>
+
+<details class="res" id="q20"><summary>Questão 20 — sólidos geométricos e expressão · <span class="pg">p. 21</span></summary>
+  <div class="quer">🎯 O que ela quer: contar arestas, vértices e faces, calcular a expressão e ver qual frase vale para o resultado.</div>
+  <div class="passo-r"><span class="n">1</span><div><b>A</b> = arestas (as "linhas", os cantos onde duas faces se encontram) do prisma de base triangular: 3 no triângulo de baixo + 3 no de cima + 3 ligando os dois = <b>9</b>.<br>
+      <b>V</b> = vértices (as "pontas") da pirâmide de base quadrada: 4 no quadrado + 1 lá em cima = <b>5</b>.<br>
+      <b>F</b> = faces (os "lados" planos) do bloco retangular, como uma caixa de sapato: <b>6</b>.</div></div>
+  <div class="passo-r"><span class="n">2</span><div>Troca as letras: \(\left(\frac{10}{3} \times 9 \times 5 - 6\right) \div 0{,}12\). <b>Primeiro o parêntese.</b> Dentro dele, multiplicação antes da subtração: \[\frac{10}{3} \times 9 = \frac{90}{3} = 30 \qquad 30 \times 5 = 150 \qquad 150 - 6 = 144\]</div></div>
+  <div class="passo-r"><span class="n">3</span><div>Agora a divisão: \(144 \div 0{,}12\). Multiplica os dois por 100 pra sumir a vírgula: \[14\,400 \div 12 = 1\,200\] O número é <b>1 200</b>.</div></div>
+  <div class="passo-r"><span class="n">A</span><div>1 200 tem 4 algarismos → <b>4 ordens</b>; separando de 3 em 3 (1 | 200) → <b>2 classes</b>. A frase diz o contrário (2 ordens e 4 classes). <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>\(1\,200 \div 1\,000 = 1{,}2\) — não dá exato. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>Começa a listar os divisores: 1; 2; 3; 4; 5; 6; 8; 10; 12; 15; 16; 20; ... Já passou de 10 e ainda tem muito mais. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>1 200 em romanos é <b>MCC</b> (M = 1 000, C = 100, C = 100). "MCLL" não vale: o L (50) <b>nunca</b> se repete — dois L viram um C. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>Um centésimo é \(\frac{1}{100}\): \(1\,200 \times \frac{1}{100} = 12\). E 12 é múltiplo de 12 (\(12 = 12 \times 1\)). <b class="v">✔</b></div></div>
+  <div class="resp">✅ Resposta: letra E — o número é 1 200</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> contar só 6 arestas no prisma (esquecendo as 3 que ligam os triângulos) ou fazer a subtração antes da multiplicação (por exemplo, \(5 - 6\)). Dentro do parêntese, primeiro \(\frac{10}{3} \times 9 \times 5\), só depois o \(- 6\). E na letra D, "MCLL" até soma 1 200, mas não é um jeito permitido de escrever em romanos.</div>
+</details>
+
+  </section>
+
+  <section class="area">
+    <h2>Português <span class="tag port">questões 21 a 40</span></h2>
+<h3 class="texto">Texto 1 — "O índio e o lobo-guará" (questões 21 a 25) · <span class="pg">p. 23</span></h3>
+
+<details class="res" id="q21"><summary>Questão 21 — o tema principal do texto · <span class="pg">p. 24</span></summary>
+  <div class="quer">🎯 O que ela quer: qual é o <b>assunto mais importante</b> da história inteira. O tema é aquilo que aparece do começo ao fim, não só num pedacinho.</div>
+  <div class="passo-r"><span class="n">A</span><div>"Animais longe dos humanos"? É o contrário! A história mostra os dois juntos: "Lun [...] aprendeu a confiar na humanidade" (4º parágrafo). <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>Amizade, ajuda e respeito à natureza aparecem o texto todo: "dando origem a uma amizade única" (1º parágrafo), "aprendendo a respeitar a natureza peculiar da região" (2º parágrafo), "Eles representavam a harmonia entre o mundo natural e o humano" (5º parágrafo). <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>A seca aparece só uma vez, "Em um momento crítico" (3º parágrafo). E o texto não fala em secas "frequentes" (que acontecem sempre). <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>As aventuras existem ("encontrou em Kai um parceiro para suas aventuras", 2º parágrafo), mas são só uma parte. Faltou o mais importante: o que eles aprenderam juntos. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>Não há animais "nas aldeias" passando dificuldade, e a solução existiu: a nascente (3º parágrafo). <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra B</div>
+  <div class="atalho">💡 <b>Truque:</b> para achar o tema, olhe o <b>último parágrafo</b>. Ele costuma dizer a "lição" do texto: "destacando a beleza da coexistência e a conexão profunda entre todos os seres vivos".</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> marcar uma alternativa que fala de algo que <b>aparece</b> no texto (a seca, as aventuras), mas que é só um pedaço da história, e não o assunto do texto todo.</div>
+</details>
+
+<details class="res" id="q22"><summary>Questão 22 — "seca implacável" e "nascente oculta" · <span class="pg">p. 24</span></summary>
+  <div class="quer">🎯 O que ela quer: as duas expressões são opostas (seca = falta de água; nascente = lugar onde a água brota da terra). O que essa oposição ajuda a entender?</div>
+  <div class="passo-r"><span class="n">A</span><div>"Força física de Lun"? O texto diz que Kai "recorreu à sabedoria de Lun" (3º parágrafo). Sabedoria é saber das coisas, não ter força. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>"Extinguir os efeitos da seca" quer dizer acabar com tudo de ruim da seca. O texto não diz isso. Diz que a nascente trouxe "alívio e esperança" (3º parágrafo). Alívio é melhorar, não acabar. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>"Impossível ficar no lugar"? A comunidade não foi embora: foi salva pela nascente. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>A nascente foi uma saída para <b>amenizar</b> (deixar menos pesado) o problema da seca. Bate com "trazendo alívio e esperança para a comunidade" (3º parágrafo). <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>Não é "erro" do texto ter seca e água juntas. O autor colocou as duas coisas de propósito, para mostrar a virada: o problema e a solução. <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra D</div>
+  <div class="atalho">💡 <b>Truque:</b> compare a <b>força</b> das palavras. O texto diz "alívio". A alternativa B diz "extinguir" (acabar de vez), que é forte demais. A D diz "amenizar", que tem a mesma força de "alívio".</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> cair na B porque ela também fala de coisa boa. Ela parece certa, mas exagera.</div>
+</details>
+
+<details class="res" id="q23"><summary>Questão 23 — quem conta a história (narrador) · <span class="pg">p. 24</span></summary>
+  <div class="quer">🎯 O que ela quer: que tipo de <b>narrador</b> (quem conta a história) o texto tem. Duas perguntas resolvem: ele usa "eu"? Ele participa da história?</div>
+  <div class="passo-r"><span class="n">A</span><div>Narrador-personagem é quem conta e também participa ("eu fui", "eu vi"). Aqui ninguém diz "eu". <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div><b>Narrador-observador</b> é quem conta de fora, como alguém olhando a cena. <b>Terceira pessoa</b> é falar "ele", "eles". Veja: "um lobo-guará chamado Lun desbravava os campos" (1º parágrafo), "Kai recorreu à sabedoria de Lun" (3º parágrafo). <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>Primeira pessoa é falar "eu" ou "nós". O texto não tem isso. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>Tem uma parte esquisita: "as reações do leitor da história". O narrador não sabe o que você, leitora, está sentindo. Isso estraga a alternativa. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>Fala em "primeira pessoa" e "personagem secundário". O narrador não é ninguém da história e não diz "eu". <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra B</div>
+  <div class="atalho">💡 <b>Truque:</b> procure "eu", "meu", "nós" fora das falas. Não achou? O narrador é de <b>terceira pessoa</b>. Isso já elimina A, C e E de uma vez.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> ler só o começo da alternativa D ("conhece os pensamentos dos personagens") e marcar. Leia até o fim: um pedaço errado deixa a alternativa toda errada.</div>
+</details>
+
+<details class="res" id="q24"><summary>Questão 24 — o que Kai aprendeu · <span class="pg">p. 25</span></summary>
+  <div class="quer">🎯 O que ela quer: qual foi a lição que <b>Kai</b> (o menino) aprendeu na história.</div>
+  <div class="passo-r"><span class="n">A</span><div>"Pedir ajuda só quando for impossível"? O texto não fala nada disso. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>"Controlar e dominar os animais"? É o contrário: Kai aprendeu "a linguagem sutil dos animais" (2º parágrafo). Ele aprendeu a entender, não a mandar. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>Respeitar a natureza e o equilíbrio. O texto diz: Kai aprendeu "a importância de equilibrar a convivência com o Cerrado" (2º parágrafo) e "compreendeu a delicadeza do ecossistema do Cerrado" (4º parágrafo). <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>"Evitar o Cerrado"? Kai explorava o Cerrado junto com Lun. Oposto. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>"Usar a natureza sem pensar no estrago"? Totalmente o contrário do texto. <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra C</div>
+  <div class="atalho">💡 <b>Truque:</b> procure o nome do personagem no texto junto com "aprendeu" ou "compreendeu". Ali está a resposta pronta.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> nenhuma pegadinha difícil aqui. As erradas dizem o <b>oposto</b> do texto. Só não vale responder com o que você acha certo na vida, e sim com o que o texto diz.</div>
+</details>
+
+<details class="res" id="q25"><summary>Questão 25 — classes de palavras na história · <span class="pg">p. 25</span></summary>
+  <div class="quer">🎯 O que ela quer: qual frase explica certo o papel das <b>classes de palavras</b> (verbo, adjetivo, artigo, pronome...) nas partes que <b>contam</b> a história e nas partes que <b>descrevem</b> lugares e personagens.</div>
+  <div class="passo-r"><span class="n">A</span><div>Diz que a descrição é feita com <b>advérbios</b>. Mas quem pinta a imagem são os <b>adjetivos</b> (palavras que dão característica): "vastas terras", "campos dourados", "vegetação exuberante" (1º parágrafo). <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>Para a história andar, usamos <b>verbos de ação</b> (palavras que dizem o que alguém faz). Em "Guiados pelo lobo-guará, descobriram uma nascente oculta, trazendo alívio" (3º parágrafo), temos guiar, descobrir, trazer: coisas acontecendo. <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>Está trocada. O artigo <b>indefinido</b> ("um", "uma") apresenta algo novo: "vivia em uma aldeia" (1º parágrafo). Depois, o <b>definido</b> ("o", "a") retoma: "quando a aldeia enfrentava" (3º parágrafo). <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>Quem dá <b>nome</b> às coisas é o <b>substantivo</b> (Kai, aldeia, nascente), não o adjetivo. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>Começa falando de pronomes e termina chamando as palavras de "advérbios". Está tudo misturado, e "Juntos" (5º parágrafo) não é pronome. <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra B</div>
+  <div class="atalho">💡 <b>Truque:</b> narrar = contar o que <b>aconteceu</b> → verbos. Descrever = mostrar <b>como é</b> → adjetivos. Lembre de "um" para coisa nova e "o" para coisa que já apareceu: "Vi <b>um</b> gato. <b>O</b> gato fugiu."</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> a C usa os exemplos certos ("uma aldeia", "a aldeia"), mas com a explicação ao contrário. Confira se a regra bate com o exemplo.</div>
+</details>
+
+<h3 class="texto">Textos 2 e 3 — "Quais são os principais animais do Cerrado brasileiro?" e o infográfico "Biodiversidade do Cerrado" (questões 26 a 31) · <span class="pg">p. 25 e 26</span></h3>
+
+<details class="res" id="q26"><summary>Questão 26 — para que serve a palavra "bioma" · <span class="pg">p. 27</span></summary>
+  <div class="quer">🎯 O que ela quer: no trecho "o bioma é reconhecido como a savana mais rica do mundo" (Texto 2, 1º parágrafo), a palavra "bioma" está no lugar de quê?</div>
+  <div class="passo-r"><span class="n">A</span><div>Não é assunto novo. O parágrafo inteiro fala do Cerrado. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>"Território" aparece antes ("24% do território nacional"), mas não é o território que é "a savana mais rica do mundo". É o Cerrado. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>"Bioma" retoma o Cerrado, para o texto não ficar repetindo "Cerrado, Cerrado, Cerrado". <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>Não aponta regiões do Brasil. Aponta o Cerrado. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>A frase não fala de tipos de vegetação. <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra C</div>
+  <div class="atalho">💡 <b>Truque:</b> troque a palavra pela candidata e leia de novo: "o <b>Cerrado</b> é reconhecido como a savana mais rica do mundo". Faz sentido? Então é ela.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> escolher a palavra que estava mais perto ("território"). A palavra retomada nem sempre é a última que apareceu.</div>
+</details>
+
+<details class="res" id="q27"><summary>Questão 27 — as vírgulas da lista · <span class="pg">p. 27</span></summary>
+  <div class="quer">🎯 O que ela quer: no Texto 3 (o infográfico), para que servem as vírgulas em "valorização de cadeias produtivas com boas práticas agrícolas, melhoria da gestão de áreas protegidas e planejamento responsável da ocupação territorial"?</div>
+  <div class="passo-r"><span class="n">A</span><div>As vírgulas separam os itens de uma <b>lista</b> (enumeração) de ações para a "diminuição dos impactos da produção". São 3 ações: valorização, melhoria, planejamento. <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>Não tem conversa entre personagens no infográfico. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>Não explica como as áreas protegidas funcionam. Só cita "melhoria da gestão" delas como uma das ações. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>Não há opinião pessoal ("eu acho"). É uma lista do que a organização faz. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>O trecho não explica a biodiversidade. <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra A</div>
+  <div class="atalho">💡 <b>Truque:</b> o próprio enunciado já entregou: "as vírgulas foram utilizadas para separar diferentes ações". Separar ações = fazer uma lista. Leia o enunciado com atenção, às vezes ele dá a dica.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> se assustar com o trecho comprido e difícil. Para essa questão, não precisa entender cada palavra: basta ver que são várias coisas separadas por vírgula.</div>
+</details>
+
+<details class="res" id="q28"><summary>Questão 28 — "funciona como elo" · <span class="pg">p. 27</span></summary>
+  <div class="quer">🎯 O que ela quer: o que significa dizer que o Cerrado "funciona como elo entre quatro dos cinco biomas". <b>Elo</b> é cada argolinha de uma corrente: é o que <b>liga</b> uma parte à outra.</div>
+  <div class="passo-r"><span class="n">A</span><div>Elo não faz as coisas ficarem "perto". Ele liga. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>"Fronteira que afasta"? É o oposto de elo. Elo junta, não separa. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>Não tem nada sobre os biomas crescerem. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>"Uma única área sem separação"? No mapa, cada bioma continua com seu nome: Amazônia, Caatinga, Mata Atlântica, Pantanal. Eles não viram um só. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>Conexão, ligação. No mapa do infográfico, as setas saem do Cerrado para os outros quatro biomas. <b class="v">✔</b></div></div>
+  <div class="resp">✅ Resposta: letra E</div>
+  <div class="atalho">💡 <b>Truque:</b> quando a palavra é difícil, use o desenho. As <b>setas</b> do mapa saindo do Cerrado já mostram a ideia de ligação.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> confundir "ligar" (E) com "virar uma coisa só" (D). Os biomas ficam ligados, mas cada um continua sendo ele mesmo.</div>
+</details>
+
+<details class="res" id="q29"><summary>Questão 29 — para que servem os números · <span class="pg">p. 27</span></summary>
+  <div class="quer">🎯 O que ela quer: por que o infográfico mostra números (199 mamíferos, 864 aves, 150 anfíbios, 1 200 peixes, 180 répteis)?</div>
+  <div class="passo-r"><span class="n">A</span><div>Números não deixam o texto "narrativo" (que conta uma história). O infográfico informa, não conta história. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>Os números <b>provam</b> o que o texto diz no começo: "Saiba por que o Cerrado é a savana mais rica em biodiversidade do mundo". Com números, a gente acredita mais. <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>O texto não diz que o Cerrado é pouco estudado. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>É verdade que os peixes são o maior número (1 200), mas o objetivo não é falar só dos peixes. É mostrar a riqueza de todos os grupos. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>"Uniforme" quer dizer igual para todos. Os números são bem diferentes (150 anfíbios e 1 200 peixes). <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra B</div>
+  <div class="atalho">💡 <b>Truque:</b> em texto que informa, números quase sempre servem para <b>comprovar</b> uma ideia e deixar o texto mais confiável.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> a D tem uma informação verdadeira (os peixes são mais). Mas a pergunta é a <b>finalidade</b> dos números, não qual número é o maior.</div>
+</details>
+
+<details class="res" id="q30"><summary>Questão 30 — sentido figurado (metáfora) · <span class="pg">p. 28</span></summary>
+  <div class="quer">🎯 O que ela quer: achar uma comparação <b>escondida</b> (sem "como" ou "tão... quanto"), com palavra usada no <b>sentido figurado</b> (um sentido diferente do normal). Isso se chama <b>metáfora</b>. Ex.: "Meu irmão é uma tartaruga" = ele é lento.</div>
+  <div class="passo-r"><span class="n">A</span><div>"Fica no coração do Brasil" (Texto 3). O Brasil não tem coração de verdade! "Coração" quer dizer <b>centro</b>, porque o coração fica no meio do corpo. É comparação escondida, sentido figurado. <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>"Tão importante quanto" é comparação <b>com a palavra de comparar à mostra</b>, não escondida. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>"Mais de 2,5 mil espécies" é número, sentido normal. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>"Ocupa onze estados" é informação direta, sentido normal. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>"Concentra 5% de todas as espécies" é dado, sentido normal. <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra A</div>
+  <div class="atalho">💡 <b>Truque:</b> pergunte "isso é verdade ao pé da letra?". O Brasil tem um coração de verdade? Não. Então é sentido figurado.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> ver a palavra "comparações" no enunciado e marcar a B, que tem "tão... quanto". Mas a questão pede comparação <b>implícita</b>, ou seja, escondida.</div>
+</details>
+
+<details class="res" id="q31"><summary>Questão 31 — o objetivo comum dos Textos 2 e 3 · <span class="pg">p. 28</span></summary>
+  <div class="quer">🎯 O que ela quer: o que os dois textos querem fazer <b>juntos</b>, mesmo sendo diferentes (um é texto corrido, o outro é infográfico).</div>
+  <div class="passo-r"><span class="n">A</span><div>Nenhum dos dois explica como o Cerrado se formou. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>"Exclusivamente" (só isso) e "espécies ameaçadas"? O Texto 2 nem fala de espécies ameaçadas. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>Nenhum ensina técnicas de preservação. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>Os dois mostram como o Cerrado é rico em vida. Texto 2: "a savana mais biodiversa do mundo" (1º parágrafo). Texto 3: "Saiba por que o Cerrado é a savana mais rica em biodiversidade do mundo". <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>Nenhum diz que a economia deve ser limitada. <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra D</div>
+  <div class="atalho">💡 <b>Truque:</b> procure a frase que aparece <b>quase igual nos dois textos</b>. Aqui foi "a savana mais rica em biodiversidade do mundo".</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> palavras como "exclusivamente", "apenas", "sempre" deixam a alternativa exagerada. Desconfie delas.</div>
+</details>
+
+<h3 class="texto">Texto 4 — "Fauna do Cerrado pelas estradas" (questões 32 a 37) · <span class="pg">p. 28 e 29</span></h3>
+
+<details class="res" id="q32"><summary>Questão 32 — "um animal a cada 15 segundos" · <span class="pg">p. 29</span></summary>
+  <div class="quer">🎯 O que ela quer: por que o texto diz "o equivalente a um animal a cada 15 segundos" (1º parágrafo), depois de falar em 475 milhões de animais atropelados por ano?</div>
+  <div class="passo-r"><span class="n">A</span><div>Não há ironia (falar o contrário do que se pensa, de brincadeira) nem dúvida sobre os dados. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>"Minimizar" é fazer parecer pequeno. O dado faz o contrário: mostra que é muito grave. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>"475 milhões" é tão grande que fica difícil imaginar. "Um a cada 15 segundos" mostra a <b>frequência</b> (de quanto em quanto tempo acontece) e faz a gente sentir o tamanho do problema. <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>Esse dado não fala de cidade. As áreas urbanas aparecem só no 2º parágrafo, em outro assunto. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>É um dado de pesquisa ("segundo dados do Centro Brasileiro de Estudos em Ecologia de Estradas"), não opinião do autor. <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra C</div>
+  <div class="atalho">💡 <b>Truque:</b> faça o teste: conte até 15. Pronto, mais um animal. Esse é o efeito que o texto quer causar em quem lê.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> achar que número é "opinião" (E). Número que vem de pesquisa é informação.</div>
+</details>
+
+<details class="res" id="q33"><summary>Questão 33 — o que é "coexistir" · <span class="pg">p. 29</span></summary>
+  <div class="quer">🎯 O que ela quer: o sentido de "coexistir" em "muitas estradas não serem planejadas para coexistir com a fauna" (2º parágrafo). Dica: <b>co</b> = junto (como em "colega"), <b>existir</b> = viver. Coexistir = viver junto.</div>
+  <div class="passo-r"><span class="n">A</span><div>Começa bem ("viver junto"), mas termina com "conflituosa" (brigando). O texto quer estradas que convivam <b>bem</b> com os animais. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>"Segregar" é separar. É o oposto de viver junto. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>"Impedir a circulação dos animais" é o oposto do que o texto quer. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>"Causar impactos negativos" é justamente o problema que o texto quer evitar. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>"Coabitar" (morar junto) de forma harmoniosa e equilibrada num mesmo espaço. Estrada e bichos dividindo o lugar sem acidente. <b class="v">✔</b></div></div>
+  <div class="resp">✅ Resposta: letra E</div>
+  <div class="atalho">💡 <b>Truque:</b> quebre a palavra em pedaços. "Co-" quase sempre é "junto": coexistir, cooperar, colega. Depois veja qual alternativa tem esse "junto" do jeito bom.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> marcar a A só porque começa com "viver junto". O fim, "conflituosa", estraga tudo.</div>
+</details>
+
+<details class="res" id="q34"><summary>Questão 34 — o mesmo tempo e modo de "ampliem" · <span class="pg">p. 29</span></summary>
+  <div class="quer">🎯 O que ela quer: achar o verbo que está no <b>mesmo jeito</b> de "ampliem". "Ampliem" está no <b>presente do subjuntivo</b>: o jeito do verbo que vem depois de "que" e fala de algo desejado ou possível, não certo. Ex.: "Espero <b>que</b> eles <b>venham</b>".</div>
+  <div class="passo-r"><span class="n">A</span><div>"<b>Reduza</b> a velocidade" (3º parágrafo). Parece "ampliem", mas aqui é uma <b>ordem ou pedido</b>: o texto está mandando o motorista fazer algo. Esse jeito do verbo se chama <b>modo imperativo</b> (o modo de dar ordem, como "Feche a porta!"). <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>"O decreto <b>deverá</b>" (6º parágrafo): é <b>futuro</b> ("vai dever"), algo que vai acontecer. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>"seus parceiros <b>reforçam</b>" (3º parágrafo): <b>presente</b> certinho, algo que acontece de verdade agora (presente do indicativo). <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>"esse cenário <b>é</b> agravado" (2º parágrafo): também presente do indicativo, um fato. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>"Estima-se <b>que</b> [...] <b>sejam</b> atropelados" (1º parágrafo). Olha o "que" antes! Faça o teste: "que eles ampliem" e "que eles sejam". Os dois se encaixam igual. É o mesmo jeito: presente do subjuntivo. <b class="v">✔</b></div></div>
+  <div class="resp">✅ Resposta: letra E</div>
+  <div class="atalho">💡 <b>Truque:</b> comece com "Espero que eles...". "Espero que eles ampliem", "Espero que eles sejam": soa natural? Então é presente do subjuntivo. "Espero que eles reforçam" ou "Espero que eles deverão" soam errados.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> marcar a A porque "reduza" termina parecido com "ampliem". A forma até parece, mas "Reduza a velocidade" é uma <b>ordem</b> para o motorista, e ordem é modo imperativo. Ah, e um detalhe: a questão copiou o trecho um pouco diferente do texto. No 7º parágrafo está "para <b>ampliar</b> oportunidades de renda". Não se preocupe com isso: o que vale é o verbo destacado no enunciado, "ampliem".</div>
+</details>
+
+<details class="res" id="q35"><summary>Questão 35 — palavras formadas com sufixo · <span class="pg">p. 30</span></summary>
+  <div class="quer">🎯 O que ela quer: qual alternativa explica certo como a palavra foi formada. <b>Sufixo</b> é um pedacinho colado no <b>fim</b> da palavra que cria uma palavra nova. Ex.: feliz + <b>-mente</b> = felizmente. Para acertar, confira se a <b>classe</b> (adjetivo, verbo, substantivo, advérbio) que a alternativa diz está certa.</div>
+  <div class="passo-r"><span class="n">A</span><div>"Especial" é <b>adjetivo</b> (dá característica: "um dia especial"). Com <b>-mente</b>, vira "especialmente", um <b>advérbio de modo</b> (diz o jeito como algo acontece). Tudo certo. <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>"Realidade" não é advérbio. É <b>substantivo</b> (nome de uma coisa: "a realidade"). <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>"Educação" não é adjetivo. É <b>substantivo</b> ("a educação"). <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>"Ambiental" e "potencial" não são verbos (verbo é ação: correr, falar). São <b>adjetivos</b>: "problema ambiental". <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>"Órgão" não é adjetivo. É <b>substantivo</b> ("o órgão"). <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra A</div>
+  <div class="atalho">💡 <b>Truque:</b> teste com "o" ou "a" na frente. "A realidade", "a educação", "o órgão" funcionam? Então são substantivos. E quase toda palavra formada por <b>adjetivo + -mente</b> é advérbio: rapidamente, calmamente, especialmente. (Cuidado: "semente" não vale, ela não vem de adjetivo.)</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> olhar só o sufixo e esquecer de conferir o nome da classe. Todas as erradas acertam o sufixo, mas erram a classe.</div>
+</details>
+
+<details class="res" id="q36"><summary>Questão 36 — para que servem os travessões · <span class="pg">p. 30</span></summary>
+  <div class="quer">🎯 O que ela quer: por que o texto usa <b>travessões</b> (o tracinho comprido —) em "produtos da sociobiodiversidade do Cerrado — como baru, buriti, jatobá, urucum, jaborandi e macaúba — com potencial para fortalecer cadeias produtivas" (5º parágrafo)?</div>
+  <div class="passo-r"><span class="n">A</span><div>Travessão também marca fala de personagem em diálogo. Mas aqui não tem ninguém conversando. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>Não tem fala de especialista nem citação. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>Quem separa cada item da lista (baru, buriti, jatobá...) são as <b>vírgulas</b>, não os travessões. Os travessões ficam só nas pontas do trecho. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>Os dois travessões abrem e fecham um trecho "enfiado" no meio da frase (<b>intercalado</b>), que explica quais são esses produtos, com destaque. Se você tirar esse trecho, a frase continua inteira: "produtos da sociobiodiversidade do Cerrado com potencial para fortalecer cadeias produtivas". <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>O trecho é só uma lista de frutos. Não serve para convencer ninguém. <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra D</div>
+  <div class="atalho">💡 <b>Truque:</b> travessão duplo funciona como <b>parênteses</b>. Tampe com o dedo o que está entre eles. Se a frase continuar fazendo sentido, é um trecho intercalado.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> ver uma lista entre os travessões e marcar a C. A lista existe, mas o trabalho de separar os itens é das vírgulas. O travessão "embrulha" a lista inteira.</div>
+</details>
+
+<details class="res" id="q37"><summary>Questão 37 — que tipo de pronome é cada um · <span class="pg">p. 30</span></summary>
+  <div class="quer">🎯 O que ela quer: dar o nome certo para <b>esse</b>, <b>Sua</b> e <b>ele</b>, nessa ordem. <b>Pronome</b> é a palavra que fica no lugar de um nome ou aponta para ele.</div>
+  <div class="passo-r"><span class="n">1</span><div>"No Brasil, <b>esse</b> cenário" (2º parágrafo): "esse" <b>aponta</b> para algo já dito (os atropelamentos). Pronome que aponta = <b>demonstrativo</b> (este, esse, aquele).</div></div>
+  <div class="passo-r"><span class="n">2</span><div>"<b>Sua</b> implementação" (7º parágrafo): "sua" diz de quem é (a implementação da política). Pronome de dono = <b>possessivo</b> (meu, teu, seu, sua).</div></div>
+  <div class="passo-r"><span class="n">3</span><div>"pois <b>ele</b> atrai animais" (3º parágrafo): "ele" está no lugar de "lixo" e é quem faz a ação de atrair. Esse é o <b>pronome pessoal do caso reto</b> (eu, tu, ele, nós, vós, eles), o que faz a ação.</div></div>
+  <div class="passo-r"><span class="n">A</span><div>Começa com "possessivo" para "esse". Errado logo no primeiro. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>Demonstrativo, possessivo, pessoal do caso reto. Bate com os três. <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>"Sua" não é pronome de tratamento (tratamento é "você", "senhor"). E "ele" não é caso oblíquo (oblíquo é me, te, lhe, o). <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>Começa com "pessoal" para "esse". Errado. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>"Esse" não é possessivo. <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra B</div>
+  <div class="atalho">💡 <b>Truque:</b> descubra só o <b>primeiro</b> ("esse" = demonstrativo). Isso já elimina A, D e E. Sobram B e C, e aí é só olhar o segundo.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> confundir "sua" (possessivo, de dono) com "Vossa/Sua Excelência" (tratamento). Aqui "sua" é só "dela".</div>
+</details>
+
+<h3 class="texto">Texto 5 — tirinha "Cerrado" / "serrado" (questão 38) · <span class="pg">p. 31</span></h3>
+
+<details class="res" id="q38"><summary>Questão 38 — de onde vem a graça da tirinha · <span class="pg">p. 31</span></summary>
+  <div class="quer">🎯 O que ela quer: por que a tirinha é engraçada (e também faz uma crítica). O personagem diz "Com vocês: O CERRADO!", aparece uma paisagem com tocos de árvore cortados e fumaça, e ele corrige: "Quero dizer: 'SERRADO'!!".</div>
+  <div class="passo-r"><span class="n">A</span><div>A correção não acaba com o duplo sentido. É ela que <b>cria</b> a piada. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>Sem as palavras, a gente não entenderia a piada do "serrado". O texto escrito é essencial, não só um enfeite. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>O humor não deixa o problema menos sério. Ele chama atenção para o problema. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>O personagem não fala de economia nem de preservação. E a tirinha tem ironia sim. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>"Cerrado" e "serrado" têm o <b>mesmo som</b>, mas sentidos diferentes. "Serrado" é o que foi cortado com serra. A troca faz a paisagem ganhar novo sentido: o Cerrado foi cortado pelas pessoas. <b class="v">✔</b></div></div>
+  <div class="resp">✅ Resposta: letra E</div>
+  <div class="atalho">💡 <b>Truque:</b> em tirinha, a graça quase sempre está numa palavra com <b>dois sentidos</b> ou num jogo de som. Ache a palavra que muda tudo ("serrado") e a resposta aparece.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> achar que "linguagem não verbal" (a imagem) faz tudo sozinha (B). Na tirinha, a imagem e as palavras trabalham juntas.</div>
+</details>
+
+<h3 class="texto">Texto 6 — tirinha da Amazônia e do Cerrado (questões 39 e 40) · <span class="pg">p. 32</span></h3>
+
+<details class="res" id="q39"><summary>Questão 39 — a atitude do autor no 4º quadrinho · <span class="pg">p. 32</span></summary>
+  <div class="quer">🎯 O que ela quer: no último quadrinho, "Atualmente esse equilíbrio foi rompido... e o agronegócio avança sobre os dois biomas!", o autor está só informando ou está criticando?</div>
+  <div class="passo-r"><span class="n">A</span><div>Ele critica. Palavras como "rompido" (quebrado) e "avança sobre" (invade), mais o ponto de exclamação e o trator no desenho, mostram que ele vê isso como algo ruim. <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>Não é "neutro" (sem tomar lado). A exclamação e a palavra "rompido" mostram que ele toma lado. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>Os primeiros quadrinhos falam de mudanças naturais (períodos secos e úmidos). Mas o 4º fala do <b>agronegócio</b>, que é ação das pessoas, não da natureza. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>"Sem emitir julgamento"? Ele julga, sim. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>Fala em mudanças "em décadas". A tirinha fala em "No decorrer das <b>eras</b>", um tempo muito, muito maior. Esse detalhe deixa a alternativa errada. <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra A</div>
+  <div class="atalho">💡 <b>Truque:</b> procure palavras "fortes" (rompido, avança sobre) e pontos de exclamação. Eles mostram que o autor tem uma opinião.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> marcar a E porque ela começa bem ("ação humana"). Leia até o fim: "décadas" não é o que a tirinha diz.</div>
+</details>
+
+<details class="res" id="q40"><summary>Questão 40 — oxítona, paroxítona e proparoxítona · <span class="pg">p. 32</span></summary>
+  <div class="quer">🎯 O que ela quer: três palavras da tirinha, <b>nessa ordem</b>: oxítona (sílaba forte é a <b>última</b>, como ca-FÉ), paroxítona (forte é a <b>penúltima</b>, como CA-sa) e proparoxítona (forte é a <b>antepenúltima</b>, como LÂM-pa-da).</div>
+  <div class="passo-r"><span class="n">A</span><div>"Já" tem uma sílaba só (monossílabo), então não é oxítona. E "pe-RÍ-o-dos" é proparoxítona, não paroxítona. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">B</span><div>"Á-re-as": a sílaba forte não é a última. Já falha no primeiro. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">C</span><div>"a-VAN-ça": forte na penúltima, é paroxítona. Já falha no primeiro. <b class="x">✘</b></div></div>
+  <div class="passo-r"><span class="n">D</span><div>"a-van-ÇOU" ("E A FLORESTA AVANÇOU", 3º quadrinho): última → <b>oxítona</b>. "bi-O-mas" ("OS DOIS BIOMAS", 4º quadrinho): penúltima → <b>paroxítona</b>. "Ú-mi-dos" ("PERÍODOS ÚMIDOS", 3º quadrinho): antepenúltima → <b>proparoxítona</b>. <b class="v">✔</b></div></div>
+  <div class="passo-r"><span class="n">E</span><div>"de-cor-RER" é oxítona, ok. Mas "mais" tem uma sílaba só, então não é paroxítona. <b class="x">✘</b></div></div>
+  <div class="resp">✅ Resposta: letra D</div>
+  <div class="atalho">💡 <b>Truque:</b> fale a palavra devagar, "chamando" alguém: a-van-ÇOOOU. A sílaba que você estica é a forte. Depois conte de trás para frente: 1ª de trás = oxítona, 2ª = paroxítona, 3ª = proparoxítona. E toda proparoxítona tem acento: úmidos, períodos, lâmpada.</div>
+  <div class="esc">⚠️ <b>Escorregão comum:</b> esquecer do "respectivamente" (nessa ordem). Não basta ter os três tipos: o primeiro tem que ser oxítona, o segundo paroxítona e o terceiro proparoxítona.</div>
+</details>
+
+<details class="res" id="redacao"><summary>A redação deste ano — o que pedia · <span class="pg">p. 33 e 34</span></summary>
+  <div class="quer">🎯 O tema: os <b>impactos das mudanças no meio ambiente</b>. O texto motivador contava que alguns animais do Cerrado começaram a perceber mudanças: "O Tamanduá-bandeira notou que as formigas estavam diminuindo e que a água do rio já não era tão limpa". E terminava com a pergunta: "e se os animais pudessem contar essa história, o que diriam?"</div>
+  <div class="passo-r"><span class="n">1</span><div><b>Tipo de texto:</b> narrativo (que conta uma história), do gênero <b>fábula</b>: história curta com animais como personagens que termina com uma lição. Escrito em <b>terceira pessoa</b> (o narrador conta de fora: "o lobo-guará viu", e não "eu vi"), em prosa (texto corrido, não poema), com <b>no mínimo 15 e no máximo 30 linhas</b>.</div></div>
+  <div class="passo-r"><span class="n">2</span><div><b>Os 4 elementos obrigatórios:</b>
+      <br>• um <b>problema no ambiente</b> (a prova deu exemplos: poluição, queimadas ou desmatamento);
+      <br>• <b>animais como personagens</b>;
+      <br>• uma <b>solução ou aprendizado</b>;
+      <br>• uma <b>moral da história</b> (a lição, como "A união faz a força").</div></div>
+  <div class="passo-r"><span class="n">3</span><div><b>Título:</b> obrigatório, "criativo, original e coerente com a narrativa", para dar vontade de ler.</div></div>
+  <div class="passo-r"><span class="n">4</span><div><b>Outras regras da prova:</b> não podia copiar trechos dos textos da prova; a história precisava ter início, meio e fim; letra legível; parágrafos e margens; e podia usar fala de personagem (discurso direto, com travessão) ou contar o que eles disseram (discurso indireto).</div></div>
+  <div class="atalho">💡 <b>O que mais conta:</b> a prova diz que quem <b>fugir do tema</b> ou <b>não escrever uma narrativa</b> fica INAPTO. Ou seja: o mais importante é ser uma <b>história com animais</b>, sobre um <b>problema no ambiente</b>, que termina com uma <b>moral</b>. Depois disso, valem a ortografia, a pontuação e o texto fazer sentido do começo ao fim.</div>
+</details>
+
+  </section>
+
+  <p class="fim">Você chegou até o fim. Isso já é muita coisa. ⭐</p>
+</div>
+<script defer src="vendor/katex/katex.min.js"></script>
+<script defer src="vendor/katex/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false});"></script>
+</body>
+</html>

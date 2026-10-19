@@ -1,5 +1,13 @@
 # progress — Estudo CMB
 
+## Depois da prova (19/10/2026)
+- Prova feita em 18/10. Caderno e gabarito oficial saíram em 19/10 → `pesquisa/provas/2026-prova.pdf` e `2026-gabarito.pdf`.
+- **Gabarito conferido às cegas** (2 agentes resolveram sem ver o gabarito): **40/40 batem**. Único recurso com argumento: **Q34** (enunciado cita "para que se ampliem", o texto diz "para ampliar"; e "Reduza" (imperativo) tem a mesma forma do subjuntivo, mas o edital só cobra indicativo/subjuntivo, art. 124 i). Moderado, anulação improvável. Resto: só erros de digitação (Q5 "a mais" × "menor", Q17, Q27, proposta).
+- **`roteiro/prova-2026.html`** (página separada, escolha do Diogo — **sem link no index**, ele manda o endereço quando quiser): gabarito clicável + resolução das 40 questões no padrão (🎯 balões ✅ 💡 ⚠️) + o que a redação pedia (fábula, 3ª pessoa, 15–30 linhas, moral). Revisor separado: 0 erros de conta; 1 grave (Q13 "dobro"→"metade") + 4 médios + 3 pequenos aplicados. 177 fórmulas KaTeX ok.
+- Diogo vai perguntar à criança o que ela lembra de ter marcado **antes** de mostrar o gabarito.
+- **Calendário:** recurso de gabarito 20–21/10 (9h–15h, presencial na Secretaria) · gabarito pós-recurso até 30/10 · cartão de respostas digitalizado **09/11** · resultado parcial objetiva **13/11** · redação 27/11 · **resultado final 11/12**.
+- Vídeos de correção da prova do CMB 2026: ainda não havia em 19/10 → procurar de novo em ~22/10 e pôr como 🎬 com minuto.
+
 ## Estado (23/09/2026, noite — 4ª sessão)
 - **Decisão do Diogo:** replanejar **só a semana 1** agora; semanas 2–4 ele define **no domingo 27/09**, com o resultado do Dia 3 novo, do reforço e do simulado de 2022 na mão.
 - **Semana 1 como ficou (publicada):** qui 24 = **Dia 3** (porcentagem, data movida) · sex 25 = **🔧 Reforço** (`data-dia="R"`, ~50 min: divisão em 3 níveis com conferência, fração↔% ida e volta, refazer 2021 Q9 + 2 problemas próprios) · sáb 26 = Dia 6 simulado 2022 (mantido: é o diagnóstico) · dom 27 = Dia 7 redação.
